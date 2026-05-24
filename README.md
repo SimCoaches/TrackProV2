@@ -8,6 +8,8 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
+Latest release: TrackPro V2 1.0.
+
 ## What TrackPro Does
 
 - Sets up and calibrates supported Sim Coaches hardware.
