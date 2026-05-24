@@ -1,9 +1,10 @@
 # Changelog
 
-## TrackPro V2 1.0 - 2026-05-24
+## TrackPro V2 2.26.3 - 2026-05-24
 
 TrackPro V2 is the Sim Coaches Windows app for hardware setup, lap review, onboard playback, telemetry, and driver improvement.
 
+- Aligned the public release, app package, Tauri shell, and core engine versions to `2.26.3`.
 - Added signed customer installer delivery through the public TrackPro V2 release channel.
 - Added in-app update notifications with changelog display before install.
 - Added automatic download, install, and restart flow for TrackPro updates.
