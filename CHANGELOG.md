@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.18 - 2026-06-07
+
+- Added Driver Lab, a structured driver-improvement course with progress tracking, telemetry drills, and a required focused human-review checkpoint.
+- Added telemetry-based proof checks so Driver Lab drills measure real driving behavior instead of relying only on manual completion.
+- Added coach review context for Driver Lab checkpoints so coaches can confirm whether the lesson focus matches the driver's real issue.
+- Fixed Simagic P-HPR pedal reactor testing so the Pedals page targets the USB pedal reactor controller instead of the under-seat haptics output.
+- Fixed duplicate Simagic haptic device entries by using the live USB HID device list.
+
 ## TrackPro V2 2.26.17 - 2026-06-06
 
 - Restored reliable telemetry capture and lap saving for live iRacing sessions.
