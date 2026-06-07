@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.19 - 2026-06-07
+
+- Fixed Community voice chat so drivers in the same voice channel can hear one another.
+- Improved voice playback resume and speaker routing for selected Windows output devices.
+
 ## TrackPro V2 2.26.18 - 2026-06-07
 
 - Added Driver Lab, a structured driver-improvement course with progress tracking, telemetry drills, and a required focused human-review checkpoint.
