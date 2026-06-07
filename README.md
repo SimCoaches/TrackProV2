@@ -29,10 +29,8 @@ Some setup and review screens can open without an active connection, but account
 
 ## Release Notes
 
-Customer-facing changes are listed in [CHANGELOG.md](./CHANGELOG.md). Release-channel rules are listed in [RELEASES.md](./RELEASES.md). Installer files are published as GitHub Release assets rather than committed to this repository.
+Customer-facing changes are listed in [CHANGELOG.md](./CHANGELOG.md). Installer files are published as GitHub Release assets rather than committed to this repository.
 
 ## About This Repository
 
-This public repository is the TrackPro V2 release channel. It contains public documentation, the customer changelog, and signed release assets.
-
-It does not contain TrackPro source code, private service configuration, signing keys, driver internals, or proprietary implementation details.
+This repository hosts TrackPro V2 download information, the customer changelog, and signed release assets.
