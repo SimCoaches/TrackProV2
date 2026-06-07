@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.21 - 2026-06-07
+
+- Fixed Community voice output selection so headset routing failures are detected instead of silently playing through the wrong Windows output.
+- Improved the headphone test so it reports when Windows falls back to the default speaker.
+- Added guidance for Bluetooth headsets that expose separate Stereo and Hands-Free outputs.
+- Fixed slow startup caused by abandoned onboard video uploads being retried on launch.
+- Changed automatic onboard video capture so failed uploads are discarded instead of stored for future retry.
+
 ## TrackPro V2 2.26.20 - 2026-06-07
 
 - Fixed Community voice join when a saved headset, microphone, or speaker device is no longer connected.
