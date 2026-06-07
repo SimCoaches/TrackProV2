@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.20 - 2026-06-07
+
+- Fixed Community voice join when a saved headset, microphone, or speaker device is no longer connected.
+- Kept voice settings available after a failed join so drivers can switch devices and retry.
+
 ## TrackPro V2 2.26.19 - 2026-06-07
 
 - Fixed Community voice chat so drivers in the same voice channel can hear one another.
