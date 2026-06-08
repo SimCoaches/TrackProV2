@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.23 - 2026-06-08
+
+- Made Live AI Coach more useful in races with proactive spotter-style calls for traffic, fuel, gaps, and incidents.
+- Added iRacing race-control tools for Coach, including cautions, black-flag clears, EOLs, wave-bys, pit open/close, grid controls, restarts, chat controls, and admin changes when the driver has session rights.
+- Added Coach controls for iRacing black boxes, including relative, fuel, tires, pit adjustments, in-car adjustments, radio, and weather pages.
+- Improved Community voice behavior so Coach push-to-talk temporarily mutes Community voice, and an optional setting lowers Community voice while Coach or Spotter is talking.
+- Moved persistent Community voice controls into the top bar so voice stays available across TrackPro pages without covering page content.
+
 ## TrackPro V2 2.26.22 - 2026-06-07
 
 - Fixed intermittent pedal input spikes that could briefly flash the raw pedal output and affect pressure in-game.
