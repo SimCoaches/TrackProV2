@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.22 - 2026-06-07
+
+- Fixed intermittent pedal input spikes that could briefly flash the raw pedal output and affect pressure in-game.
+- Kept Community voice connected when switching away from the Community page.
+- Improved Community voice controls so active drivers can manage mute, deafen, device refresh, and disconnect from other pages.
+
 ## TrackPro V2 2.26.21 - 2026-06-07
 
 - Fixed Community voice output selection so headset routing failures are detected instead of silently playing through the wrong Windows output.
