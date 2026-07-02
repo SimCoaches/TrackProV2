@@ -1,5 +1,44 @@
 # Changelog
 
+## TrackPro V2 2.26.42 - 2026-07-02
+
+- Added the AI Coach and Spotter overhaul with stronger spotter accuracy, less repeated callouts, and richer live coaching context from recent laps.
+- Improved Coach personalities so Encouraging, Technical, Tough Love, and Race Engineer modes respond with clearer, more distinct guidance.
+- Added reciprocal community corner-data sharing: drivers can turn sharing off to keep their data private, and community reference data is only returned to drivers who also share.
+- Redeployed the live AI Coach voice and realtime token services with the updated prompts and tools.
+- Verified Buttkicker/bass-shaker output support in the haptics engine, including preferred handling for ButtKicker USB Amp devices.
+- Hardened the corner-composite RPC so anonymous callers cannot read community corner reference data.
+
+## TrackPro V2 2.26.33 - 2026-06-10
+
+- Fixed a rare system crash (blue screen) that could occur when the Sim Coaches pedal driver was updated, repaired, or disabled. The virtual pedal driver now shuts down cleanly in every case.
+- The installer now reliably updates the Sim Coaches virtual pedal driver to the latest version on PCs that already had it installed, completing the update safely after the next reboot. Previously some PCs could keep running an older driver even after updating.
+- Fixed an iRacing controls/calibration freeze risk that could happen when the virtual pedal device stopped responding. TrackPro now checks that the pedal output is working, rebuilds the virtual pedal device if needed, and — if it still won't respond — leaves your physical pedals available instead of getting stuck.
+- Reduced log noise from a bad pedal-driver session so problems are recorded as periodic health checks instead of flooding the logs.
+- Fixed motion controller startup so TrackPro no longer scans, opens, or falls back to Thanos/ESP32 serial controllers while motion is idle. TrackPro now opens motion hardware only when you start, test, or calibrate motion, and releases the serial port when motion is stopped.
+- Added a support diagnostic option to help troubleshoot controller-enumeration issues.
+
+## TrackPro V2 2.26.30 - 2026-06-10
+
+- Fixed stuttery game frame pacing while TrackPro was running. The ambient lighting screen sampler was capturing the desktop in the background even when ambient lighting was off; it no longer captures anything unless ambient lighting is enabled with a selected light.
+- Rebuilt ambient screen capture on GPU-based desktop duplication, so screen-driven ambient lighting now runs during races without affecting smoothness. Older capture is kept only as a fallback for remote desktop and rotated displays.
+- Improved Govee light discovery so lights are found more reliably, including lights known to the Govee Desktop app and lights that only answer direct network scans.
+- Added ambient lighting quick actions (toggle lighting, hold idle, dark mode, acknowledge low fuel, reset output/mask) for StreamDeck-style control mapping.
+- Added a control mode for ambient lighting: Full Control (lights follow the screen and effects) or Effects First (lights only react to alerts and overrides).
+- Added behavior settings for unselected lights: leave them alone, turn them off, or hold a fixed color.
+
+## TrackPro V2 2.26.29 - 2026-06-09
+
+- Fixed pedals that showed in Windows but produced no output after upgrading from an older TrackPro. The installer now automatically frees your Sim Coaches pedals from the device-hiding the old version left behind, so they work right away.
+- This cleanup is automatic and safe: it leaves your other software alone and never removes drivers, so it cannot affect your keyboard or mouse.
+
+## TrackPro V2 2.26.27 - 2026-06-09
+
+- Added built-in Remote Support so Sim Coaches can help you directly on your sim PC: generate a one-time access code from the Remote Support page and read it to our team; no TeamViewer or other third-party tools needed.
+- Added a one-time guided setup for Remote Support with a single administrator approval; nothing extra appears on your PC afterwards.
+- Added an instant-access option so approved Sim Coaches staff can assist unattended rigs when you enable it.
+- Improved Remote Support reliability with live online status for support sessions.
+
 ## TrackPro V2 2.26.23 - 2026-06-08
 
 - Made Live AI Coach more useful in races with proactive spotter-style calls for traffic, fuel, gaps, and incidents.
