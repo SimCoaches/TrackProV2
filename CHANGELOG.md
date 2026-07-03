@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.44 - 2026-07-03
+
+- Added the track-edge model foundation for spatial racing-line analysis, including canonical centerline/edge geometry, signed lateral offset, and line-fault detection.
+- Added Telemetry page spatial line notes and official-edge rendering support, with graceful fallback to the driver's own lap model when imported map data is unavailable.
+- Added live predictive coach cues that can speak upcoming corner and racing-line guidance from the new track model.
+- Seeded Supabase with surveyed TUM track-edge data for 25 circuits and redeployed the realtime coach token service.
+- Published a fresh signed installer and updater feed for TrackPro V2 2.26.44.
+
 ## TrackPro V2 2.26.43 - 2026-07-03
 
 - Added AI Coach improvement tracking with persistent driver skill snapshots, structured coaching tips, and coach usage linked to telemetry sessions.
