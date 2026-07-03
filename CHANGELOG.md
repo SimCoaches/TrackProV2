@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.43 - 2026-07-03
+
+- Added AI Coach improvement tracking with persistent driver skill snapshots, structured coaching tips, and coach usage linked to telemetry sessions.
+- Improved post-session insights with real improvement velocity, lap-time trend, and coaching follow-through counters.
+- Updated Live AI Coach usage metering so unlimited plans still record analytics rows without charging quota.
+- Removed dead credentialed AI coach completion and compaction function cleanup from the deployed Supabase surface.
+- Published a fresh signed installer and updater feed for TrackPro V2 2.26.43.
+
 ## TrackPro V2 2.26.42 - 2026-07-02
 
 - Added the AI Coach and Spotter overhaul with stronger spotter accuracy, less repeated callouts, and richer live coaching context from recent laps.

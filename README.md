@@ -8,7 +8,7 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.42.
+Latest release: TrackPro V2 2.26.43.
 
 ## What TrackPro Does
 
