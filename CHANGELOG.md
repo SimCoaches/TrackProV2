@@ -1,5 +1,80 @@
 # Changelog
 
+## TrackPro V2 2.26.70 - 2026-07-13
+
+- AI Coach now keeps one configuration-specific view of the current, previous, and next corner, speaks earlier, and uses short, measured guided-lap calls without rolling into extra laps.
+- Coaching now compares more than braking, including turn-in, steering/rotation, racing line, throttle application, wheel slip, and understeer/oversteer evidence when the simulator reports it.
+- Added protected continuous-learning review so real telemetry and correlated radio history can improve verified coach capabilities without letting a transcript directly rewrite live behavior.
+- Assetto Corsa telemetry is now captured and normalized across its complete official shared-memory surface, including per-wheel and engineering channels used by coaching, haptics, motion, and saved sessions.
+- Remote Support now includes its verified helper in the installer and automatically replaces a missing or damaged local copy, avoiding setup-download failures on customer PCs.
+- Online and in-sim presence now use the same member data on Community and every other page, including drivers who are active in voice chat.
+- Sim Center Assetto Corsa sessions now have stronger content checks, race readiness, LAN launch coordination, race phases, and live race-control telemetry.
+
+## TrackPro V2 2.26.69 - 2026-07-12
+
+- AI Coach now uses exact iRacing track configurations and only speaks a turn number when the map and live position are trustworthy; uncertain layouts fall back safely instead of guessing.
+- Fixed Coach track-position, corner-number, radio replay, and lap-persistence regressions introduced during recent Coach improvements.
+- Added a card-required 14-day trial for new Starter, Pro, and Elite subscribers.
+- Added complimentary tester memberships and single-use access codes with no card or automatic renewal.
+- Added promotional membership pricing that stays locked while the original subscription remains active.
+
+## TrackPro V2 2.26.55 - 2026-07-08
+
+- Track distances (brake points, turn-in, approach) always spoken in meters so they match race boards and markers.
+- Speeds still default to mph; toggle Settings to metric for kph.
+
+## TrackPro V2 2.26.54 - 2026-07-08
+
+- Pre-corner cues fire earlier so you hear brake/setup notes while preparing, not after you're already on the brakes.
+- Speed coaching gives a real target ("aim about 60 mph mid-corner") plus the delta vs your last pass — not only "+9 mph more."
+- Speeds default to mph; distances use meters to match track boards (refined further in 2.26.55).
+- Removed confusing "you'll be at Turn X in about N seconds" countdowns (they were a rough distance÷speed guess and often wrong once you brake).
+
+## TrackPro V2 2.26.53 - 2026-07-08
+
+- Fixed pre-corner coaching language: approach cues now say what to do next ("brake about 15 meters later") instead of diagnosing a brake you haven't made yet ("15 meters early on the brakes").
+- While working one focus corner, pre-corner radio no longer calls secondary corners you aren't coaching.
+- Clearer live position for the coach: "where am I" uses the live landmark snapshot and should not invent a different corner from chat history.
+- Outlap stays quiet for unprompted coaching (tires, warmup). Proactive technique radio starts on the first flying lap after you cross start/finish; if you key the radio and ask, the coach still answers.
+- Hardened pin/switch, guided-lap phrasing, and delivery so cues are less likely to fire at the wrong moment or double-talk.
+
+## TrackPro V2 2.26.52 - 2026-07-08
+
+
+- Live AI Coach focus: ask to work on a corner (e.g. "focus on Turn 4") and coaching sticks there immediately — no more "we can't switch" style pushback.
+- Cleaner pre-corner radio: measured distances stay realistic (no absurd hundred/thousand-meter callouts), and open tips no longer spam other corners while you're focused on one.
+- If a fix isn't landing, the coach escalates how it teaches the same corner (pressure, sequence, eyes) instead of only repeating the same one-liner.
+- Instant post-corner feedback is more honest: one good pass is "on the mark"; "that's fixed" waits until you've held it for two clean laps.
+- Live voice cost/quality tiers: Starter uses the efficient Realtime mini model; Pro and Elite use full Realtime 2.1 for the best tool-following coach.
+
+## TrackPro V2 2.26.49 - 2026-07-08
+
+
+- Proactive corner cues now include the measured figure ("you're about 15 meters late on the brakes") for the technical coach, so you get the number without asking.
+- Gear coaching: ask what gear to be in and the coach compares the reference's apex gear to yours; it can always report your current gear.
+- Consistent reference answers: the coach explains the reference the same way every time (a per-corner best composite from laps as quick as a stated time) instead of flip-flopping on whether it has a lap time.
+- "Was that an improvement?" asked mid-lap now returns "finish the lap and I'll confirm" instead of sounding blind.
+- Start Coach no longer fails silently — it tells you when mic/headphones need setup and points to Voice Setup.
+- All existing laps in the database now feed the coach's reference pool, so faster reference data is available without waiting for owners to re-run the app.
+
+## TrackPro V2 2.26.48 - 2026-07-08
+
+- Fixed Start with Windows: TrackPro now repairs its own startup entry on every launch (stale paths after reinstalls/updates), respects your opt-out and Task Manager disables, and starts quietly in the tray without flashing a window at login.
+- Community Voice channels now show who's inside (names and avatars) before you join, refreshing every few seconds on the Community page.
+- Fixed the AI coach failing to load reference laps: coach memory is now per account, your previously saved laps seed the reference data automatically after sign-in, and a new session best becomes the comparison target within seconds.
+- "Where am I losing time" now falls back to comparing against your own best pass this session (and says so) instead of refusing when no stored reference exists yet.
+- Locked down a database table that was readable outside the app (RLS enabled; no user action needed).
+
+## TrackPro V2 2.26.47 - 2026-07-07
+
+- Fixed the AI coach believing a full-course yellow / pace order was active in solo Test Drive and practice sessions (misread iRacing pace-mode signal); the coach now knows the session type and when you are alone on track.
+- Fixed the coach placing you 1-2 corners behind: forward-phrased position, corrected corner resolver, and about half a second less latency on every voice question.
+- Corner questions now work for corners ahead: "turn 10" resolves on tracks with named corners, answers state where the corner is relative to you, and saved/community reference laps load reliably mid-session.
+- Fixed the faint robotic background voice reading off-track tallies; off-track history now resets each session and never forces computer text-to-speech.
+- Coaching advice is now driver-relatable (relative, rounded distances and gears) instead of raw track coordinates, and the coach starts proactive focus coaching within a couple of laps on any track.
+- Added the Corner Naming setting: numbers by default ("Turn 3"), traditional names opt-in, switchable from the Coach page or by voice; the spotter no longer reads corner names.
+- Fixed multi-source track maps so iRacing-exact corner data wins (Red Bull Ring now uses all 10 corners).
+
 ## TrackPro V2 2.26.44 - 2026-07-03
 
 - Added the track-edge model foundation for spatial racing-line analysis, including canonical centerline/edge geometry, signed lateral offset, and line-fault detection.
