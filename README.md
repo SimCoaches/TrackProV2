@@ -8,16 +8,13 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.94.
+Latest release: TrackPro V2 2.26.95.
 
-### What's New in 2.26.94
+### What's New in 2.26.95
 
-- AI Coach measures which guidance improves lap performance, accepts imperial pit values, recalibrates pedal pressure, and discovers each car's in-car adjustments.
-- Hardware and device settings now sync safely per machine, restoring a rebuilt rig without carrying its calibration to another PC; personal preferences still follow the driver.
-- Sim Center adds scan-to-race arrivals, rig mapping, USB card scanners, waiver gates, and visit-based venue progression.
-- Works Drivers gain commission tracking, referral cards, and individual Stripe promotion codes.
-- Messages now use a focused phone-style inbox, with more reliable DMs and clearer unread counts.
-- Community events now support reliable RSVPs, confirmation email, and race-day reminders.
+- The startup splash now reads the version from the running app, so it always shows the version actually installed.
+- Diagnostics now deliver normal shutdown markers immediately and deduplicate fleet alerts, preventing healthy closes and ongoing incidents from repeatedly paging staff.
+- TrackPro now re-checks for updates every four hours while running, so always-on simulator rigs receive new releases without needing an app restart.
 
 ## What TrackPro Does
 
