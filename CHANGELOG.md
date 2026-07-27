@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.95 - 2026-07-26
+
+- The startup splash now reads the version directly from the running TrackPro binary, so it always identifies the version actually installed instead of showing a stale hardcoded number.
+- Normal app shutdowns are now delivered immediately to fleet diagnostics, reducing false “went dark” incidents when a driver closes TrackPro normally.
+- Fleet alerts now page once per distinct dark event and at most daily for an ongoing error group, preventing repeated notifications from hiding genuinely new incidents.
+- TrackPro now re-checks for updates every four hours while running, so always-on simulator rigs receive new releases without needing an app restart.
+
 ## TrackPro V2 2.26.94 - 2026-07-26
 
 - AI Coach now measures which coaching guidance improves lap performance, keeps useful anticipation cues from being demoted by unrelated metrics, and correctly includes control cues in suppression decisions.
