@@ -1,5 +1,139 @@
 # Changelog
 
+## TrackPro V2 2.26.94 - 2026-07-26
+
+- AI Coach now measures which coaching guidance improves lap performance, keeps useful anticipation cues from being demoted by unrelated metrics, and correctly includes control cues in suppression decisions.
+- AI Coach now accepts gallons and PSI for pit fuel and tire-pressure commands, can recalibrate pedal-pressure guidance on request, and begins discovering each car's available in-car adjustments from live simulator data.
+- Hardware calibration and device-specific settings are now explicitly tied to each PC or simulator rig, while personal preferences can safely follow the driver between machines.
+- Sim Center adds a scan-to-race arrivals desk, simulator rig mapping, and USB HID card-scanner support for faster check-in.
+- Venue check-in now enforces required liability waivers, blocks revoked Driver Cards, supports replacement fees, and records waiver review provenance for front-desk staff.
+- Venue progression now combines career XP with real venue visits, shows visits needed for the next rank, and reliably awards the visit when a session ends.
+- Added a Works Driver program with applications, commission tracking, referral cards, and individual Stripe promotion codes so attributed sales reach the right driver.
+- Messages now use a focused phone-style inbox, with more reliable realtime DMs, clearer unread counts, and a less cluttered profile page.
+- Community events now support reliable RSVPs, confirmation email, and race-day reminders sent three hours before green.
+
+## TrackPro V2 2.26.93 - 2026-07-26
+
+- AI Coach now fills verified gaps between mapped corners with inferred straight segments, extending track-position awareness across more of the lap without inventing corner names.
+
+- Added password and username recovery to sign-in. A driver who forgets either can now recover their account with a code sent to their email; previously there was no way back in.
+- Sim Center: bookings taken on a venue's own website now appear in TrackPro, hold the right rig, and attach the driver to their own account so their laps are saved to them.
+- Sim Center: introduced Driver Cards — a scannable card that lets a driver check themselves in at any simulator, with a permanent code that stays theirs across every card they are issued.
+- Sim Center: added Grid Rank, earned at the venue, and Driver Class, earned from lap pace, so venue progression is not skipped by racing at home.
+- Sim Center: added membership credits, including buddy passes, that refresh each billing period.
+- The Race Pass season leaderboard now refreshes while you watch it instead of only when the page is opened.
+- Third-party pedal rigs no longer report a missing TrackPro HID filter as an error.
+- Fleet diagnostics now report install heartbeats and group recurring errors reliably so silent failures can be detected and fixed.
+- Telemetry is retained indefinitely instead of being removed by an automatic retention window.
+- Retired the legacy SuperLap page and removed its navigation entry.
+- Driver accounts are now enforced as unique by email and username, preventing duplicate profiles for the same person.
+
+## TrackPro V2 2.26.92 - 2026-07-25
+
+- Race Pass now records progress for all 12 supported quest requirement types, fixing challenge categories that previously never advanced.
+- The Race Pass header is more compact so the leaderboard appears higher on the page and is visible sooner.
+- Personal-best lookups used by Race Pass progression now use a dedicated index for faster updates as participation grows.
+- Overlay cosmetic rarities now have distinct visual treatments across both the TrackPro interface and the in-sim overlay host.
+- Improved backend update reliability so Race Pass progression and future service updates stay consistent.
+
+## TrackPro V2 2.26.91 - 2026-07-25
+
+- Microphone setup now silences the live voice channel while testing and calibrates against the measured room-noise floor, preventing setup audio from leaking to other participants and avoiding false speech detection from fans or background noise.
+- Added an opt-in microphone-level diagnostic and offline replay gate so voice tuning can be verified against real rig noise and normal speech without recording audio.
+- Overlays now use **Alt+O** to switch between click-through driving mode and movable setup mode, replacing the old F8 hold-to-move behavior.
+- Overlay dragging is reliable while setup mode is active, and the overlay host clearly reflects whether windows are locked or movable.
+- Rebuilt the Overlays page around focused tabs and a wider card grid so configuration controls are easier to find and scan.
+- Rebuilt Race Pass so the leaderboard appears first, with challenges, prizes, rules, and history organized into separate tabs.
+- Home now greets a driver by name only when a real signed-in account session exists.
+
+## TrackPro V2 2.26.90 - 2026-07-25
+
+- Fixed the spotter repeating himself: a suppression window shorter than the engines' event retention let the same call play again seconds later, which was the largest single source of spotter noise.
+- "Next car ahead" now tells you where the car actually is, adding the measured gap to the call instead of only naming the driver.
+- Multiclass traffic calls no longer repeat every few seconds in a mixed-class field.
+- Corner-trouble warnings ("careful into Turn 7") are limited to twice per corner per session.
+- The spotter no longer makes fuel calls before the race goes green, or before the fuel-burn estimate is based on real laps.
+- Spotter voices are now the two complete voices, Male and Female; the previous default shipped only a fraction of the phrases, so drivers on it were missing most of what the spotter can say. Existing selections migrate automatically.
+- The free spotter gained real controls: chatter level, voice, and per-category switches for traffic, flags, timing, multiclass, fuel, car damage, and engineer chatter.
+- Push-to-talk no longer loses a quick re-press while the previous radio turn is finishing.
+- Overlays are click-through by default, so an overlay can never sit over the app and block you from changing tabs; installs already affected recover on launch.
+- Coach settings: push-to-talk binding moved directly under the microphone settings, and pressing it now starts the coach if it is not already running.
+
+## TrackPro V2 2.26.89 - 2026-07-24
+
+- Rebalanced AI Coach corner cues: roll speed, apex, and exit coaching now lead when they explain the time loss, instead of every corner becoming "brake later"; braking-point cues still speak when they are the whole story.
+- Fixed the coach going permanently silent after a guided lap by detecting and reviving a dead voice connection, during and after the walkthrough.
+- Guided lap calls now speak in the coach's own voice, pre-synthesized when the lap is armed, instead of the robotic system voice; other dynamic radio lines upgrade to the real voice automatically over time.
+- Corner-trouble warnings ("Careful into Turn 7") now come only from the spotter and are limited to two per corner per session.
+- Removed the back-to-back repeat of the focus-corner cue right after the start/finish line; the early call now owns the approach.
+- The spotter reads your lap time after every valid practice and qualifying lap, in both spotter voices, with a new "Lap time reads" toggle.
+- Pressing push-to-talk now starts the coach if it is not already running, and the PTT binding moved directly under the microphone settings with a clear explanation.
+- Reduced the frame-rate dip at the start/finish line: onboard recording now uses the GPU's hardware video encoder when available, and finished-lap video processing waits until you are in the pits.
+- Haptics can no longer bind to headphones or screen-attached audio outputs, and your shaker selection is remembered even when the amp is powered on after TrackPro starts.
+- Quieted the haptics reconnect loop when the output device is disconnected, keeping automatic recovery when it returns.
+- Subscriptions now require a real TrackPro account: guests are guided through account creation (Google, Discord, or email) before checkout, and guest mode no longer blocks the sign-in page.
+- Fixed a false "OAuth sign in failed" message that could appear even though Google or Discord sign-in succeeded.
+
+## TrackPro V2 2.26.88 - 2026-07-20
+
+- Fixed subscription checkout failures caused by stale Stripe price overrides and made billing errors show their actionable server message.
+- Extended the new-subscriber free trial to 30 days and pinned the Supabase client used by billing functions for repeatable Edge deployments.
+- Renamed the paid coaching choices to Pro 5× and Pro 20× consistently across the app, Coach, support, and backend responses.
+- Reorganized the subscription page so pricing choices appear first in a cleaner, less cluttered layout.
+
+## TrackPro V2 2.26.87 - 2026-07-20
+
+- Unified member, profile, and direct-message avatars around the canonical profile photo, with reliable local initials whenever no image is available.
+- Added a one-time repair path for legacy empty profile-avatar rows so older accounts converge without repeated database writes.
+
+## TrackPro V2 2.26.86 - 2026-07-20
+
+- Added targeted database indexes so community lap and Coach reference searches remain fast as telemetry grows.
+- Added a privacy- and membership-gated precomputed leaderboard for each track, configuration, and car combination, refreshed every 10 minutes.
+- Improved Motion telemetry fidelity with rFactor 2 rotation rates, F1 MotionEx slip data, and an iRacing rear-traction surrogate.
+- Strengthened Motion stop and limit handling with gentle parking for normal disable and disconnect flows, while keeping E-STOP immediate, plus expanded safety proof tests.
+- Updated the Motion page to follow live profiles, show honest E-STOP state, apply real master gain, and include a hardware rig-testing runbook.
+
+## TrackPro V2 2.26.85 - 2026-07-20
+
+- Improved telemetry gear traces so normal shifts no longer spike through neutral, and expanded surface track maps with sector context.
+- Added venue-keyed corner numbers and driving-line fault pins to track maps without tying the display to a specific simulator.
+- Added a dedicated Social Events experience with accurate Friday Night Race timing, weekly car/track details, and copyable session information.
+- Polished Home and Coach settings with a clearer hardware strip, consistent cards, and toggles that retain their proper shape beside long labels.
+- Restored lap coaching across configured OpenAI models, made Driver Profile pace and consistency respond to recent sessions, clearly separated long-term driver traits from single-lap radar labels, and made personal-best comparisons frame the driver's own next-best lap honestly.
+
+## TrackPro V2 2.26.84 - 2026-07-20
+
+- Redesigned the Home page around current season standing, Friday Night Race information, and recent driving sessions.
+- Updated Race Pass leaderboards to rank drivers by the XP shown in the interface and made leaderboard rows open the selected racer's profile.
+- Improved the first-startup tour so paid pages show their real interfaces as safe, read-only previews while the tour is open, with normal access gates restored immediately afterward.
+
+## TrackPro V2 2.26.83 - 2026-07-20
+
+- Added a guided first-startup tour across TrackPro's main pages, coordinated with the onboard-video consent prompt so startup guidance does not overlap.
+- Added a reusable tooltip system and more than fifty contextual explanations across pedals, motion, haptics, telemetry, Coach, and Driver Lab controls.
+- Opened Marketplace buying and trading to every account while keeping selling features on paid plans.
+- Added Marketplace notifications and email delivery so buyers and sellers do not miss offers, purchases, or direct messages.
+- Improved application error recovery with a full Reload App action when a page or dynamically loaded module fails.
+
+## TrackPro V2 2.26.82 - 2026-07-20
+
+- Reworked motion-controller connection so Thanos controllers can be selected, probed, and connected directly from a clearer in-app connection card.
+- Motion controller port choices now persist per user and remain stable during the session, with more tolerant FTDI serial-device detection.
+- Added a controlled testing gate to the Motion page while the refreshed motion workflow is prepared for wider use.
+- Fixed onboard-video consent so the driver's answer is saved before capture state changes and remains correct after restarting TrackPro.
+- Redesigned Driver Lab lesson pages with a stronger instructor-led layout and complete, untruncated lesson content.
+- Improved Simagic pedal-reactor controls with a real strength slider and removed the inactive polarity control.
+
+## TrackPro V2 2.26.81 - 2026-07-20
+
+- Added the cinematic TrackPro startup experience to every manual launch and Windows auto-start, with the app opening only after the launch sequence is ready.
+- Improved AI Coach track awareness, corner honesty, racecraft priorities, earlier teaching, and concise live-radio guidance; Driver Lab now stays on the selected lesson and grades drills from live laps.
+- Expanded haptics across iRacing, Assetto Corsa, and ACC with real gear-shift and downshift effects, positional curb feel, wheel-slip lockup feedback, per-game capability indicators, and safer Simagic reactor shutdown behavior.
+- Improved Coach and Community voice routing so both use the selected TrackPro headset without duplicate or competing audio.
+- Added clearer onboard-video consent and comparison handling, venue visual reference anchors, and more reliable live race and opponent context.
+- Improved overlay and borderless-window controls, including monitor-aware sizing and direct Coach control of overlays.
+
 ## TrackPro V2 2.26.70 - 2026-07-13
 
 - AI Coach now keeps one configuration-specific view of the current, previous, and next corner, speaks earlier, and uses short, measured guided-lap calls without rolling into extra laps.
