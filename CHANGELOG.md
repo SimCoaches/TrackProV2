@@ -4,7 +4,7 @@
 
 - AI Coach now measures which coaching guidance improves lap performance, keeps useful anticipation cues from being demoted by unrelated metrics, and correctly includes control cues in suppression decisions.
 - AI Coach now accepts gallons and PSI for pit fuel and tire-pressure commands, can recalibrate pedal-pressure guidance on request, and begins discovering each car's available in-car adjustments from live simulator data.
-- Hardware calibration and device-specific settings are now explicitly tied to each PC or simulator rig, while personal preferences can safely follow the driver between machines.
+- Hardware and device settings now sync safely per machine, restoring a rebuilt rig without carrying its calibration to another PC or sim-center rig; personal preferences still follow the driver.
 - Sim Center adds a scan-to-race arrivals desk, simulator rig mapping, and USB HID card-scanner support for faster check-in.
 - Venue check-in now enforces required liability waivers, blocks revoked Driver Cards, supports replacement fees, and records waiver review provenance for front-desk staff.
 - Venue progression now combines career XP with real venue visits, shows visits needed for the next rank, and reliably awards the visit when a session ends.
