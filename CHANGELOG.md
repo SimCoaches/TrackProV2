@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.96 - 2026-07-26
+
+- The startup/loading page now shows `V2.26.96` from its first paint and continues to confirm the installed version directly from the running TrackPro app.
+- Failed update checks now appear in fleet diagnostics without generating unnecessary alerts for ordinary offline rigs or temporary network interruptions.
+- Failed downloads or installations now report the target release to support diagnostics, making it possible to identify and help rigs stranded on an older version.
+- Marketplace listing details no longer crush the browse header when the members rail is open; the header actions wrap cleanly while the title, plan badge, and tagline remain readable.
+
 ## TrackPro V2 2.26.95 - 2026-07-26
 
 - The startup splash now reads the version directly from the running TrackPro binary, so it always identifies the version actually installed instead of showing a stale hardcoded number.
