@@ -8,13 +8,14 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.95.
+Latest release: TrackPro V2 2.26.96.
 
-### What's New in 2.26.95
+### What's New in 2.26.96
 
-- The startup splash now reads the version from the running app, so it always shows the version actually installed.
-- Diagnostics now deliver normal shutdown markers immediately and deduplicate fleet alerts, preventing healthy closes and ongoing incidents from repeatedly paging staff.
-- TrackPro now re-checks for updates every four hours while running, so always-on simulator rigs receive new releases without needing an app restart.
+- The startup/loading page now shows `V2.26.96` immediately and continues to confirm the version from the running app.
+- Failed update checks and installations now reach fleet diagnostics, making rigs stranded on an older release visible to support.
+- TrackPro continues to re-check for updates every four hours while running, so always-on simulator rigs receive new releases without needing an app restart.
+- Marketplace listing details no longer crush the browse header when the members rail is open; actions wrap cleanly and the title remains readable.
 
 ## What TrackPro Does
 
