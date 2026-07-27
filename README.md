@@ -8,7 +8,16 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.44.
+Latest release: TrackPro V2 2.26.94.
+
+### What's New in 2.26.94
+
+- AI Coach measures which guidance improves lap performance, accepts imperial pit values, recalibrates pedal pressure, and discovers each car's in-car adjustments.
+- Hardware calibration and device settings are now explicitly machine-scoped, while personal preferences can safely follow the driver.
+- Sim Center adds scan-to-race arrivals, rig mapping, USB card scanners, waiver gates, and visit-based venue progression.
+- Works Drivers gain commission tracking, referral cards, and individual Stripe promotion codes.
+- Messages now use a focused phone-style inbox, with more reliable DMs and clearer unread counts.
+- Community events now support reliable RSVPs, confirmation email, and race-day reminders.
 
 ## What TrackPro Does
 
