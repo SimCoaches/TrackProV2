@@ -13,7 +13,7 @@ Latest release: TrackPro V2 2.26.94.
 ### What's New in 2.26.94
 
 - AI Coach measures which guidance improves lap performance, accepts imperial pit values, recalibrates pedal pressure, and discovers each car's in-car adjustments.
-- Hardware calibration and device settings are now explicitly machine-scoped, while personal preferences can safely follow the driver.
+- Hardware and device settings now sync safely per machine, restoring a rebuilt rig without carrying its calibration to another PC; personal preferences still follow the driver.
 - Sim Center adds scan-to-race arrivals, rig mapping, USB card scanners, waiver gates, and visit-based venue progression.
 - Works Drivers gain commission tracking, referral cards, and individual Stripe promotion codes.
 - Messages now use a focused phone-style inbox, with more reliable DMs and clearer unread counts.
