@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.97 - 2026-07-31
+
+- Added Wheel Studio for building reusable steering-wheel LED profiles and dash displays, including scalable LED layouts, themes, typed conditions, live previews, and expanded hardware backends for GSI, Moza, Fanatec, WLED, SimHub-compatible, and other supported devices.
+- Wheel Studio is protected by testing access code `1994`; an unlock lasts only for the current app run, matching the Motion testing gate.
+- Motion now publishes commanded platform pose for VR motion-compensation integrations, with customer-facing Unity integration guides and an example telemetry sender.
+- ACC now exposes the tyre, timing, flag, and session data already available from shared memory, while rFactor 2 reads its scoring buffer so dashboards no longer remain at `0:00.000`.
+- Native select menus were replaced with TrackPro's in-app selector to avoid WebView2 popup failures.
+- Event Mode now releases its sender port when disabled, aligns the kiosk with the standalone lap-time sender, and keeps every attendant action tied to the selected simulator.
+- Fixed the false "went dark" alerts: TrackPro now records that it closed normally when you quit from the title bar, so a clean exit is no longer reported as a crash. No install had ever managed to record a clean exit, which is why healthy sessions were being flagged.
+- Diagnostics now report when a shutdown record is rejected instead of failing silently.
+
 ## TrackPro V2 2.26.96 - 2026-07-26
 
 - The startup/loading page now shows `V2.26.96` from its first paint and continues to confirm the installed version directly from the running TrackPro app.
