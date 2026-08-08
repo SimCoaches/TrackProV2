@@ -8,15 +8,16 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.101.
+Latest release: TrackPro V2 2.26.97.
 
-### What's New in 2.26.101
+### What's New in 2.26.97
 
-- Improved force-feedback output under heavy steering load with dynamic-headroom mixing, safer open-loop testing, and removal of unwanted autocenter spring behavior.
-- Wheel LED assignments now persist per device and render through supported hardware backends during live telemetry.
-- Added a Wheel Studio device picker and live dash output for desktop and in-sim overlay displays.
-- Le Mans Ultimate is now detected and identified separately from rFactor 2 across telemetry, lap uploads, coaching, and hardware profiles.
-- Includes the locked FFB Lab, responsive live-session navigation, native OpenXR/SteamVR overlays, spotter, motion, haptics, and AI Coach improvements from prior releases.
+- Added Wheel Studio for designing reusable steering-wheel LED profiles and dash displays across supported devices, with themes, typed conditions, live previews, and expanded hardware backends.
+- Wheel Studio is protected by testing access code `1994` and unlocks only for the current app run, matching the Motion testing gate.
+- Added commanded platform-pose output for VR motion compensation plus Unity motion-integration documentation and an example sender.
+- Improved ACC and rFactor 2 telemetry for tyre, timing, flag, session, and scoring data used by dashboards.
+- Replaced native select menus with TrackPro's in-app selector to avoid WebView2 popup failures, and improved Event Mode kiosk and attendant reliability.
+- Fixed false "went dark" alerts by recording clean title-bar exits and reporting rejected shutdown records to diagnostics.
 
 ## What TrackPro Does
 
