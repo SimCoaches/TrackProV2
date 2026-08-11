@@ -8,13 +8,12 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.106.
+Latest release: TrackPro V2 2.26.107.
 
-### What's New in 2.26.106
+### What's New in 2.26.107
 
-- Fixed onboard recording restarting itself every two seconds on untimed laps (out-laps, tows): recordings now survive, and the constant background CPU and disk churn it caused is gone.
-- The collapsed members rail now shows every online driver's picture (up to twelve, then a +N counter) instead of only the first four.
-- Dash Studio layouts now render on the wheel's own screen (VoCore-based displays), and Moza and Fanatec wheels join device discovery.
+- The setup flow's headset step now handles a headset plugged in late: it explains that no microphone was found, watches for one, and continues by itself the moment Windows sees it — no more raw "Requested device not found" dead end.
+- A remembered microphone that's no longer present falls back to the system default instead of a dead level meter.
 
 ## What TrackPro Does
 
