@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.104 - 2026-08-11
+
+- Radio Check is now personal: the coach answers by name in the coach voice you picked during setup, for all accounts.
+- Race-day event reminder emails now send even when the only open TrackPro is a guest session.
+- Message, offer, order, and RSVP emails are no longer silently skipped when the app hasn't finished signing in.
+
 ## TrackPro V2 2.26.103 - 2026-08-10
 
 - AI Coach responds faster, carries forward prior-session work more reliably, and gives clearer guided-lap, predictive, and technique coaching with fewer contradictory or mistimed calls.
