@@ -8,16 +8,16 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.97.
+Latest release: TrackPro V2 2.26.103.
 
-### What's New in 2.26.97
+### What's New in 2.26.103
 
-- Added Wheel Studio for designing reusable steering-wheel LED profiles and dash displays across supported devices, with themes, typed conditions, live previews, and expanded hardware backends.
-- Wheel Studio is protected by testing access code `1994` and unlocks only for the current app run, matching the Motion testing gate.
-- Added commanded platform-pose output for VR motion compensation plus Unity motion-integration documentation and an example sender.
-- Improved ACC and rFactor 2 telemetry for tyre, timing, flag, session, and scoring data used by dashboards.
-- Replaced native select menus with TrackPro's in-app selector to avoid WebView2 popup failures, and improved Event Mode kiosk and attendant reliability.
-- Fixed false "went dark" alerts by recording clean title-bar exits and reporting rejected shutdown records to diagnostics.
+- AI Coach responds faster and can use real session history, fuel planning, lap comparison, live delta, garage setup, track-corner, audio, connection, and overlay information.
+- Guided-lap, predictive, and technique coaching is more consistent, with stronger continuity between sessions and fewer contradictory calls.
+- Spotter now stays quiet behind the pace car and adds closing-traffic, pit-exit, and unsafe-rejoin warnings with complete male and female voice packs.
+- Added Assetto Corsa traffic-spotter integration with automatic plugin installation and activation guidance.
+- Radio Check uses a more natural speaking level and supports mapped steering-wheel buttons.
+- Account billing now shows the billed plan accurately and offers eligible subscribers a one-time save offer before cancellation without blocking cancellation.
 
 ## What TrackPro Does
 
