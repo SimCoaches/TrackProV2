@@ -1,5 +1,60 @@
 # Changelog
 
+## TrackPro V2 2.26.103 - 2026-08-10
+
+- AI Coach responds faster, carries forward prior-session work more reliably, and gives clearer guided-lap, predictive, and technique coaching with fewer contradictory or mistimed calls.
+- AI Coach can now read real session history, calculate fuel plans, identify track corners, compare your own laps, report live delta, read the current garage setup, and diagnose connection, microphone, audio, and overlay state.
+- Added optional named comparison with an accepted friend when both drivers explicitly enable it; private driver data remains unavailable without mutual consent.
+- Spotter now stays quiet behind the pace car, warns about rapidly closing traffic, pit-exit traffic, and unsafe rejoins, and includes complete male and female voice clips for the new calls.
+- Added Assetto Corsa traffic-spotter integration with automatic plugin installation and in-app activation guidance.
+- Radio Check now uses a natural speaking level and supports mapped steering-wheel buttons for push-to-talk testing.
+- Account billing now distinguishes the billed Stripe tier from temporary or trial access and can offer eligible subscribers a one-time 50%-off, three-month save offer before cancellation without blocking cancellation.
+
+## TrackPro V2 2.26.102 - 2026-08-09
+
+- TrackPro no longer launches Steam or SteamVR under any circumstances; the SteamVR integration has been removed entirely.
+- Fixed a crash that could freeze the whole app and silence the coach, spotter, and radio the moment push-to-talk was pressed or coach voice connected.
+- TrackPro's background engine now shuts itself down when the app closes unexpectedly, so the next launch always starts clean instead of "nothing works until reboot".
+- The installer now clears stale TrackPro processes from previous sessions automatically instead of refusing to install until Windows is restarted.
+- AI Coach voice now recovers automatically when a microphone (for example a VR headset mic) disconnects and later returns mid-session.
+- Wheel-button push-to-talk bindings now reach the native input monitor, so coach radio works while the sim has focus.
+- The app and its background engine are now code-signed, reducing antivirus and SmartScreen blocks during install.
+
+## TrackPro V2 2.26.101 - 2026-08-07
+
+- Improved force-feedback output under heavy steering load with dynamic-headroom mixing, safer open-loop testing, and removal of unwanted autocenter spring behavior.
+- Wheel LED assignments now persist per device and render through supported hardware backends during live telemetry.
+- Added a Wheel Studio device picker and live dash output for desktop and in-sim overlay displays.
+- Le Mans Ultimate is now detected and identified separately from rFactor 2 across telemetry, lap uploads, coaching, and hardware profiles.
+
+## TrackPro V2 2.26.100 - 2026-08-07
+
+- Added a locked FFB Lab for supervised staff testing, profile control, signal-chain inspection, and session-locked Auto/Manual tuning.
+- Added steering-torque acquisition for iRacing, Assetto Corsa, ACC, rFactor 2, and Le Mans Ultimate.
+- Fixed stuck navigation during live sessions by coalescing high-frequency telemetry and LiveKit audio-meter updates.
+- Improved overlay startup and recovery with boot-race protection, starvation detection, and broader healing coverage.
+
+## TrackPro V2 2.26.99 - 2026-08-06
+
+- Added native VR overlay foundations for both OpenXR and SteamVR, including an OpenXR API layer that does not require SteamVR.
+- Added iRacing's 360 Hz steering-torque stream as the high-rate input for TrackPro's dormant FFB engine.
+- Added an environment-gated FFB capture and deterministic replay harness for measuring detail, smoothness, clipping, and safety before hardware output is enabled.
+- Added an inert-by-default DirectInput constant-force layer for explicitly enabled, capped, supervised FFB bench testing.
+- Added left/right traffic calls for rFactor 2, Le Mans Ultimate, and F1 24/25.
+- Fixed spotter category switches so each setting controls exactly the call family described by its label.
+- Added regression coverage for the spotter settings wiring and native OpenXR loader path.
+
+## TrackPro V2 2.26.98 - 2026-08-06
+
+- Added a guided, resumable setup flow covering driver identity, headset and radio checks, spotter configuration, pedal calibration, and plan selection.
+- Telemetry capture and valid-lap handling now work consistently across iRacing, ACC, Assetto Corsa, rFactor 2/LMU, F1, and BeamNG.
+- Community comparison laps now stay within the correct simulator, preventing same-named tracks from different games from being mixed.
+- Expanded Wheel Studio with device discovery, click-to-map calibration, hardware LED rendering, and verified layouts for a much larger wheel catalog.
+- Motion now uses a 360 Hz control loop with predictive compensation, understeer and road-texture cues, stronger plausibility checks, and BeamNG OutSim support.
+- Haptic profiles can switch automatically for each car and track.
+- AI Coach and spotter controls now expose radio volume more clearly, report real usage, and make more honest lap and position calls.
+- Fixed username availability checks so a driver can keep the username already assigned to their own account.
+
 ## TrackPro V2 2.26.97 - 2026-07-31
 
 - Added Wheel Studio for building reusable steering-wheel LED profiles and dash displays, including scalable LED layouts, themes, typed conditions, live previews, and expanded hardware backends for GSI, Moza, Fanatec, WLED, SimHub-compatible, and other supported devices.
