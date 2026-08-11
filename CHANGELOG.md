@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.107 - 2026-08-11
+
+- The setup flow's headset step now handles a headset plugged in late: it explains that no microphone was found, watches for one, and continues by itself the moment Windows sees it — no more raw "Requested device not found" dead end.
+- A remembered microphone that's no longer present falls back to the system default instead of a dead level meter.
+
 ## TrackPro V2 2.26.106 - 2026-08-11
 
 - Fixed onboard recording restarting itself every two seconds on untimed laps (out-laps, tows): recordings now survive, and the constant background CPU and disk churn it caused is gone.
