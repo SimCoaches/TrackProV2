@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.106 - 2026-08-11
+
+- Fixed onboard recording restarting itself every two seconds on untimed laps (out-laps, tows): recordings now survive, and the constant background CPU and disk churn it caused is gone.
+- The collapsed members rail now shows every online driver's picture (up to twelve, then a +N counter) instead of only the first four.
+- Dash Studio layouts now render on the wheel's own screen (VoCore-based displays), and Moza and Fanatec wheels join device discovery.
+
 ## TrackPro V2 2.26.105 - 2026-08-11
 
 - One-time driver setup now belongs to each account: signing in on a PC where someone else already finished setup no longer skips yours, and signing in mid-session routes you into setup if yours was never finished.
