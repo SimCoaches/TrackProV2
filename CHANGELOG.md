@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.105 - 2026-08-11
+
+- One-time driver setup now belongs to each account: signing in on a PC where someone else already finished setup no longer skips yours, and signing in mid-session routes you into setup if yours was never finished.
+- Fixed shared-PC settings bleed: a newly signed-in account can no longer inherit another driver's coach and spotter settings.
+- The final setup screen can no longer be missed by closing the app right after the radio check — setup resumes there on the next launch.
+- Fixed ACC lap saving: laps driven in Assetto Corsa Competizione are now captured and saved (on-track detection previously discarded every ACC lap).
+- Race Pass now shows a full XP history — every award this season with time, description, and +XP, grouped by day.
+- Race Pass tiers continue past 100: Elite tiers progress at 2.5x XP cost, with tiers 1-100 and all rewards unchanged.
+- The "active on another PC" screen now appears only when TrackPro is actually running on another PC; a claim left behind by a closed app is taken over silently.
+- The sign-in page got the welcome-flow treatment: your coach is on the left of the screen, waiting with the radio.
+- Fixed drivers dropping to offline or "went dark" mid-session: TrackPro minimized behind the sim no longer throttles its own heartbeats, and noisy diagnostics can no longer drown them out — Online and On-track status now hold through multi-hour stints.
+
 ## TrackPro V2 2.26.104 - 2026-08-11
 
 - Radio Check is now personal: the coach answers by name in the coach voice you picked during setup, for all accounts.
