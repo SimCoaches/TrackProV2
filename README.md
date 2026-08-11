@@ -8,16 +8,13 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.103.
+Latest release: TrackPro V2 2.26.104.
 
-### What's New in 2.26.103
+### What's New in 2.26.104
 
-- AI Coach responds faster and can use real session history, fuel planning, lap comparison, live delta, garage setup, track-corner, audio, connection, and overlay information.
-- Guided-lap, predictive, and technique coaching is more consistent, with stronger continuity between sessions and fewer contradictory calls.
-- Spotter now stays quiet behind the pace car and adds closing-traffic, pit-exit, and unsafe-rejoin warnings with complete male and female voice packs.
-- Added Assetto Corsa traffic-spotter integration with automatic plugin installation and activation guidance.
-- Radio Check uses a more natural speaking level and supports mapped steering-wheel buttons.
-- Account billing now shows the billed plan accurately and offers eligible subscribers a one-time save offer before cancellation without blocking cancellation.
+- Radio Check is now personal: the coach answers by name in the coach voice you picked during setup, for all accounts.
+- Race-day event reminder emails now send even when the only open TrackPro is a guest session.
+- Message, offer, order, and RSVP emails are no longer silently skipped when the app hasn't finished signing in.
 
 ## What TrackPro Does
 
