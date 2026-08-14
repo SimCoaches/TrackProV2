@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.108 - 2026-08-13
+
+- Added production support for Fanatec ClubSport Pedals V3 connected directly by USB, including automatic discovery and correct throttle, brake, and clutch mapping.
+- Rebuilt Paint Studio around each selected car's actual iRacing body map so artwork lands on recognizable body panels instead of a blank texture.
+- Added car-aware paint layouts, editable multi-location custom numbers, automatic paint installation, and a responsive workspace that remains usable with the members panel open.
+
 ## TrackPro V2 2.26.107 - 2026-08-11
 
 - The setup flow's headset step now handles a headset plugged in late: it explains that no microphone was found, watches for one, and continues by itself the moment Windows sees it — no more raw "Requested device not found" dead end.
