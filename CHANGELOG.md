@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.109 - 2026-08-14
+
+- Fixed intermittent pedal disconnects by keeping active USB devices out of background re-enumeration and recovering third-party pedal handles without requiring an app restart.
+- Fixed apparent simulator freezes after missed iRacing notifications or temporary telemetry stalls; TrackPro now resumes the existing connection instead of waiting for a reconnect cycle.
+- Reduced lockup risk from repeated diagnostics by coalescing duplicate telemetry and virtual-device warnings, and corrected the page watchdog so normal navigation cannot be mistaken for a frozen screen.
+- Improved background AI Coach session analysis and strategy planning while preserving the existing low-latency live radio path.
+
 ## TrackPro V2 2.26.108 - 2026-08-13
 
 - Added production support for Fanatec ClubSport Pedals V3 connected directly by USB, including automatic discovery and correct throttle, brake, and clutch mapping.
