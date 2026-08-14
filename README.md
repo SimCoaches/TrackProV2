@@ -8,13 +8,14 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.108.
+Latest release: TrackPro V2 2.26.109.
 
-### What's New in 2.26.108
+### What's New in 2.26.109
 
-- Added production support for Fanatec ClubSport Pedals V3 connected directly by USB, including automatic discovery and correct throttle, brake, and clutch mapping.
-- Rebuilt Paint Studio around each selected car's actual iRacing body map so artwork lands on recognizable body panels instead of a blank texture.
-- Added car-aware paint layouts, editable multi-location custom numbers, automatic paint installation, and a responsive workspace that remains usable with the members panel open.
+- Fixed intermittent pedal disconnects and added automatic recovery for third-party pedal handles.
+- Fixed apparent simulator freezes after missed iRacing notifications or temporary telemetry stalls.
+- Reduced repeated diagnostic noise that could contribute to lockups and corrected the page-freeze watchdog.
+- Improved background AI Coach analysis without changing the low-latency live radio path.
 
 ## What TrackPro Does
 
