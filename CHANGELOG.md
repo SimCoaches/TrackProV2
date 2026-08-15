@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.117 - 2026-08-15 (private beta)
+
+- Fixed page navigation being blocked while the AI Coach is speaking or transcribing.
+- The updater re-checks for the newest version at install time, so a stale prompt can never install an outdated build.
+
 ## TrackPro V2 2.26.116 - 2026-08-15
 
 - Fixed third-party pedal axes being zeroed during report silence — including a throttle held flat against its stop. TrackPro now holds the last known pedal state while the device connection is verifiably healthy; real disconnects are detected instantly from the failed read, and a frozen device is caught by a direct liveness probe within seconds.
