@@ -8,14 +8,15 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.110.
+Latest release: TrackPro V2 2.26.111.
 
-### What's New in 2.26.110
+### What's New in 2.26.111
 
-- Fixed a critical resource leak that could freeze TrackPro to a black screen during or after long sessions when a steering-wheel button was mapped to coach push-to-talk.
-- Pedals now keep working through an unexpected app interruption while you are driving, and TrackPro captures detailed crash evidence automatically so support can diagnose issues without asking for logs.
-- Onboard recording now pauses safely when your drive is almost full instead of failing repeatedly.
-- Fixed sign-in loops on PCs whose Windows clock is set incorrectly.
+- Fixed multi-second freezes and stalled navigation while the AI Coach was speaking or starting, and reduced background work for drivers using the free spotter or plain telemetry.
+- Fixed disabled overlays continuing to process live telemetry invisibly.
+- Fixed VR mirroring resource leaks, including frozen overlay frames left in the headset after closing TrackPro.
+- Fixed clean app closes being misreported as crashes in reliability monitoring.
+- Paint Studio is now in early access behind an access code.
 
 ## What TrackPro Does
 
