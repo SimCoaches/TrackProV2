@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.113 - 2026-08-15
+
+- Fixed third-party pedals (including Fanatec ClubSport V3) dropping out and centering mid-corner. Background device discovery re-walked the whole device tree every two seconds, which on USB-heavy rigs could starve pedal reads for 5-12 seconds. Detection is now push-based — Windows notifies TrackPro the moment hardware changes — cutting background device walks by over 99% while making hot-plug response faster.
+- Slow device walks are now measured and logged so any remaining interference is diagnosable from a single field log.
+
 ## TrackPro V2 2.26.112 - 2026-08-15
 
 - Freeze reports now include the exact main-thread tasks that blocked the app, with timing and attribution, so remaining freeze causes can be pinpointed from a single field occurrence.
