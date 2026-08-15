@@ -1,8 +1,13 @@
 # Changelog
 
-## TrackPro V2 2.26.115 - 2026-08-15 (private beta)
+## TrackPro V2 2.26.116 - 2026-08-15 (private beta)
 
+- Fixed third-party pedal axes being zeroed during report silence — including a throttle held flat against its stop. TrackPro now holds the last known pedal state while the device connection is verifiably healthy; real disconnects are detected instantly from the failed read, and a frozen device is caught by a direct liveness probe within seconds.
 - Beta: game-controller buttons (push-to-talk, hotkeys) are read directly from the HID layer with persistent device handles, replacing legacy Windows joystick polling and eliminating a Windows-level registry-handle leak on rigs with frequently changing USB devices. Beta builds are published as pre-releases and are not delivered by automatic update.
+
+## TrackPro V2 2.26.115 - 2026-08-15 (private beta, superseded by 2.26.116)
+
+- Earlier beta of the HID-native button reading; its pedal-silence handling was incomplete and is replaced in 2.26.116.
 
 ## TrackPro V2 2.26.114 - 2026-08-15
 
