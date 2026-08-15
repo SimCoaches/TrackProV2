@@ -8,14 +8,14 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.109.
+Latest release: TrackPro V2 2.26.110.
 
-### What's New in 2.26.109
+### What's New in 2.26.110
 
-- Fixed intermittent pedal disconnects and added automatic recovery for third-party pedal handles.
-- Fixed apparent simulator freezes after missed iRacing notifications or temporary telemetry stalls.
-- Reduced repeated diagnostic noise that could contribute to lockups and corrected the page-freeze watchdog.
-- Improved background AI Coach analysis without changing the low-latency live radio path.
+- Fixed a critical resource leak that could freeze TrackPro to a black screen during or after long sessions when a steering-wheel button was mapped to coach push-to-talk.
+- Pedals now keep working through an unexpected app interruption while you are driving, and TrackPro captures detailed crash evidence automatically so support can diagnose issues without asking for logs.
+- Onboard recording now pauses safely when your drive is almost full instead of failing repeatedly.
+- Fixed sign-in loops on PCs whose Windows clock is set incorrectly.
 
 ## What TrackPro Does
 
