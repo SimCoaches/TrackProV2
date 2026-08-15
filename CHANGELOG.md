@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.110 - 2026-08-14
+
+- Fixed a critical desktop resource leak triggered by an AI Coach wheel-button push-to-talk binding. TrackPro now uses the native low-latency wheel monitor instead of repeatedly enumerating input devices, preventing freezes, black screens, lost voice chat, and pedal loss after long sessions.
+- TrackPro Core now survives an unexpected app interruption as a pedal failsafe: virtual pedal output continues while you are driving, and the Pedals page can restart the engine in place without relaunching the app.
+- Added native crash capture: WebView failures, Windows crash events, and black-box session state are collected automatically and included in private support bundles, so incidents can be diagnosed without manual log hunting.
+- Onboard recording now checks free disk space before and during capture and stops cleanly with a clear message when the drive is almost full, instead of failing repeatedly in the background.
+- Fixed immediate sign-out loops on PCs with an incorrect Windows clock by anchoring session lifetime to the local clock.
+- AI Coach voice usage is now measured precisely, so short exchanges no longer round up to extra seconds against your plan.
+
 ## TrackPro V2 2.26.109 - 2026-08-14
 
 - Fixed intermittent pedal disconnects by keeping active USB devices out of background re-enumeration and recovering third-party pedal handles without requiring an app restart.
