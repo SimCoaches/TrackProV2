@@ -8,7 +8,12 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.114. (Current private beta: 2.26.116 — pre-release only, not delivered by automatic update.)
+Latest release: TrackPro V2 2.26.116.
+
+### What's New in 2.26.116
+
+- Fixed third-party pedal axes being zeroed during report silence — a throttle held flat against its stop now holds. Silence means "unchanged", never "centered"; real disconnects are detected instantly and a frozen device is caught within seconds.
+- Game-controller buttons (push-to-talk, hotkeys) are now read directly from the HID layer, eliminating a Windows-level registry-handle leak that could crash or hang long sessions.
 
 ### What's New in 2.26.114
 
