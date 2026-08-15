@@ -8,7 +8,12 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.111.
+Latest release: TrackPro V2 2.26.112.
+
+### What's New in 2.26.112
+
+- Freeze reports now identify exactly what blocked the app, so any remaining freeze can be diagnosed from a single occurrence.
+- Includes all 2.26.111 fixes below.
 
 ### What's New in 2.26.111
 
