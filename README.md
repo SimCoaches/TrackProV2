@@ -8,7 +8,11 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.112.
+Latest release: TrackPro V2 2.26.113.
+
+### What's New in 2.26.113
+
+- Fixed third-party pedals (including Fanatec ClubSport V3) dropping out mid-corner: device detection is now push-based, eliminating the background device scans that could starve pedal reads on USB-heavy rigs. Hot-plug detection is faster than before.
 
 ### What's New in 2.26.112
 
