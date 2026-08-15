@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.115 - 2026-08-15 (private beta)
+
+- Beta: game-controller buttons (push-to-talk, hotkeys) are read directly from the HID layer with persistent device handles, replacing legacy Windows joystick polling and eliminating a Windows-level registry-handle leak on rigs with frequently changing USB devices. Beta builds are published as pre-releases and are not delivered by automatic update.
+
 ## TrackPro V2 2.26.114 - 2026-08-15
 
 - Fixed third-party pedals (including Fanatec ClubSport V3) showing as disconnected and reconnecting in a loop whenever they sat idle: pedals that only send data when moved were treated as unplugged after three quiet seconds. TrackPro now verifies the connection directly and leaves a healthy idle device alone.
