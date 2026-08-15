@@ -8,7 +8,13 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.113.
+Latest release: TrackPro V2 2.26.114.
+
+### What's New in 2.26.114
+
+- Fixed third-party pedals (including Fanatec ClubSport V3) disconnecting and reconnecting in a loop while idle — pedals that only send data when moved are no longer treated as unplugged.
+- Fixed two startup crashes on PCs where TrackPro launches within a minute of Windows booting.
+- Reduced background device polling and diagnostic disk writes that could interfere with pedals and controllers on USB-heavy rigs.
 
 ### What's New in 2.26.113
 
