@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.111 - 2026-08-15
+
+- Fixed multi-second freezes and stalled navigation while the AI Coach was speaking or starting: the coach's live machinery no longer re-runs on every spoken syllable, a spotter feedback loop that could starve the app has been broken, and coach overlay updates publish only when content actually changes. Drivers using only the free spotter or plain telemetry also benefit.
+- Fixed disabled overlays continuing to process live telemetry invisibly; a hidden overlay window now costs nothing.
+- Fixed VR mirroring resource leaks: the shared feed releases when mirroring turns off, headset panels retire properly, and closing TrackPro no longer leaves frozen overlay frames in the headset.
+- Fixed clean app closes being misreported as crashes, so reliability monitoring reflects reality.
+- Paint Studio is now in early access behind an access code.
+
 ## TrackPro V2 2.26.110 - 2026-08-14
 
 - Fixed a critical desktop resource leak triggered by an AI Coach wheel-button push-to-talk binding. TrackPro now uses the native low-latency wheel monitor instead of repeatedly enumerating input devices, preventing freezes, black screens, lost voice chat, and pedal loss after long sessions.
