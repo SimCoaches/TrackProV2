@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.114 - 2026-08-15
+
+- Fixed third-party pedals (including Fanatec ClubSport V3) showing as disconnected and reconnecting in a loop whenever they sat idle: pedals that only send data when moved were treated as unplugged after three quiet seconds. TrackPro now verifies the connection directly and leaves a healthy idle device alone.
+- Fixed two startup crashes on PCs where TrackPro launches within the first minute after Windows boots.
+- Fixed a background loop that re-scanned all USB devices every second when a configured haptic device was absent, and cut game-controller polling by ~95% — both could interfere with streaming pedals on USB-heavy rigs.
+- Diagnostic recording no longer amplifies disk writes during device error bursts.
+
 ## TrackPro V2 2.26.113 - 2026-08-15
 
 - Fixed third-party pedals (including Fanatec ClubSport V3) dropping out and centering mid-corner. Background device discovery re-walked the whole device tree every two seconds, which on USB-heavy rigs could starve pedal reads for 5-12 seconds. Detection is now push-based — Windows notifies TrackPro the moment hardware changes — cutting background device walks by over 99% while making hot-plug response faster.
