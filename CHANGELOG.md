@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.112 - 2026-08-15
+
+- Freeze reports now include the exact main-thread tasks that blocked the app, with timing and attribution, so remaining freeze causes can be pinpointed from a single field occurrence.
+- Includes all 2.26.111 fixes.
+
 ## TrackPro V2 2.26.111 - 2026-08-15
 
 - Fixed multi-second freezes and stalled navigation while the AI Coach was speaking or starting: the coach's live machinery no longer re-runs on every spoken syllable, a spotter feedback loop that could starve the app has been broken, and coach overlay updates publish only when content actually changes. Drivers using only the free spotter or plain telemetry also benefit.
