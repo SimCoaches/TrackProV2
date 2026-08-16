@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.121 - 2026-08-15 (beta)
+
+- AI Coach answers sooner after key-up: questions held over 1.5s no longer wait for speech recognition before the coach starts thinking, and database lookups (session history, lap comparisons, fuel plans) run while the coach is still composing its answer.
+- Fixed the first callout of a session coming out as a robotic computer voice — the coach's real voice clips are warmed before connect.
+- Fixed a garbled or clipped first syllable when the coach first comes on the radio.
+- Every coach exchange records a per-leg latency breakdown for fleet-level tuning.
+
 ## TrackPro V2 2.26.120 - 2026-08-15
 
 - Fixed push-to-talk only registering the first press of a session on wheel and controller buttons. TrackPro publishes its own virtual pedal device, and that device was answering the button query for every binding, so the real controller was never consulted after the first press. Button reads are now matched to the device the binding was captured on.
