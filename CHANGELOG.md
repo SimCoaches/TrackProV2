@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.120 - 2026-08-15
+
+- Fixed push-to-talk only registering the first press of a session on wheel and controller buttons. TrackPro publishes its own virtual pedal device, and that device was answering the button query for every binding, so the real controller was never consulted after the first press. Button reads are now matched to the device the binding was captured on.
+- Fixed the AI Coach refusing every key-up as "microphone unavailable" on headsets that report an idle microphone as muted (Corsair VOID and similar). A muted reading on an idle capture proves nothing about whether audio will flow, so it no longer blocks transmitting; genuine silence is still caught by the dead-mic detector.
+- Fixed page navigation freezing for as long as the AI Coach was running. A callback rebuilt on every render drove a render loop in the coach provider, which starved React Router's navigation and left the app stuck on the current page until restart.
+
 ## TrackPro V2 2.26.117 - 2026-08-15 (private beta)
 
 - Fixed page navigation being blocked while the AI Coach is speaking or transcribing.
