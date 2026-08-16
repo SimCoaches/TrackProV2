@@ -8,7 +8,17 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.116. (Current private beta: 2.26.117 — pre-release only, not delivered by automatic update.)
+Latest release: TrackPro V2 2.26.120.
+
+### What's New in 2.26.120
+
+AI Coach — three fixes that made the coach unusable for some drivers:
+
+- Push-to-talk now registers every press. Wheel and controller buttons were only working on the first press of a session; after that TrackPro's own virtual pedal device masked the button and nothing reached the coach.
+- You can talk to the coach again. Key-ups were being refused as "microphone unavailable" on headsets that report an idle mic as muted (Corsair VOID and similar), even when the microphone was working perfectly.
+- Page navigation no longer freezes while the coach is running. Starting the coach could lock you on whatever page you were on until you restarted the app; the sidebar looked like it was ignoring clicks.
+
+Includes the 2.26.117 fixes, which were pre-release only and never delivered by automatic update.
 
 ### What's New in 2.26.116
 
