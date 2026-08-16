@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.122 - 2026-08-16 (beta)
+
+- Staff: Coach Learning admin page for reviewing, replaying and approving the capability candidates the AI Coach mines from driver requests it could not fulfil. Nothing reaches drivers without a passing deterministic replay and a human adversarial review.
+
 ## TrackPro V2 2.26.121 - 2026-08-15 (beta)
 
 - AI Coach answers sooner after key-up: questions held over 1.5s no longer wait for speech recognition before the coach starts thinking, and database lookups (session history, lap comparisons, fuel plans) run while the coach is still composing its answer.
