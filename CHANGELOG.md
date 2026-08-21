@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.123 - 2026-08-21 (beta)
+
+- League Night: RSVP lists show who is on the grid by name on the League page and the Friday event cards, not just a count.
+- The League Night card on Home is clearer: your local start time leads with the Pacific origin spelled out, the sim (iRacing) is named, and drivers without an account see that the league is free to enter and can create one from the card.
+- Installer fix: installing with a third-party STM32-based wheel or button box connected no longer disturbs that device. The pedal-filter binding pass previously re-enumerated any STMicro USB device, which could knock the device or its USB port offline until reboot.
+
 ## TrackPro V2 2.26.122 - 2026-08-16 (beta)
 
 - Staff: Coach Learning admin page for reviewing, replaying and approving the capability candidates the AI Coach mines from driver requests it could not fulfil. Nothing reaches drivers without a passing deterministic replay and a human adversarial review.
