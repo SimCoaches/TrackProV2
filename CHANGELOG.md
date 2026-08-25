@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.126 - 2026-08-26 (beta)
+
+- Driver Lab is now early access behind an access code while the course videos are in production. Existing progress is untouched; ask the Sim Coaches team for access.
+
 ## TrackPro V2 2.26.125 - 2026-08-25 (beta)
 
 - NEW: Report Card (Racing > Report Card). Your last 30 days, measured from your own driving: time the AI Coach found you on coached corners, your improvement rate on coached vs uncoached corners, your community pace-group climb, habits fixed or fading vs still recurring, seat time, and the one thing most worth working on next. Every number is real; sections say honestly when there is not enough data yet.
