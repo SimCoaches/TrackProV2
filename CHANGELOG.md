@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.124 - 2026-08-25 (beta)
+
+- Telemetry lap loading is much lighter on the database: lap viewers, ghost overlays and comparisons request only the channels they render, and repeat views of the same lap are served from a session cache. Every telemetry channel is still captured and stored unchanged.
+- Community corner references: the coach's reference layer now publishes whole-field reference cells for track/car combos with 5 or more real drivers sharing data, alongside the existing quartile ladders.
+- AI Coach training system (shadow mode): a nightly server-side model learns which coaching cues actually make drivers faster from graded cue outcomes across the fleet. This build records what the model would have said next to every graded cue; it does not change what the coach says.
+
 ## TrackPro V2 2.26.123 - 2026-08-21 (beta)
 
 - League Night: RSVP lists show who is on the grid by name on the League page and the Friday event cards, not just a count.
