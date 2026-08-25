@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.125 - 2026-08-25 (beta)
+
+- NEW: Report Card (Racing > Report Card). Your last 30 days, measured from your own driving: time the AI Coach found you on coached corners, your improvement rate on coached vs uncoached corners, your community pace-group climb, habits fixed or fading vs still recurring, seat time, and the one thing most worth working on next. Every number is real; sections say honestly when there is not enough data yet.
+- Returning accounts skip setup: if you finished account setup once, signing in on a new PC no longer re-walks the setup screens — at most you see the final plan screen once. Signed-out machines still offer account creation as before.
+
 ## TrackPro V2 2.26.124 - 2026-08-25 (beta)
 
 - Telemetry lap loading is much lighter on the database: lap viewers, ghost overlays and comparisons request only the channels they render, and repeat views of the same lap are served from a session cache. Every telemetry channel is still captured and stored unchanged.
