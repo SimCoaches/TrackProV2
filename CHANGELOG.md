@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.127 - 2026-08-26 (beta)
+
+- Fixed high CPU usage while pedal haptics were active — severe enough on some rigs to cause stutter or disconnects in iRacing. The SIMAGIC P-HPR writer now sends motor state only when it actually changes (with a once-per-second refresh; the feel is unchanged), and the bass-shaker audio stream uses a shaker-appropriate buffer size instead of an aggressively small one some audio drivers service expensively.
+
 ## TrackPro V2 2.26.126 - 2026-08-26 (beta)
 
 - Driver Lab is now early access behind an access code while the course videos are in production. Existing progress is untouched; ask the Sim Coaches team for access.
