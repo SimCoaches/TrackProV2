@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.130 - 2026-08-26 (beta)
+
+- Assetto Corsa / ACC haptics feel restored: the Aug 14 move to high-rate telemetry polling silently changed the change-rate math behind impact, slip and kerb triggers (noise amplified ~5x, impacts over-clamped in response, split-second events droppable). Rates are now computed over a fixed window that behaves identically at any telemetry rate; all effect tuning keeps its original meaning.
+- Wall taps and scrapes thump again, including a new side-contact trigger — a lateral jolt with loaded tires (the drift wall kiss) now fires the impact thud. Side contact never had its own trigger before.
+- Coach settings changed by voice no longer display stale or get silently reverted by the Coach page's next save.
+- Motion controller type survives a core engine restart; FFB Lab's Invert switch shows the engine's real state after a restart.
+
 ## TrackPro V2 2.26.129 - 2026-08-26 (beta)
 
 - FFB Lab survives session changes: practice to qualifying to race no longer needs a lab restart. A dead force connection is detected, reconnected automatically, and force ramps back in from zero — never resuming mid-corner at full torque.
