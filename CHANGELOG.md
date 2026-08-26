@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.128 - 2026-08-26 (beta)
+
+- Hard THUD on gear shifts and kerb strikes: continuous effects momentarily duck out of the way while an impact fires, so the hit owns the full shaker stroke. The punch was being masked, not missing.
+- ACC and Assetto Corsa road/kerb texture now plays the car's real suspension waveform (the same high-rate playback iRacing got) instead of synthesized noise.
+- SIMAGIC P-HPR: the streaming path now uses the same output-route discovery as the Test button, so boards that only answer a fallback route work while driving.
+- Motion settings and the enabled state survive an app restart: the saved profile loads at startup, and if motion was enabled when you closed TrackPro it re-arms on launch (waiting for telemetry behind the full safety chain; an emergency stop always cancels the re-arm).
+- Motion page shows a live command-smoothness readout to separate software jitter from controller-side settings.
+
 ## TrackPro V2 2.26.127 - 2026-08-26 (beta)
 
 - Fixed high CPU usage while pedal haptics were active — severe enough on some rigs to cause stutter or disconnects in iRacing. The SIMAGIC P-HPR writer now sends motor state only when it actually changes (with a once-per-second refresh; the feel is unchanged), and the bass-shaker audio stream uses a shaker-appropriate buffer size instead of an aggressively small one some audio drivers service expensively.
