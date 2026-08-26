@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.129 - 2026-08-26 (beta)
+
+- FFB Lab survives session changes: practice to qualifying to race no longer needs a lab restart. A dead force connection is detected, reconnected automatically, and force ramps back in from zero — never resuming mid-corner at full torque.
+- FFB effects (engine rumble, shift knock, ABS, slip, bumps) now scale with steering load so they stay feelable mid-corner instead of vanishing as you turn in; total effect contribution stays hard-bounded. Shift knock leads with the hit like a real driveline jolt.
+- FFB in every game: fixed inverted steering torque on rFactor 2 / Le Mans Ultimate (the wheel pushed into corners); F1 games and BeamNG now get synthesized force feedback built from steering and lateral G, labeled as synthesized on the lab page.
+- New end-stop safety guard for all games and wheel bases: the lab learns which way torque moves your wheel and automatically cuts force if output keeps driving the rim into its end stop (the signature of a flipped sign anywhere in the chain).
+- iRacing: the FFB Lab stands down automatically while iRacing's own force feedback is enabled — two force sources never fight over one wheel.
+- Crash protection now logs every trip with the G reading that caused it.
+
 ## TrackPro V2 2.26.128 - 2026-08-26 (beta)
 
 - Hard THUD on gear shifts and kerb strikes: continuous effects momentarily duck out of the way while an impact fires, so the hit owns the full shaker stroke. The punch was being masked, not missing.
