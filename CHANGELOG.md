@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.131 - 2026-08-26 (beta)
+
+- No more thud when first getting in the game: haptics used to jump from silence to the full effect bed in one sample when telemetry went live. Effects now ease in over ~120ms at session join and fade out when telemetry stops, instead of cutting.
+- The always-alive road feel is back: a reduced version of the classic speed bed now runs under the real-waveform texture playback, so smooth roads breathe with speed again while kerbs and surface events still play their true signature on top.
+
 ## TrackPro V2 2.26.130 - 2026-08-26 (beta)
 
 - Assetto Corsa / ACC haptics feel restored: the Aug 14 move to high-rate telemetry polling silently changed the change-rate math behind impact, slip and kerb triggers (noise amplified ~5x, impacts over-clamped in response, split-second events droppable). Rates are now computed over a fixed window that behaves identically at any telemetry rate; all effect tuning keeps its original meaning.
