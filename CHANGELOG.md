@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.137 - 2026-08-27 (beta)
+
+- Dog-box gear shift is ONE clunk now. A real dog box has no synchros — the dogs clunk once when they come together (confirmed by a dog-box driver). Previous builds modeled a second hit ~40ms after the first, which read as a double thud. Single strong, sharp clunk; the retune's extra strength and crack stay.
+- Fanatec V3 rumble motor floor is rig-tunable (fanatec_erm_floor in haptic-feel-tuning.json) so the little motors' response point can be dialed from real-hardware feedback without a rebuild.
+
 ## TrackPro V2 2.26.136 - 2026-08-26 (beta)
 
 - Pedal haptics moved to the Pedals page, under each pedal — the same spot as the Simagic reactor controls. The Haptics page is back to seat/chassis shakers only.
