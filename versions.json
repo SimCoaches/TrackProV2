@@ -1,0 +1,7 @@
+{
+  "_readme": "Curated per-version status shown in TrackPro's in-app Beta Channel version list (Settings). Statuses: 'recommended' | 'testing' | 'buggy'. Defaults when a version is absent here: stable releases show 'recommended', pre-releases show 'testing'. Add an entry to override — e.g. mark a beta 'buggy' the moment a field report confirms a real problem, with a short honest note. Synced to the public repo by scripts/publish-update-release.ps1 on every publish; the app fetches it raw from the public repo's main branch.",
+  "updated": "2026-08-26",
+  "versions": {
+    "2.26.110": { "status": "buggy", "note": "Freeze reports on some machines; superseded" }
+  }
+}
