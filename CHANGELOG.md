@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.134 - 2026-08-26 (beta)
+
+- Every haptic Test button now makes noise: Test plays the full demo even when the effect is toggled off or its volume slider is at zero, then restores your saved settings. A disabled effect used to test as dead silence.
+- Lockup / Flat Spot is audible for the first time: a gain-staging bug had the brake-lockup grind rendering at ~1/100th of its intended level everywhere — in game and on Test. Check its volume against your other effects.
+- Gear shifts feel like a dog box: two mechanical hits per shift (dog ring slam, then the driveline lash shunt), ~30% stronger with a sharper crack. Downshift rev-match punch scaled to keep downshifts on top.
+- Fixed random strong rumbles while driving hard (reported in Assetto Corsa): the crash-impact effect could false-trigger on aggressive drift transitions and hard brake stomps. The detector now separates tire-limited driving from genuine contact (wheel slip tells a barrier scrape from a drift); real wall taps still thump.
+
 ## TrackPro V2 2.26.133 - 2026-08-26 (beta)
 
 - Warranty return shipping handled in-app: when your repair is done you get an email, pick a carrier in TrackPro → Support → Warranty, and pay right there — we ship the moment it's paid, with live tracking. Parts and labor stay fully covered; shipping is the only cost either way (Warranty+ keeps free overnight both ways).
