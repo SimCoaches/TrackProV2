@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.135 - 2026-08-26 (beta)
+
+- NEW: Pedal rumble for Fanatec ClubSport Pedals V3 — the vibration motors in the throttle and brake pedals now work in TrackPro. ABS pulse and lockup grind through the brake; wheelspin, gear-shift kick, and downshift rev-match through the throttle. Pedal Rumble card at the bottom of the Haptics page: enable, per-pedal strength, effect picks, and per-pedal Test buttons that work with no game running.
+- Supports pedals connected directly by USB; pedals plugged into a Fanatec wheel base can be driven through the base with the experimental wheel-base option (verified on CSL Elite bases, best-effort on DD/other bases).
+- Same safety discipline as the Simagic reactor support: motors force-stop if the app dies or telemetry stalls, exact-device matching only, and no USB traffic at all when the pedals aren't present.
+
 ## TrackPro V2 2.26.134 - 2026-08-26 (beta)
 
 - Every haptic Test button now makes noise: Test plays the full demo even when the effect is toggled off or its volume slider is at zero, then restores your saved settings. A disabled effect used to test as dead silence.
