@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.132 - 2026-08-26 (beta)
+
+- NEW: Beta Channel in Settings — opt in to see the recent version list with recommended / testing / buggy tags, one-click install for newer builds, and installer links for older ones (signed and verified like stable; nothing installs automatically; the next stable release returns you to the main channel).
+- Mono haptics now drive BOTH shakers: the mono layout previously output on one channel, leaving the second shaker of a standard kit silent.
+- Kit tuning matched to real hardware: frequency bands at the Dayton datasheet limits for BST-1/BST-300EX, power ceilings derived from the shipped amps. The 100W kit was throttled to roughly half its safe output and now delivers noticeably more.
+- Haptics page honesty: F1 wheel-slip effects note they need F1 23+ with the MotionEx UDP packet enabled.
+
 ## TrackPro V2 2.26.131 - 2026-08-26 (beta)
 
 - No more thud when first getting in the game: haptics used to jump from silence to the full effect bed in one sample when telemetry went live. Effects now ease in over ~120ms at session join and fade out when telemetry stops, instead of cutting.
