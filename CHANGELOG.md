@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.133 - 2026-08-26 (beta)
+
+- Warranty return shipping handled in-app: when your repair is done you get an email, pick a carrier in TrackPro → Support → Warranty, and pay right there — we ship the moment it's paid, with live tracking. Parts and labor stay fully covered; shipping is the only cost either way (Warranty+ keeps free overnight both ways).
+- Warranty shipping robustness: spelled-out state names no longer break labels, abandoned payment sessions expire in 30 minutes, stale payments auto-refund, and a shipped box advances the claim from carrier tracking even without a button click.
+- Beta Channel members get a notification when a new beta is available, with a View button to the version list. Nothing installs without your click; each beta notifies once.
+
 ## TrackPro V2 2.26.132 - 2026-08-26 (beta)
 
 - NEW: Beta Channel in Settings — opt in to see the recent version list with recommended / testing / buggy tags, one-click install for newer builds, and installer links for older ones (signed and verified like stable; nothing installs automatically; the next stable release returns you to the main channel).
