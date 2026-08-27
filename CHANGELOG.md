@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.136 - 2026-08-26 (beta)
+
+- Pedal haptics moved to the Pedals page, under each pedal — the same spot as the Simagic reactor controls. The Haptics page is back to seat/chassis shakers only.
+- The pedal haptics section auto-detects hardware: V3 pedals → V3 rumble controls only; Simagic reactor → Simagic panel only; both (V3s upgraded with Simagic pucks) → a small picker, defaulting to the V3s; neither → one quiet line.
+- Per-effect strength sliders for V3 rumble — each effect gets its own level on top of the per-pedal strength.
+- Tuned for the V3's motors: intensities map into the little gamepad-style motors' real response band (below ~a fifth of drive they don't spin at all — subtle effects used to vanish there). Off stays perfectly off.
+
 ## TrackPro V2 2.26.135 - 2026-08-26 (beta)
 
 - NEW: Pedal rumble for Fanatec ClubSport Pedals V3 — the vibration motors in the throttle and brake pedals now work in TrackPro. ABS pulse and lockup grind through the brake; wheelspin, gear-shift kick, and downshift rev-match through the throttle. Pedal Rumble card at the bottom of the Haptics page: enable, per-pedal strength, effect picks, and per-pedal Test buttons that work with no game running.
