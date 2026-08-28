@@ -1,50 +1,58 @@
 # Changelog
 
+## TrackPro V2 2.26.140 - 2026-08-28 (beta)
+
+- Instant coach lines (beta toggle, off by default): cues, verdicts, openers and debriefs play from the coach's cached voice for near-instant starts; questions stay on her live voice. Applies live to the running coach.
+- Human-reviewed track craft at fifteen circuits (all League season tracks included) plus MX-5 Cup and GT3 car behavior — the coach explains the "why" behind measured coaching and never invents knowledge on unreviewed tracks.
+- My Program rebuilt to proof-first: a measured coached-vs-uncoached improvement strip, the climb graph, and the single thing to work on.
+- Talk discoverability: the opener names the driver's actual talk key, Start Coach nudges once when on track without the coach, and the coach overlay gains live status with a start/stop control.
+- Community Voice keeps full volume during coach speech by default; the ducking dip is opt-in and saved levels are preserved.
+- Per-driver ask-response learning: numeric asks are graded against how much the driver applied, feeding the what-works profile.
 ## TrackPro V2 2.26.139 - 2026-08-27 (beta)
 
-- Total-reliability diagnostics: every install ships its complete rolling logs automatically (5 minutes after launch, then every 30 minutes) — compressed, size-capped, indexed, and scrubbed of tokens/passwords/keys/payment references before leaving the machine. Field issues become diagnosable from our side without asking anyone for files; the whole system dials back remotely.
-- Silent haptic Tests self-report: a Test that renders no signal logs a warning, and warnings ship within 30 seconds — dead Test buttons anywhere in the fleet are visible without a bug report.
+- Total-reliability diagnostics: every install ships its complete rolling logs automatically (5 minutes after launch, then every 30 minutes) â€” compressed, size-capped, indexed, and scrubbed of tokens/passwords/keys/payment references before leaving the machine. Field issues become diagnosable from our side without asking anyone for files; the whole system dials back remotely.
+- Silent haptic Tests self-report: a Test that renders no signal logs a warning, and warnings ship within 30 seconds â€” dead Test buttons anywhere in the fleet are visible without a bug report.
 
 ## TrackPro V2 2.26.138 - 2026-08-27 (beta)
 
-- Haptics Test buttons hardened further: Test now bypasses spatial channel routing entirely (spatial gains come from live driving data a bench test doesn't have), so every active output plays every test on every layout — guarded by a new all-effects × all-layouts test.
-- Test demos louder: guaranteed minimum test level raised 55% → 70%.
+- Haptics Test buttons hardened further: Test now bypasses spatial channel routing entirely (spatial gains come from live driving data a bench test doesn't have), so every active output plays every test on every layout â€” guarded by a new all-effects Ã— all-layouts test.
+- Test demos louder: guaranteed minimum test level raised 55% â†’ 70%.
 - Every finished test logs the exact signal level it rendered, so a dead-feeling Test button is now diagnosable from one core-log line (no signal vs downstream device/wiring).
 
 ## TrackPro V2 2.26.137 - 2026-08-27 (beta)
 
-- Dog-box gear shift is ONE clunk now. A real dog box has no synchros — the dogs clunk once when they come together (confirmed by a dog-box driver). Previous builds modeled a second hit ~40ms after the first, which read as a double thud. Single strong, sharp clunk; the retune's extra strength and crack stay.
+- Dog-box gear shift is ONE clunk now. A real dog box has no synchros â€” the dogs clunk once when they come together (confirmed by a dog-box driver). Previous builds modeled a second hit ~40ms after the first, which read as a double thud. Single strong, sharp clunk; the retune's extra strength and crack stay.
 - Fanatec V3 rumble motor floor is rig-tunable (fanatec_erm_floor in haptic-feel-tuning.json) so the little motors' response point can be dialed from real-hardware feedback without a rebuild.
 
 ## TrackPro V2 2.26.136 - 2026-08-26 (beta)
 
-- Pedal haptics moved to the Pedals page, under each pedal — the same spot as the Simagic reactor controls. The Haptics page is back to seat/chassis shakers only.
-- The pedal haptics section auto-detects hardware: V3 pedals → V3 rumble controls only; Simagic reactor → Simagic panel only; both (V3s upgraded with Simagic pucks) → a small picker, defaulting to the V3s; neither → one quiet line.
-- Per-effect strength sliders for V3 rumble — each effect gets its own level on top of the per-pedal strength.
-- Tuned for the V3's motors: intensities map into the little gamepad-style motors' real response band (below ~a fifth of drive they don't spin at all — subtle effects used to vanish there). Off stays perfectly off.
+- Pedal haptics moved to the Pedals page, under each pedal â€” the same spot as the Simagic reactor controls. The Haptics page is back to seat/chassis shakers only.
+- The pedal haptics section auto-detects hardware: V3 pedals â†’ V3 rumble controls only; Simagic reactor â†’ Simagic panel only; both (V3s upgraded with Simagic pucks) â†’ a small picker, defaulting to the V3s; neither â†’ one quiet line.
+- Per-effect strength sliders for V3 rumble â€” each effect gets its own level on top of the per-pedal strength.
+- Tuned for the V3's motors: intensities map into the little gamepad-style motors' real response band (below ~a fifth of drive they don't spin at all â€” subtle effects used to vanish there). Off stays perfectly off.
 
 ## TrackPro V2 2.26.135 - 2026-08-26 (beta)
 
-- NEW: Pedal rumble for Fanatec ClubSport Pedals V3 — the vibration motors in the throttle and brake pedals now work in TrackPro. ABS pulse and lockup grind through the brake; wheelspin, gear-shift kick, and downshift rev-match through the throttle. Pedal Rumble card at the bottom of the Haptics page: enable, per-pedal strength, effect picks, and per-pedal Test buttons that work with no game running.
+- NEW: Pedal rumble for Fanatec ClubSport Pedals V3 â€” the vibration motors in the throttle and brake pedals now work in TrackPro. ABS pulse and lockup grind through the brake; wheelspin, gear-shift kick, and downshift rev-match through the throttle. Pedal Rumble card at the bottom of the Haptics page: enable, per-pedal strength, effect picks, and per-pedal Test buttons that work with no game running.
 - Supports pedals connected directly by USB; pedals plugged into a Fanatec wheel base can be driven through the base with the experimental wheel-base option (verified on CSL Elite bases, best-effort on DD/other bases).
 - Same safety discipline as the Simagic reactor support: motors force-stop if the app dies or telemetry stalls, exact-device matching only, and no USB traffic at all when the pedals aren't present.
 
 ## TrackPro V2 2.26.134 - 2026-08-26 (beta)
 
 - Every haptic Test button now makes noise: Test plays the full demo even when the effect is toggled off or its volume slider is at zero, then restores your saved settings. A disabled effect used to test as dead silence.
-- Lockup / Flat Spot is audible for the first time: a gain-staging bug had the brake-lockup grind rendering at ~1/100th of its intended level everywhere — in game and on Test. Check its volume against your other effects.
+- Lockup / Flat Spot is audible for the first time: a gain-staging bug had the brake-lockup grind rendering at ~1/100th of its intended level everywhere â€” in game and on Test. Check its volume against your other effects.
 - Gear shifts feel like a dog box: two mechanical hits per shift (dog ring slam, then the driveline lash shunt), ~30% stronger with a sharper crack. Downshift rev-match punch scaled to keep downshifts on top.
 - Fixed random strong rumbles while driving hard (reported in Assetto Corsa): the crash-impact effect could false-trigger on aggressive drift transitions and hard brake stomps. The detector now separates tire-limited driving from genuine contact (wheel slip tells a barrier scrape from a drift); real wall taps still thump.
 
 ## TrackPro V2 2.26.133 - 2026-08-26 (beta)
 
-- Warranty return shipping handled in-app: when your repair is done you get an email, pick a carrier in TrackPro → Support → Warranty, and pay right there — we ship the moment it's paid, with live tracking. Parts and labor stay fully covered; shipping is the only cost either way (Warranty+ keeps free overnight both ways).
+- Warranty return shipping handled in-app: when your repair is done you get an email, pick a carrier in TrackPro â†’ Support â†’ Warranty, and pay right there â€” we ship the moment it's paid, with live tracking. Parts and labor stay fully covered; shipping is the only cost either way (Warranty+ keeps free overnight both ways).
 - Warranty shipping robustness: spelled-out state names no longer break labels, abandoned payment sessions expire in 30 minutes, stale payments auto-refund, and a shipped box advances the claim from carrier tracking even without a button click.
 - Beta Channel members get a notification when a new beta is available, with a View button to the version list. Nothing installs without your click; each beta notifies once.
 
 ## TrackPro V2 2.26.132 - 2026-08-26 (beta)
 
-- NEW: Beta Channel in Settings — opt in to see the recent version list with recommended / testing / buggy tags, one-click install for newer builds, and installer links for older ones (signed and verified like stable; nothing installs automatically; the next stable release returns you to the main channel).
+- NEW: Beta Channel in Settings â€” opt in to see the recent version list with recommended / testing / buggy tags, one-click install for newer builds, and installer links for older ones (signed and verified like stable; nothing installs automatically; the next stable release returns you to the main channel).
 - Mono haptics now drive BOTH shakers: the mono layout previously output on one channel, leaving the second shaker of a standard kit silent.
 - Kit tuning matched to real hardware: frequency bands at the Dayton datasheet limits for BST-1/BST-300EX, power ceilings derived from the shipped amps. The 100W kit was throttled to roughly half its safe output and now delivers noticeably more.
 - Haptics page honesty: F1 wheel-slip effects note they need F1 23+ with the MotionEx UDP packet enabled.
@@ -57,17 +65,17 @@
 ## TrackPro V2 2.26.130 - 2026-08-26 (beta)
 
 - Assetto Corsa / ACC haptics feel restored: the Aug 14 move to high-rate telemetry polling silently changed the change-rate math behind impact, slip and kerb triggers (noise amplified ~5x, impacts over-clamped in response, split-second events droppable). Rates are now computed over a fixed window that behaves identically at any telemetry rate; all effect tuning keeps its original meaning.
-- Wall taps and scrapes thump again, including a new side-contact trigger — a lateral jolt with loaded tires (the drift wall kiss) now fires the impact thud. Side contact never had its own trigger before.
+- Wall taps and scrapes thump again, including a new side-contact trigger â€” a lateral jolt with loaded tires (the drift wall kiss) now fires the impact thud. Side contact never had its own trigger before.
 - Coach settings changed by voice no longer display stale or get silently reverted by the Coach page's next save.
 - Motion controller type survives a core engine restart; FFB Lab's Invert switch shows the engine's real state after a restart.
 
 ## TrackPro V2 2.26.129 - 2026-08-26 (beta)
 
-- FFB Lab survives session changes: practice to qualifying to race no longer needs a lab restart. A dead force connection is detected, reconnected automatically, and force ramps back in from zero — never resuming mid-corner at full torque.
+- FFB Lab survives session changes: practice to qualifying to race no longer needs a lab restart. A dead force connection is detected, reconnected automatically, and force ramps back in from zero â€” never resuming mid-corner at full torque.
 - FFB effects (engine rumble, shift knock, ABS, slip, bumps) now scale with steering load so they stay feelable mid-corner instead of vanishing as you turn in; total effect contribution stays hard-bounded. Shift knock leads with the hit like a real driveline jolt.
 - FFB in every game: fixed inverted steering torque on rFactor 2 / Le Mans Ultimate (the wheel pushed into corners); F1 games and BeamNG now get synthesized force feedback built from steering and lateral G, labeled as synthesized on the lab page.
 - New end-stop safety guard for all games and wheel bases: the lab learns which way torque moves your wheel and automatically cuts force if output keeps driving the rim into its end stop (the signature of a flipped sign anywhere in the chain).
-- iRacing: the FFB Lab stands down automatically while iRacing's own force feedback is enabled — two force sources never fight over one wheel.
+- iRacing: the FFB Lab stands down automatically while iRacing's own force feedback is enabled â€” two force sources never fight over one wheel.
 - Crash protection now logs every trip with the G reading that caused it.
 
 ## TrackPro V2 2.26.128 - 2026-08-26 (beta)
@@ -80,7 +88,7 @@
 
 ## TrackPro V2 2.26.127 - 2026-08-26 (beta)
 
-- Fixed high CPU usage while pedal haptics were active — severe enough on some rigs to cause stutter or disconnects in iRacing. The SIMAGIC P-HPR writer now sends motor state only when it actually changes (with a once-per-second refresh; the feel is unchanged), and the bass-shaker audio stream uses a shaker-appropriate buffer size instead of an aggressively small one some audio drivers service expensively.
+- Fixed high CPU usage while pedal haptics were active â€” severe enough on some rigs to cause stutter or disconnects in iRacing. The SIMAGIC P-HPR writer now sends motor state only when it actually changes (with a once-per-second refresh; the feel is unchanged), and the bass-shaker audio stream uses a shaker-appropriate buffer size instead of an aggressively small one some audio drivers service expensively.
 
 ## TrackPro V2 2.26.126 - 2026-08-26 (beta)
 
@@ -89,7 +97,7 @@
 ## TrackPro V2 2.26.125 - 2026-08-25 (beta)
 
 - NEW: Report Card (Racing > Report Card). Your last 30 days, measured from your own driving: time the AI Coach found you on coached corners, your improvement rate on coached vs uncoached corners, your community pace-group climb, habits fixed or fading vs still recurring, seat time, and the one thing most worth working on next. Every number is real; sections say honestly when there is not enough data yet.
-- Returning accounts skip setup: if you finished account setup once, signing in on a new PC no longer re-walks the setup screens — at most you see the final plan screen once. Signed-out machines still offer account creation as before.
+- Returning accounts skip setup: if you finished account setup once, signing in on a new PC no longer re-walks the setup screens â€” at most you see the final plan screen once. Signed-out machines still offer account creation as before.
 
 ## TrackPro V2 2.26.124 - 2026-08-25 (beta)
 
@@ -110,7 +118,7 @@
 ## TrackPro V2 2.26.121 - 2026-08-15 (beta)
 
 - AI Coach answers sooner after key-up: questions held over 1.5s no longer wait for speech recognition before the coach starts thinking, and database lookups (session history, lap comparisons, fuel plans) run while the coach is still composing its answer.
-- Fixed the first callout of a session coming out as a robotic computer voice — the coach's real voice clips are warmed before connect.
+- Fixed the first callout of a session coming out as a robotic computer voice â€” the coach's real voice clips are warmed before connect.
 - Fixed a garbled or clipped first syllable when the coach first comes on the radio.
 - Every coach exchange records a per-leg latency breakdown for fleet-level tuning.
 
@@ -127,7 +135,7 @@
 
 ## TrackPro V2 2.26.116 - 2026-08-15
 
-- Fixed third-party pedal axes being zeroed during report silence — including a throttle held flat against its stop. TrackPro now holds the last known pedal state while the device connection is verifiably healthy; real disconnects are detected instantly from the failed read, and a frozen device is caught by a direct liveness probe within seconds.
+- Fixed third-party pedal axes being zeroed during report silence â€” including a throttle held flat against its stop. TrackPro now holds the last known pedal state while the device connection is verifiably healthy; real disconnects are detected instantly from the failed read, and a frozen device is caught by a direct liveness probe within seconds.
 - Beta: game-controller buttons (push-to-talk, hotkeys) are read directly from the HID layer with persistent device handles, replacing legacy Windows joystick polling and eliminating a Windows-level registry-handle leak on rigs with frequently changing USB devices. Beta builds are published as pre-releases and are not delivered by automatic update.
 
 ## TrackPro V2 2.26.115 - 2026-08-15 (private beta, superseded by 2.26.116)
@@ -138,12 +146,12 @@
 
 - Fixed third-party pedals (including Fanatec ClubSport V3) showing as disconnected and reconnecting in a loop whenever they sat idle: pedals that only send data when moved were treated as unplugged after three quiet seconds. TrackPro now verifies the connection directly and leaves a healthy idle device alone.
 - Fixed two startup crashes on PCs where TrackPro launches within the first minute after Windows boots.
-- Fixed a background loop that re-scanned all USB devices every second when a configured haptic device was absent, and cut game-controller polling by ~95% — both could interfere with streaming pedals on USB-heavy rigs.
+- Fixed a background loop that re-scanned all USB devices every second when a configured haptic device was absent, and cut game-controller polling by ~95% â€” both could interfere with streaming pedals on USB-heavy rigs.
 - Diagnostic recording no longer amplifies disk writes during device error bursts.
 
 ## TrackPro V2 2.26.113 - 2026-08-15
 
-- Fixed third-party pedals (including Fanatec ClubSport V3) dropping out and centering mid-corner. Background device discovery re-walked the whole device tree every two seconds, which on USB-heavy rigs could starve pedal reads for 5-12 seconds. Detection is now push-based — Windows notifies TrackPro the moment hardware changes — cutting background device walks by over 99% while making hot-plug response faster.
+- Fixed third-party pedals (including Fanatec ClubSport V3) dropping out and centering mid-corner. Background device discovery re-walked the whole device tree every two seconds, which on USB-heavy rigs could starve pedal reads for 5-12 seconds. Detection is now push-based â€” Windows notifies TrackPro the moment hardware changes â€” cutting background device walks by over 99% while making hot-plug response faster.
 - Slow device walks are now measured and logged so any remaining interference is diagnosable from a single field log.
 
 ## TrackPro V2 2.26.112 - 2026-08-15
@@ -183,7 +191,7 @@
 
 ## TrackPro V2 2.26.107 - 2026-08-11
 
-- The setup flow's headset step now handles a headset plugged in late: it explains that no microphone was found, watches for one, and continues by itself the moment Windows sees it — no more raw "Requested device not found" dead end.
+- The setup flow's headset step now handles a headset plugged in late: it explains that no microphone was found, watches for one, and continues by itself the moment Windows sees it â€” no more raw "Requested device not found" dead end.
 - A remembered microphone that's no longer present falls back to the system default instead of a dead level meter.
 
 ## TrackPro V2 2.26.106 - 2026-08-11
@@ -196,13 +204,13 @@
 
 - One-time driver setup now belongs to each account: signing in on a PC where someone else already finished setup no longer skips yours, and signing in mid-session routes you into setup if yours was never finished.
 - Fixed shared-PC settings bleed: a newly signed-in account can no longer inherit another driver's coach and spotter settings.
-- The final setup screen can no longer be missed by closing the app right after the radio check — setup resumes there on the next launch.
+- The final setup screen can no longer be missed by closing the app right after the radio check â€” setup resumes there on the next launch.
 - Fixed ACC lap saving: laps driven in Assetto Corsa Competizione are now captured and saved (on-track detection previously discarded every ACC lap).
-- Race Pass now shows a full XP history — every award this season with time, description, and +XP, grouped by day.
+- Race Pass now shows a full XP history â€” every award this season with time, description, and +XP, grouped by day.
 - Race Pass tiers continue past 100: Elite tiers progress at 2.5x XP cost, with tiers 1-100 and all rewards unchanged.
 - The "active on another PC" screen now appears only when TrackPro is actually running on another PC; a claim left behind by a closed app is taken over silently.
 - The sign-in page got the welcome-flow treatment: your coach is on the left of the screen, waiting with the radio.
-- Fixed drivers dropping to offline or "went dark" mid-session: TrackPro minimized behind the sim no longer throttles its own heartbeats, and noisy diagnostics can no longer drown them out — Online and On-track status now hold through multi-hour stints.
+- Fixed drivers dropping to offline or "went dark" mid-session: TrackPro minimized behind the sim no longer throttles its own heartbeats, and noisy diagnostics can no longer drown them out â€” Online and On-track status now hold through multi-hour stints.
 
 ## TrackPro V2 2.26.104 - 2026-08-11
 
@@ -286,7 +294,7 @@
 ## TrackPro V2 2.26.95 - 2026-07-26
 
 - The startup splash now reads the version directly from the running TrackPro binary, so it always identifies the version actually installed instead of showing a stale hardcoded number.
-- Normal app shutdowns are now delivered immediately to fleet diagnostics, reducing false “went dark” incidents when a driver closes TrackPro normally.
+- Normal app shutdowns are now delivered immediately to fleet diagnostics, reducing false â€œwent darkâ€ incidents when a driver closes TrackPro normally.
 - Fleet alerts now page once per distinct dark event and at most daily for an ongoing error group, preventing repeated notifications from hiding genuinely new incidents.
 - TrackPro now re-checks for updates every four hours while running, so always-on simulator rigs receive new releases without needing an app restart.
 
@@ -308,7 +316,7 @@
 
 - Added password and username recovery to sign-in. A driver who forgets either can now recover their account with a code sent to their email; previously there was no way back in.
 - Sim Center: bookings taken on a venue's own website now appear in TrackPro, hold the right rig, and attach the driver to their own account so their laps are saved to them.
-- Sim Center: introduced Driver Cards — a scannable card that lets a driver check themselves in at any simulator, with a permanent code that stays theirs across every card they are issued.
+- Sim Center: introduced Driver Cards â€” a scannable card that lets a driver check themselves in at any simulator, with a permanent code that stays theirs across every card they are issued.
 - Sim Center: added Grid Rank, earned at the venue, and Driver Class, earned from lap pace, so venue progression is not skipped by racing at home.
 - Sim Center: added membership credits, including buddy passes, that refresh each billing period.
 - The Race Pass season leaderboard now refreshes while you watch it instead of only when the page is opened.
@@ -368,7 +376,7 @@
 
 - Fixed subscription checkout failures caused by stale Stripe price overrides and made billing errors show their actionable server message.
 - Extended the new-subscriber free trial to 30 days and pinned the Supabase client used by billing functions for repeatable Edge deployments.
-- Renamed the paid coaching choices to Pro 5× and Pro 20× consistently across the app, Coach, support, and backend responses.
+- Renamed the paid coaching choices to Pro 5Ã— and Pro 20Ã— consistently across the app, Coach, support, and backend responses.
 - Reorganized the subscription page so pricing choices appear first in a cleaner, less cluttered layout.
 
 ## TrackPro V2 2.26.87 - 2026-07-20
@@ -450,9 +458,9 @@
 ## TrackPro V2 2.26.54 - 2026-07-08
 
 - Pre-corner cues fire earlier so you hear brake/setup notes while preparing, not after you're already on the brakes.
-- Speed coaching gives a real target ("aim about 60 mph mid-corner") plus the delta vs your last pass — not only "+9 mph more."
+- Speed coaching gives a real target ("aim about 60 mph mid-corner") plus the delta vs your last pass â€” not only "+9 mph more."
 - Speeds default to mph; distances use meters to match track boards (refined further in 2.26.55).
-- Removed confusing "you'll be at Turn X in about N seconds" countdowns (they were a rough distance÷speed guess and often wrong once you brake).
+- Removed confusing "you'll be at Turn X in about N seconds" countdowns (they were a rough distanceÃ·speed guess and often wrong once you brake).
 
 ## TrackPro V2 2.26.53 - 2026-07-08
 
@@ -465,7 +473,7 @@
 ## TrackPro V2 2.26.52 - 2026-07-08
 
 
-- Live AI Coach focus: ask to work on a corner (e.g. "focus on Turn 4") and coaching sticks there immediately — no more "we can't switch" style pushback.
+- Live AI Coach focus: ask to work on a corner (e.g. "focus on Turn 4") and coaching sticks there immediately â€” no more "we can't switch" style pushback.
 - Cleaner pre-corner radio: measured distances stay realistic (no absurd hundred/thousand-meter callouts), and open tips no longer spam other corners while you're focused on one.
 - If a fix isn't landing, the coach escalates how it teaches the same corner (pressure, sequence, eyes) instead of only repeating the same one-liner.
 - Instant post-corner feedback is more honest: one good pass is "on the mark"; "that's fixed" waits until you've held it for two clean laps.
@@ -478,7 +486,7 @@
 - Gear coaching: ask what gear to be in and the coach compares the reference's apex gear to yours; it can always report your current gear.
 - Consistent reference answers: the coach explains the reference the same way every time (a per-corner best composite from laps as quick as a stated time) instead of flip-flopping on whether it has a lap time.
 - "Was that an improvement?" asked mid-lap now returns "finish the lap and I'll confirm" instead of sounding blind.
-- Start Coach no longer fails silently — it tells you when mic/headphones need setup and points to Voice Setup.
+- Start Coach no longer fails silently â€” it tells you when mic/headphones need setup and points to Voice Setup.
 - All existing laps in the database now feed the coach's reference pool, so faster reference data is available without waiting for owners to re-run the app.
 
 ## TrackPro V2 2.26.48 - 2026-07-08
@@ -528,7 +536,7 @@
 
 - Fixed a rare system crash (blue screen) that could occur when the Sim Coaches pedal driver was updated, repaired, or disabled. The virtual pedal driver now shuts down cleanly in every case.
 - The installer now reliably updates the Sim Coaches virtual pedal driver to the latest version on PCs that already had it installed, completing the update safely after the next reboot. Previously some PCs could keep running an older driver even after updating.
-- Fixed an iRacing controls/calibration freeze risk that could happen when the virtual pedal device stopped responding. TrackPro now checks that the pedal output is working, rebuilds the virtual pedal device if needed, and — if it still won't respond — leaves your physical pedals available instead of getting stuck.
+- Fixed an iRacing controls/calibration freeze risk that could happen when the virtual pedal device stopped responding. TrackPro now checks that the pedal output is working, rebuilds the virtual pedal device if needed, and â€” if it still won't respond â€” leaves your physical pedals available instead of getting stuck.
 - Reduced log noise from a bad pedal-driver session so problems are recorded as periodic health checks instead of flooding the logs.
 - Fixed motion controller startup so TrackPro no longer scans, opens, or falls back to Thanos/ESP32 serial controllers while motion is idle. TrackPro now opens motion hardware only when you start, test, or calibrate motion, and releases the serial port when motion is stopped.
 - Added a support diagnostic option to help troubleshoot controller-enumeration issues.
@@ -646,3 +654,4 @@ TrackPro V2 is the Sim Coaches Windows app for hardware setup, lap review, onboa
 ## 2.26.1 - 2026-04-14
 
 - Maintenance release for TrackPro V2.
+
