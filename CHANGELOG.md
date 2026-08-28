@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.139 - 2026-08-27 (beta)
+
+- Total-reliability diagnostics: every install ships its complete rolling logs automatically (5 minutes after launch, then every 30 minutes) — compressed, size-capped, indexed, and scrubbed of tokens/passwords/keys/payment references before leaving the machine. Field issues become diagnosable from our side without asking anyone for files; the whole system dials back remotely.
+- Silent haptic Tests self-report: a Test that renders no signal logs a warning, and warnings ship within 30 seconds — dead Test buttons anywhere in the fleet are visible without a bug report.
+
 ## TrackPro V2 2.26.138 - 2026-08-27 (beta)
 
 - Haptics Test buttons hardened further: Test now bypasses spatial channel routing entirely (spatial gains come from live driving data a bench test doesn't have), so every active output plays every test on every layout — guarded by a new all-effects × all-layouts test.
