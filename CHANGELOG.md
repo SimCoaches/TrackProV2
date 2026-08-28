@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.138 - 2026-08-27 (beta)
+
+- Haptics Test buttons hardened further: Test now bypasses spatial channel routing entirely (spatial gains come from live driving data a bench test doesn't have), so every active output plays every test on every layout — guarded by a new all-effects × all-layouts test.
+- Test demos louder: guaranteed minimum test level raised 55% → 70%.
+- Every finished test logs the exact signal level it rendered, so a dead-feeling Test button is now diagnosable from one core-log line (no signal vs downstream device/wiring).
+
 ## TrackPro V2 2.26.137 - 2026-08-27 (beta)
 
 - Dog-box gear shift is ONE clunk now. A real dog box has no synchros — the dogs clunk once when they come together (confirmed by a dog-box driver). Previous builds modeled a second hit ~40ms after the first, which read as a double thud. Single strong, sharp clunk; the retune's extra strength and crack stay.
