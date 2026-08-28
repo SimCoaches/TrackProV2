@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.142 - 2026-08-28 (beta)
+
+- Haptics flight recorder: every five seconds the rolling logs record the peak level each haptic effect actually rendered, by name. "The seat vibrated and I don't know why" is now answerable directly from logs — which effect, how hard, and when — instead of reverse-engineering lap telemetry.
+- Includes all 2.26.141 fixes below.
+
 ## TrackPro V2 2.26.141 - 2026-08-28 (beta)
 
 - Phantom impact thumps while drifting are gone (second report, and this time the fix is built from the reporter's own lap data, not desk math). Two real causes, two gates: (1) a hard drift flick swings lateral G far faster than any "crash-only" threshold — on sims with a real slip channel (AC, ACC, rFactor 2), an established slide now suppresses the G-spike impact arms entirely; (2) aggressive downshifts and clutch kicks on the straight shunt the driveline hard enough to read as a frontal hit with the brake untouched — the frontal-impact arm now requires the wall to actually eat speed. iRacing's estimated slip channel keeps today's behavior. Trade-off: a genuine wall kiss mid-slide no longer thumps on real-slip sims.
