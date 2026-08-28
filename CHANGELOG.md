@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.145 - 2026-08-28 (beta)
+
+- The real community chat lives on Home: read #general and post to it right from the dashboard, live.
+- Chat notifications: the sidebar Social badge counts channel messages you haven't seen (plus unread DMs); reading a channel clears it instantly.
+- YouTube links in channel chat, DMs, and the Home chat play inline (click the preview to watch).
+- League Night shows for signed-out visitors as a reason to join; session credentials appear once you have an account.
+- The online members bar shows every online driver - no more "+N" overflow chip.
+- The coach is referred to as "he" across the app.
+
 ## TrackPro V2 2.26.144 - 2026-08-28 (beta)
 
 - Home rebuilt around coach, league, Race Pass and live community: a "Happening Now" strip shows who is on track right this second, the Race Pass card names your season rival and the exact XP gap, and free drivers see the 30-day trial (with the measured coaching improvement number) instead of a price banner. Signed-out drivers get the trial pitch with a one-click path to signup.
