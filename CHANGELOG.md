@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.141 - 2026-08-28 (beta)
+
+- Phantom impact thumps while drifting are gone (second report, and this time the fix is built from the reporter's own lap data, not desk math). Two real causes, two gates: (1) a hard drift flick swings lateral G far faster than any "crash-only" threshold — on sims with a real slip channel (AC, ACC, rFactor 2), an established slide now suppresses the G-spike impact arms entirely; (2) aggressive downshifts and clutch kicks on the straight shunt the driveline hard enough to read as a frontal hit with the brake untouched — the frontal-impact arm now requires the wall to actually eat speed. iRacing's estimated slip channel keeps today's behavior. Trade-off: a genuine wall kiss mid-slide no longer thumps on real-slip sims.
+- Impact triggers are field-diagnosable: every live Impact/Collision trigger logs its arm, G-jolt, and slip into the rolling logs, so a false-fire report is answerable from logs instead of lap forensics.
+- Laps stuck mid-upload recover on the next launch instead of staying ungraded forever (found in the field: a driver raced three weeks with laps silently not reaching the server). When telemetry is live but laps repeatedly fail to save, a visible warning says so instead of staying silent.
+- Assetto Corsa lap capture survives pauses and session restarts - modded-content sessions no longer churn into zero-length sessions that lose every lap.
+
 ## TrackPro V2 2.26.140 - 2026-08-28 (beta)
 
 - Instant coach lines (beta toggle, off by default): cues, verdicts, openers and debriefs play from the coach's cached voice for near-instant starts; questions stay on her live voice. Applies live to the running coach.
