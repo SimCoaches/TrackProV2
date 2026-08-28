@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.144 - 2026-08-28 (beta)
+
+- Home rebuilt around coach, league, Race Pass and live community: a "Happening Now" strip shows who is on track right this second, the Race Pass card names your season rival and the exact XP gap, and free drivers see the 30-day trial (with the measured coaching improvement number) instead of a price banner. Signed-out drivers get the trial pitch with a one-click path to signup.
+- Removed from Home: hardware status strip, quick actions, and recent activity (all live elsewhere).
+
 ## TrackPro V2 2.26.143 - 2026-08-28 (beta)
 
 - Track and car names are now real names everywhere sessions are listed (Home, Insights, Telemetry, Profile): Assetto Corsa content ids like "ac_legends_ta_firebird_1970" read "AC Legends TA Firebird 1970".
@@ -20,7 +25,7 @@
 
 ## TrackPro V2 2.26.140 - 2026-08-28 (beta)
 
-- Instant coach lines (beta toggle, off by default): cues, verdicts, openers and debriefs play from the coach's cached voice for near-instant starts; questions stay on her live voice. Applies live to the running coach.
+- Instant coach lines (beta toggle, off by default): cues, verdicts, openers and debriefs play from the coach's cached voice for near-instant starts; questions stay on his live voice. Applies live to the running coach.
 - Human-reviewed track craft at fifteen circuits (all League season tracks included) plus MX-5 Cup and GT3 car behavior — the coach explains the "why" behind measured coaching and never invents knowledge on unreviewed tracks.
 - My Program rebuilt to proof-first: a measured coached-vs-uncoached improvement strip, the climb graph, and the single thing to work on.
 - Talk discoverability: the opener names the driver's actual talk key, Start Coach nudges once when on track without the coach, and the coach overlay gains live status with a start/stop control.
