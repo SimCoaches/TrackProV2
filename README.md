@@ -8,11 +8,11 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.120. (Current beta: 2.26.139 — pre-release only; install manually or opt into the in-app Beta Channel in Settings.)
+Latest release: TrackPro V2 2.26.120. (Current beta: 2.26.140 â€” pre-release only; install manually or opt into the in-app Beta Channel in Settings.)
 
 ### What's New in 2.26.120
 
-AI Coach — three fixes that made the coach unusable for some drivers:
+AI Coach â€” three fixes that made the coach unusable for some drivers:
 
 - Push-to-talk now registers every press. Wheel and controller buttons were only working on the first press of a session; after that TrackPro's own virtual pedal device masked the button and nothing reached the coach.
 - You can talk to the coach again. Key-ups were being refused as "microphone unavailable" on headsets that report an idle mic as muted (Corsair VOID and similar), even when the microphone was working perfectly.
@@ -22,12 +22,12 @@ Includes the 2.26.117 fixes, which were pre-release only and never delivered by 
 
 ### What's New in 2.26.116
 
-- Fixed third-party pedal axes being zeroed during report silence — a throttle held flat against its stop now holds. Silence means "unchanged", never "centered"; real disconnects are detected instantly and a frozen device is caught within seconds.
+- Fixed third-party pedal axes being zeroed during report silence â€” a throttle held flat against its stop now holds. Silence means "unchanged", never "centered"; real disconnects are detected instantly and a frozen device is caught within seconds.
 - Game-controller buttons (push-to-talk, hotkeys) are now read directly from the HID layer, eliminating a Windows-level registry-handle leak that could crash or hang long sessions.
 
 ### What's New in 2.26.114
 
-- Fixed third-party pedals (including Fanatec ClubSport V3) disconnecting and reconnecting in a loop while idle — pedals that only send data when moved are no longer treated as unplugged.
+- Fixed third-party pedals (including Fanatec ClubSport V3) disconnecting and reconnecting in a loop while idle â€” pedals that only send data when moved are no longer treated as unplugged.
 - Fixed two startup crashes on PCs where TrackPro launches within a minute of Windows booting.
 - Reduced background device polling and diagnostic disk writes that could interfere with pedals and controllers on USB-heavy rigs.
 
@@ -72,3 +72,4 @@ Customer-facing changes are listed in [CHANGELOG.md](./CHANGELOG.md). Installer 
 ## About This Repository
 
 This repository hosts TrackPro V2 download information, the customer changelog, and signed release assets.
+
