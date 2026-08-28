@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.143 - 2026-08-28 (beta)
+
+- Track and car names are now real names everywhere sessions are listed (Home, Insights, Telemetry, Profile): Assetto Corsa content ids like "ac_legends_ta_firebird_1970" read "AC Legends TA Firebird 1970".
+- The AI Coach card on Home shows your best lap with the improvement next to it, the coach's focus for tonight, and a "Drive with your coach" button.
+- Installing a build from the in-app Beta Channel now shows live download progress.
+
 ## TrackPro V2 2.26.142 - 2026-08-28 (beta)
 
 - Haptics flight recorder: every five seconds the rolling logs record the peak level each haptic effect actually rendered, by name. "The seat vibrated and I don't know why" is now answerable directly from logs — which effect, how hard, and when — instead of reverse-engineering lap telemetry.
