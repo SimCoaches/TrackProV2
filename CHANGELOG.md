@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.146 - 2026-08-28 (beta)
+
+- On-track status is steady: iRacing pausing its telemetry feed (garage, replays, session changes) no longer makes drivers pop on and off the online list several times a minute. Status holds through short gaps and clears after a real exit; offline and voice status still clear instantly.
+
 ## TrackPro V2 2.26.145 - 2026-08-28 (beta)
 
 - The real community chat lives on Home: read #general and post to it right from the dashboard, live.
