@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.147 - 2026-08-28 (beta)
+
+- Review hardening for the social update: the Social chat badge now clears on visiting busy channels and accrues while the app is minimized; League Night join credentials are database-enforced for signed-out clients; "on track" status clears sooner and never carries across accounts; chat sends can't duplicate; YouTube links with trailing punctuation embed; trial-offer analytics no longer double-count; friendly names reach the in-game overlay and Haptics; less background polling.
+
 ## TrackPro V2 2.26.146 - 2026-08-28 (beta)
 
 - On-track status is steady: iRacing pausing its telemetry feed (garage, replays, session changes) no longer makes drivers pop on and off the online list several times a minute. Status holds through short gaps and clears after a real exit; offline and voice status still clear instantly.
