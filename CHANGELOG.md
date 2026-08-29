@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.149 - 2026-08-29 (beta)
+
+- Lap replays load frames in parallel with an honest retry state when the server is momentarily busy (read-side companion to .148's save retry).
+- Telemetry frames persist at a uniform 60Hz across every sim for like-for-like lap comparisons.
+
 ## TrackPro V2 2.26.148 - 2026-08-29 (beta)
 
 - League race results capture at the final classification, not when the first car takes the flag - Friday's Week 2 standings froze mid-final-lap and have been corrected to the official finish.
