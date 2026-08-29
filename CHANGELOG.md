@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.150 - 2026-08-29 (beta)
+
+- Sim frame drops at lap end addressed: all post-lap onboard video work (encode, trim, concat, probes) runs at Windows IDLE priority and software encoding is capped at two threads, so lap-boundary video jobs can no longer steal frames from the sim. Rigs without a working hardware encoder now say so in shipped diagnostics.
+
 ## TrackPro V2 2.26.149 - 2026-08-29 (beta)
 
 - Lap replays load frames in parallel with an honest retry state when the server is momentarily busy (read-side companion to .148's save retry).
