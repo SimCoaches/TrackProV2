@@ -8,7 +8,7 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.120. (Current beta: 2.26.145 - pre-release only; install manually or opt into the in-app Beta Channel in Settings.)
+Latest release: TrackPro V2 2.26.120. (Current beta: 2.26.146 - pre-release only; install manually or opt into the in-app Beta Channel in Settings.)
 
 ### What's New in 2.26.120
 
