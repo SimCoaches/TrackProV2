@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.152 - 2026-08-30 (beta)
+
+- The spotter says driver names: "Next car is Robinson", fastest-lap calls with who and the time, pit calls, watched rivals - names with no recorded clip are spoken dynamically instead of silently dropped, and frequent phrases upgrade to the coach's real voice. Dynamic speech turns on for everyone once (an old default was muting names, exact lap times, and fuel figures); switching it off afterwards is respected.
+
 ## TrackPro V2 2.26.151 - 2026-08-29 (beta)
 
 - Spotter reflexes: car left / car right / three-wide fire the instant the overlap appears (~30-50ms, faster than CrewChief) - a redundant onset debounce and the engine-tick wait are gone. Clears, flicker damping, and mid-corner clear holds are unchanged.
