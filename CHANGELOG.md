@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.151 - 2026-08-29 (beta)
+
+- Spotter reflexes: car left / car right / three-wide fire the instant the overlap appears (~30-50ms, faster than CrewChief) - a redundant onset debounce and the engine-tick wait are gone. Clears, flicker damping, and mid-corner clear holds are unchanged.
+
 ## TrackPro V2 2.26.150 - 2026-08-29 (beta)
 
 - Sim frame drops at lap end addressed: all post-lap onboard video work (encode, trim, concat, probes) runs at Windows IDLE priority and software encoding is capped at two threads, so lap-boundary video jobs can no longer steal frames from the sim. Rigs without a working hardware encoder now say so in shipped diagnostics.
