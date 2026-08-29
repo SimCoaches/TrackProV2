@@ -8,7 +8,19 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.120. (Current beta: 2.26.150 - pre-release only; install manually or opt into the in-app Beta Channel in Settings.)
+Latest release: TrackPro V2 2.26.150.
+
+### What's New in 2.26.150
+
+The biggest update since launch - everything from thirty beta builds, promoted after field testing:
+
+- Home is rebuilt around your racing life: live community chat you can read and post from the dashboard, who's on track right now, League Night with one-click RSVP, your Race Pass standing with your named rival and the exact XP gap, and your coaching progress.
+- League Night results are captured at the official final classification, with points scored server-side and a full audit trail.
+- Chat got notifications (channel badge in the sidebar), inline YouTube players in channels and private messages, and the online bar shows every online driver.
+- Reliability: lap saves and replay loads ride through momentary server congestion with automatic retries - no lap is ever lost; telemetry records a uniform 60Hz across every sim.
+- Performance: post-lap onboard video work runs at idle priority so it can't steal frames from your sim at the start/finish line, and background database traffic is roughly halved.
+- The AI Coach speaks with instant cached lines, knows human-reviewed track craft at fifteen circuits, and new drivers get the full coach free for 30 days.
+- Assetto Corsa lap capture survives pauses and restarts; track and car names display properly everywhere.
 
 ### What's New in 2.26.120
 
