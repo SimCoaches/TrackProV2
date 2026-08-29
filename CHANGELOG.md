@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.148 - 2026-08-29 (beta)
+
+- League race results capture at the final classification, not when the first car takes the flag - Friday's Week 2 standings froze mid-final-lap and have been corrected to the official finish.
+- Lap saves ride through momentary database congestion (retry-in-place) instead of failing and re-uploading minutes later - hardening from Friday League Night field data; no lap data was lost.
+- The community members list is fetched once and shared across surfaces, roughly halving background database traffic on Home.
+
 ## TrackPro V2 2.26.147 - 2026-08-28 (beta)
 
 - Review hardening for the social update: the Social chat badge now clears on visiting busy channels and accrues while the app is minimized; League Night join credentials are database-enforced for signed-out clients; "on track" status clears sooner and never carries across accounts; chat sends can't duplicate; YouTube links with trailing punctuation embed; trial-offer analytics no longer double-count; friendly names reach the in-game overlay and Haptics; less background polling.
