@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.155 - 2026-08-30 (beta)
+
+- Ask the coach for any lap in plain words: "analyze lap 32 from Monza last week", "my fastest lap at Summit Point in the Miata ever" - track words, car words, dates, and all-time scope all resolve; a numbered lap missing from the latest session is found in older ones automatically, and every answer names the session it used (track + date) so a wrong pick is one correction away.
+- Coach answers land faster: candidate laps fetch in one batched query instead of one-per-session, both laps' telemetry loads in parallel, the hardware readout probes all four subsystems at once, and friend comparison plus hardware reads join the pre-start lane (their work overlaps the coach's own speech).
+
 ## TrackPro V2 2.26.154 - 2026-08-30 (beta)
 
 - Open mic (beta toggle, off by default): just talk to the coach - no key needed. The adaptive voice gate (the same engine behind Community Voice) opens transmission when you speak and closes on silence; the coach never listens while he's talking, your talk key still works and always wins, and a stuck-open mic force-closes after 30 seconds.
