@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.154 - 2026-08-30 (beta)
+
+- Open mic (beta toggle, off by default): just talk to the coach - no key needed. The adaptive voice gate (the same engine behind Community Voice) opens transmission when you speak and closes on silence; the coach never listens while he's talking, your talk key still works and always wins, and a stuck-open mic force-closes after 30 seconds.
+- Ask the coach "what's my wheel rotation?" and get a measured answer: he tracks the largest steering angle you actually use each session - a hard lower bound on the configured rotation - instead of saying he can't read it.
+
 ## TrackPro V2 2.26.153 - 2026-08-30 (beta)
 
 - The coach fixes your connection instead of shrugging: when telemetry is missing he diagnoses WHY and speaks the exact fix for your sim (F1 games: UDP telemetry on, port 20777; BeamNG: OutGauge on, port 4444; iRacing/AC/ACC/rF2/LMU: run the game on this PC in a session). "Telemetry isn't connected" as a dead end is gone.
