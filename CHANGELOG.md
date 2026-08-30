@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.153 - 2026-08-30 (beta)
+
+- The coach fixes your connection instead of shrugging: when telemetry is missing he diagnoses WHY and speaks the exact fix for your sim (F1 games: UDP telemetry on, port 20777; BeamNG: OutGauge on, port 4444; iRacing/AC/ACC/rF2/LMU: run the game on this PC in a session). "Telemetry isn't connected" as a dead end is gone.
+- The coach analyzes laps you already drove - parked, off-sim, no game running: "analyze lap 32" or "how was my race last night" pulls the stored lap from your account, compares it against your best clean lap of that session, and names the corners where the time went. Being told "I need live telemetry" for a lap that's already saved is gone.
+- Corner numbers verified against physics fleet-wide: every active track's turn map was checked against measured driving data. Four tracks had every label rotated (Sachsenring, Navarra, St. Petersburg, Portland) - all fixed from real telemetry; Sachsenring additionally gets hand-measured corner spans.
+- Spoken names drop iRacing's disambiguation digits ("Robinson", not "Robinson2").
+- Coach tool timing is now measured per tool in the rolling logs, so slow answers are diagnosable by name.
+
 ## TrackPro V2 2.26.152 - 2026-08-30 (beta)
 
 - The spotter says driver names: "Next car is Robinson", fastest-lap calls with who and the time, pit calls, watched rivals - names with no recorded clip are spoken dynamically instead of silently dropped, and frequent phrases upgrade to the coach's real voice. Dynamic speech turns on for everyone once (an old default was muting names, exact lap times, and fuel figures); switching it off afterwards is respected.
