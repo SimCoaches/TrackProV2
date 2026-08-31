@@ -1,5 +1,25 @@
 # Changelog
 
+## TrackPro V2 2.26.157 - 2026-08-31 (beta)
+
+- Give the shakers an output of their own and they run on a 3ms path instead of a 10ms one. A Shared / Shakers only switch sits beside the output picker on the Haptics page and shows the delay you actually got - 3.0ms means it worked. Windows will not hand over a device that is already playing something else, so point it at an output nothing else uses; your amp and shakers do not change.
+- Priority is an order, not a checkbox. The Haptics page shows the order and lets you move effects up and down: the top two hit at full strength and push everything else down while they land. Setting half your effects to Priority used to mean none of them won; the page now says how many are set and how many can fire.
+- Four corners plus a seat, and zones you define yourself, with a level for every effect into every shaker - so braking can live at the front corners and the engine in the seat instead of twelve effects sharing two shakers. Existing rigs are unchanged until you route them.
+- Haptics stay quiet when you are not in the car: entering and leaving an iRacing session no longer shakes the rig.
+- Audio interfaces (MOTU, Behringer, PreSonus, RME, Audient and others) now appear in the haptics output list instead of being filtered out.
+- TrackPro measures its own haptic delay end to end, and records what each of your outputs is capable of.
+- Fixed a blank screen on launch present in the unpublished 2.26.156 build; no released version was affected.
+- Coach: radio volume, greeting and ACC session length fixes, and track length is measured from a lap when the sim never reports one.
+
+## TrackPro V2 2.26.156 - 2026-08-30 (beta)
+
+- Pit strategy answers where you come out, not just when to stop: a stop costs your own measured pit loss, so the coach names the cars you would rejoin among and whether that slot is clean air or a train. Cars already in the pits are excluded, and an unmeasured pit loss projects nothing rather than inventing a pit-lane time.
+- Traffic answers when, not just who: how long until you reach the car ahead and until the car behind reaches you, from measured pace on both sides. The out-lap after a stop is included and given as a floor - the real one is slower - unless your own cold-tire penalty has been measured.
+- The coach compares your lap against the fastest lap in the database for that exact car and track, corner by corner, instead of only your own best. Seeing other drivers' laps still requires sharing your own; if sharing is off he says so and can turn it on mid-conversation. The reference driver is never named.
+- The questions asked most - how was that lap, where am I losing time, what should I work on - are answered in one hop from what the coach already measured, with no tool lookup.
+- The coach carries only the tools that fit the sim you are in, and warms his connection before you speak.
+- Long comparison reads are bounded, so a slow lookup can no longer leave the coach silent mid-answer.
+
 ## TrackPro V2 2.26.155 - 2026-08-30 (beta)
 
 - Ask the coach for any lap in plain words: "analyze lap 32 from Monza last week", "my fastest lap at Summit Point in the Miata ever" - track words, car words, dates, and all-time scope all resolve; a numbered lap missing from the latest session is found in older ones automatically, and every answer names the session it used (track + date) so a wrong pick is one correction away.
