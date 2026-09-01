@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.161 - 2026-09-01 (beta)
+
+- The Haptics page shows what is shaking the seat: a live meter on every effect, the priority chip that is holding a slot lights up, and the Engine row names the engine the firing order is following ("V8", "Four-cylinder", or "car not recognised, assuming six").
+- Engine vibration is the engine's firing order - a four knocks, a V8 hums, a V10 sings - felt hardest under load and easing at redline, instead of a tone that follows the tachometer. Lateral load marks turn-in and weight transfer instead of droning through every corner. Kerbs and bumps now fire on Assetto Corsa, ACC and Le Mans Ultimate, where the old thresholds were tuned to iRacing's 360 Hz data and never triggered. Wheel slip sustains through a real slide on sims with a real slip channel. Road texture is audible.
+- A fresh profile starts with the eight effects that carry a lap and three priorities, not twelve and six. Saved profiles get a one-time "New feel available" offer on the Haptics page and are never changed without a click.
+- Haptics can play through up to four audio devices at once, sixteen shakers total. Add devices under Channels; every shaker becomes its own zone with a mount preset (Seat left, Pedals, Backrest, Front left...) and a name. Channel numbering stays fixed when a device is off.
+- The output pill shows the latency an output can reach before a stream opens, "No amp output found" says what to do, and Priority is hidden on effects that are switched off.
+
+## TrackPro V2 2.26.160 - 2026-09-01 (beta)
+
+- Prestige is something other drivers can see. Your crown now appears beside your name everywhere you show up - the members rail, community chat, direct messages, the driver browser, friends, and the Race Pass leaderboard - instead of sitting on your own profile where only you could find it.
+- Each prestige earns a different crown, not the same one in a new colour: steel at Prestige I, solid gold with a ring around your avatar at II, a crown that moves at III, and a prismatic crown with your name in its own colour at IV. Previously every prestige past the first drew an identical crown.
+- The members rail shows the crown your next prestige unlocks, and says what it does, so the reward is visible before you earn it rather than discovered afterwards.
+- Prestiging swaps your crown immediately. It used to keep showing the old one for up to two minutes.
+
 ## TrackPro V2 2.26.159 - 2026-09-01 (beta)
 
 - A sim launched as administrator (Content Manager's "Run as administrator" is the common way) was invisible to TrackPro: no telemetry, no laps, no coach, no haptics, and the community rail showed you as merely online while you were driving. TrackPro now identifies running games without needing permission over them, so an elevated sim behaves like any other.
