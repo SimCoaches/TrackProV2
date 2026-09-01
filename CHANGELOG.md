@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.162 - 2026-09-01 (beta)
+
+- Fixes 2.26.161 on onboard sound cards: the haptics output no longer closes and reopens every half minute. The low-latency probe's normal "no faster period here" answer was being treated as the stream dying, so the working stream was torn down and rebuilt in a loop and the seat cut out each time. Seen on a staff rig within the hour of install; a refusal before the stream starts is now never a death.
+- If a change on the Haptics page cannot reach core, that failure is recorded in the diagnostics trail instead of vanishing.
+- The live meter never competes with the audio callback for the mixer (a lost race was ten milliseconds of silence). Fleet haptics reports (latency, endpoint reach, dropped callbacks) ship correctly again, and two long-repeating warnings dedupe.
+
 ## TrackPro V2 2.26.161 - 2026-09-01 (beta)
 
 - The Haptics page shows what is shaking the seat: a live meter on every effect, the priority chip that is holding a slot lights up, and the Engine row names the engine the firing order is following ("V8", "Four-cylinder", or "car not recognised, assuming six").
