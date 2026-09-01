@@ -1,5 +1,12 @@
 # Changelog
 
+## TrackPro V2 2.26.158 - 2026-08-31 (beta)
+
+- On the beta channel, a new beta comes to you: a green Install Beta button with download progress and an automatic restart - the same one-click experience stable users get, in green so you always know you are taking a test build. No more hunting through Settings for the right version. A stable release still wins the screen if both are waiting.
+- Event Mode has a master switch in Settings. Turning it on binds TCP 5001, broadcasts on UDP 5001 and 5003, and runs the automatic lap sender, which fought any rig using a standalone lap-time sender with no way to opt out. Off means off: TrackPro holds none of those ports and sends no laps. Defaults to on, so a rig already running events is unaffected.
+- The coach speaks and listens in the language saved on your account.
+- Everything in the 2.26.157 beta is included (dedicated shaker output at 3ms, ranked haptic priority, four corners plus a seat, and the launch fix).
+
 ## TrackPro V2 2.26.157 - 2026-08-31 (beta)
 
 - Give the shakers an output of their own and they run on a 3ms path instead of a 10ms one. A Shared / Shakers only switch sits beside the output picker on the Haptics page and shows the delay you actually got - 3.0ms means it worked. Windows will not hand over a device that is already playing something else, so point it at an output nothing else uses; your amp and shakers do not change.
