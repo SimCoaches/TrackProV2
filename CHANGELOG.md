@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.159 - 2026-09-01 (beta)
+
+- A sim launched as administrator (Content Manager's "Run as administrator" is the common way) was invisible to TrackPro: no telemetry, no laps, no coach, no haptics, and the community rail showed you as merely online while you were driving. TrackPro now identifies running games without needing permission over them, so an elevated sim behaves like any other.
+- When a sim really is unreachable, TrackPro says so: Assetto Corsa clearly running but with no visible process now appears in the logs with the likely reason, instead of looking identical to never having opened a sim.
+
 ## TrackPro V2 2.26.158 - 2026-08-31 (beta)
 
 - On the beta channel, a new beta comes to you: a green Install Beta button with download progress and an automatic restart - the same one-click experience stable users get, in green so you always know you are taking a test build. No more hunting through Settings for the right version. A stable release still wins the screen if both are waiting.
