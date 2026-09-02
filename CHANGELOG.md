@@ -1,5 +1,9 @@
 # Changelog
 
+## TrackPro V2 2.26.166 - 2026-09-02 (beta)
+
+- TrackPro now says why telemetry is not flowing. When a sim is detected but has not connected for fifteen seconds, or a sim is running as administrator where TrackPro cannot see it, an amber notice appears at the top of the app with the fix in plain words, and withdraws itself the moment the sim connects. The same condition reaches the fleet as a structured event and a Discord warning, once per rig per six hours.
+
 ## TrackPro V2 2.26.165 - 2026-09-02 (beta)
 
 - Switching from iRacing to another sim works again without restarting TrackPro. iRacing's shared memory outlives the sim (its UI keeps it open), and the game detector took its presence as proof iRacing was running, so it never looked at Assetto Corsa: no telemetry, laps, coach or haptics after a switch. iRacing now claims detection only when its data is actually live.
