@@ -1,5 +1,19 @@
 # Changelog
 
+## TrackPro V2 2.26.168 - 2026-09-02 (beta)
+
+- Suspension and kerb strikes are scaled per sim. One threshold for every 60 Hz sim made Assetto Corsa fire a full-force thump on every transition of a drift while ACC never fired at all; each sim now gets its own scale (AC 3.0 m/s, ACC 1.5, Le Mans Ultimate 0.9, iRacing 4.0 on its 360 Hz data).
+- The shaker output path is chosen automatically. "Automatic" dedicates a real amp output for the fastest path and leaves the Windows default device shared so everything else keeps playing; "Dedicated" and "Shared" remain as overrides. The page now says when game audio reaches the shakers on a shared default output.
+- Assetto Corsa sessions no longer split on a hiccup: the sim must be missing from three consecutive process checks before it is declared gone, the process snapshot retries, and a telemetry stall closes the session only after thirty seconds.
+- Haptics profile changes from a slider drag are sent once every 60 ms instead of fifteen times a second, so a drag cannot starve the audio callback.
+- Staff log pulls now carry the whole rolling log.
+
+## TrackPro V2 2.26.167 - 2026-09-02 (beta)
+
+- Drifting no longer drones. On sims with a real slip channel the wheel-slip scrub strikes when a slide begins and fades to a simmer while it lasts, striking again on a fresh transition, instead of holding at full for as long as the car is sideways.
+- "Shakers only" (exclusive) output heals itself. The render loop now notices when a 3 ms period is being missed under sim load (the hardware replays stale audio, heard as a random rumble), counts it, and steps the period up to 6 ms and then 12 ms on its own.
+- Fleet noise: startup races with the engine, network failures and the auth lock steal between TrackPro windows are no longer recorded as errors; Discord alerts describe the last 24 hours and only repeat when something grows.
+
 ## TrackPro V2 2.26.166 - 2026-09-02 (beta)
 
 - TrackPro now says why telemetry is not flowing. When a sim is detected but has not connected for fifteen seconds, or a sim is running as administrator where TrackPro cannot see it, an amber notice appears at the top of the app with the fix in plain words, and withdraws itself the moment the sim connects. The same condition reaches the fleet as a structured event and a Discord warning, once per rig per six hours.
