@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.163 - 2026-09-01 (beta)
+
+- Haptics synthesis audit. The sine wave every effect is built from was lopsided (its negative half peaked at two thirds), so every tonal effect carried a DC bias and a second-harmonic buzz. Fixed. Engine pitch now rises continuously with revs instead of dropping an octave twice up the range, and the engine is felt harder as revs climb and under load. ABS pulses now sit in a band a bass shaker can reproduce. A kerb strikes once, not again on exit. Suspension thumps decay as advertised. Impacts no longer go silent for their last third. Kerb and bump thresholds reach ACC and Le Mans Ultimate as intended. Measured on a staff lap: engine DC offset gone, engine loudness correlation with revs from -0.35 to +0.57.
+- Saved profiles get the "New feel available" offer again, because the ABS band changed meaning (pulses per second x carrier Hz).
+
 ## TrackPro V2 2.26.162 - 2026-09-01 (beta)
 
 - Fixes 2.26.161 on onboard sound cards: the haptics output no longer closes and reopens every half minute. The low-latency probe's normal "no faster period here" answer was being treated as the stream dying, so the working stream was torn down and rebuilt in a loop and the seat cut out each time. Seen on a staff rig within the hour of install; a refusal before the stream starts is now never a death.
