@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.165 - 2026-09-02 (beta)
+
+- Switching from iRacing to another sim works again without restarting TrackPro. iRacing's shared memory outlives the sim (its UI keeps it open), and the game detector took its presence as proof iRacing was running, so it never looked at Assetto Corsa: no telemetry, laps, coach or haptics after a switch. iRacing now claims detection only when its data is actually live.
+- The haptics output picker no longer offers a monitor's HDMI audio. Core has always refused screen-attached audio, but the picker's own rule did not, so a driver could "select" a monitor and get silence with no explanation.
+- The Haptics page says "No sim telemetry" when TrackPro is not receiving the game, instead of "Waiting for the car to roll".
+
 ## TrackPro V2 2.26.164 - 2026-09-01 (beta)
 
 - The coach never answers a press that carried no speech. A dead or muted mic gets "Say again? I got no audio" in the coach's own voice instead of improvised coaching, and the dead-mic warning comes on the second silent press.
