@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.169 - 2026-09-02 (beta)
+
+- Headset setup pairs the mic and headphones by hardware and never hides a headset whose output Windows names "Speakers (...)"; the pickers pre-fill from the device Windows already uses for calls, monitors and TVs stay hidden behind a "show all outputs" link, and one Radio check button replaces three.
+- The coach's own voice now plays for every cue clip: the client read the TTS reply as text and threw, so every phrase fell to the Windows voice. The shared clip library (15,396 clips across six voices, plus 12,420 named-corner clips) now exists in production, and guided-lap phrases are voiced at session start.
+- A guided lap arms with its clips ready, fills in reference marks that arrive before the start line, says plainly when no reference exists yet, and setup cues never use the robotic engine.
+- Interrupted coach audio that the server never confirmed cleared used to disconnect the coach for the rest of the session; it now heals in place.
+- New paid Brake Approach overlay: two arrows close on your reference brake point and meet at it, then show how many meters early or late you braked; turn-in follows. Opens with a guided lap. Coach Cue, Race Engineer and Brake Approach unlock on the Starter plan; free members see them greyed out.
+- Corner references use the laps of the session being driven the moment they complete, not after the save.
+- The Overlays page warns when the sim is in exclusive full screen, and the welcome radio check reports whether the personal line played.
+
 ## TrackPro V2 2.26.168 - 2026-09-02 (beta)
 
 - Suspension and kerb strikes are scaled per sim. One threshold for every 60 Hz sim made Assetto Corsa fire a full-force thump on every transition of a drift while ACC never fired at all; each sim now gets its own scale (AC 3.0 m/s, ACC 1.5, Le Mans Ultimate 0.9, iRacing 4.0 on its 360 Hz data).
