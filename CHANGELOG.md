@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.164 - 2026-09-01 (beta)
+
+- The coach never answers a press that carried no speech. A dead or muted mic gets "Say again? I got no audio" in the coach's own voice instead of improvised coaching, and the dead-mic warning comes on the second silent press.
+- The hot post-lap questions ("how was that lap", "where am I losing time", "what should I work on", "what lap am I on") are pre-rendered at the line and played in the coach's own voice with no model round trip, about a second sooner.
+- Suggestions per lap replaces Coach Chatter: 1, 2 or 3 per lap, default 2, one slot always kept for the focus corner. The old buttons wrote a setting the cue engine never read.
+- Pre-race stop planner: "how many stops for a 40-lap race" answers with box laps, fuel to start and per stop, and the stop cost measured from your own in-lap and out-lap. Caution stops, drive-throughs and garage dwells never price a stop. On iRacing the usable tank comes from the session's fuel rules.
+- Trace-shape corner reads against your session-best pass: where the time went in metres from the apex, and what the brake and throttle traces did differently.
+- Live per-corner delta booked at every corner exit, this lap and last, with the reference labelled (own best, community best, or session best).
+- iRacing: per-wheel brake pressure measured under straight-line braking and compared with the bias dial when the car has one; damper high-speed share, kerb and bump strikes, and travel in the engineer block.
+- Driver-induced slides name the corner and the technique behind them.
+
 ## TrackPro V2 2.26.163 - 2026-09-01 (beta)
 
 - Haptics synthesis audit. The sine wave every effect is built from was lopsided (its negative half peaked at two thirds), so every tonal effect carried a DC bias and a second-harmonic buzz. Fixed. Engine pitch now rises continuously with revs instead of dropping an octave twice up the range, and the engine is felt harder as revs climb and under load. ABS pulses now sit in a band a bass shaker can reproduce. A kerb strikes once, not again on exit. Suspension thumps decay as advertised. Impacts no longer go silent for their last third. Kerb and bump thresholds reach ACC and Le Mans Ultimate as intended. Measured on a staff lap: engine DC offset gone, engine loudness correlation with revs from -0.35 to +0.57.
