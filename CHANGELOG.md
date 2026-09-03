@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.170 - 2026-09-02 (beta)
+
+- The coach knows reference corner speeds before your first lap, learned from the community's fast laps across cars and tracks and scaled to your car; on a layout nobody has driven it gives a rough target from the track's shape, spoken as a range. All of it is labeled as an estimate and confirmed against your own passes.
+- iRacing depth: the sim's live delta, in-car dials, shift lights, set tire pressures, track wetness and driver rating are in the coach's context; sector deltas and the optimal lap are in the Timing block; practice corner answers go deeper, car-state questions route to car data, repeats and positive-feedback questions get straight answers.
+- Damage, fuel, laps left and time left answer instantly in the coach's own voice with the sim's numbers.
+- A question the link dropped is replayed after the reconnect; stale telemetry says so instead of refusing; offline iRacing test sessions no longer read as one lap to green.
+- Fastest-lap comparisons name corners from the validated map; lap times keep milliseconds and gaps stay in tenths.
+- Assetto Corsa Competizione saves the whole first flying lap of a stint, not a 0.75 s tail.
+- Telemetry laps are stored as compressed per-lap records with a local lap store; reads and corner passes are faster and complete.
+- Welcome flow: coach voice matches the radio check, checkout back path, trial state, colorway resume, headset hydration, pending email and language rows fixed.
+
 ## TrackPro V2 2.26.169 - 2026-09-02 (beta)
 
 - Headset setup pairs the mic and headphones by hardware and never hides a headset whose output Windows names "Speakers (...)"; the pickers pre-fill from the device Windows already uses for calls, monitors and TVs stay hidden behind a "show all outputs" link, and one Radio check button replaces three.
