@@ -1,5 +1,10 @@
 # Changelog
 
+## TrackPro V2 2.26.172 - 2026-09-02 (beta)
+
+- Fanatec ClubSport Pedals V3 rumble works again when TrackPro is processing the pedals: the pedals are hidden from other programs by design, and TrackPro's own rumble writer was hidden with them. The app now sees and drives the pedal motors.
+- The coach gives corner targets the way a race engineer would: the number to aim for and how sure it is, in plain words. No system vocabulary on the radio.
+
 ## TrackPro V2 2.26.170 - 2026-09-02 (beta)
 
 - The coach knows reference corner speeds before your first lap, learned from the community's fast laps across cars and tracks and scaled to your car; on a layout nobody has driven it gives a rough target from the track's shape, spoken as a range. All of it is labeled as an estimate and confirmed against your own passes.
