@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.173 - 2026-09-03 (beta)
+- Coach push-to-talk works again after Stop Coach, and pressing talk while the coach is off starts it and says when it is ready.
+- Guided lap tells you it waits for the start/finish line before calling corners.
+- Spotter rejoin and pit-exit calls say what to do ("Cars coming behind. Don't pull out yet.").
+- FFB Lab settings persist across pages and restarts; a force effect the wheel dropped after a sim exit re-arms itself.
+- Assetto Corsa no longer floods the app window with 333 Hz telemetry (the cause of most frozen-UI reports).
+- Pedal haptics panels keep their labels at narrow window widths.
+- Warranty claims accept phone videos (MOV, MP4) up to 100 MB.
+
 ## TrackPro V2 2.26.172 - 2026-09-02 (beta)
 
 - Fanatec ClubSport Pedals V3 rumble works again when TrackPro is processing the pedals: the pedals are hidden from other programs by design, and TrackPro's own rumble writer was hidden with them. The app now sees and drives the pedal motors.
