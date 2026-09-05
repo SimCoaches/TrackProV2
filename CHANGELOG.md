@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.175 - 2026-09-04 (beta)
+
+- Coach reconnects through its long-session refresh, preserves saved push-to-talk bindings, and handles rapid Stop/Start. Ready and push-to-talk tones are clearer.
+- Spotter side and three-wide warnings respond sooner to changing traffic, cancel obsolete calls, and recover from stalled playback and repeated output failures.
+- Group Voice adds an optional in-game roster with speaking and mute indicators. Community voice volume and overlapping playback are improved, with new join and leave chimes.
+- Wheel Studio adds stop-all LED/dashboard control, persistent off settings, individual LED hardware checks, and better warning-zone coverage. Repeated LED write failures disable the affected transport.
+- Native wheel-button capture improves Coach push-to-talk setup. FFB and haptics gain clearer starting profiles and wheel presentation.
+- Setup Shop expands NASCAR discovery and matched run comparisons. iRacing capture retains more engineering channels, pit observations, and private saved-setup evidence. Downloadable setup inventory remains a preview.
+- Support reports preserve crash history and capture additional evidence for diagnosing unexpected app closure.
+
+Beta testing: verify long-session headset/PTT behavior, rapid NASCAR traffic changes, Group Voice overlays, and physical wheel handover. Hardware and live audio sign-off remain pending.
+
 ## TrackPro V2 2.26.174 - 2026-09-04 (beta)
 
 - AI Coach gets a driver-focused home, Live Radio as the primary action, a collapsible Coach Notebook, clearer Driver Progress, and simpler settings.
@@ -875,4 +887,3 @@ TrackPro V2 is the Sim Coaches Windows app for hardware setup, lap review, onboa
 ## 2.26.1 - 2026-04-14
 
 - Maintenance release for TrackPro V2.
-
