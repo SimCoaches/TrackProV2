@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.174 - 2026-09-04 (beta)
+
+- AI Coach gets a driver-focused home, Live Radio as the primary action, a collapsible Coach Notebook, clearer Driver Progress, and simpler settings.
+- Coach answers use richer session history, stricter car/layout matching, faster setup tools, and measured named-driver corner comparisons with clear limits on rival data.
+- Motion coordinates all four corners as one chassis plane, refines smoothing and factory tuning, preserves customized profiles, and adds geometry and motion-quality readouts.
+- Haptics restores saved outputs without opening its page, retains disconnected devices for reconnection, and strengthens grass/dirt/gravel feedback while keeping quiet tarmac crisp.
+- Setup Shop expands its product preview with AI Setup Lab, contribution and personal-proof workflows. Downloadable inventory, community submissions, and rewards are not live in this beta.
+- Approved Wheel Studio testers get one-click wheel setup, matching LED/dashboard colorways, improved dashboard defaults, and persistent explicit-off behavior.
+- FFB Lab and telemetry reliability improvements are included, along with cleaner diagnostic reporting.
+
+Tonight's testing: check coach microphone/PTT, short spoken answers and HUD-off behavior; begin motion testing at low master gain; verify haptics restoration and off-track feel. Physical hardware and live audio sign-off remain pending.
+
 ## TrackPro V2 2.26.173 - 2026-09-03 (beta)
 - Coach push-to-talk works again after Stop Coach, and pressing talk while the coach is off starts it and says when it is ready.
 - Guided lap tells you it waits for the start/finish line before calling corners.
