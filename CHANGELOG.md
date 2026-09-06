@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.176 - 2026-09-05 (beta)
+
+- Support gains saved account-linked cases, guided troubleshooting, suggested replies, and repair verification. Reopen earlier conversations and send a reviewed case to the team when human help is needed.
+- Live telemetry is shared across app views to reduce repeated processing. Hardware pages clean up their listeners more reliably, with improved reconnect and shutdown handling.
+- Onboard recording is opt-in and uses continuous segmented video when enabled. Long sessions preserve lap telemetry and video alignment, with background uploads and retention that protects saved highlights.
+- Coach references use anonymous, measured corners matched to your exact sim, car, and layout. Opponent lap answers use observed lap times, and public lap/ghost sharing respects both drivers' choices.
+- Wheel Studio adds new racing dashboards, landscape and portrait layouts, clearer instruments, and shared fuel estimates.
+- Event Mode retries, Setup Shop comparisons, and app navigation receive further cleanup.
+
+Beta testing: check long stints with recording off and on, Coach/PTT and headset audio, wheel displays, and support repairs on your rig. Physical hardware and live driving sign-off remain pending.
+
+Known beta issue: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target.
+
 ## TrackPro V2 2.26.175 - 2026-09-04 (beta)
 
 - Coach reconnects through its long-session refresh, preserves saved push-to-talk bindings, and handles rapid Stop/Start. Ready and push-to-talk tones are clearer.
