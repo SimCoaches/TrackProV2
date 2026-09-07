@@ -1,5 +1,19 @@
 # Changelog
 
+## TrackPro V2 2.26.177 - 2026-09-06 (beta)
+
+- Wheel Studio adds a device-definition library with import, validation, preview, export, and removal. Compatible HID and serial devices can describe separate RPM, warning, button, and encoder LED banks, including grouped or reversed wiring.
+- Displays have their own device inventory and explicit selection. Supported VoCore panels use firmware identification for their dimensions, and native USBD480 output is added. A disconnected selected screen cannot redirect output to a different display.
+- Racing dashboards gain clearer timing graphics, indicators, and fitted landscape and portrait layouts. Display choices show supported products and output availability.
+- LED hardware checks show addressable banks and individual lights. Quick assignments cover RPM, flags, ABS, TC, proximity, pit limiter, and backlighting while preserving existing effects. Stop controls release LED and dashboard output.
+- Settings gains searchable categories and clearer recording, privacy, audio, installed-version, and beta controls. Video recording starts off after this upgrade until you explicitly enable it again.
+- Privacy controls require account confirmation and remain accessible without a paid Coach plan. Delayed settings reads and audio-device detection preserve confirmed privacy choices.
+- Stream Deck integration and its bundled plugins have been removed.
+
+Beta testing: verify physical LED bank mappings, screen selection/orientation, VoCore and USBD480 output, headset/PTT, and recording off/on on your rig. Universal wheel coverage and physical hardware sign-off remain incomplete. True wheel-lockup LED telemetry is not yet available.
+
+Known beta issue carried forward: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target.
+
 ## TrackPro V2 2.26.176 - 2026-09-05 (beta)
 
 - Support gains saved account-linked cases, guided troubleshooting, suggested replies, and repair verification. Reopen earlier conversations and send a reviewed case to the team when human help is needed.
