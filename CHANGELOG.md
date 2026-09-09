@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.178 - 2026-09-09 (beta)
+
+- Motion includes Omega Comfort at 45% intensity and Omega Full at 65%. Both provide the same complete pitch, roll, heave and actuator effects, including suspension impacts, engine, shifts, curbs, road, ABS and traction cues.
+- Confirming My rig setup prepares both matching Omega profiles. Controller selection, dimensions and confirmed cable labels persist across profile switching and restarts. Custom tunes and different saved rigs are preserved; unconfigured Omega profiles require setup before enabling motion.
+- Motion gains faster body response, stronger elevation and suspension cues, smoother startup, and bounded Thanos controller recovery. The coordinated motion trial remains a separate developer experiment.
+- Haptics gains clearer effect controls and updated seat-feel presets. Compact windows fit navigation and content more reliably.
+
+Beta testing: confirm setup persistence, both Omega intensities, pitch/roll/heave, telemetry-driven effects, stop/re-enable and controller reliability on the actual rig. Physical acceptance of the stronger tune and intermittent-disconnect fix remains pending. Combined hill, braking and crest cues can produce a secondary heave tail.
+
+Known beta issue carried forward: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target.
+
 ## TrackPro V2 2.26.177 - 2026-09-06 (beta)
 
 - Wheel Studio adds a device-definition library with import, validation, preview, export, and removal. Compatible HID and serial devices can describe separate RPM, warning, button, and encoder LED banks, including grouped or reversed wiring.
