@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.179 - 2026-09-10 (beta)
+
+- OpenAI Live Coach gains conversational delivery instructions and gentler audio processing to preserve vocal warmth and dynamics. Existing session brevity, tool use and verified-data rules remain in place.
+- Coach and Spotter have independent voice controls, with OpenAI Coach previews including Marin and Cedar. Saved voice choices are preserved. Nari is not enabled.
+
+Beta testing: compare headset sound with the Coach radio effect on and off, then check three flying practice laps, pre-corner timing, progress feedback, HUD off, PTT interruptions and recovery. Sound quality and live driving validation remain pending; no measured latency improvement is claimed.
+
+Known issues carried forward: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target. Physical Omega motion acceptance and the combined hill/braking/crest secondary heave tail remain pending.
+
 ## TrackPro V2 2.26.178 - 2026-09-09 (beta)
 
 - Motion includes Omega Comfort at 45% intensity and Omega Full at 65%. Both provide the same complete pitch, roll, heave and actuator effects, including suspension impacts, engine, shifts, curbs, road, ABS and traction cues.
