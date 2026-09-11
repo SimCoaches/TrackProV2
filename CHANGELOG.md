@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.182 - 2026-09-11 (beta)
+
+- Live Coach removes sentence-count and word-count cutoffs so healthy spoken answers can finish. Long custom-voice replies preserve their remaining text through the final segment.
+- Starter now uses the same live AI model, coaching tools and knowledge as Pro. Your plan's usage allowance still applies.
+- AC practice on layouts without a reliable corner map starts with a clear explanation and offers measured clean-lap consistency feedback. More laps are no longer presented as a way to unlock an unavailable map.
+- Incorrect map matches are rejected when the layout length does not fit. Corner names and braking points are not guessed.
+- Lap counting handles the simulator's counter and position arriving separately. Incident laps are excluded from clean-lap comparisons, and busy or failed feedback can retry.
+- Guided acceleration instructions leave time for the voice to start before their reference point.
+
+Automated validation replayed 38 recorded laps and captured a complete 144-second spoken answer through the playback code. Physical headset routing, live-provider delay and ACC field acceptance are not certified by those checks.
+
+Known limitation carried forward: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target.
+
 ## TrackPro V2 2.26.181 - 2026-09-11 (stable)
 
 - Live Coach preserves slower transcriptions of acknowledged speech without delaying normal replies. Late commands still cannot affect a later question.
