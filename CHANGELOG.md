@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.181 - 2026-09-11 (beta)
+
+- Live Coach preserves slower transcriptions of acknowledged speech without delaying normal replies. Late commands still cannot affect a later question.
+- A held PTT re-key can wait for the previous question to finish. Releasing the button cancels it, and connection startup avoids repeated offline rejection warnings.
+
+Beta testing: verify questions, quick re-keying, release cancellation and interruption recovery in the actual headset, then three flying practice laps with timely guidance and HUD off. Physical acceptance remains pending; no measured end-to-end latency improvement is claimed.
+
+Known issues carried forward: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target. Physical Haptics and Omega motion acceptance, including the secondary heave tail, remain pending.
+
 ## TrackPro V2 2.26.180 - 2026-09-11 (beta)
 
 - Haptics becomes a compact mixer with all 12 effects visible. Each row holds the enable switch, strength, activity, Test and Tune. Frequency and priority controls expand below the selected effect. Overall strength uses one line; setup, presets, mix priorities and saved car profiles remain available with less wasted space.
