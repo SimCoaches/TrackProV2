@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.180 - 2026-09-11 (beta)
+
+- Haptics becomes a compact mixer with all 12 effects visible. Each row holds the enable switch, strength, activity, Test and Tune. Frequency and priority controls expand below the selected effect. Overall strength uses one line; setup, presets, mix priorities and saved car profiles remain available with less wasted space.
+- Saved haptics settings, channel routing and synthesis behavior are preserved. The mixer adapts to narrow windows and keeps unsupported effects disabled with their explanation available.
+- Personal Warranty now explicitly filters claims to the signed-in owner, including admins. This fixes shipping requests made from another customer's claim accidentally displayed on the personal page. Admin claim management remains available separately.
+- Warranty requests show the server's explanation or readable guidance instead of a generic Edge Function error. Missing Spanish labels for the latest Coach and Spotter settings are included.
+
+Beta testing: verify saved Haptics setup and shaker output on your rig, plus Warranty in the installed app. Physical hardware acceptance and live carrier rating remain pending.
+
+Known issues carried forward: text Coach may suggest a slower community corner when your own faster corner is private. Live Coach keeps your faster personal target. Headset/driving acceptance of the previous Coach audio changes and physical Omega motion acceptance, including the secondary heave tail, remain pending.
+
 ## TrackPro V2 2.26.179 - 2026-09-10 (beta)
 
 - OpenAI Live Coach gains conversational delivery instructions and gentler audio processing to preserve vocal warmth and dynamics. Existing session brevity, tool use and verified-data rules remain in place.
