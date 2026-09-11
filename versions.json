@@ -2,6 +2,7 @@
   "_readme": "Curated per-version status shown in TrackPro's in-app Beta Channel version list (Settings). Statuses: 'recommended' | 'testing' | 'buggy'. Defaults when a version is absent here: stable releases show 'recommended', pre-releases show 'testing'. Add an entry to override — e.g. mark a beta 'buggy' the moment a field report confirms a real problem, with a short honest note. Synced to the public repo by scripts/publish-update-release.ps1 on every publish; the app fetches it raw from the public repo's main branch.",
   "updated": "2026-09-11",
   "versions": {
+    "2.26.182": { "status": "testing", "note": "Coach answer completion, Starter model parity and AC lap feedback; recorded replay and digital audio checks passed" },
     "2.26.181": { "status": "recommended", "note": "Current stable release with Coach PTT fixes; headset and physical hardware acceptance remain pending" },
     "2.26.180": { "status": "testing", "note": "Compact Haptics mixer and warranty shipping fixes; installed-app and physical rig checks pending" },
     "2.26.179": { "status": "testing", "note": "OpenAI Coach delivery and gentler audio; headset and live driving validation pending" },
