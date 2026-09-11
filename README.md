@@ -8,7 +8,13 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest release: TrackPro V2 2.26.150. (Current beta: 2.26.181 - pre-release only; install manually or opt into the in-app Beta Channel in Settings.)
+Latest stable release: TrackPro V2 2.26.181.
+
+### What's New in 2.26.181
+
+- Coach PTT preserves slower transcriptions and accepts a held re-key when the previous question finishes.
+- Includes recent Coach voice controls and audio improvements, the compact Haptics mixer, and warranty error-message fixes.
+- See the [changelog](CHANGELOG.md) for all changes and known limitations. Headset/driving and physical hardware acceptance remain pending.
 
 ### What's New in 2.26.150
 
