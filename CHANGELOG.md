@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.184 - 2026-09-12 (beta)
+
+- Motion no longer disconnects and parks on a brief host stall. The Thanos writer re-sends for up to 250 ms before treating the port as gone; a genuine port loss still disconnects.
+- A new host stall report ties pedals, the virtual joystick driver and the motion port together when they freeze at the same moment, with the number of TrackPro core processes alive.
+- Spotter proximity calls keep one voice: a repeated call reuses the same take, reminders come every 2 seconds (was 1), and a call never restarts itself mid-word. First side calls and every clear stay immediate.
+- Spotter transmissions key off with the radio squelch. New "Radio clicks" toggle under Radio effect.
+- Spotter radio voicing is softer and consistent from call to call; every number fragment is level-matched.
+- Lap times are read like a spotter: "Last lap, one oh six, three sixty-six", about 3.3 seconds instead of 11.
+- Setup Shop detects the live car and track without waiting for device status and clears the previous car's garage sheet on a car change.
+
 ## TrackPro V2 2.26.182 - 2026-09-11 (beta)
 
 - Live Coach removes sentence-count and word-count cutoffs so healthy spoken answers can finish. Long custom-voice replies preserve their remaining text through the final segment.
