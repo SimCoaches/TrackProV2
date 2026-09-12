@@ -10,7 +10,7 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
-Latest beta: [TrackPro V2 2.26.182](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.182), with complete Coach replies, Starter model parity, and useful AC feedback on layouts without corner maps.
+Latest beta: [TrackPro V2 2.26.184](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.184), with motion that rides out host stalls, a spotter that keeps one voice and breathes between calls, and lap times read in three seconds.
 
 ### What's New in 2.26.181
 
