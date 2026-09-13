@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.186 - 2026-09-13 (beta)
+
+- Spotter and coach lap times are exact: both wait for the sim's official time for that lap (up to 5 s) and stay silent rather than read the previous lap. iRacing read one lap behind on most laps before.
+- The coach invites the driver to talk: offers on lap notes until the driver speaks, one short question after a scrappy practice lap, and a rotating "Try asking" line on the Coach page.
+- Rival comparison against any driver in the session by name, car number or position, TrackPro user or not, from observed sim data; only observable causes are spoken.
+- The coach never says it can't: 41 refusal lines rewritten as what she has, what gets the rest, and when.
+- An iRacing UI left open with the sim closed is no longer treated as a detected sim.
+
 ## TrackPro V2 2.26.185 - 2026-09-12 (beta)
 
 - Coach humor register: Professional, Some fun (default) or Roast me, under the coach voice picker; "roast me tonight" on the radio saves it.
