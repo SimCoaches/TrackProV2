@@ -10,7 +10,7 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
-Latest beta: [TrackPro V2 2.26.185](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.185), with a coach that has a sense of humor, speaks every lap, never announces a reconnect, and coaches live on any track.
+Latest beta: [TrackPro V2 2.26.186](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.186), with exact lap times, a coach that invites you to talk, rival comparison against anyone in the session, and a coach that never says it can't.
 
 ### What's New in 2.26.181
 
