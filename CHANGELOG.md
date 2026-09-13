@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.185 - 2026-09-12 (beta)
+
+- Coach humor register: Professional, Some fun (default) or Roast me, under the coach voice picker; "roast me tonight" on the radio saves it.
+- Coach speaks at least once per practice lap when nothing else was said, once per two race laps, never in a battle or near a press-to-talk.
+- Coach never announces a reconnect: lost acknowledgements are probed before any teardown, reconnects prefetch token and speaker, "Back with you" removed.
+- Live coaching on any track: with no trusted map the coach measures corners from three clean laps and coaches live from them.
+- Rival comparison against nearby cars never requires a friendship; observed traces survive session info updates and reconnects.
+- Cedar and Marin are the setup voice defaults; the welcome radio check uses the live coach voice.
+- Fuel context carries the driver's unit; "clear my black flag" refers to the driver's own car.
+- An iRacing UI left open with the sim closed is no longer treated as a detected sim.
+
 ## TrackPro V2 2.26.184 - 2026-09-12 (beta)
 
 - Motion no longer disconnects and parks on a brief host stall. The Thanos writer re-sends for up to 250 ms before treating the port as gone; a genuine port loss still disconnects.
