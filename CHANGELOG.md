@@ -1,6 +1,22 @@
 # Changelog
 
-## TrackPro V2 2.26.187 - 2026-09-16 (beta)
+## TrackPro V2 2.26.188 - 2026-09-16 (beta, validation hold)
+
+VALIDATION HOLD: for supervised testing only, not approved for customer delivery. Physical Thanos4U acceptance and PC/controller power-cycle testing remain pending. Automatic updates stay on the existing stable release.
+
+- Includes public Thanos4U / four-actuator 3DOF setup, saved strength and axis assignments, faster channel identification, and center-only software startup from 2.26.187.
+- Saved hardware settings and controller selection use flushed replacement files and a valid recovery copy. Corrupt or unreadable saved data cannot silently become default motion settings.
+- Startup restores the acknowledged native motion snapshot, protecting against partial browser-storage writes. Setup and Connection help wait for the core to confirm the controller selection was saved.
+- A failed controller enable stays disabled. Stop during startup prevents a pending restore from re-arming motion.
+- Opening the Thanos port no longer sends center-position packets. A lost connection cancels motion/tests and requires an explicit Enable to resume.
+- Corrects the Thanos command interpretation against the manufacturer's manual: spike-filter commands are not motor enable/stop commands. TrackPro preserves controller tuning; homing, startup, physical travel and offline parking remain controlled by the configured firmware.
+- Software E-stop cancels pending output and closes the Thanos stream instead of sending an undocumented command or a sudden center target. This does not cut servo power or prove the actuators have stopped. The physical E-stop remains necessary for hardware emergencies.
+
+Before acceptance: verify the installed controller firmware, controller-side stroke and filter configuration, physical E-stop, channel directions, actual travel and timing, saved setup after app/PC/controller restart, and an installer upgrade that preserves settings. Do not promote this candidate based on software tests alone.
+
+## TrackPro V2 2.26.187 - 2026-09-16 (beta, validation hold)
+
+VALIDATION HOLD: 2.26.187 is not approved for customer delivery. Further audit found settings-recovery and controller-command issues. A replacement must pass software checks and supervised Thanos4U acceptance before promotion. Automatic updates remain on 2.26.181.
 
 - Motion is available to everyone without an access code, directly in the sidebar.
 - Setup supports Thanos4U with four lift actuators for 3DOF: pitch, roll and heave. ESP32, standalone AMC, and unfinished 5DOF/6DOF layouts are not selectable.
