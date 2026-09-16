@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.187 - 2026-09-16 (beta)
+
+- Motion is available to everyone without an access code, directly in the sidebar.
+- Setup supports Thanos4U with four lift actuators for 3DOF: pitch, roll and heave. ESP32, standalone AMC, and unfinished 5DOF/6DOF layouts are not selectable.
+- Controller, USB binding, corner assignments, rig measurements and profile tuning are saved on this PC. A native settings backup restores them if an update resets browser storage; save errors remain visible.
+- Overall strength controls real motion output and is remembered per profile.
+- Identify each controller channel in 2 seconds, label it while moving, then choose Found it to return and continue to the next channel.
+- Normal startup moves to center without the repeated full-stroke check. A manual full-travel check remains in My rig.
+- Supported setup range: 50-150 mm usable stroke, with a configurable command speed ceiling within the actuator rating (up to 250 mm/s).
+
+Beta acceptance: software regression checks pass. Physical Thanos4U startup, axis direction, travel, E-stop, and overnight/power-cycle checks remain pending on the delivery rig. This beta is a signed download; it is not yet offered by the stable automatic-update feed.
+
 ## TrackPro V2 2.26.186 - 2026-09-13 (beta)
 
 - Spotter and coach lap times are exact: both wait for the sim's official time for that lap (up to 5 s) and stay silent rather than read the previous lap. iRacing read one lap behind on most laps before.
