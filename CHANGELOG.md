@@ -1,5 +1,24 @@
 # Changelog
 
+## TrackPro V2 2.26.189 - 2026-09-22 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes.
+
+AI Coach
+- Cues and answers are grounded in the latest measured evidence; the coach recognizes demonstrated pace without inventing limits.
+- A beginner or short practice plan with no measured laps gives a useful general exercise instead of guessing specific corners.
+- Corrected track map identity, answer evidence and headset recovery after a device change.
+- Corrected fuel advice, with briefings when the session changes.
+- New out-lap preparation briefings for practice and qualifying.
+- Coach voice and banter stay consistent across every audio path.
+
+Other
+- New in-game TrackPro FFB strength and power overlay.
+- Community chat: history, delivery recovery and timestamps fixed.
+- Setup capture evidence qualification repaired.
+
+Before acceptance: rehearse the AI Coach demonstration on the target rig with the real headset, simulator and recording software. Motion acceptance requirements from 2.26.188 still apply.
+
 ## TrackPro V2 2.26.188 - 2026-09-16 (beta, validation hold)
 
 VALIDATION HOLD: for supervised testing only, not approved for customer delivery. Physical Thanos4U acceptance and PC/controller power-cycle testing remain pending. Automatic updates stay on the existing stable release.
