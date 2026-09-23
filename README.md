@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189) adds AI Coach evidence, map, fuel and briefing improvements, and the in-game FFB overlay. It includes the 2.26.188 motion changes, which remain on validation hold.
+
 Validation candidate [2.26.188](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.188) contains further motion persistence and controller-protocol corrections. **Supervised testing only; not approved for customer delivery.**
 
 Beta [2.26.187](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.187) is on **validation hold - do not use for customer delivery**. Reliability fixes and physical Thanos4U acceptance are pending.
