@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.190 - 2026-09-22 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes.
+
+AI Coach
+- Fixed the coach going silent after some actions and checks (about 1 in 8 in field data): a refused reply after a completed tool is now retried for the same question, without cutting off audio.
+- A volume level you name ("spotter volume 60", "set your volume to 80") is now applied exactly. Relative requests ("turn it down", "10 percent quieter") still move from the current level.
+- Includes everything in 2.26.189.
+
+Before acceptance: rehearse the AI Coach demonstration on the target rig with the real headset, simulator and recording software.
+
 ## TrackPro V2 2.26.189 - 2026-09-22 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes.
