@@ -1,5 +1,27 @@
 # Changelog
 
+## TrackPro V2 2.26.194 - 2026-09-23 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes. Everything in 2.26.193 is included.
+
+AI Coach v0.237
+- The AI Coach now has its own version number, shown in Settings and on the Coach page. This release is AI Coach v0.237.
+- "Where am I losing time to the fastest lap?" now works on every car and track with laps in TrackPro. The coach compares you against the fastest clean lap from any driver and says where the time goes, corner by corner. It never names the other driver. Before, it could only use laps from drivers who had turned on lap sharing.
+- The coach's comparisons no longer need lap sharing, and the coach no longer asks you to turn it on.
+- Honest answers at the edges. If you're the only driver with laps there, the coach says so instead of praising you. If a lap's telemetry doesn't load, it gives the time gap and says the corner breakdown didn't load. A best lap far quicker than everyone else's is treated as a timing glitch, not a record.
+- New setting: "Use my laps in AI Coach comparisons" (Settings > Sharing, and Coach settings). It's on by default. Turn it off to leave your laps out of other drivers' comparisons; you're still compared against theirs.
+
+Sharing
+- "Share telemetry laps" now controls what other drivers see by name: overlaying your laps on the Telemetry page and racing them as in-sim ghosts. It also still decides whether your laps count toward Setup Shop's fleet setup data. It doesn't affect the AI Coach.
+
+Beta updates
+- The download bar now matches the percentage shown, and starting the same update from the prompt and from Settings no longer runs two downloads.
+
+Known in this beta
+- Creating a spotter voice cannot make samples yet ("Couldn't make samples right now") while the voice service is being connected. The market stays empty until the first voices are built.
+
+Before acceptance: rehearse the AI Coach demonstration on the target rig with the real headset, simulator and recording software. In the Ferrari 296 GT3 at Red Bull Ring, after four clean laps, ask "Where am I losing time to the fastest lap?" and check the named corners against the lap.
+
 ## TrackPro V2 2.26.193 - 2026-09-23 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes. Everything in 2.26.192 is included.
