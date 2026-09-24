@@ -1,5 +1,22 @@
 # Changelog
 
+## TrackPro V2 2.26.193 - 2026-09-23 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes. Everything in 2.26.192 is included.
+
+AI Coach
+- Coach memory is live. The coach can save what it learns about you (goals, how you like to learn, what works for you) across every car and track, and the "What your coach remembers" panel in Coach settings loads your memories. The service side was switched on after 2.26.192 was published, so 2.26.192 benefits too.
+
+Spotter
+- Spotter Market voices install into their own folder for each version, so updating a voice never touches the copy the Spotter is using.
+- Updating or removing the voice the Spotter is speaking in waits until the radio is off.
+- "Update" appears only when the market has a newer version of a voice.
+
+Known in this beta
+- Creating a spotter voice cannot make samples yet ("Couldn't make samples right now") while the voice service is being connected. The market stays empty until the first voices are built.
+
+Before acceptance: rehearse the AI Coach demonstration on the target rig with the real headset, simulator and recording software, including "Remember that..." and the memory panel.
+
 ## TrackPro V2 2.26.192 - 2026-09-23 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes. The 2.26.191 candidate was never published; everything in it and in 2.26.190 is included here.
