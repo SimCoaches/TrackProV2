@@ -1,5 +1,44 @@
 # Changelog
 
+## TrackPro V2 2.26.192 - 2026-09-23 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes. The 2.26.191 candidate was never published; everything in it and in 2.26.190 is included here.
+
+AI Coach
+- When you say you are nervous or frustrated, the coach responds to that first, gives one calming step, then one simple focus, instead of opening with technique.
+- "Remember that...", "note that..." and "don't forget..." now always save a coaching note for this car and track, then confirm.
+- Damage questions are answered from what the car reports: repair times, warnings and tire wear. The coach no longer says "no damage" when the data cannot show it.
+- Corner gear comparisons no longer swap your gear and the reference lap's gear.
+- A greeting with a question ("Hey Jim, how was that session?") gets the question answered, and a queued "I can't hear you" is never played once the coach has heard you.
+- The coach speaks only in your selected coach voice, and the spotter only in its selected voice pack. The Windows fallback voice is removed, a voice change never plays audio prepared in the old voice, and the coach and spotter can no longer share a voice.
+- New: coach memory. The coach can remember your goals, how you like to learn and what works for you, on every car and track. Coach settings has a "What your coach remembers" panel to view, add or forget memories, or delete them all, and a switch to turn memory off. Only you can see it.
+
+Setup Shop (Starter and up)
+- New: TrackPro AI setups for iRacing, built from the setups TrackPro drivers run fastest on the same car and track. A TrackPro AI setup is never a copy of any one driver's setup.
+- Setup Shop > TrackPro AI follows the car and track loaded in iRacing and shows each value beside your current one. "Use this setup" starts a garage checklist that ticks off live as you set each value. Save it with the suggested name and it is labelled TrackPro AI in My garage.
+- After three clean laps on it, Setup Shop compares your best three laps with your previous best at that car and track. The AI Coach can talk you through the remaining values one at a time.
+
+Spotter
+- New: Spotter voice studio and Spotter Market (Coach > Spotter settings). Describe a spotter voice, hear samples and build a full voice pack. Starter and up can download any pack from the market; free members keep the stock voices.
+- Lap-time readback: 81 takes that stood out from the rest of their voice (harsher, off-pitch or quieter) were regenerated in the two stock voices. Silent, stalled and slow traffic, number and lap-time clips were also replaced.
+
+Reliability and performance
+- If TrackPro's display process crashes, the page reloads itself, and after a graphics crash the window repaints instead of staying black. If the WebView2 runtime fails, TrackPro restarts (at most once every 10 minutes).
+- Community member lists and the Race Pass prestige animation do far less rendering work.
+- Crash and freeze reports carry more detail for support: window focus, the active game and the previous session's handle count.
+
+Account
+- A PC left on the "account active on another PC" screen no longer takes the account over by itself, for example from an event rig that lost its internet. Taking over always needs a click, and a running PC that loses the account to an automatic claim takes it back. The screen also offers "Sign in with a different account".
+
+Motion
+- The 3D rig view is removed from the Motion page.
+
+Known in this beta
+- Coach memory needs a server update that is not live yet. Until then the memory panel shows an error and the coach cannot save things about you. Car and track coaching notes and normal coaching are unaffected.
+- Creating a spotter voice cannot make samples yet ("Couldn't make samples right now") while the voice service is being connected. The market stays empty until the first voices are built.
+
+Before acceptance: rehearse the AI Coach demonstration on the target rig with the real headset, simulator and recording software; listen to the lap-time readback in both stock voices on a headset; run one TrackPro AI setup checklist in the iRacing garage.
+
 ## TrackPro V2 2.26.190 - 2026-09-22 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes.
