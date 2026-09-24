@@ -34,7 +34,6 @@ Motion
 - The 3D rig view is removed from the Motion page.
 
 Known in this beta
-- Coach memory needs a server update that is not live yet. Until then the memory panel shows an error and the coach cannot save things about you. Car and track coaching notes and normal coaching are unaffected.
 - Creating a spotter voice cannot make samples yet ("Couldn't make samples right now") while the voice service is being connected. The market stays empty until the first voices are built.
 
 Before acceptance: rehearse the AI Coach demonstration on the target rig with the real headset, simulator and recording software; listen to the lap-time readback in both stock voices on a headset; run one TrackPro AI setup checklist in the iRacing garage.
