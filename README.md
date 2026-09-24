@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.192](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.192) adds TrackPro AI setups in Setup Shop, the Spotter voice studio and market, coach memory, regenerated lap-time readback clips and AI Coach answer fixes. It includes the 2.26.188 motion changes, which remain on validation hold.
+
 Beta [2.26.190](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.190) fixes AI Coach silences after actions and exact spoken volume levels.
 
 Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189) adds AI Coach evidence, map, fuel and briefing improvements, and the in-game FFB overlay. It includes the 2.26.188 motion changes, which remain on validation hold.
