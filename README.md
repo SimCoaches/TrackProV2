@@ -10,7 +10,7 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
-Beta [2.26.195](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.195) makes the AI Coach Blip (v0.238): a live overlay, his own page with a weekly mission, and actions that ask first. It adds phone pairing, the Spotter page with a Language setting, Motion setup with a response test, and the VR overlays add-on. Motion needs rig acceptance; supervised testing only.
+Beta [2.26.196](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.196) makes the word highlight on Blip's overlay follow Blip's voice (AI Coach v0.239): it counts the syllables Blip speaks, so it stays with Blip to the end of long answers. Everything in 2.26.195 is included; motion needs rig acceptance; supervised testing only.
 
 Beta [2.26.190](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.190) fixes AI Coach silences after actions and exact spoken volume levels.
 
