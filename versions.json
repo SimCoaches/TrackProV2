@@ -1,7 +1,8 @@
 {
   "_readme": "Curated per-version status shown in TrackPro's in-app Beta Channel version list (Settings). Statuses: 'recommended' | 'testing' | 'buggy'. Defaults when a version is absent here: stable releases show 'recommended', pre-releases show 'testing'. Add an entry to override — e.g. mark a beta 'buggy' the moment a field report confirms a real problem, with a short honest note. Synced to the public repo by scripts/publish-update-release.ps1 on every publish; the app fetches it raw from the public repo's main branch.",
-  "updated": "2026-09-23",
+  "updated": "2026-09-25",
   "versions": {
+    "2.26.195": { "status": "testing", "note": "Meet Blip (AI Coach v0.238): Blip overlay and page, actions that ask first, standing orders, weekly mission; phone pairing; Spotter page and language setting; Motion split into Motion and Motion setup with a response test and quieter actuators; VR overlays add-on; smaller, faster updates. Supervised testing only; motion needs rig acceptance." },
     "2.26.194": { "status": "testing", "note": "AI Coach demonstration candidate 6 (AI Coach v0.237): fastest-lap comparisons against every driver, anonymously, with an opt-out; beta download bar fix. Spotter voice creation waits on server setup. Includes 2.26.188 motion changes, still on validation hold; supervised testing only." },
     "2.26.193": { "status": "testing", "note": "AI Coach demonstration candidate 5: everything in 2.26.192, coach memory live, safer Spotter Market voice installs. Spotter voice creation waits on server setup. Includes 2.26.188 motion changes, still on validation hold; supervised testing only." },
     "2.26.192": { "status": "testing", "note": "AI Coach demonstration candidate 4: coach answer fixes, TrackPro AI setups, Spotter voice studio and lap-time clip fixes. Spotter voice creation waits on server setup. Includes 2.26.188 motion changes, still on validation hold; supervised testing only." },
