@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.196 - 2026-09-25 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.195 is included. Motion changes from 2.26.195 still need rig acceptance; keep motion testing supervised.
+
+AI Coach v0.239 - the word highlight follows Blip's voice
+- The word Blip is saying is now found in Blip's own voice: TrackPro counts the syllables as they are spoken and matches them to the words on screen. Before, it guessed a speaking speed and fell further behind the longer Blip talked; now it stays with Blip to the end of a long answer.
+- Prepared lines (radio checks, corner calls, the opener) are read from the audio file before they reach you and land on the word being said almost every time. Live answers follow Blip as Blip speaks; in a fast run of numbers the highlight can wait for the next pause to catch up.
+- Lap times, gaps, units and codes are read the way Blip says them ("1:47.3", "0.4s", "GT3", "T12", "km/h").
+- When the coach speaks a language other than English, the words show without a highlight rather than a wrong one.
+- Blip's voice is measured on a separate, silent audio path, so the highlight never touches how Blip sounds.
+
+Before acceptance:
+- Listen to a long answer from Blip and a prepared line (the opener): the highlight stays on the word being said, start to finish, on your usual headset. Try a Bluetooth headset if you use one and note whether the highlight is ever ahead of the voice.
+- Interrupt Blip mid-answer with push-to-talk: the next answer's highlight starts on its first word.
+- Update from 2.26.195 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.195 - 2026-09-25 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.194 is included. Motion changes a lot in this beta (see Motion); keep motion testing supervised until the rig checks at the end pass.
