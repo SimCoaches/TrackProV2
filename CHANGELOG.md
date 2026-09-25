@@ -1,5 +1,97 @@
 # Changelog
 
+## TrackPro V2 2.26.195 - 2026-09-25 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.194 is included. Motion changes a lot in this beta (see Motion); keep motion testing supervised until the rig checks at the end pass.
+
+AI Coach v0.238 - meet Blip
+- The AI Coach is now Blip and introduces himself that way. The coach overlay is Blip: a live helmet whose face follows the real coach (starting, listening, thinking, talking), with his actual words in one box and the word he's saying highlighted in TrackPro blue.
+- Blip reacts to what really happens on track: a clean new best, real passes, incidents and his finish. He gets to know each driver: shy at first, cheekier as you drive together, and he greets you when you start him.
+- When Blip says he'll check something, he now follows up, or tells you he couldn't.
+- Blip answers questions with no sim running instead of asking you to start one.
+- Humor: Roast me now swears and goes mean, and trash talk gets answered in kind. New switch: "Coach can swear".
+- If your saved speaker is missing, Blip plays on the Windows default output with one warning and moves back when your headset returns. Choosing a mic no longer replaces the speaker you picked.
+- Comparisons against the fastest lap count a lap you just banked right away, and the glitch guard no longer flags a genuinely fast driver.
+- Blip's settings: push-to-talk and headset at the top, then three small sections instead of one long fold. Radio Check fits its card.
+
+Blip acts for you
+- Blip asks before he changes anything. Only a plain yes or no that you say, heard on the PC, confirms a change. "Done." comes once iRacing shows it.
+- Pedal and motion changes now work on track too: a pedal change waits until you lift off that pedal, a motion change until the car is settled.
+- Standing orders in iRacing: "tell me when car 12 pits", "box when the window opens".
+- "Sort my stop" asks one question for the whole stop. In iRacing races Blip offers fuel to the finish when you're short, and repairs when there's damage.
+
+Blip's page
+- Your week at the top: grades, streak and weekly mission, Blip's latest radio words, and Start Blip.
+- Weekly mission: five laps within 0.5% of your best from before this week, on a car and track you've driven before, earns one Race Pass tier (1,000 XP) once a week.
+- Pick a car and track: your best and next target, your last visit, one focus, and a track map with every corner coloured by how well you've mastered it. Open a corner to compare your best pass with your usual one, see what to change, and ask Blip about it.
+- Your skills over time: braking, throttle, consistency, pace and control, each with its history, plus your biggest gain and your weakest skill.
+- Drivers without a plan get a page to try Blip: time found in their own corners, real radio calls from Blip, and one free question.
+
+AI Coach monthly limits
+- Starter: 12 minutes of talk and 100 typed messages (up a third). Pro 5x is exactly five times Starter and Pro 20x exactly twenty times. Every plan has a monthly limit; nothing says unlimited any more.
+
+TrackPro on your phone
+- Pair your phone in Settings > Pair TrackPro Mobile. The phone shares Blip's conversation and your practice focus, and shows the desktop Pedals, Haptics and Motion pages at phone size, with an E-Stop always on screen.
+
+Spotter
+- The Spotter has its own sidebar entry, page and chatter level, separate from Blip. "Spotter, talk less" goes to the Spotter only. Switches that changed nothing were removed; the rest do exactly what their rows say.
+- Assetto Corsa and ACC: cars running door to door are now called, and cars in the pit lane or across a hairpin are no longer called alongside.
+- New Language setting for the Spotter's reactions: Clean, Salty (swearing) or Unfiltered (swearing plus cheeky innuendo). 18+ confirmation first. Traffic calls and flags never change.
+- Spotter voice creation works end to end: describe any voice and it's matched in style, always as an adult's voice. Your own voices show in the voice menu with build progress, then one click to download and use them.
+- Market cards show voice type, pace and energy with a race-radio sample, and the Market filters by voice type.
+- The voice sample plays on the Windows default output when your saved headset is missing.
+
+Motion
+- Motion is now two pages. Motion is for driving and feel: on/off, overall strength, pick a feel (Omega Comfort / Omega Full), Braking, Cornering and Bumps with live bars and - / +, and a live view of what each actuator is told. Everything about the hardware is on Motion setup (top right): controller and connection, rig dimensions, corner wiring, moving the rig by hand, the response test and diagnostics.
+- Move the rig by hand: pitch, roll and heave sliders (-100% to +100%) plus "all the way" buttons, to check clearances. The rig moves slowly, holds, and returns to center after 2 minutes without a change or when you leave the page.
+- Advanced tuning shows what your rig can physically do (from the actuator rating and your rig dimensions) and what your profile delivers. Controls that never reached the rig were removed (LP Freq, Tilt Coord, Max Tilt, Slew Rate, the 360 Hz checkbox); 360 Hz playout is always on. Omega profiles get Restore factory settings.
+- New response test (Motion setup): your phone strapped to the seat frame measures the real angles at full travel, the delay from TrackPro's command to the seat, how fast braking and cornering cues arrive and, optionally, how much vertical acceleration the actuators follow. Each run is saved to %APPDATA%\TrackPro\motion-response\. Needs TrackPro open on the paired phone.
+- Quieter actuators: every frame to the Thanos controller is now sent fresh on an even cadence (repeated frames made the servos stutter audibly), and actuator road texture stays below 25 Hz.
+- TrackPro reads the Thanos 4U settings on connect and logs any drift from the rig baseline.
+- Rig dimensions: usable stroke must match the Stroke setting on the Thanos controller.
+
+Force feedback
+- Assetto Corsa's own FFB is switched off automatically while TrackPro FFB is on, and restored afterwards. iRacing's FFB is shown live ("IRACING FFB ON" on the FFB overlay); switch it off in iRacing yourself for now.
+- Compact FFB overlay: power, strength - / +, and an output meter that shows clipping.
+
+Overlays
+- The Overlays page: pick an overlay from one list and edit it with a live preview beside it; display setup sits top right.
+- VR overlays are back as an opt-in add-on on the Overlays page. Turning it on takes one Windows permission prompt; when it's off, nothing loads into your games. A setup guide checks your OpenXR runtime and OpenComposite. Supported: iRacing in OpenXR mode, Le Mans Ultimate 1.4+, and ACC, AMS2, AC and rFactor 2 through OpenComposite.
+
+Driver Progress
+- Pace trend from your saved laps, back to your first session.
+- Weekly report card: grades for pace, consistency and seat time that reset every Monday, a weeks-in-a-row streak, this week's personal bests and a next target. Also on the Report Card page.
+
+Updates
+- Smaller, faster updates: stock spotter clips ship compressed, and the remote support engine downloads only when you open Remote Support. The installer closes TrackPro's engine cleanly instead of waiting on fixed timers, and an update no longer counts as a crash.
+- Update prompts stop nagging: "Later" on a stable update is remembered for that version, and prompts wait while a sim is running.
+
+League Night
+- TrackPro records your iRacing identity with each race, so league results are matched to you by name and car. Friday drivers should be on this version.
+
+Other fixes
+- The lap-save warning no longer counts laps the retry queue already saved, and its "Run diagnostics" button starts the run.
+- Title bar labels show whenever they fit.
+- Spanish: corrected translations, and the remaining English text is translated.
+
+Not switched on yet
+- Typed chat with Blip (his page and the phone) picks up his name and the new swearing and roast settings with the next coach server update. The radio has them now.
+- Blip's prepared radio lines recorded in his live voice are ready in the app; they turn on from the server one voice at a time.
+
+Known in this beta
+- The phone shows the desktop pages at phone size; phone layouts come later.
+- ACC can still call a car in a pit lane that runs closer than 10 m to the track (ACC gives no pit flag for other cars).
+
+Before acceptance:
+- Blip in a real session: reactions, the word highlight on your headset, and unplugging and replugging the headset mid-session.
+- Ask Blip for a pit change and a pedal change on track; answer yes and no. Check "Done." and that the pedal change waits until you lift off.
+- Try the free question on Blip's page with an account that has no plan.
+- Update from 2.26.194 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+- Spotter on a headset: the stock clips sound right, and door-to-door calls in AC and ACC.
+- Motion: run the response test once with a rider and keep the saved file; check the hand moves and actuator noise.
+- VR overlays on a real headset. Pair a real phone and try its E-Stop.
+- On Blip's page, check the corner markers sit on the real corners on a few tracks.
+
 ## TrackPro V2 2.26.194 - 2026-09-23 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Motion changes from 2.26.188 are included unchanged and remain on validation hold until physical Thanos4U acceptance passes. Everything in 2.26.193 is included.
