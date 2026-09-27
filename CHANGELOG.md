@@ -1,5 +1,34 @@
 # Changelog
 
+## TrackPro V2 2.26.200 - 2026-09-27 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.199 is included.
+
+AI Coach v0.243 - Blip in any Spotter Market voice
+- Pro 5× and Pro 20×: every Spotter Market voice is in Blip's voice list (Coach page → Your coach's voice), your own voices first. Pick one and Blip talks in it. Starter and free members see them marked "Pro 5× and Pro 20×".
+- Blip's key-up and off-radio clicks follow Blip's volume: turn Blip down and the clicks go down with him.
+- When the voice service is briefly busy, Blip's line retries once instead of going silent.
+
+Spotter
+- Every Spotter Market voice is in the Spotter voice menu. Pick one and it downloads and becomes your Spotter's voice in one step. Free members see them marked "(paid plans)".
+- The Spotter's key-up and off-radio clicks follow the Spotter's volume. Turn the Spotter down and you no longer hear loud clicks around quiet calls.
+- Your Spotter voice and Blip's voice are set separately.
+
+Spotter voice studio
+- Voices follow your description more closely.
+- Flirty, teasing and sultry voices, anime-style voices included. A voice asked for as a child or a teen is made as a youthful-sounding adult and never gets the flirty lines or becomes Blip's voice.
+
+Social voice chat
+- Turn voice chat up or down from a wheel dial or buttons, 10% a click.
+- Voice chat settings can be changed without joining a channel.
+
+Before acceptance:
+- Pro 5× or Pro 20× account: Coach page → Your coach's voice → pick a Spotter Market voice (NORA) → Hear voice, then start Blip and ask a question. Blip answers in that voice, with no silent lines.
+- Starter account: the Market voices show in Blip's list marked "Pro 5× and Pro 20×" and can't be picked.
+- Spotter page: pick a Market voice you don't have yet; it downloads and the Spotter uses it.
+- Turn the Spotter to 10% and Blip to 10%: their clicks are just as quiet.
+- Update from 2.26.199 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.199 - 2026-09-27 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.198 is included. Motion anticipation is new and OFF by default; keep motion testing supervised.
