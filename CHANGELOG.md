@@ -1,5 +1,27 @@
 # Changelog
 
+## TrackPro V2 2.26.202 - 2026-09-27 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.201 is included. AI Coach is unchanged (v0.244). FFB Lab changes are new; keep FFB testing supervised.
+
+League Night
+- Your result is kept even when the whole field finishes at once: a save that fails is retried until it lands, and it waits across a TrackPro restart.
+- The result is taken once the race goes green. A session that ends on the grid, in the warm-up or on the parade lap no longer records your grid slot as your finish.
+- Already live on the server for every version: scoring no longer runs inside your result save, a wrong PC clock no longer drops your result, your real finish replaces an early guess, and a driver whose result never arrived is placed from the race's classified order by name. Week 6 (Snetterton) is corrected: three missing drivers are scored and one misplaced finish is fixed.
+
+Profile pictures
+- Google profile pictures load again on the Race Pass leaderboard, Social, friends and profiles. A picture that can't load shows the driver's initials instead of a broken image.
+
+FFB Lab
+- When the wheel's force stops mid-session, TrackPro notices within about a tenth of a second (was half a second) and brings it back with a 0.4 s ramp, well under a second in all.
+- Each force loss is logged with the USB devices that changed just before it.
+
+Before acceptance:
+- League Night: finish a hosted iRacing race on this build; your result is on the League page within a minute. Pull the network cable at the finish and reconnect: the result still arrives.
+- Race Pass leaderboard and Social: drivers with Google pictures show their photo; nobody shows a broken image.
+- FFB Lab on a supervised rig: unplug and replug the wheelbase USB mid-session; force returns within a second, and the log names the device.
+- Update from 2.26.201 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.201 - 2026-09-27 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.200 is included. FFB Lab changes are new; keep FFB testing supervised.
