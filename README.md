@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.200](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.200) puts every Spotter Market voice in the Spotter voice menu for everyone and lets Pro 5× and Pro 20× members give Blip any of them (AI Coach v0.243). The Spotter's and Blip's radio clicks now follow their volume, and custom voices follow their description more closely. Everything in 2.26.199 is included; supervised testing only.
+
 Beta [2.26.199](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.199) lets Blip tune your motion rig by voice on track, clear your own black flag in iRacing, and act as your endurance and oval strategist (AI Coach v0.242). The spotter now names the car to follow under caution, and a new motion Anticipation setting (off by default) starts cues from your steering, brake and throttle. Everything in 2.26.198 is included; motion needs rig acceptance; supervised testing only.
 
 Beta [2.26.190](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.190) fixes AI Coach silences after actions and exact spoken volume levels.
