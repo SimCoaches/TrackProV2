@@ -1,5 +1,36 @@
 # Changelog
 
+## TrackPro V2 2.26.198 - 2026-09-26 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.197 is included.
+
+AI Coach v0.241 - fuel that just works, and fixes from real sessions
+- Fuel knows where you are. In practice, "how much fuel?" gets the qualifying load and the race load. In qualifying or before the green, it gets the race load: the race laps, the pace lap and a spare lap. Once the race is running, it gets fuel to the flag.
+- The race length comes from the event, so Blip never asks "how long is the race?" in iRacing.
+- When qualifying ends, Blip gives the race load on his own: "Qualifying's done. For the 13-lap race, load..."
+- The race briefing says the load instead of "fuel to finish isn't confirmed yet".
+- Your practice and qualifying laps plan the race fuel. They are no longer thrown away when the session changes.
+- Every TrackPro driver's fuel laps help every driver. With no laps of your own, Blip uses other drivers' laps in this car at this track, then this car's burn at other tracks. It always says where the number came from and errs on the side of extra fuel.
+- The load is always rounded up, and the spare grows on long races.
+- "Did I lock up?", "did I shift too early?" and "did I spin?" are answered from that moment: the last braking zone, the last upshift against the shift light, and how far the car rotated. Before, Blip answered from what the car was doing right now.
+- Venting ("this car is terrible", swearing) gets one calm line, not a lecture. "Trust me" ends a warning for the stint, and "shut up" means quiet.
+- A line said to a friend in voice chat ("Sean, can you hear me?") is not answered by Blip. "Sean Skiles" now finds a voice-chat participant listed as "Sean".
+- Blip no longer invents features, like "send me a screenshot". For "tell me when to brake" he offers the guided lap, and a bug report reaches the TrackPro team.
+- Wheel buttons are spoken as "your wheel button 10", not "fanatec wheel b10".
+- A corner call no longer reads "coasting about 0.2s. no coasting —".
+
+FFB Lab
+- The Start button works again. From 2.26.195 to 2.26.197 the page found your wheel but Start stayed greyed out, because the core never answered FFB Lab's status request. The FFB overlay's status had the same fault.
+- If a session can't start, FFB Lab now says why.
+
+Before acceptance:
+- FFB Lab: with your wheelbase connected, Start becomes active and a session starts and stops.
+- In practice, ask "how much fuel should I run for the race?": Blip gives the load from the event's race length without asking.
+- Run qualifying, then wait for the flag: Blip says "Qualifying's done" with the race load.
+- Lock a brake, then ask "did I lock up?": Blip describes the last braking zone, not "brake is at zero".
+- In voice chat, say "Sean, can you hear me?" (use a name in the room): Blip stays silent.
+- Update from 2.26.197 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.197 - 2026-09-26 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.196 is included. Motion for DCS and MSFS is new in this beta; keep motion testing supervised.
