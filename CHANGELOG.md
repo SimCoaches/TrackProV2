@@ -1,5 +1,35 @@
 # Changelog
 
+## TrackPro V2 2.26.201 - 2026-09-27 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.200 is included. FFB Lab changes are new; keep FFB testing supervised.
+
+AI Coach v0.244 - fixes from the field
+- The Blip page no longer flashes the "Meet Blip" sign-up page for drivers who already have Blip when switching pages. It waits a moment for your account to load.
+- Circuito de Navarra (Speed Circuit): Blip names the corners from the real start/finish line. It had been calling Turns 2 and 3 "Turn 5" and "Turn 6".
+- Blip in a Spotter Market voice: its prepared lines wait for a free slot when the voice service is busy, instead of dropping.
+
+Spotter Market voices
+- A new voice is usable in about 7 minutes. Its everyday calls are built first; the lap-time numbers follow over the next ~20 minutes and arrive on their own. Until then the stock voice of the same type reads lap times.
+- Corner names are built only for the tracks you race with corner names on. The first time you drive a track in names mode, that track's corner names are built in your Spotter's voice in about a minute (the stock voice reads them until then), and every driver with that voice gets them.
+- Installed voices update themselves: only the new lines download, in the background, and never while you're on track (an update waits until the radio has been quiet for a minute).
+
+FFB Lab
+- Spin-aware end-stop guard.
+- Strength up to 60 Nm, with a live clipping read.
+- Names the program that has taken the wheel.
+
+Also
+- Chat avatars stay round instead of stretching down long messages.
+
+Before acceptance:
+- Blip page: switch between pages on a Pro account; the Blip page never shows "Meet Blip" or a sign-up screen.
+- iRacing Navarra Speed Circuit: Blip names Turn 1, 2 and 3 at the right corners.
+- Create a voice: it shows as ready in about 7 minutes and you can pick it. Lap times are read in the stock voice at first, then in the new voice after the background update.
+- Corner names on (Coach page), a Market voice selected, drive a track: corner names in the stock voice, then in your voice from the next session.
+- FFB Lab on a supervised rig: end-stop guard and strength behave as expected.
+- Update from 2.26.200 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.200 - 2026-09-27 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.199 is included.
