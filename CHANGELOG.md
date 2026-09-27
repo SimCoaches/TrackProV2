@@ -1,5 +1,33 @@
 # Changelog
 
+## TrackPro V2 2.26.199 - 2026-09-27 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.198 is included. Motion anticipation is new and OFF by default; keep motion testing supervised.
+
+AI Coach v0.242 - Blip as your agent, endurance and oval engineer
+- Blip changes your motion rig by voice, on track: "less heave", "more braking feel", "motion to 70", "turn the kerbs up", "switch to my Comfort profile", "undo that". Changes are saved to your profile like the Motion page, and land the moment the car is settled (on a straight or stopped), never mid-corner. The rig's safety limits, geometry and wiring stay on the Motion setup page.
+- iRacing admin control is on by default for everyone. iRacing itself refuses admin commands from anyone who isn't host or admin of the session. "Clear my black flag", "EOL me" and "wave me by" now happen straight away; anything that touches other drivers or the whole session (yellow, DQ, black flag a rival, kick, pits) still asks one quick question. A question about a flag ("why do I have a black flag?") never clears it.
+- Endurance: any race length, including 24-hour races. Multi-stop fuel plans, a stint debrief while the car sits in the pit stall, hour marks (halfway and the final hour named), a pace-fade call when the stint slows, and dusk and dawn.
+- Ovals: Blip is your strategist. Tyres over the run (laps on each tyre, lap time lost per lap, what fresh tyres are worth), and at a caution the pit-or-stay call, based on what the cars ahead actually do, a few seconds before your pit entry. Lap-time reads now work on short ovals.
+- Blip watches every car: from what iRacing shows of each car (laps since its stop, how long its stops took, its lap-time falloff), the field's tyre falloff and each same-car rival's fuel window. When your own run is short, the field and other TrackPro drivers' data give the tyre read.
+- Fuel: caution laps never set your burn, and race pace survives a long yellow.
+
+Spotter - iRacing cautions
+- Under caution the spotter names the car to follow: "Follow car 24." At the front: "Follow the pace car."
+- "Let car 24 by. It goes ahead of you." when the car you should follow is behind you.
+- Free pass, wave-around and "sent to the end of the line", straight from iRacing, and how many laps down you are when an oval caution comes out.
+- Lap-by-lap gap change: "Car 24 ahead, 1.2. You took three tenths that lap."
+
+Motion - anticipation (new, off by default)
+- Your steering, brake and throttle start the cornering, braking and acceleration cues before the car builds the G, so turn-in and braking arrive earlier. Motion → Advanced → Anticipation (or ask Blip). Start at 60 ms. It learns each car in the first minutes of driving and stays silent until it has. It never leads a slide or a countersteer.
+
+Before acceptance:
+- Motion: set Anticipation to 60 ms, drive 2-3 minutes, then feel turn-in and braking. Try 40 and 90. Anything odd: set it to 0 and report it.
+- Blip: "less heave" → yes → felt on the next straight; reopen the Motion page to see it saved; "undo that".
+- As host of an iRacing session: "clear my black flag" happens at once; "throw a yellow" asks once.
+- iRacing oval caution: the spotter names the car to follow; Blip gives the pit-or-stay call before pit entry.
+- Update from 2.26.198 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.198 - 2026-09-26 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.197 is included.
