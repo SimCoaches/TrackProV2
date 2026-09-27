@@ -1,5 +1,35 @@
 # Changelog
 
+## TrackPro V2 2.26.197 - 2026-09-26 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.196 is included. Motion for DCS and MSFS is new in this beta; keep motion testing supervised.
+
+AI Coach v0.240 - fixes from real Blip sessions
+- The spoken session debrief no longer reads Blip's internal notes aloud ("Ask calibration (measured, n=9)..."). It speaks only lines meant for you.
+- Confirmations no longer loop. If you answer "Clear your black flag?" with anything other than yes or no, Blip asks once more and says "Just say yes and I'll do it." Only a plain spoken "yes" still carries out the action.
+- In the garage, "look over my data" no longer reports a stalled engine, no oil or fuel pressure, or an empty tank as trouble. Those are normal engine-off readings while the car is parked.
+- Roast mode means it: with roast on, Blip gives trash talk back in kind, swears properly and never scolds you for your language.
+- Blip in iRacing: can replay to where you lost time, knows your incidents and iRating, and makes engineer calls in qualifying.
+- Blip's answers are no longer cut to a fixed number of words.
+- During a server outage, Blip no longer tells you your talk time is used up.
+- Custom (ElevenLabs) Blip voices are for Pro 5x and Pro 20x plans. Custom Spotter voices stay on every paid plan, Starter included.
+- Listen / Play sample buttons in the Spotter Market, Spotter settings and the Blip voice picker now work whenever the radio is quiet and you are not driving on track.
+
+Flight sims
+- Motion for DCS and MSFS (MSFS ships its SimConnect connection).
+- Aircraft effects on the motion rig and bass shakers: engines and rotors, runway rumble, touchdowns, landing gear and flap clunks, buffet and guns.
+
+Community
+- Member list online, on-track and voice status fixes.
+- Reply to direct messages from the email notification.
+
+Before acceptance:
+- In the garage, ask Blip "look over my data": no stall, pressure or fuel alarm.
+- Say "roast me" and trash-talk Blip: it gives it back, no "that's a bit harsh".
+- Ask Blip to clear a black flag, answer with something other than yes, then say "yes": it asks once with "Just say yes" and then does it.
+- Finish a session and listen to the debrief: no "calibration" or "n=" numbers are read aloud.
+- Update from 2.26.196 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.196 - 2026-09-25 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.195 is included. Motion changes from 2.26.195 still need rig acceptance; keep motion testing supervised.
