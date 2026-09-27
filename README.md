@@ -10,7 +10,7 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
-Beta [2.26.197](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.197) brings Blip fixes from real sessions (AI Coach v0.240): no internal notes read aloud in the debrief, no confirmation loops, no false engine alarms in the garage, and a roast mode that gives it back. It also adds motion and aircraft effects for DCS and MSFS. Everything in 2.26.196 is included; motion needs rig acceptance; supervised testing only.
+Beta [2.26.198](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.198) makes Blip's fuel calls just work (AI Coach v0.241): he knows whether you are in practice, qualifying or the race, gives the race load on his own when qualifying ends, and uses every TrackPro driver's fuel data when you have none. It also fixes FFB Lab's Start button, answers "did I lock up" from the moment itself, and stays quiet on lines meant for voice chat. Everything in 2.26.197 is included; motion needs rig acceptance; supervised testing only.
 
 Beta [2.26.190](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.190) fixes AI Coach silences after actions and exact spoken volume levels.
 
