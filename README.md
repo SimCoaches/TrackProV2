@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.204](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.204) rebuilds Force Feedback around a simple page with an automatic setup check (rotation, force direction, clipping) and car-first effects: shifts are a small knock that cannot pull the wheel, ABS pumps the steering weight, and effects grey out in games that cannot drive them. Haptics outputs recover on their own and name who holds them, and Community gains a support channel. Everything in 2.26.203 is included; supervised testing only.
+
 Beta [2.26.203](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.203) stops TrackPro from disturbing SimHub or FlyPT VR motion compensation while TrackPro motion is off, lets custom games drive the motion platform (Generic Motion Telemetry v1 over UDP), and moves corner calls to iRacing's official turn numbers with Blip's ElevenLabs voices on Eleven v4 (AI Coach v0.245). Custom Spotter voices now come as three distinct takes. Everything in 2.26.202 is included; supervised testing only.
 
 Beta [2.26.202](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.202) keeps League Night results from going missing: result saves retry until they land (even across a restart), a grid-time session no longer records your grid slot, and the server now places drivers whose result never arrived. Google profile pictures load again, and FFB Lab brings lost force back in under a second. Everything in 2.26.201 is included; supervised testing only.
