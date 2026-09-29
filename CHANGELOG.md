@@ -1,5 +1,36 @@
 # Changelog
 
+## TrackPro V2 2.26.203 - 2026-09-29 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.202 is included. AI Coach v0.245. Custom motion games are new; test them on an empty rig at low master gain first.
+
+VR motion compensation
+- TrackPro no longer touches VR motion-compensation data unless TrackPro motion is moving your rig. With SimHub or FlyPT driving the platform, OpenXR Motion Compensation no longer jumps. Before, TrackPro wrote a level rig position into the same shared memory even with its motion off.
+- With TrackPro motion on, compensation works as before.
+
+AI Coach v0.245
+- Corner calls use iRacing's official turn numbers only. Numbers come from iRacing's own track maps, placed on the line drivers actually take. A layout whose map can't be verified stays silent rather than guess a number.
+- Blip's ElevenLabs voices (the shared voice catalog and every Spotter Market voice) run on ElevenLabs' newest speech model, Eleven v4 Turbo, and fall back to the previous model automatically. The server side is already live for every version; this build keeps Blip's saved lines matched to the model in use and remembers it across restarts.
+
+Spotter
+- Corner calls use iRacing's official turn numbers, the same as Blip.
+- Custom voices, already live on the server for every version: the three samples are three genuinely different takes on your description (voice range, texture and attitude), made with ElevenLabs' newer voice designer. Voices no longer have a radio filter baked in (TrackPro adds the radio sound). Accents you ask for stay strong, and you can name your voice whatever you like.
+- In this build, the voice studio pre-selects the pace and energy that suit your voice's personality. You can still change them.
+
+Custom motion games
+- A game built to TrackPro's motion integration guide (Generic Motion Telemetry v1) can now drive the motion platform. It sends UDP to port 5101 on the same PC.
+- TrackPro recognizes the game by its packets, hands the rig to iRacing or a flight sim the moment one starts, and parks the rig when the game pauses or stops. The game never reaches lap capture, Blip or the Spotter.
+- The Motion page's engineering panel adds Custom motion games settings: joystick cue strength, joystick ramp and rotation onset.
+
+Before acceptance:
+- SimHub (or FlyPT) motion with OpenXR Motion Compensation, TrackPro running with its motion off: the headset view stays still with no jump every second.
+- TrackPro motion with OpenXR Motion Compensation: compensation still follows the rig while TrackPro motion is enabled.
+- Custom motion game on an empty rig at low master gain, using the bench sender (scripts/send-trackpro-motion.py circle, thrust, joystick): the rig leans the right way, the joystick moves it only while its cue is on, and it parks when the sender stops.
+- Blip in an ElevenLabs voice for a session: every reply in the chosen voice, no gaps.
+- Spotter and Blip at Road Atlanta and VIR: corner numbers match iRacing's.
+- Voice studio: design "grumpy old spotter"; the three samples are clearly different voices.
+- Update from 2.26.202 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.202 - 2026-09-27 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.201 is included. AI Coach is unchanged (v0.244). FFB Lab changes are new; keep FFB testing supervised.
