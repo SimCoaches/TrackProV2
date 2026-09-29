@@ -1,5 +1,44 @@
 # Changelog
 
+## TrackPro V2 2.26.204 - 2026-09-29 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.203 is included. AI Coach v0.245 (unchanged). Force Feedback is still staff-only and drives a real wheel: hands off the rim when you press Start, and start at a low Force limit.
+
+Force Feedback page
+- Rebuilt around what a driver sets: wheelbase, rotation, Force limit, Steering weight and a Feel. Steering weight now reads Lighter to Heavier.
+- Setup check replaces manual calibration and the test pulses. Five rows turn green on their own as you drive: wheelbase found, the game's own force feedback off, rotation matching the game, force direction, and clipping. The force-direction row is new: TrackPro proves in grip corners that the wheel is pulled back to centre, and a backwards wheel gets a one-tap Flip. Rotation and clipping also get one-tap fixes.
+- Balanced GT is the default feel for a fresh install (it was Pure physics). Saved settings are kept.
+- Advanced holds only driver settings: Detail, Minimum force, Invert, and a live force bar while driving.
+- The page says Connecting, not "not responding", while the engine starts, and keeps looking for a wheelbase that is plugged in later.
+- A plain dial replaces the drawn wheel when TrackPro cannot identify your rim.
+
+Force feedback effects
+- Effects grey out, with the reason, in games that cannot drive them. The page follows the live game, or the game you pick. iRacing: no front lockup or traction control (it publishes no wheel speeds or TC activity). rFactor 2 and Le Mans Ultimate: no ABS or TC. F1: no suspension bumps. BeamNG: no slip, bumps, limiter or lockup. Assetto Corsa and ACC drive all eight.
+- Newly working: front lockup in rFactor 2, Le Mans Ultimate and F1, and traction control in F1 (F1 23 and later). BeamNG's rev limiter no longer fires against a guessed redline. Le Mans Ultimate was never greyed before.
+- Car first: effects are sized against the car's own steering force, so they stay in proportion to it at any Steering weight and on any wheelbase, with a hard ceiling each.
+- Shift: a small knock through the rim on each gear change that cannot pull the wheel either way (it could reach a third of full force before).
+- ABS: the steering weight pumps as front grip comes and goes, as in a real car. It only ever takes force away.
+- Each effect has its own rhythm: slip is a pulsing judder that slows as the slide grows, TC a fast stutter, lockup a gritty scrub, limiter a coarse cut-and-catch under power, engine a faint hum that steps back when anything else speaks.
+- Fixed: effects squashed against the force limit in loaded corners went one-sided and lightened the steering; one braking zone fired ABS, lockup and slip together; body roll on turn-in pushed the wheel as a "bump"; H-pattern shifts through neutral never knocked.
+
+Haptics (bass shakers)
+- Outputs follow amplifiers Windows renumbers, say which program holds an output (SimHub, Voicemeeter), retry every 2 seconds, and recover streams that stop.
+- Dedicated mode remembers the period each output held; dropouts are counted and named by cause.
+- Feel: calibrated loudness, no effects during garage animations, kerbs by strike only, shift dynamics; F1 ABS read from the wheels; iRacing straight-line lockup; slip and lockup calibrated at the kit preset volumes; the Dayton kits' 60 Hz engine ceiling shown on the page.
+
+Community and Setup Shop
+- Community has a support channel with a handoff to AI support, and unread counts on text channels.
+- Setup Shop: compact header, live session card, and a searchable AI setup list that stays in view.
+
+Before acceptance:
+- FFB in iRacing (sim FFB off): all five Setup check rows go green within a few laps; tick Invert and the check flags it and Flip fixes it; a heavy car shows the clipping fix.
+- FFB shifts at full Force limit on a direct-drive base: a small knock, never a yank. Sequential and H-pattern.
+- FFB braking: ABS makes the steering weight pump; a lockup (AC or ACC) scrubs; no triple buzz in one stop.
+- FFB each effect's Test, eyes closed: every one recognisable.
+- FFB in Assetto Corsa: check whether kerbs feel doubled (AC's own kerb and road enhancement may already be in the force TrackPro reads).
+- Haptics: pick an output, restart TrackPro, the same output plays; unplug and replug the amp, it recovers within seconds.
+- Update from 2.26.203 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.203 - 2026-09-29 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.202 is included. AI Coach v0.245. Custom motion games are new; test them on an empty rig at low master gain first.
