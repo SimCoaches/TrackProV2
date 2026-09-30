@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.206 - 2026-09-30 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.205 is included. AI Coach v0.246.
+
+Phone control
+- Motion tests started from the paired phone run at 25% speed. The axis test covers the same travel at a quarter of the frequency (8 s instead of 2 s), the corner actuator test ramps over 8 s instead of 2 s, and the full travel check moves at a quarter of its normal top speed. The PC enforces this: a phone cannot ask for a faster test.
+- The full travel check can be started from the phone. The PC sends the complete motion configuration first, exactly like the Motion page, never leaves motion enabled, and runs only from Stopped (never after an E-STOP).
+- If the phone disconnects within 30 s of starting a test or enabling motion, the PC stops motion.
+- The phone asks the PC what it supports and keeps motion tests locked on older TrackPro versions that cannot slow them down.
+- Desktop test buttons are unchanged.
+
 ## TrackPro V2 2.26.205 - 2026-09-30 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.204 is included. AI Coach v0.246.
