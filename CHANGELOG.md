@@ -1,5 +1,59 @@
 # Changelog
 
+## TrackPro V2 2.26.205 - 2026-09-30 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.204 is included. AI Coach v0.246.
+
+Motion
+- Lower latency on every profile. Measured stage by stage (docs/motion-latency-ledger-2026-09-30.md): on Omega Comfort the seat starts moving 20 ms after the car's G changes on a brake stab (was 69 ms), 21 ms on throttle (was 100) and 32 ms on turn-in (was 103), and reaches half the cue 93 / 33 / 40 ms after the car (was 281 / 217 / 239). Jitter on noisy telemetry is no worse.
+  - The body cue takes each iRacing telemetry batch the moment it lands instead of 13.9 ms later.
+  - The G smoothing opens up during a real brake stab or turn-in and stays calm on a straight.
+  - The planner answers real cues fast and keeps small moves smooth.
+  - Omega Comfort and Omega Full: planner limits sized to the Omega actuator (250 mm/s, 5000 mm/s², 400 000 mm/s³) and driver-input anticipation on (80 ms: steering, brake and throttle start the cue before the car's G does, once a few laps have taught it the car). Saved factory profiles upgrade on their own; a driver's own changes are kept.
+  - Drivers' own tunes and non-Omega rigs get the engine fixes and keep their own planner limits.
+  - Returning to center when telemetry stops or motion parks keeps its gentle limits.
+  - Engineering panel: new Cue response setting; the jerk limit goes up to 500 000 mm/s³.
+- Lebois SRT80 control box support (firmware 1.8+): setup kit and channel test. Rises gently after Enable, lowers on stop without blocking E-STOP, freezes in place on E-STOP.
+- Phone control: the paired phone can change every motion and pedal-haptics setting and enable motion with the same safeguards as the Motion page.
+- Flight: MSFS motion no longer parks on the G FORCE check; why motion stopped stays on screen during a flight.
+
+Handbrake
+- In-app firmware updater for the Arduino handbrake, with P1 Pro auto-detect and a factory flasher.
+- The handbrake firmware uses its own USB ID and is hidden from games together with the pedals.
+
+Getting started
+- New PCs drive first and sign up after: laps driven as a guest are saved, and the keep-your-laps ask comes after the session. The free trial ask shows more often.
+- Signup is Blip: live Blip and the logo replace the old coach art, and the setup step sets up Blip.
+- A second PC keeps your recording choice, headset and wheel talk button. Signing up with an email that already has an account signs you in.
+- Finished accounts are no longer sent back through setup on another PC.
+
+AI Coach v0.246
+- Try Blip free: drivers who've never had the coach can put Blip on the radio for one free session (up to 10 minutes of talk) from the Blip page.
+- AI Coach allowances doubled on every plan. Free trial minutes no longer use up a new paid plan's coach time.
+- Out of talk time, the coach always says so: the line waits for a busy radio, plays to its end (no 15 s cut), no longer goes silent late in a long session, comes in every coach language, and after a plan ends comes from the shared clip library.
+- Talk-time heads-ups wait for a busy radio instead of being lost, and say the minutes left when they finally play.
+- Starting the coach while offline shows the real network error. A capped driver hears the upgrade offer for their actual plan (Pro 20x gets none). A plan that lapses mid-session says the plan has ended and the status reads Paid Plan Required.
+- Accented iRacing track and driver names (Nürburgring, Autódromo, León) are spoken and shown correctly, and each track keeps its history.
+- Coach speed: guided action words ("Brake now.") and queued coach lines start on time even when the PC is busy.
+- Guided lap no longer skips corner cues when a clean lap lands before the line.
+- Coach and Spotter clips no longer pile up in memory over a long session: each player keeps at most 3 minutes of decoded speech; traffic and hazard calls stay preloaded.
+
+Haptics
+- No phantom shift clunk after E-Stop, a skipped frame, an effect switched back on, or haptics resuming.
+
+Membership
+- Complimentary memberships expire on time.
+
+Before acceptance:
+- Motion, Omega Comfort on the rig: the five-part feel test (quiet baseline, pure roll on a slalom, pure pitch on the pedals, kerb heave mid-corner, grass chatter). Listen for clunks on hard brake stabs. Run Motion setup > Response test and keep the saved file.
+- SRT80 on a real rig (not yet run on hardware).
+- Handbrake: update the firmware in the app; the handbrake still works in iRacing afterwards and isn't seen twice.
+- New PC: drive as a guest, then sign up; the guest laps are kept.
+- Try Blip free: on an account that never had the coach, start the free session from the Blip page; it ends at 10 minutes and can't be claimed twice on the same account or PC.
+- Coach: offline Start; a Pro 20x driver at the cap; a plan expiring mid-session; a long session with the Spotter off run to the cap; a non-English coach at the cap; an accented iRacing track; a 1 h+ session with memory flat and traffic calls instant.
+- Haptics: no clunk after E-Stop and resume.
+- Update from 2.26.204 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.204 - 2026-09-29 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.203 is included. AI Coach v0.245 (unchanged). Force Feedback is still staff-only and drives a real wheel: hands off the rim when you press Start, and start at a low Force limit.
