@@ -28,7 +28,6 @@ Getting started
 - Finished accounts are no longer sent back through setup on another PC.
 
 AI Coach v0.246
-- Try Blip free: drivers who've never had the coach can put Blip on the radio for one free session (up to 10 minutes of talk) from the Blip page.
 - AI Coach allowances doubled on every plan. Free trial minutes no longer use up a new paid plan's coach time.
 - Out of talk time, the coach always says so: the line waits for a busy radio, plays to its end (no 15 s cut), no longer goes silent late in a long session, comes in every coach language, and after a plan ends comes from the shared clip library.
 - Talk-time heads-ups wait for a busy radio instead of being lost, and say the minutes left when they finally play.
@@ -49,7 +48,6 @@ Before acceptance:
 - SRT80 on a real rig (not yet run on hardware).
 - Handbrake: update the firmware in the app; the handbrake still works in iRacing afterwards and isn't seen twice.
 - New PC: drive as a guest, then sign up; the guest laps are kept.
-- Try Blip free: on an account that never had the coach, start the free session from the Blip page; it ends at 10 minutes and can't be claimed twice on the same account or PC.
 - Coach: offline Start; a Pro 20x driver at the cap; a plan expiring mid-session; a long session with the Spotter off run to the cap; a non-English coach at the cap; an accented iRacing track; a 1 h+ session with memory flat and traffic calls instant.
 - Haptics: no clunk after E-Stop and resume.
 - Update from 2.26.204 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
