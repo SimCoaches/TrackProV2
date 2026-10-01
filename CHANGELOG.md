@@ -1,5 +1,24 @@
 # Changelog
 
+## TrackPro V2 2.26.209 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.208 is included. AI Coach v0.247.
+
+Motion
+- Banking wins: on a banked turn the held cornering lean used to pull the rig the other way and cancel most of the bank. It now gives way by how steep the bank is, so the rig leans into the banking and holds it. Daytona at 100% overall strength: about 41 mm per side into the banking (it was about 16). The quick push to the outside at turn-in stays. Off-camber corners keep both, so they feel like they throw you out.
+- Crests and compressions: over a crest the seat drops as the car goes light; at the bottom of a dip or a compression (Eau Rouge) it lifts as the car goes heavy. These ride on the elevation travel, not the bump travel.
+- Tracks are mapped and anticipated: TrackPro records each track's hills, banking and height along the lap as you drive, and keeps them. After one clean lap it reads the track a moment ahead, so crests, banks and hills arrive on time instead of after the telemetry and actuator delay.
+- Track feel (new card on the Motion page): the lap's climbs and drops, where the banking is, where you are on it, the steepest hill and the biggest bank.
+- Ride along: replay your last clean lap on the rig without the game, looping, to judge and tune hills, banking and crests from the seat. Motion must be on; Stop, E-stop, turning motion off or driving again ends it, and the rig parks.
+- Banking check: on steep banking TrackPro confirms the sim reports the bank the right way round, and corrects it for the session if not.
+
+Before acceptance:
+- Motion, Omega: Daytona. The rig leans clearly into the banking through each turn, inside down. If it leans to the outside, check the Track feel card (it should say it corrected the banking) and send logs.
+- A hilly road course (Spa, Laguna Seca): first lap maps it (the card shows progress); from the second lap crests drop the seat and compressions lift it, on time. Eau Rouge and the Corkscrew.
+- Ride along: drive one clean lap, stop in the pits or exit, press Ride along with motion on. Try Stop, E-stop, and driving again: each ends it and the rig parks.
+- Kerbs, braking and cornering still read clearly on flat road courses.
+- Update from 2.26.208 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.208 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.207 is included. AI Coach v0.247.
