@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.210 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.209 is included. AI Coach v0.247.
+
+Motion
+- Chassis stiffness: four actuators can twist the frame diagonally, which no car chassis does. TrackPro now removes that twist, so every movement reaches the seat as heave, pitch and roll, like a car. A kerb under one wheel still hits hardest at that corner (three quarters of it), and the rest of the hit comes through as the body moving. New slider next to the corner mixer (Advanced), 100% by default.
+- The suspension travel limit added in 2.26.208 now holds all four corners together, so it can no longer twist the frame.
+- Motion monitor (new card on the Motion page): live, what each corner is sent in mm, split into cueing (braking, cornering, bumps), elevation, suspension and haptics, plus heave, pitch, roll and warp (twist). Each lap the log gets the RMS of each, including warp.
+- Corner LEDs work with Pro Micro, Leonardo and Micro boards (ATmega32u4), including stock SimHub firmware: TrackPro keeps the board's DTR line up through the baud change it was dropping.
+
+Before acceptance:
+- Motion, Omega: kerbs on one wheel and on both sides. The rig moves as one body (no diagonal twist), the kerb side still reads, and the Motion monitor shows warp near 0 mm.
+- Corner LEDs with a Pro Micro on stock SimHub firmware: connects, all four modes, E-stop flashes red.
+- Motion monitor: numbers move with the car; the log line appears each lap.
+- Update from 2.26.209 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.209 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.208 is included. AI Coach v0.247.
