@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.211](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.211) makes overlays fit at any display scale with a 50-200% size slider and free placement, makes the FFB overlay's buttons work, fixes the haptics Lo/Hi frequency sliders, and has the AI Coach describe positions from the apex instead of lap distances (AI Coach v0.248). Everything in 2.26.210 is included; supervised testing only.
+
 Beta [2.26.210](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.210) makes the rig move as one rigid body with no diagonal frame twist, adds a live motion monitor on the Motion page, and makes corner LEDs work with Pro Micro boards (AI Coach v0.247). Everything in 2.26.209 is included; supervised testing only.
 
 Beta [2.26.209](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.209) makes the rig lean into banking instead of cancelling it, drops the seat over crests and lifts it in compressions, maps each track's hills and banking and plays them a moment early, adds a Track feel card on the Motion page, and lets you ride along your last lap on the rig (AI Coach v0.247). Everything in 2.26.208 is included; supervised testing only.
