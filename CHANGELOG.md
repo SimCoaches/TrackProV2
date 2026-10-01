@@ -1,5 +1,31 @@
 # Changelog
 
+## TrackPro V2 2.26.208 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.207 is included. AI Coach v0.247.
+
+Motion haptics (actuators)
+- Kerb rumble hits hard on the side that's on the kerb. iRacing's kerb pitch (often 40-120 Hz at speed) was played on the actuators at up to 45 Hz, where their top speed allowed only 2-4 mm of movement and a loaded rig barely follows. The actuators now play each kerb as 10-18 Hz bumps (still faster at higher speed) at 85% of the haptics travel, under the full-strength thunk: more than 6 mm peak to peak on the struck side, nothing on the other side. The shakers keep the real kerb pitch.
+- Haptics travel goes up to 5 mm. The rest of the stroke belongs to elevation and suspension.
+
+Motion
+- Travel split: every movement is elevation, suspension or haptics, and each has its own share of the stroke. Advanced > Travel:
+  - Elevation (the track's shape: banking, climbing and dropping down hills, crests): by default all the stroke the safety zone leaves after suspension (85 mm on a 150 mm Omega).
+  - Suspension (the car's own movement: braking, throttle, cornering lean, kerbs launching the car, bumps): 50 mm.
+  - Haptics: set under Actuator haptics, up to 5 mm.
+  Overall strength scales elevation and suspension together.
+- Banking and hills are calibrated per track. TrackPro learns each track's biggest sustained bank and hill as you drive and sizes that track to the elevation travel, so Daytona's banking and a big climb both use the stroke, and each track's slopes keep their true proportions. The first lap on a new track learns as it goes; the track is remembered after that.
+- Banking no longer cancels out: before, the track's slope, cornering lean and braking shared one angle limit, so on a banked turn the cornering lean cancelled the bank and the rig sat nearly level.
+- Track elevation (Advanced) now sets how far each track's biggest hill or bank reaches into the elevation travel: 1.5 (Omega) uses all of it.
+- VR compensation includes the elevation movement.
+
+Before acceptance:
+- Motion, Omega: Daytona (or any banked oval). The rig leans clearly into the banking and holds it through the turn.
+- Motion: a hilly road course (Spa, Laguna Seca, Road America). You feel the climbs and the drops; the first lap learns, the second lap is the full size.
+- Motion: braking, throttle and cornering still read clearly with suspension at 50 mm. Try 40-70 mm under Advanced > Travel.
+- Kerbs on both sides: the kerb side's actuators rumble hard, the other side stays still. No clunks at 5 mm.
+- Update from 2.26.207 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.207 - 2026-09-30 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.206 is included. AI Coach v0.247.
