@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.207](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.207) gives kerbs a hard thunk on the side and tyre that hit them, lets actuator haptics play at full strength again, puts track elevation ahead of suspension in the Omega motion tune, drives the rig's corner LEDs without SimHub, lifts shaker kerbs above the engine, and lets Blip run without a microphone (AI Coach v0.247). Everything in 2.26.206 is included; supervised testing only.
+
 Beta [2.26.206](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.206) runs motion tests started from the paired phone at 25% speed (enforced by the PC) and adds the full travel check to the phone, which runs only from Stopped and never leaves motion enabled. Everything in 2.26.205 is included; supervised testing only.
 
 Beta [2.26.205](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.205) starts motion cues up to 3x sooner on every profile (the seat moves about 20 ms after the car's G on a brake stab), adds the Lebois SRT80 control box, an in-app handbrake firmware updater and phone control of every motion setting, lets new PCs drive first and sign up after, and brings AI Coach v0.246: doubled allowances, out-of-talk-time lines in every coach language, and guided "Brake now." calls on time under load. Everything in 2.26.204 is included; supervised testing only.
