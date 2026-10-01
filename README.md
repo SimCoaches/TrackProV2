@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.208](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.208) makes kerb rumble hit hard on the actuators on the side that is on the kerb, gives elevation, suspension and haptics their own share of the stroke, and learns each track's banking and hills so Daytona's banking and big climbs use the travel (AI Coach v0.247). Everything in 2.26.207 is included; supervised testing only.
+
 Beta [2.26.207](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.207) gives kerbs a hard thunk on the side and tyre that hit them, lets actuator haptics play at full strength again, puts track elevation ahead of suspension in the Omega motion tune, drives the rig's corner LEDs without SimHub, lifts shaker kerbs above the engine, and lets Blip run without a microphone (AI Coach v0.247). Everything in 2.26.206 is included; supervised testing only.
 
 Beta [2.26.206](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.206) runs motion tests started from the paired phone at 25% speed (enforced by the PC) and adds the full travel check to the phone, which runs only from Stopped and never leaves motion enabled. Everything in 2.26.205 is included; supervised testing only.
