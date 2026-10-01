@@ -1,5 +1,29 @@
 # Changelog
 
+## TrackPro V2 2.26.212 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.211 is included. AI Coach v0.248.
+
+Corner LEDs: Race mode
+A new mode under Motion > Corner LEDs drives the four corner strips like a race LED profile. The layers run top to bottom and the first cue that is on wins each corner, so flags beat the pit lane, which beats cars alongside, which beats the car's own cues.
+- Flags (all four corners): red (blink), disqualified (fast red/black), black (red/black), meatball (orange chase), checkered (white chase), start lights ready/set/go (red, amber, green), white, one lap to green (green pulse), full-course caution (yellow blink), local yellow (solid), debris (slow yellow chase), furled yellow (pulse), blue (blink), green. Five to go, ten to go and halfway pulse white on the fronts.
+- Pit lane: over the pit speed limit blinks red everywhere; the limiter runs a blue chase; the pit lane itself shows dim blue.
+- Cars alongside: car left or right pulses amber on that side; two cars on a side pulse faster; cars on both sides pulse red everywhere.
+- The car: reverse lights the rears white; ABS working blinks the rears white/red; TC working blinks them amber; low fuel (under 10%) pulses the rear-left amber; shift point blinks the fronts red; DRS open shows green on the fronts, DRS available pulses green on the rears; an RPM bar fills the fronts outward from the centre line between the car's own shift-light points; brake (red) and throttle (green) by pedal pressure on the rears.
+- A green, white, start-go or halfway cue stays lit 3 seconds after the sim drops it.
+- Test: every layer has a Test button that lights it on the real strips for 3 seconds, to judge the colours by eye.
+- Out of a session the strips show the dim static colour. E-stop still flashes red in every mode.
+- The profile is saved with the LED settings and can be edited by hand (%APPDATA%\TrackPro\motion_leds.json, "profile"); the built-in one is used until you do.
+
+Diagnostics
+- The "Telemetry source: Native 360 Hz" tile showed red on healthy rigs. The motion loop takes each 60 Hz batch the moment it lands and skips what is left of the old one on purpose, which keeps latency low, but the tile failed on any skipped sub-sample ever. It now judges a skip rate (normal up to 36 a second, fail above 120) and says what it expects.
+
+Before acceptance:
+- Motion > Corner LEDs > Race, in an iRacing race: the start lights, a yellow, a full-course caution, a blue, the white and the checkered each show on all four corners in their colour; a car alongside pulses amber on that side only; the pit limiter runs its blue chase and going over the pit limit blinks red; braking lights the rears red and throttle green; the rev bar fills the fronts from the centre line outward and blinks red past the shift point.
+- Press Test on each layer and check its colour on the strips.
+- Leave the session: the strips drop to the dim static colour.
+- Update from 2.26.211 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.211 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.210 is included. AI Coach v0.248.
