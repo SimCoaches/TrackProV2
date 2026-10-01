@@ -1,5 +1,34 @@
 # Changelog
 
+## TrackPro V2 2.26.207 - 2026-09-30 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.206 is included. AI Coach v0.247.
+
+Motion haptics (actuators)
+- Kerbs thunk: the moment a tyre touches a kerb, that corner kicks up in one short, hard hit, and the same-side corner follows at half, so you feel which side and whether it was the front or rear tyre. One thunk per kerb; the rumble follows.
+- Kerb rumble stays on the tyres actually on the kerb (iRacing reports it per tyre) instead of buzzing all four corners.
+- Full strength: actuator haptics now follow their own Master and Travel budget only. Since early September they were also scaled by overall motion strength, so Omega Full delivered 65% and Omega Comfort 45% of what the haptics settings asked for. Overall strength at 0 still silences them.
+- Omega kerb gain 1.0 (was 0.75). Suspension impact stays at 1.0.
+
+Motion
+- Elevation first: hills, crests and banking get the travel; suspension and bump heave give it up. Omega factory tune: Track elevation 1.5 (new slider in Advanced), bump release 0.4 Hz so crests and dips are held, Bumps & kerbs 1.0 (was 1.5), corner mixer suspension 0.10 (was 0.25). Saved Omega factory profiles upgrade on their own; a profile you changed keeps your values (Restore factory settings applies the new ones).
+- Corner LEDs: TrackPro drives the LED strip on the rig's corners (a SimHub Arduino), so SimHub isn't needed for them. Motion setup > Corner LEDs: pick the Arduino's port, then press Show to map each part of the strip to its corner. Motion page > Corner LEDs: Status, Movement (each corner follows its actuator), Game (rev lights and flags) or Static, plus brightness and colour. E-stop always flashes them red. Close SimHub, or turn off its Arduino connection, first: only one program can use the port.
+- The response test times braking and cornering cues with the profile's cue response, the way they arrive while driving.
+
+Haptics (bass shakers)
+- Kerbs stand out again: while the kerb rumble plays, engine vibration eases to half and comes back slowly after the kerb. Road texture is unchanged. Since 2.26.204 only the kerb's first strike ducked the engine, so the rest of the kerb played under a constant engine buzz.
+
+AI Coach v0.247
+- Blip works without a microphone: he still calls corners and laps on the radio, and picks up your mic the moment you plug it in.
+
+Before acceptance:
+- Motion, Omega on the rig: kerbs on both sides at Laguna Seca or Spa. Each kerb gives one clear thunk on the right side, front then rear, then rumble. No clunks at 4.5 mm.
+- Motion: a hilly track. Crests, dips and banking read clearly; suspension and bumps no longer fill the stroke. Try Track elevation 1.0 to 2.0.
+- Corner LEDs: with SimHub closed, pick the port, map the four parts with Show, try each mode, press E-stop once.
+- Shakers: kerbs stand clearly above the engine, and the engine comes back smoothly after each kerb.
+- Blip: start with the headset mic unplugged (or blocked in Windows), then plug it in mid-session.
+- Update from 2.26.206 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.206 - 2026-09-30 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.205 is included. AI Coach v0.246.
