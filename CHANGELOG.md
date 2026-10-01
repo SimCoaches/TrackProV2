@@ -1,5 +1,32 @@
 # Changelog
 
+## TrackPro V2 2.26.211 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.210 is included. AI Coach v0.248.
+
+Overlays
+- Overlays no longer get cut off. With Windows display scaling above 100% every overlay window came out too small for its content (80% of it at 125%, 67% at 150%), so text was clipped on the right and bottom whatever the size or position. Windows now size to their content at any display scale, and re-fit when dragged to a monitor with different scaling.
+- Size is a slider from 50% to 200% instead of three sizes (your Small/Medium/Large become 75/100/150%).
+- Drag any overlay anywhere with Alt+O, right up to the screen edge. Positions are kept per monitor, so an overlay on a second screen comes back there. The position presets stay as shortcuts.
+- FFB overlay: the power button and the - / + strength buttons work. Overlays are click-through while locked, so every click on them went to the sim; the FFB overlay now takes clicks in its own small window without ever taking focus from the sim. Its strength range matches FFB Lab (6-60 Nm).
+
+Haptics
+- Pedal (Simagic Reactor) and shaker frequency sliders: Lo and Hi move on their own, can meet for a single frequency (one tone for ABS, for example), and never get stuck at an end. Before, moving one moved the other and a slider could lock solid. A bad frequency value can no longer stop the pedal haptics.
+
+AI Coach v0.248
+- Lap comparisons describe positions the way a driver thinks: from the corner's apex and against what you do now ("the reference is at full throttle 20 m earlier than you"), never as a distance into the lap like "5889m". Small brake gaps (under 10 m) are no longer offered as advice, and a mixed-up comparison that could tell you the reference brakes later when it brakes earlier is fixed.
+
+Motion
+- Corner LEDs: when an LED board doesn't answer, the message now shows exactly what the board sent back, to pin down boards that still won't connect.
+
+Before acceptance:
+- Overlays on a 125% or 150% display: Session Focus and Race Engineer show fully at 50%, 100% and 200%. Drag one with Alt+O, restart TrackPro: it comes back in the same spot, on the same monitor.
+- FFB overlay in iRacing: - and + change the wheel's weight, power stops and starts it, and clicking it doesn't take control away from iRacing.
+- Haptics: set ABS Lo and Hi to the same frequency; ABS fires at that one tone. Drag sliders to both ends; nothing sticks.
+- Telemetry page lap comparison: no lap-distance positions; advice reads from the apex and against your own lap.
+- Corner LEDs: if it still doesn't connect, send the message (it now includes what the board replied).
+- Update from 2.26.210 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.210 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.209 is included. AI Coach v0.247.
