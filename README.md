@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.181.
 
+Beta [2.26.215](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.215) keeps the Lebois SRT80 a beta-channel option until it has run on a rig, no longer takes a Thanos or SRT80 controller at launch (press Enable), and is the candidate for the next stable release (AI Coach v0.249). Everything in 2.26.214 is included.
+
 Beta [2.26.214](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.214) has the AI Coach call the corner you are working on live in practice ("Brake now.", "Turn in.", "Keep turning.", "Unwind.", "Accelerate."), speak in short instant clips, and treat suggestions per lap as a real count; it also supports Lebois SRT80 control boxes on firmware 2.1 (AI Coach v0.249). Everything in 2.26.213 is included.
 
 Beta [2.26.213](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.213) makes TrackPro stop and latch motion the moment the rig's physical E-stop is pressed, read from the Sim Coaches Control Center display (its updated firmware required) (AI Coach v0.248). Everything in 2.26.212 is included; supervised testing only.
