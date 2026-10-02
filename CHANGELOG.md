@@ -1,5 +1,23 @@
 # Changelog
 
+## TrackPro V2 2.26.213 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.212 is included. AI Coach v0.248.
+
+Motion
+- The rig's physical E-stop reaches TrackPro. The Sim Coaches Control Center display (the touchscreen E-stop display) senses the Motion Kit and Simucube E-stops and now reports both to the PC over its Bluetooth gamepad link. TrackPro reads it: the moment the Motion Kit E-stop is pressed, motion goes to E-STOP and latches, the corner LEDs flash red, the Motion page shows a red "E-stop pressed on the rig" banner, and Enable is refused until the button is released. Releasing the button never restarts motion by itself: press Enable, as with the on-screen E-STOP.
+- The Motion page shows whether an E-stop display is reporting ("Rig E-stop: ready") or not paired.
+- This needs the display's updated firmware (SimCoaches/estop, "Report both E-Stop states to the PC"), flashed to the display, and the display re-paired with the PC afterwards so Windows reads its new report layout. Until then TrackPro shows "Rig E-stop: not reported".
+
+Why this way: the Thanos4U controller never reports its E-stop over USB (its manual has no status output) and keeps accepting position data while stopped, and the SRT80 control box only shows its servo enable, so neither controller can tell TrackPro anything. The display is wired to the button and already talks to the PC.
+
+Before acceptance:
+- Flash the display firmware, remove and re-add the "Sim Coaches Control Center" Bluetooth pairing, open TrackPro: the Motion page says "Rig E-stop: ready".
+- With motion running, press the rig's E-stop: the rig stops, the LEDs flash red, the banner appears, Enable is refused with "Release it, then press Enable".
+- Release the button: the banner clears, nothing moves; press Enable: motion resumes normally.
+- Unplug or power off the display: the line changes to "not reported" within 10 s; nothing moves.
+- Update from 2.26.212 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.212 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.211 is included. AI Coach v0.248.
