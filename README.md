@@ -8,9 +8,9 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest stable release: TrackPro V2 2.26.181.
+Latest stable release: TrackPro V2 2.26.216.
 
-Beta [2.26.216](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.216) makes the Motion page say that Stop has released the controller (other software can use it), and is the candidate for the next stable release (AI Coach v0.249). Everything in 2.26.215 is included.
+Earlier beta builds, all included in 2.26.216 (their notes describe each build as it was tested):
 
 Beta [2.26.215](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.215) keeps the Lebois SRT80 a beta-channel option until it has run on a rig, no longer takes a Thanos or SRT80 controller at launch (press Enable), and is the candidate for the next stable release (AI Coach v0.249). Everything in 2.26.214 is included.
 
@@ -53,6 +53,14 @@ Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189)
 Validation candidate [2.26.188](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.188) contains further motion persistence and controller-protocol corrections. **Supervised testing only; not approved for customer delivery.**
 
 Beta [2.26.187](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.187) is on **validation hold - do not use for customer delivery**. Reliability fixes and physical Thanos4U acceptance are pending.
+
+### What's New in 2.26.216
+
+- Blip, your AI Coach: calls the corner you are working on live in practice ("Brake now.", "Turn in.", "Keep turning.", "Unwind.", "Accelerate."), speaks in short instant clips, coaches as many corners per lap as you set, stays quiet in qualifying and is your race engineer in a race.
+- Motion: cues start sooner, kerbs and elevation felt separately, a Motion setup page with a response test, the rig's physical E-stop read by TrackPro, and a Thanos controller left alone until you press Enable (Stop releases it for SimHub).
+- Force Feedback page rebuilt, haptics mixer and feel, corner LEDs with a Race mode, Spotter page and voice market, handbrake firmware updater, phone companion.
+- Lebois SRT80 support is on the beta channel only until it has been run on a rig.
+- See the [changelog](CHANGELOG.md) for all changes since 2.26.181.
 
 ### What's New in 2.26.181
 
