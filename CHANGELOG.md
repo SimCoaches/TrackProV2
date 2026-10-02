@@ -1,5 +1,24 @@
 # Changelog
 
+## TrackPro V2 2.26.216 - 2026-10-02 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.215 is included. AI Coach v0.249.
+
+Motion
+- Stop releases the controller, and now says so. Pressing Stop has always parked the rig and then closed the controller's port, but the Motion page kept showing "Rig connected" and a Disconnect button, so it looked as if TrackPro was still holding the controller. After Stop the page now shows the rig as not connected, with: "Motion stopped. The controller is released, so other software can use it. Press Enable to use it here again." SimHub and other software can open the controller as soon as that appears (a few seconds after Stop, once the rig has parked).
+- Correction to the 2.26.215 notes, which said TrackPro keeps the port until Disconnect: it does not. Stop and Disconnect both release it. E-STOP keeps the connection, because the rig is being held and motion resumes from there.
+- If an SRT80 cannot be lowered in time on Stop, TrackPro says the rig is still held up instead of saying the controller is free.
+
+This build is the candidate for the next stable release: the same installer is promoted if it passes.
+
+Before acceptance:
+- Thanos rig: Enable, drive, press Stop. The rig parks, then the Motion page shows "Rig not connected" and the released message. SimHub can open the controller without closing TrackPro. Press Enable in TrackPro (with SimHub's connection closed): motion works with the same settings.
+- Press E-STOP while running: the Motion page still shows the rig connected; Enable resumes.
+- Beta channel off: Motion setup and Settings list no Lebois SRT80. Beta channel on: both list it.
+- Thanos rig: enable motion, close TrackPro, open it again. Motion is not armed and SimHub can open the controller's port.
+- Practice, three or more flying laps so the coach picks a corner: the short cue before it, "Brake now." early enough to act on, the other calls through the corner, the short verdict just past the exit.
+- Update from 2.26.215 (and from stable 2.26.181) with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.215 - 2026-10-02 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.214 is included. AI Coach v0.249.
@@ -7,7 +26,7 @@ BETA: for supervised testing. Automatic updates stay on the existing stable rele
 Motion
 - The Lebois SRT80 is offered as a motion kit and controller on the beta channel only. Its driver has not run on a real rig yet, so an install that is not on the beta channel does not show it. A rig that is already set up on the SRT80 keeps its setup.
 - TrackPro no longer takes a Thanos or SRT80 controller when it starts. Before, if TrackPro was closed with motion still enabled, the next launch re-armed motion and opened the controller's port, which locked SimHub and other software out of it. Now every motion setting still comes back at launch, and the controller's port is opened only when you press Enable or Connect (or run a test). The Sim Coaches controller still re-arms at launch as before.
-- To hand the controller to SimHub in the middle of a session, press Disconnect on the Motion page: TrackPro keeps the port from the first Enable or Connect until then.
+- To hand the controller to SimHub in the middle of a session, press Stop (or Disconnect) on the Motion page: both park the rig and release the port.
 
 This build is the candidate for the next stable release: the same installer is promoted if it passes.
 
