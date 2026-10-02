@@ -1,5 +1,24 @@
 # Changelog
 
+## TrackPro V2 2.26.215 - 2026-10-02 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.214 is included. AI Coach v0.249.
+
+Motion
+- The Lebois SRT80 is offered as a motion kit and controller on the beta channel only. Its driver has not run on a real rig yet, so an install that is not on the beta channel does not show it. A rig that is already set up on the SRT80 keeps its setup.
+- TrackPro no longer takes a Thanos or SRT80 controller when it starts. Before, if TrackPro was closed with motion still enabled, the next launch re-armed motion and opened the controller's port, which locked SimHub and other software out of it. Now every motion setting still comes back at launch, and the controller's port is opened only when you press Enable or Connect (or run a test). The Sim Coaches controller still re-arms at launch as before.
+- To hand the controller to SimHub in the middle of a session, press Disconnect on the Motion page: TrackPro keeps the port from the first Enable or Connect until then.
+
+This build is the candidate for the next stable release: the same installer is promoted if it passes.
+
+Before acceptance:
+- Beta channel off: Motion setup lists Thanos4U and MEGA+ kits and no Lebois SRT80; Settings, Hardware lists ESP32, Thanos 4U and Thanos AMC and no Lebois SRT80. Beta channel on: both list it.
+- Practice, three or more flying laps so the coach picks a corner: the short cue before it, "Brake now." early enough to act on, the other calls through the corner, the short verdict just past the exit. Nothing talks over anything else.
+- Suggestions per lap on 1, 2 and 3: she coaches that many corners in a lap when that many have a measured fault.
+- Motion on the rig you normally drive: connect, Start, Stop and E-STOP behave as in 2.26.213.
+- Thanos rig: enable motion, close TrackPro, open it again. Motion is not armed and SimHub can open the controller's port; press Enable and motion works with the same settings as before.
+- Update from 2.26.214 (and from stable 2.26.181) with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.214 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.213 is included. AI Coach v0.249.
