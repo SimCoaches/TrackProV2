@@ -1,17 +1,15 @@
 # Changelog
 
-## TrackPro V2 2.26.216 - 2026-10-02 (beta)
+## TrackPro V2 2.26.216 - 2026-10-02 (stable)
 
-BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.215 is included. AI Coach v0.249.
+Promoted from the signed beta without rebuilding the installer, after a drive on the owner's rig. This is the stable release: it carries every change since 2.26.181 (the entries below). The Lebois SRT80 has not been run on a rig and stays a beta-channel option. AI Coach v0.249.
 
 Motion
 - Stop releases the controller, and now says so. Pressing Stop has always parked the rig and then closed the controller's port, but the Motion page kept showing "Rig connected" and a Disconnect button, so it looked as if TrackPro was still holding the controller. After Stop the page now shows the rig as not connected, with: "Motion stopped. The controller is released, so other software can use it. Press Enable to use it here again." SimHub and other software can open the controller as soon as that appears (a few seconds after Stop, once the rig has parked).
 - Correction to the 2.26.215 notes, which said TrackPro keeps the port until Disconnect: it does not. Stop and Disconnect both release it. E-STOP keeps the connection, because the rig is being held and motion resumes from there.
 - If an SRT80 cannot be lowered in time on Stop, TrackPro says the rig is still held up instead of saying the controller is free.
 
-This build is the candidate for the next stable release: the same installer is promoted if it passes.
-
-Before acceptance:
+Checks used for acceptance:
 - Thanos rig: Enable, drive, press Stop. The rig parks, then the Motion page shows "Rig not connected" and the released message. SimHub can open the controller without closing TrackPro. Press Enable in TrackPro (with SimHub's connection closed): motion works with the same settings.
 - Press E-STOP while running: the Motion page still shows the rig connected; Enable resumes.
 - Beta channel off: Motion setup and Settings list no Lebois SRT80. Beta channel on: both list it.
