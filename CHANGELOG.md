@@ -1,5 +1,33 @@
 # Changelog
 
+## TrackPro V2 2.26.214 - 2026-10-01 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.213 is included. AI Coach v0.249.
+
+AI Coach (practice)
+- She calls the corner you are working on, at the spot, every lap: "Brake now." at the reference brake point, "Turn in.", "Keep turning." (only while your steering has stopped well short of the reference), "Unwind.", "Accelerate.". A driver who brakes too early hears "Wait for it." first. The reference is your reference lap for that car and track, or your best pass this session. If you brake before she calls it, she says nothing there and tells you after the corner.
+- Practice lines are short and instant. Before the corner: "Turn 5 — brake 35 meters earlier." After it: "Turn 5 — good." / "Turn 5 — better." / "Turn 5 — not yet. Brake earlier." These play from the coach's saved voice clips, so they start at once instead of one to three seconds late. The longer spoken explanation is no longer volunteered; ask her and she explains.
+- Suggestions per lap is a real count. On 1 she coaches the corner she is working on with you; on 2 and 3 she adds the next-biggest measured losses at other corners. A lap with fewer measured faults gets fewer; nothing is made up to fill the number. A corner you pin stays the only corner.
+- The lap note no longer names a different "biggest loss" corner every lap while she is working one corner with you.
+- She never talks over an answer to you, and "less corner coaching" silences the live calls too. Qualifying and races are unchanged: quiet in qualifying, race engineer in the race.
+- Race pace calls say "1.2 seconds a lap" instead of "12 tenths a lap".
+- English only for now: on another coach language the cues keep the live voice.
+
+Motion: Lebois SRT80
+- Control boxes on Lebois firmware 2.1 are supported (Competition Control Box V1 and V2, four lift actuators). Firmware 1.8 and 1.9 work as before. Lebois changed the box's protocol in firmware 2.0 (June 2026) and Motion Center V1.1 installs 2.1, so an updated box could not connect to TrackPro until now.
+- Firmware 2.0 is refused with a message to update to 2.1: it switches the servos off whenever the port closes, which would drop a held rig every time TrackPro closes.
+- New safety gate, on every firmware: if the box's servos went off while TrackPro's record has the rig raised (SimHub or Motion Center used the box, the box's own E-stop, a fault), TrackPro will not move it. The box only counts position while its servos are on, so its count no longer matches the rig. TrackPro asks for the box's USB to be unplugged and plugged back in with TrackPro open, and connects after that.
+- While a rig is recorded as held on a control box, TrackPro does not probe that port and will not connect another controller type to it.
+- Nothing here has run on a real SRT80 rig yet. The first-run checklist in docs/motion-srt80.md must be done with nobody in the rig.
+
+Before acceptance:
+- Practice, three or more flying laps so she picks a corner: on the next approach you hear the short cue, then "Brake now." early enough to act on, the other calls through the corner, and the short verdict just past the exit. Nothing talks over anything else.
+- Set Suggestions per lap to 1, 2 and 3 in turn: she coaches that many corners in a lap when that many have a measured fault.
+- Key up and ask a question near the corner she is working on: her answer is never cut off by a call.
+- SRT80 on firmware 2.1 (nobody in the rig): connect, Start (smooth rise), Stop (lowers, drivers go quiet), E-STOP while running (freezes and stays held for a full minute), quit TrackPro while running (stays held for a full minute), relaunch and Start (no jump).
+- SRT80: with the rig held by an E-STOP, quit TrackPro, unplug and replug the box, relaunch: TrackPro refuses with the replug message; replug the box with TrackPro open: it connects.
+- Update from 2.26.213 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.213 - 2026-10-01 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.212 is included. AI Coach v0.248.
