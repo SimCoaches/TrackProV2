@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.218](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.218) makes the Force Feedback page drive the wheel in Assetto Corsa: AC's gain is held at 5% (not 0, which blanked the steering force) and divided back out, and the page never judges one sim by another sim's last frame. Everything in 2.26.217 is included.
+
 Beta [2.26.217](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.217) finds a throttle whose sensor lead was moved to another port during calibration, as the brake and clutch already were. Everything in 2.26.216 is included.
 
 Earlier beta builds, all included in 2.26.216 (their notes describe each build as it was tested):
