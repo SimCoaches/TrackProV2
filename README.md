@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.217](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.217) finds a throttle whose sensor lead was moved to another port during calibration, as the brake and clutch already were. Everything in 2.26.216 is included.
+
 Earlier beta builds, all included in 2.26.216 (their notes describe each build as it was tested):
 
 Beta [2.26.215](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.215) keeps the Lebois SRT80 a beta-channel option until it has run on a rig, no longer takes a Thanos or SRT80 controller at launch (press Enable), and is the candidate for the next stable release (AI Coach v0.249). Everything in 2.26.214 is included.
