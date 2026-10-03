@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.217 - 2026-10-02 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.216 is included. AI Coach v0.249.
+
+Pedals
+- Calibration now finds the throttle on another port. If a throttle's sensor lead has been moved to one of the other leads inside the back of the pedal, the "press the throttle" step sees the movement on that port and fixes the mapping automatically, exactly as it already did for the brake and clutch. The same Undo is there if it guessed wrong.
+- Nothing changes for pedals that are wired normally: a throttle that moves on its own port is confirmed as before, and a pedal only moves to another port when that port alone moves clearly while the throttle's own port stays still.
+
+Before acceptance:
+- A pedal set wired normally: run calibration; every pedal is confirmed on its own port and drives normally afterwards.
+- The throttle with its sensor on another lead: run calibration, press the throttle at its step; the page says it found the throttle on that port and fixed it; finish calibration; the throttle drives the throttle axis in the game, and the brake and clutch are unaffected.
+- Update from 2.26.216 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.216 - 2026-10-02 (stable)
 
 Promoted from the signed beta without rebuilding the installer, after a drive on the owner's rig. This is the stable release: it carries every change since 2.26.181 (the entries below). The Lebois SRT80 has not been run on a rig and stays a beta-channel option. AI Coach v0.249.
