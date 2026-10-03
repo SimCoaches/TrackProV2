@@ -1,5 +1,23 @@
 # Changelog
 
+## TrackPro V2 2.26.218 - 2026-10-02 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.217 is included. AI Coach v0.249.
+
+Force feedback
+- The Force Feedback page now drives the wheel in Assetto Corsa. TrackPro reads AC's steering force from the game's shared memory, and that channel is published after AC's own force-feedback gain. TrackPro used to turn that gain to 0 to keep AC's force feedback out of the way, which also blanked the steering force for the whole session: the page said "Force paused: car not in world" to a driver who was on track (reported 2026-10-02 from a Content Manager launch). TrackPro now holds AC's gain at 5% while TrackPro FFB is on, divides that 5% back out so the wheel gets the full force AC computed, and puts the driver's gain back when TrackPro FFB turns off, exactly as before. AC's minimum-force setting is held at 0 for the same time and restored with it.
+- An install that an earlier build left at gain 0 is lifted to 5% automatically the next time TrackPro FFB is on with Assetto Corsa and Content Manager closed; until then the page says "Gain 0 — at 0 Assetto Corsa sends no steering force" with what to close, instead of a message about the car.
+- The page never again judges one sim by another sim's last frame. When the sim changes, or no steering force has arrived yet, it says "no steering force from the sim yet" and the wheel is held at zero.
+
+Before acceptance (Assetto Corsa via Content Manager, a wheel in the FFB page):
+- With Assetto Corsa and Content Manager closed, press On in the FFB page: the Game force feedback card shows Assetto Corsa "Off — Held at 5% by TrackPro". Launch AC through Content Manager, drive: the page shows "Driving your wheel" and the wheel has steering force that scales with the Strength slider.
+- Press Off, close AC and Content Manager: the Assetto Corsa gain in controls.ini is back to the value it had before (the card shows "On" in grey).
+- An install still at gain 0 from 2.26.216/217: with TrackPro FFB on and AC running, the card says "Gain 0" and what to close; after closing AC and Content Manager for a few seconds it changes to "Off — Held at 5% by TrackPro".
+- iRacing still drives the wheel as in 2.26.217, and switching from iRacing to AC (or back) in one TrackPro run shows no stale message from the other sim.
+- Update from 2.26.217 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
+Not yet run on a rig: the feel with Content Manager's FFB post-processing (LUT or gamma) enabled. If the force feels wrong with post-processing on, turn it off in Content Manager for this build and report it.
+
 ## TrackPro V2 2.26.217 - 2026-10-02 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.216 is included. AI Coach v0.249.
