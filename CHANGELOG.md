@@ -1,5 +1,37 @@
 # Changelog
 
+## TrackPro V2 2.26.219 - 2026-10-02 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.218 is included. AI Coach v0.250.
+
+AI Coach (Blip)
+- In-car dials from the radio: "lower my traction control", "ABS up one", "bias to 54", "two clicks more front bar", "engine map 3". Blip works iRacing's F8 box for you and proves the change in the car's own telemetry, then says before and after ("traction control 1 to 0"). The first time on each car it learns the F8 row order while you are stopped in the pits or garage (one click up and one back down per row); on the move before that it says so and asks you to say "learn the in-car box" when you are stopped. Brake bias waits until you are off the brakes. If the box ever moves the wrong dial, Blip puts it back and tells you. Last night (2026-10-02) it answered "lower my traction control" with "I don't have a direct control here".
+- "Read me Thomas's lap every lap" is a standing order now: every time that car completes a lap, Blip calls the time to the millisecond with the gap to your own last lap ("Thomas: 2:00.036, 0.8 quicker than your last"). Last night it said an automatic lap call wasn't supported.
+- Asking about a driver now includes their live speed and position on the lap, their last and best laps and laps done, so "how fast is Michael going" has an answer instead of "I don't have his live speed".
+- iRacing gaps at the start/finish line: for a few seconds every lap the gap to the leader and the car ahead read a whole lap too long (7 s read as 103.8 s last night, so "you're not catching him" was said off a wrong number). The gap now wraps correctly through the line.
+
+Spotter
+- iRacing lone qualifying: no more "Cars coming behind. Don't pull out yet." when nobody can reach you. The other cars share the session but not the track.
+
+Voice chat
+- A screech guard on both ends. A wireless headset breaking up or a feedback howl (last night: one driver's mic put a screech through everyone's headphones) is cut from the channel the moment it is detected, on the sender's PC and again on every listener's PC, for 1.5 seconds, longer if it keeps coming back. Speech, breathing and rig noise under a voice are never cut. Each cut is logged so the next one can be diagnosed.
+
+Force feedback
+- Everything in 2.26.218 (Assetto Corsa force feedback works: gain held at 5%, never 0).
+
+Before acceptance:
+- iRacing, a car with TC and ABS (GR86, GT3), stopped in the pits with TrackPro FFB/pedals as usual: say "learn the in-car box". Blip clicks through the F8 rows and says what it learned; every dial reads the same afterwards as before.
+- On track: "lower my TC" → the F8 box shows TC one lower within a second and Blip says "traction control 2 to 1". "ABS to 4", "bias to 55" (off the brakes) land the same way; "bias forward" while braking is held with "Off the brakes first".
+- A car with no TC (MX-5): "lower my TC" → Blip says the car has no traction control and names what it does have.
+- Race: "read me <leader>'s lap every lap" → one call per lap with the gap to your own; "stop that" cancels it.
+- "How fast is <name> going" → a speed in your units, with where they are on the lap.
+- Race, as you cross the line behind the leader: the gap to the leader on the radio stays sensible (never a lap too long).
+- Voice chat with two or more PCs: a whistle into the mic cuts for about 1.5 s on everyone's end; normal talking, laughing and breathing never cut. Gabe's headset on the next race night: if it still screeches, the log says whether it was a tone or a hiss.
+- Lone qualifying: no traffic calls while alone on track.
+- Update from 2.26.218 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
+Not yet run on a rig: the F8 box walk on a real iRacing install (row order, the F8 toggle, whether the selection wraps on any car). The design refuses to move a dial it cannot prove and undoes a wrong one, so a failure reads as a message, never a silent wrong click.
+
 ## TrackPro V2 2.26.218 - 2026-10-02 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.217 is included. AI Coach v0.249.
