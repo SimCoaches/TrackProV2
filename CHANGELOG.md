@@ -1,5 +1,31 @@
 # Changelog
 
+## TrackPro V2 2.26.220 - 2026-10-04 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.219 is included. AI Coach v0.251.
+
+AI Coach (Blip)
+- The reference is the fastest clean lap another driver has set for your exact car and track, one driven lap, and every driver's clean laps count. Race night 2026-10-02 at Navarra: the coach held a 2:10.1 "community reference" all evening while a clean 1:59.9 from another driver sat in the database, because the number came from a corner pool that only counted drivers who had switched on an off-by-default "share corner data" toggle. That toggle no longer gates what the coach knows; "Use my laps in AI Coach comparisons" is the only opt-out, and lap sharing by name is unchanged.
+- That lap's own corners are the targets from your first flying lap; the stitched per-corner composite fills only corners it did not cover. Your own corner stays the target where you already beat it.
+- As you go out the coach says what it is comparing you to: "The fastest clean lap here in this car is a 1:59.9 from another driver, and its corners are your targets from your first flying lap." If your own lap is the fastest in the database it says so.
+- The "Share corner data" switch is gone from Coach settings: it no longer changed what the coach knew, so it is not offered. "Use my laps in AI Coach comparisons" (Settings → Sharing and Coach settings) is the one opt-out, and it removes your data from other drivers' references only.
+- When the fastest-lap read is unavailable (offline, free plan) the coach falls back to the anonymous corner composite and says so; it never calls the composite "one driven lap by another driver".
+- The coach never explains a benchmark away as a database lag or delay; when you say a faster lap exists it checks the fastest-lap tool.
+
+Support agent
+- The Support agent now knows the Spotter and Blip. "My spotter isn't talking" starts with the cause it usually is: whether TrackPro sees your sim at all (the first dot in the title bar reads No Game until you are in the car), then whether the Spotter is switched on, then where the radio is playing. On 2026-10-04 a driver asked why he could not hear the spotter, and the agent only checked his microphone.
+- New checks it can run: a Spotter and Blip status read (sim connected, Spotter switch, volumes, voice, the radio output both share, and the Spotter's last decision and why), and turning the Spotter on or off with your approval.
+- New starting points on the Support page: "Spotter silent" and "Blip / AI Coach".
+- iRacing not detected: it no longer guesses about install drives (TrackPro reads iRacing's live feed, not its files). It asks you to sit in the car, then checks irsdkEnableMem in app.ini and whether iRacing and TrackPro are started the same way (Run as administrator).
+- The Spotter is free with every account; the agent will not tell you otherwise.
+
+Before acceptance:
+- Navarra, MX-5, practice, after the coach server update: the out-lap opener names the fastest clean lap another driver set ("The fastest clean lap here in this car is a 1:59.9 from another driver...").
+- Support page, iRacing closed: "Spotter silent" -> the agent runs the status check and says no sim is connected before asking about audio.
+- Support page, Spotter switched off: the agent offers to turn it on; approving flips the switch on the Spotter page.
+- Support page on a free account: "Blip / AI Coach" -> the agent explains Blip needs a paid plan and points to Settings > Account, without quoting a price.
+- Update from 2.26.219 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.219 - 2026-10-02 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.218 is included. AI Coach v0.250.
