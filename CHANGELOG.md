@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.221 - 2026-10-05 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.220 is included. AI Coach v0.252.
+
+AI Coach (Blip)
+- Brake points are spoken as trackside markers wherever a verified marker is in reach of the mark: "brake right at the 100 board", "brake between the 100 and 50 boards", "brake about 20 meters past the bridge". The marker replaces the meters; "brake 30 meters later" is only said where no marker is in reach. Before, a marker was only used within 15 meters of the mark and was tacked on after the meters.
+- The quick pre-corner call, the guided lap and Blip's corner answers all use the markers. The corner answer also names where you brake now against the same objects ("you braked at the 150 board, the reference brakes at the 100").
+- Longer marker lines start earlier so they finish before the mark they name.
+- The plain-words coach hears board names but never a meters figure.
+- Markers come only from the verified set for the exact sim layout; nothing is guessed. The set is filled per track from onboard footage, starting with Red Bull Ring Grand Prix.
+
+Before acceptance:
+- Onboard recording on, 2-3 laps at Red Bull Ring Grand Prix (iRacing, cockpit view): laps are listed with video under Telemetry, so the boards can be placed from them.
+- Until markers are verified for a layout, every brake cue still reads in meters exactly as in 2.26.220.
+- Update from 2.26.220 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.220 - 2026-10-04 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.219 is included. AI Coach v0.251.
