@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.221](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.221) speaks brake points as trackside markers wherever a verified marker is in reach ("brake right at the 100 board", "between the 100 and 50 boards"), replacing the meters in the pre-corner call, the guided lap and Blip's corner answers (AI Coach v0.252). Everything in 2.26.220 is included.
+
 Beta [2.26.220](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.220) makes the coach's reference the fastest clean lap any other driver set for your car and track (AI Coach v0.251), and teaches the Support agent the Spotter and Blip: it checks whether your sim is connected, whether the Spotter is switched on and where the radio is playing, and can turn the Spotter on for you. Everything in 2.26.219 is included.
 
 Beta [2.26.219](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.219) lets Blip change your in-car dials (TC, ABS, bias, bars, maps) through iRacing's F8 box with the change proven in telemetry, read a rival's lap every lap, fixes the start/finish gap read, keeps the spotter quiet in lone qualifying, and cuts headset screeches out of voice chat on both ends (AI Coach v0.250). Everything in 2.26.218 is included.
