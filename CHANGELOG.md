@@ -1,5 +1,28 @@
 # Changelog
 
+## TrackPro V2 2.26.224 - 2026-10-06 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.223 is included. AI Coach v0.255.
+
+AI Coach (Blip)
+- On Assetto Corsa, ACC, rFactor 2 and Le Mans Ultimate, Blip now uses your sim's lap numbers. These sims count completed laps, so Blip ran one lap behind the HUD: it said "you're on lap 3, 2 laps done" while the HUD showed lap 4. This applies to lap verdicts, "what lap am I on", lap reports, corner breakdowns and the projected pit-stop lap. iRacing and F1 were already right.
+- "Compare my laps" now compares the laps you asked for. On those four sims it could read the lap before or after the one named, so the time and corners it reported came from a neighbouring lap.
+- Blip downloads the brain's corner profiles (checked every 30 minutes, cached on the PC). After each lap it records, without saying anything, where the profiles say time went, so those calls can be measured before Blip ever speaks one.
+
+Spotter
+- rFactor 2 and Le Mans Ultimate now read your first lap's time. Before, the spotter never read lap 1 of a stint, and it counted every later lap one low internally.
+
+Telemetry
+- On Assetto Corsa, lap 1 (and lap 0 on races captured from the start) is no longer saved as a copy of lap 2. AC publishes the new lap time one frame before its lap counter. So the lap was stored under the previous number, then again under the right one.
+- On AC, ACC, rF2 and LMU, the corner data shared from your laps now links to the right saved lap. Before, it was one lap low.
+
+Before acceptance:
+- AC practice from the pits, 3 laps: under Telemetry, stored laps 2 and 3 each have their own time and window, and there is no lap 1 copied from lap 2.
+- AC with Live Coach on, a few laps. Ask "how was that lap" and "what lap am I on": the numbers match the AC HUD. Ask "compare my last lap with my best": the laps it names are in the Telemetry lap list with those times.
+- iRacing, the same questions: the same numbers as on 2.26.223.
+- LMU or rF2 if available: the spotter reads the lap times of laps 1, 2 and 3.
+- Update from 2.26.223 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.223 - 2026-10-06 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.222 is included. AI Coach v0.254.
@@ -161,7 +184,7 @@ BETA: for supervised testing. Automatic updates stay on the existing stable rele
 
 Motion
 - The Lebois SRT80 is offered as a motion kit and controller on the beta channel only. Its driver has not run on a real rig yet, so an install that is not on the beta channel does not show it. A rig that is already set up on the SRT80 keeps its setup.
-- TrackPro no longer takes a Thanos or SRT80 controller when it starts. Before, if TrackPro was closed with motion still enabled, the next launch re-armed motion and opened the controller's port, which locked SimHub and other software out of it. Now every motion setting still comes back at launch, and the controller's port is opened only when you press Enable or Connect (or run a test). The Sim Coaches controller still re-arms at launch as before.
+- TrackPro no longer takes a Thanos or SRT80 controller when it starts. Before, if TrackPro was closed with motion still enabled, the next launch re-armed motion and opened the controller's port, which locked SimHub and other software out of it. Now every motion setting still comes back at launch, and the controller's port is opened only when you press Enable or Connect (or run a test). No motion controller re-arms on its own at launch: press Enable to start motion.
 - To hand the controller to SimHub in the middle of a session, press Stop (or Disconnect) on the Motion page: both park the rig and release the port.
 
 This build is the candidate for the next stable release: the same installer is promoted if it passes.
