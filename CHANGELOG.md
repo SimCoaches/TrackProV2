@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.225 - 2026-10-06 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.224 is included. AI Coach v0.255 (unchanged).
+
+Blip page
+- "He already found time in your laps" and Corner mastery now judge each lap by the time saved with that lap. On iRacing, TrackPro versions before 2.26.186 stored the previous lap's time on every corner. A clean lap after an off or a pit stop was then left out as slow, and an off could count as a normal lap. Older sessions now show corrected numbers; laps from 2.26.186 on were already right.
+
+Server (already live, no update needed)
+- Every saved corner is linked to the lap it was driven on when it is read. On AC, ACC, rF2 and LMU, corners saved before 2.26.224 sat one lap low. On iRacing, corners saved before 2.26.186 carried the previous lap's time. No stored data was changed. The AC lap copies flagged in 2.26.224 are never linked.
+
+Before acceptance:
+- Blip page on an account with no plan whose newest outing is an iRacing session from before mid-September: "He already found time in your laps" shows corners and times, with no error.
+- Corner mastery on the Blip home and on a combo page, for a combo with recent laps: grades and times show as on 2.26.224.
+- Update from 2.26.224 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.224 - 2026-10-06 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.223 is included. AI Coach v0.255.
