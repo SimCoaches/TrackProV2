@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.224](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.224) makes Blip number laps the way the sim does on Assetto Corsa, ACC, rFactor 2 and Le Mans Ultimate (it ran one lap behind the HUD), makes "compare my laps" read the laps you asked for, and stops AC saving lap 1 as a copy of lap 2 (AI Coach v0.255). Everything in 2.26.223 is included.
+
 Beta [2.26.223](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.223) makes onboard recording film the centre screen on triple-screen rigs (it was picking a side screen) and gives Blip corner targets from the brain trained nightly on the server (AI Coach v0.254). Everything in 2.26.222 is included.
 
 Beta [2.26.222](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.222) makes the coach's reference follow the database live: a quicker clean lap another driver banks during your session counts within about twenty seconds and the coach says so once (AI Coach v0.253). Spotter Market voices now say their own turn numbers. Everything in 2.26.221 is included.
