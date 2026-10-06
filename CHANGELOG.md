@@ -1,5 +1,22 @@
 # Changelog
 
+## TrackPro V2 2.26.222 - 2026-10-05 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.221 is included. AI Coach v0.253.
+
+AI Coach (Blip)
+- The reference follows the database while you drive. A quicker clean lap another driver banks during your session, practice or race, becomes the reference within about twenty seconds, and the coach says so once: "the reference is now 1:59.2 (was 1:59.9)". In a race it waits for the lap line and never interrupts a battle; never in qualifying, never with a name. Before, another driver's lap took up to ten minutes to count and the coach never mentioned the change. A failed check never throws away a good reference.
+
+Spotter
+- Spotter Market voices say their own turn numbers. Numbered turns were never built for Market voices, so the stock voice read "Turn 4" right after your chosen voice's "Careful into". Every voice now records Turn 1-51, a voice can't go live without them, and published voices back-fill once.
+- Installed voices fetch every new line the server has, whatever corner naming you use, still only while the radio is quiet.
+
+Before acceptance:
+- Practice at a combo where another driver is also running (or bank a quicker lap on a second account): within about 20 s of their lap the coach says "the reference is now ..." once, and the next verdicts compare to the new lap.
+- Qualifying: no reference-moved line.
+- Spotter with a Market voice and corner naming set to numbers: "Careful into Turn 4" is all in your chosen voice.
+- Update from 2.26.221 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.221 - 2026-10-05 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.220 is included. AI Coach v0.252.
