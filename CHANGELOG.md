@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.223 - 2026-10-06 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.222 is included. AI Coach v0.254.
+
+AI Coach (Blip)
+- Blip's corner targets now come from the TrackPro Brain trained nightly on the server: more corners and more cars than the model bundled with the app, which stays as the fallback. The app checks for a new model every 30 minutes, downloads it once (under 200 KB), validates it and switches over; any failure or a server rollback keeps the bundled model. Nothing waits on it.
+
+Onboard recording
+- Triple-screen rigs now record the centre screen, the view ahead. Before, the recorder picked whichever screen the iRacing window covered most; with three equal screens that was a tie and it took a side screen, so the video showed the roof and side window instead of the road (Red Bull Ring, 2026-10-06). Single-screen setups are unchanged.
+
+Before acceptance:
+- Triple screens, onboard recording on, two laps anywhere: the lap's video under Telemetry shows the forward view through the windscreen.
+- Single screen: unchanged, the video still shows the whole iRacing window.
+- Coach on: within a minute of opening TrackPro the newest brain model is loaded (localStorage trackpro.brain.cornerModel.v1 shows runId 2); corner targets still work offline.
+- Update from 2.26.222 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.222 - 2026-10-05 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.221 is included. AI Coach v0.253.
