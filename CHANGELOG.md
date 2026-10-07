@@ -1,5 +1,63 @@
 # Changelog
 
+## Unreleased (next beta)
+
+AI Coach v0.256. Fold this into the next release's entry when it is cut.
+
+AI Coach (Blip)
+- "Trail the brake" is no longer said on paved ovals. The owner's oval rule already kept trail-braking advice off ovals, but the live pedal check skipped that rule. In the last 4 weeks, 42% of the fleet's "trail the brake" calls were on ovals such as Charlotte, Iowa, the Bullring and USA International Speedway, where one driver heard the same line 11 times. Dirt ovals and road courses are unchanged.
+- "Trail the brake" now needs the reference to trail-brake at that corner. The pedal check only sees you come off the brake before turning; it can't tell whether the fast lap keeps brake on there. The call now comes only where the reference carries brake into the turn for at least 0.2 s: the stored reference for your car and track, or else your own best pass from an earlier lap this session. In the last 4 weeks, 44 of 140 road-course calls were at corners where the fastest stored pass had the brake off before turning too.
+- The coach now follows its nightly scorecard. If a call is reliably worse than saying nothing, the coach stops volunteering it. "Reliably" means 60 or more graded calls from at least 10 drivers, with the whole 95% range below zero. A pinned corner and direct questions still get that advice. Today no call meets that bar. The two calls the owner held back by hand ("smooth on throttle" and "eyes up") stay held back.
+
+Report Card
+- "Beating it N% of tries" for each fault no longer counts a coach call that could not be graded as a miss.
+
+Server (already live, no update needed)
+- Coach calls are now graded fairly, both on the staff Brain page and by the nightly scorecard. Some calls cannot be graded: there was no earlier pass at that corner, or the driver was already at or ahead of the reference there. Those used to count as "did not improve". They are now left out. Each call is also compared with silence on the same fault at the same time loss, not with the costliest silent corners. Last 4 weeks, coaching vs silence: −3.7 pts before, +6.0 pts after. "Keep a little brake into the turn": 11.7% vs 53.4% before. Graded fairly, it is close to silence: on road courses, 38.9% vs 41.5% over 54 calls. The nightly scorecard also leaves out the calls the coach may no longer make on ovals: on road courses, all time, it reads +1.4 pts over 59 calls from 19 drivers.
+- Report Card "Coached corners improved" leaves out calls that could not be graded.
+
+Before acceptance:
+- iRacing on a paved oval with Live Coach on, 5+ laps, driving without trail braking: no "trail the brake" call.
+- iRacing road course with a loaded reference, braking fully before turning everywhere: "trail the brake" comes only at corners where the reference trail-brakes. A fast kink or a corner the reference takes off the brake gets no call.
+- Send a bug report after starting a Live Coach session: its diagnostics show "Fleet cue model demotions adopted" with status "applied" and an empty demoted list.
+
+## TrackPro V2 2.26.226 - 2026-10-07 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.225 is included. AI Coach v0.256.
+
+Laps and corner data
+- Every driver's corner times now upload, for every sim. Since 2.26.177 they only uploaded for drivers who had switched corner sharing on, which almost nobody had. The coach and the brain learn from all driving, always without names. The only sharing choice left is whether other drivers can find your laps by name on the Telemetry page.
+- Laps the sim never timed are now saved (marked untimed) instead of dropped, and a late iRacing lap timer no longer loses the lap. About one lap in four the coach measured was not being saved.
+
+AI Coach (v0.256)
+- Calls are graded against the same fault with no call, so the coach's learning compares like with like.
+- No "keep a little brake into the turn" on paved ovals, and only at corners where the reference lap trail-brakes. That call was leaving drivers slower than saying nothing.
+- Calls the nightly model finds unhelpful stop being volunteered (a pinned corner and direct questions still get them).
+- Corners taken flat say so, instead of reporting the previous corner's brake and throttle points. Long braking zones are measured from their real start.
+- Turn-in and throttle can be spoken against trackside references ("10 meters before the 100 board").
+- First out lap sets the plan, lap 1 is the baseline, and coaching starts on lap 2.
+- Guided laps are called by the lap instructor, a second voice; Blip says when it hands over.
+
+Race Engineer and FFB
+- Race Engineer suggests only controls the car really has, skips ones already at their limit, recognises the change you made, and changes one thing at a time on the radio too.
+- FFB on wheel buttons: on/off and strength up/down mid-race. Once started, FFB starts by itself every session until you press STOP.
+- Brake Approach overlay: an optional soft count-in and chime on the brake mark.
+
+Settings
+- "Use my laps in AI Coach comparisons" is gone: every lap trains the coach and counts in anonymous comparisons. Telemetry sharing still decides whether other drivers see your laps by name.
+
+Server (already live, no update needed)
+- Corner data lost since 2.26.177 was rebuilt from saved iRacing laps with the app's own corner code (119,000 corner passes, checked against live data first). It runs nightly for any saved lap that arrives without corner data.
+- Staff Brain page (desktop Operations > Brain, and trackpro-mobile.vercel.app/brain): training, every track driven, corner maps pinned to iRacing's turn numbers, corner-data alarm, coach against silence, and whether drivers are getting faster.
+
+Before acceptance:
+- iRacing practice, 5+ laps with Blip on: after the session, corner_pass_events has rows for each lap with metrics.source empty (live), and the Brain page's Corner data line for iRacing stays green.
+- Assetto Corsa practice, 5+ laps: corner rows arrive for each lap (this sim had 0% corner data in the last 7 days).
+- A lap with an off or an untimed lap (pit exit, reset): it appears in Telemetry, marked untimed or invalid, instead of missing.
+- Settings > Privacy: only "Share telemetry laps" shows, with the line that every lap trains the AI Coach.
+- Paved oval (e.g. Charlotte): no trail-brake call.
+- Update from 2.26.225 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.225 - 2026-10-06 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.224 is included. AI Coach v0.255 (unchanged).
