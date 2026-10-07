@@ -1,25 +1,23 @@
 # Changelog
 
-## Unreleased (next beta)
+## TrackPro V2 2.26.227 - 2026-10-07 (beta)
 
-AI Coach v0.256. Fold this into the next release's entry when it is cut.
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.226 is included. AI Coach v0.257.
 
-AI Coach (Blip)
-- "Trail the brake" is no longer said on paved ovals. The owner's oval rule already kept trail-braking advice off ovals, but the live pedal check skipped that rule. In the last 4 weeks, 42% of the fleet's "trail the brake" calls were on ovals such as Charlotte, Iowa, the Bullring and USA International Speedway, where one driver heard the same line 11 times. Dirt ovals and road courses are unchanged.
-- "Trail the brake" now needs the reference to trail-brake at that corner. The pedal check only sees you come off the brake before turning; it can't tell whether the fast lap keeps brake on there. The call now comes only where the reference carries brake into the turn for at least 0.2 s: the stored reference for your car and track, or else your own best pass from an earlier lap this session. In the last 4 weeks, 44 of 140 road-course calls were at corners where the fastest stored pass had the brake off before turning too.
-- The coach now follows its nightly scorecard. If a call is reliably worse than saying nothing, the coach stops volunteering it. "Reliably" means 60 or more graded calls from at least 10 drivers, with the whole 95% range below zero. A pinned corner and direct questions still get that advice. Today no call meets that bar. The two calls the owner held back by hand ("smooth on throttle" and "eyes up") stay held back.
-
-Report Card
-- "Beating it N% of tries" for each fault no longer counts a coach call that could not be graded as a miss.
+AI Coach (v0.257)
+- The fair test. In practice sessions, when the coach is about to take on a new corner to work on, it sometimes waits instead: one time in ten, chosen at random, it stays quiet about that corner until the next laps through it are measured. Comparing those corners with the ones it spoke about shows how much the coach's calls really help, which the old comparison could not (the coach always picked the worst corner, and the worst corner tends to improve by itself).
+- Never in races, qualifying or warmups, never the first call of a session, never a corner you asked about ("work on Turn 5" takes that corner out of the test at once), at most three times a session and at least five laps apart. Questions are answered in full as always, including about that corner.
+- While a corner is in the test, the lap summary leaves out its "biggest loss" line instead of naming a smaller loss as the biggest.
 
 Server (already live, no update needed)
-- Coach calls are now graded fairly, both on the staff Brain page and by the nightly scorecard. Some calls cannot be graded: there was no earlier pass at that corner, or the driver was already at or ahead of the reference there. Those used to count as "did not improve". They are now left out. Each call is also compared with silence on the same fault at the same time loss, not with the costliest silent corners. Last 4 weeks, coaching vs silence: −3.7 pts before, +6.0 pts after. "Keep a little brake into the turn": 11.7% vs 53.4% before. Graded fairly, it is close to silence: on road courses, 38.9% vs 41.5% over 54 calls. The nightly scorecard also leaves out the calls the coach may no longer make on ovals: on road courses, all time, it reads +1.4 pts over 59 calls from 19 drivers.
-- Report Card "Coached corners improved" leaves out calls that could not be graded.
+- Staff Brain page: a "Fair test" card on the Coach tab (calls given vs held back, and whether the gap is bigger than chance), and the full-rate driving model card: the brain now also trains on every saved lap at the full 60 readings a second with 65 channels, including tyre temperatures, wear, pressures, brake temperatures and suspension, and each night tries a bigger model, keeping it only if it wins.
 
 Before acceptance:
-- iRacing on a paved oval with Live Coach on, 5+ laps, driving without trail braking: no "trail the brake" call.
-- iRacing road course with a loaded reference, braking fully before turning everywhere: "trail the brake" comes only at corners where the reference trail-brakes. A fast kink or a corner the reference takes off the brake gets no call.
-- Send a bug report after starting a Live Coach session: its diagnostics show "Fleet cue model demotions adopted" with status "applied" and an empty demoted list.
+- iRacing practice with Live Coach on, 10+ laps: coaching works as in 2.26.226. Over several sessions the Brain page's "Fair test" card starts counting calls given and held back.
+- In a held-back moment (rare): no call, pre-corner cue or lap-summary "biggest loss" about that corner for the next couple of laps, and asking "where am I losing time?" still names it.
+- Say "work on Turn N" for any corner: the coach works on it right away.
+- iRacing race session: the coach behaves exactly as in 2.26.226 (no held-back calls).
+- Update from 2.26.226 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
 
 ## TrackPro V2 2.26.226 - 2026-10-07 (beta)
 
