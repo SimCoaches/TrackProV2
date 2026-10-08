@@ -1,5 +1,25 @@
 # Changelog
 
+## TrackPro V2 2.26.230 - 2026-10-08 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.229 is included. AI Coach v0.260.
+
+AI Coach (v0.260)
+- The brain's coach runs on your PC. TrackPro downloads the brain's small coaching model (about 6 MB, cached) and, after every clean timed lap, reads the corners where the lap lost the most time to the fast drivers in your car: how much, and whether it went in the braking zone, on entry or on the exit, from your inputs and how the car responded. It runs in the background on its own thread, never on the radio's, and never touches the lap save.
+- In practice, Blip calls it: "Turn 5, 3 tenths, mostly on entry. Carry more speed to the apex." Only when the measured comparison with the fast drivers and the brain's own read agree on where the time went, at most every other lap, never over the corner you are working on, a corner you muted, or one the fair test is holding back. The braking fix is to come off the brake sooner and let it roll, never "brake later". iRacing, on corners with fast-driver data for your car.
+- Races and qualifying stay quiet as before: ask "where am I losing time?" and Blip answers against the fast drivers.
+- Every lap's read is also logged next to what the lap measured, so the staff Brain page shows how the brain does on real laps.
+
+Server (already live, no update needed)
+- The brain's full-rate model is now 209M parameters, trained nightly on every saved lap at 60 readings a second; a small model learns from it every night and reaches PCs only when it beats the one they have.
+
+Before acceptance:
+- iRacing practice with Blip on, 6+ clean laps on a car and track with fast-driver data: within a few seconds of a lap, Blip calls a corner, its phase and the fix, at most every other lap, and never the corner of the current focus.
+- The same in a race: no brain calls volunteered; "where am I losing time?" is answered.
+- Settings > Diagnostics (or a bug report): coach.brainwhy reads appear for each clean lap.
+- Frame rate and radio stay smooth at the moment a lap completes.
+- Update from 2.26.229 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.229 - 2026-10-07 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.228 is included. AI Coach v0.259.
