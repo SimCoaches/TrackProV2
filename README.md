@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.229](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.229) makes wheel LEDs follow the game with one click, lights every wheel the way its maker set it up (rev, side and button lights from SimHub's vendor setups, per-car rev lights, lock-up lights), reworks the wheel dash, and Blip remembers you across sessions and PCs (AI Coach v0.259). Everything in 2.26.228 is included.
+
 Beta [2.26.228](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.228) plays the coach's focus calls again without the live coach voice, answers "where am I losing time" against the fast drivers in your car from lap 1 (AI Coach v0.258), and has the Spotter say what happened instead of incident points. Everything in 2.26.227 is included.
 
 Beta [2.26.227](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.227) adds the fair test: in practice the coach sometimes waits, at random, before taking on a new corner, so we can measure how much its calls really help (AI Coach v0.257). Everything in 2.26.226 is included.
