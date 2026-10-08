@@ -1,5 +1,39 @@
 # Changelog
 
+## TrackPro V2 2.26.229 - 2026-10-07 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.228 is included. AI Coach v0.259.
+
+Wheel Studio (LEDs & Dash, still in shop testing)
+- Your wheel's LEDs follow the game with one click. Wheel Studio picks the wheel that is plugged in, "Apply complete setup" turns its LEDs on, and the device bar says "LEDs off - Turn on" when they are off. TrackPro still never takes a wheel you did not turn on, and warns you if SimHub is running too.
+- A USB hiccup no longer switches a wheel's LEDs off for good: TrackPro reconnects on its own. Only a wheel that another program keeps holding is turned off, and it tells you so.
+- Wheels light the way their makers set them up. Each wheel's rev, side and button lights come from the vendor setups in SimHub's device files (used with SimHub's permission): which light is which, the rev colors and where they start, ABS and TC on the side lights, flags, pit limiter. 18 more wheels get their own side lights instead of a rev bar spread across them.
+- Per-car rev lights: in ACC and iRacing, wheels whose maker publishes a car's shift lights show that car's own pattern.
+- Lock-up lights: front wheels locking light the left side lights, rears the right. ABS still wins while it is working. Assetto Corsa now shows ABS and TC on the side lights too.
+- Button lights: backlights stay on when TrackPro takes the wheel. Click buttons on the wheel photo to color them and choose when they light (always, pit limiter, pit lane, TC or ABS on, flags).
+- A live "Game to wheel" line under the wheel shows the sim, updates per second, rev % and any write errors, so you can see where the data stops.
+- Moza: pick your rim (CS V2.1, CS Pro, KS Pro or your own LED count); button LEDs; a note when Pit House is holding the wheel. Fanatec: TrackPro asks the base which rim is fitted. Two identical GSI wheels no longer clash.
+- Wheel dash: warnings are short pop-ups that keep gear and shift lights on screen instead of taking it over; shift lights start near the shift point and flash at it, with a pit-limiter pattern; every flag (green, white, checkered, black, meatball, red); delta in ACC; a default dash on a screen that was never set up; a brightness slider; your units; a dash instead of fake zeros. New look: rounded cards, a rev arc round the gear, gradient headers.
+
+AI Coach (Blip, v0.259)
+- Blip's level is now kept on your account, so every PC shows the same Blip. Your history counts: every session where you and Blip talked on the radio, from your first one.
+- A real conversation now counts as a session together, even without a lap.
+- Blip remembers your last sessions together: what you worked on, what you told him and what you agreed to try next, and picks up from last time in practice when it fits. In qualifying or a race he only brings it up if you do. See and delete these under "What your coach remembers".
+- He greets you like someone he knows and follows your preferences without reading his notes back to you. His memory keeps what matters about you as a person ahead of lap times, and a note about one track is only used at that track.
+
+Setup Shop
+- One-click AI setups only build from fresh garage saves, the server checks its own garage capture, and misplaced or never-loaded files retire.
+
+Server (already live, no update needed)
+- Blip memory database changes and the driver-memory-digest, ai-coach-voice and ai-coach-realtime-token functions.
+
+Before acceptance:
+- GSI GT-MAX32, iRacing and ACC: Turn on in Wheel Studio; rev lights fill with rpm and flash at the shift point; side lights show ABS and TC; a lock-up lights the matching side; all 13 buttons stay backlit; the "Game to wheel" line counts updates with 0 errors.
+- GT-MAX32 screen: the dash shows on the wheel; a low-fuel or flag warning pops up and clears, gear stays visible.
+- Close TrackPro and reopen: the wheel lights again without pressing anything.
+- Practice with Blip on a second PC: same level; he picks up from last time.
+- Update from 2.26.228 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.228 - 2026-10-07 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.227 is included. AI Coach v0.258.
