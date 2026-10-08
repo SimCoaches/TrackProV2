@@ -1,5 +1,34 @@
 # Changelog
 
+## TrackPro V2 2.26.228 - 2026-10-07 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.227 is included. AI Coach v0.258.
+
+AI Coach (v0.258)
+- Focus calls ("let's work on Turn 5") play again for drivers without the live coach voice. Since 2.26.216 the radio refused them because the coach voice had not rendered the line yet, so they were never heard. The coach now renders the line first (up to 10 seconds) without holding up the lap, drops it if you pinned another corner, reset, pitted or started a race meanwhile, and only scores it on corners driven after you heard it.
+- "Where am I losing time?" and "What should I work on?" can answer against the fast drivers in your car, from lap 1 and without a reference lap of your own: "Against the fast drivers in this car, most time at Turn 5, 4 tenths, on the exit." Clean, timed iRacing laps only; a car that has not driven that corner gets a reading only from 0.2 s and is called an estimate. Never volunteered.
+
+Spotter
+- Incidents say what happened, never the points: "We made contact with a car", "We made contact with the wall", "We lost control there", "We went off track", several takes each. A wall and a spin both score 2x in iRacing, so the spotter tells them apart from the impact the car felt (checked against 2,473 real incidents). Near the incident limit it adds "You're close to the incident limit."
+- Salty and Unfiltered language levels get their own incident lines ("Damn, we traded paint." / "Holy fuck, we lost it."); Clean stays clean.
+- Green flag is "Green, green, green!", and yellow, local and full-course yellow, blue, black and red each have more than one way to be called.
+
+Setup Shop and Race Engineer
+- One-click install of TrackPro AI setups, from the first driver's verified garage save.
+- Race Engineer HUD: your TrackPro AI setup's garage checklist, live in the sim.
+- Every setup verdict saves exactly which controls moved.
+
+Server (already live, no update needed)
+- The brain now also trains on every saved lap at 60 readings a second with 65 channels (tyre temperatures, wear, pressures, brakes, suspension); the first full-rate model is live (104M parameters).
+- Market Spotter voices record the new incident and flag lines.
+
+Before acceptance:
+- Practice without the live coach voice: after a lap you hear "let's work on…" in the coach voice.
+- iRacing, new car and track, lap 1: ask "where am I losing time?" and hear the fast-driver answer.
+- iRacing: one wall hit, one spin, one car contact: the spotter names each correctly, with no "x" points.
+- Green flag at a race start or restart: "Green, green, green!".
+- Update from 2.26.227 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+
 ## TrackPro V2 2.26.227 - 2026-10-07 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.226 is included. AI Coach v0.257.
