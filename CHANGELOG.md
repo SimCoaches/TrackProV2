@@ -1,5 +1,103 @@
 # Changelog
 
+## TrackPro V2 2.26.231 - 2026-10-08 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.230 is included. AI Coach v0.261.
+
+Wheel LEDs
+- Every LED combo now works on the wheel. 2.26.230 shipped with the previous version's engine inside it. That engine didn't understand the newer shift-light and animation styles, so it threw away every combo except Vendor Original and the button and rev colours never changed. 2.26.231 ships the matching engine, and the installer build now refuses an engine that isn't the app's own version.
+- If the wheel ever can't load an LED setup, the line under the wheel says so instead of quietly keeping the old one.
+
+Wheel screen
+- Sharper text. Letters and numbers are sized to whole pixels, so their top and bottom edges sit on the screen's pixel rows instead of smearing across two. The soft fringe around light text on dark backgrounds is removed, so strokes look solid. Small captions grow to at least 8 px where they have room.
+- Brighter captions. Labels such as TYRES, LAST, BEST, LAPS LEFT and GAL / LAP are now at least 9:1 against the background on dark themes, up from about 7:1, so they read at a glance through a visor. Light themes are checked too.
+- Tyre and brake temperatures on the TrackPro Race dash are about 50% taller.
+- Speed follows your units. The Race dash used to show KM/H when your TrackPro units are miles per hour, unless you had picked mph in the dashboard builder. It now follows your units unless you choose a speed unit there yourself. Re-apply your dash once to pick this up.
+
+New dashes (Wheel Studio)
+- Endurance Pro: a header with the session clock, laps, the car's dials boxed by type, position, places gained, iRating gain and class. Rev arcs on both sides around a huge gear, with previous and next gear. Three gauge styles (plain, dashed, spotter bars) and three gauge data sets (rpm, energy, extended). MULTI 1 and MULTI 2 zones (any of 16 panels) and a Zone C that cycles opponents, lap times and fuel on a button. Footer with weather, the car ahead and behind, delta and clocks. Flag, dial and car alerts in compact, framed or full-screen sizes. Dark-mode colours, idle screens (TrackPro, Driver, Car or your own picture) and an XL size.
+- New panels: Launch (clutch and throttle, 0-100 and 0-200 km/h or 0-60 and 0-120 mph timers), Opponents (gap and gap change to the cars ahead and behind), Energy (hybrid energy per lap, laps on energy, energy to finish) and Track Rivals (your rank and the car you're chasing on each part of the lap).
+- Oval Pro: RPM and speed plates, 6 to 10 shift dots, LED rev bars around a red gear box, a straight-line track strip with every car on it, plus oil temp, water temp, laps, position, estimated laps and average fuel.
+- Stage Pro (rally): rev wings around the gear, a map that follows the car, tyre temps around a car icon, stage time and stage progress.
+- Co-Pilot Pro: 15 big-text pages for a second screen: lap times, opponents, timing, sectors, relative, leaderboard, fuel, tyres, radar, map, flags, car settings, pit and PC.
+- Pocket: 16 single-panel screens for small displays, paged with your wheel buttons.
+- Oil and water temperature are new readings in iRacing, rFactor 2 and Le Mans Ultimate, plus water in ACC.
+
+Monitor dash (4th monitor)
+- A full-screen dash for a spare monitor, with no rev bar. The text size is set from the screen size and how far away you sit (Standard, Large, XL or Huge).
+- Race Control has three pages: race (a class-split leaderboard with iRating, incidents, laps, gaps and the map), track map and telemetry traces. There are also Race Engineer, Traffic, Strategy and Stint layouts.
+- It works on 1080p, 1440p, ultrawide and portrait screens, opens and closes with the sim, and remembers its monitor.
+
+Wheel screen tools
+- See-through: a hotkey (Alt+Home by default, or a wheel button) shows the part of your monitor behind the wheel on the wheel's screen, so the dash seems to disappear. You set the area by dragging an outline once per screen.
+- Control Panel: a big-button window for a touchscreen, and a Controls tab in the phone app. It pages screens, Fast Glance, delta reference, brightness, theme, dark mode, alert size, see-through, LEDs on/off, LED combo, low-fuel acknowledge and fuel target. It never takes focus from the sim.
+
+AI Coach (v0.261)
+- "Report that as a bug" is confirmed on the radio as soon as the report is saved. The logs upload behind it instead of holding up Blip's answer.
+- Blip no longer says an overlay "is on screen" when it only asked for it. Turning on an overlay, or asking whether one is showing, now gets the real answer from the overlay window. If the window is gated by your plan or waiting for the sim, Blip says that.
+- Racecraft calls only name a car that is really behind or ahead of you on track. Mid-lap, the race order could name a car that had already passed you and tell you not to defend against it.
+- Guided lap: "Unwind." is called ahead of where the fast reference driver opens the wheel, the same way "Turn in." is, instead of waiting until you have already started unwinding. Where the reference was back on the power before opening the wheel, you hear "Accelerate." with no "Unwind."
+- iRacing races: at the flag, Blip says your real finishing place from iRacing's results: "You won it!", "P3, that's a podium", "P7 at the flag, plus four from where you started". In multi-class it gives your class place. The tone follows his humor setting. If the result isn't posted yet, it's still "Well done". Without Blip, the Spotter says a plain version.
+- Guided lap without visible overlays (exclusive full screen, VR without the VR overlay add-on, overlays hidden): each brake point gets the brake count-in, two pips and a chime on the mark, instead of a spoken "Brake now." that arrives late over the radio. Turn-in, unwind, accelerate and gear are still spoken and never land on a pip.
+- VR: Blip never says an overlay is "on screen" when you are in a headset. Without the VR overlay add-on the guided lap no longer pops a window on your desktop monitor, and Blip mentions the add-on once. With the add-on on, the arrows go to the headset.
+- The "switch to borderless" advice for exclusive full screen is said once, not on every guided lap.
+- Push-to-talk works on Pause/Break, Scroll Lock, Num Lock, Caps Lock and the Menu key while the sim has focus. Before, those keys only worked when TrackPro was the focused window.
+- In the garage, Blip greets normally on a track that has a corner map, instead of saying it is not receiving a usable position yet.
+- Corner maps for iRacing's new Mid-Ohio and Road America (2026 layouts) and the new Mid-Ohio Chicane and Short and Road America Bend: Blip used to say their corner numbering "does not check out". Nürburgring Gesamtstrecke VLN, Short without Arena and Long now call corners by name, like the Nordschleife, instead of refusing over turn numbers that never checked out.
+- Guided-lap and practice corner calls play 20% faster, with the same pitch.
+- The brain's lap call waits for a free moment on the radio instead of being dropped.
+
+Overlays
+- Overlays show the first time you turn them on. A new overlay window used to hide itself while it was still loading, so you had to switch it off and on again. TrackPro now also re-checks that a window really appeared, and shows it again if not.
+- Brake Approach shows the corner's gear next to its name ("Turn 4 · 3rd"), the same gear the guided lap calls.
+- On a track without a corner map, Brake Approach says so instead of "Brake marks appear once a session is running".
+- The Overlays page no longer switches an overlay back off after Blip or the guided lap turned it on.
+
+Spotter
+- Two new Spotter voices: Marin (female) and Cedar (male), free like the others. By default the Spotter and Blip still sound different, but you can pick any voice for the Spotter, even Blip's.
+- In iRacing Lone Qualify, the "faster class car approaching" call no longer fires. The other cars run on their own track and can't come up behind you.
+
+Games
+- Le Mans Ultimate: when the game is running but sends no car data (you're in the garage, or the shared-memory plugin is off), TrackPro says so and how to fix it, instead of "no game".
+
+Pedals and support
+- The Pedals page tells drivers with other pedals, such as a Logitech G29 through the wheel base, that TrackPro leaves them alone and they keep working in games. It used to say to connect pedals by USB.
+- The AI support agent no longer reads "no devices with problems" as "Windows can't see your pedals".
+
+Bug reports
+- A report now carries the last 10 minutes of TrackPro's logs instead of about the last minute, so the logs cover the moment the problem happened, not only the moment you explained it.
+- Windows account names (often your real name) are removed from the file paths in logs sent to support.
+
+Haptics and motion
+- ABS, slip and kerb effects are no longer turned down by gear shifts. Road texture comes through, and pedal ABS is strong on any pedal.
+- The motion health line reads the controller link instead of always saying disconnected.
+
+Privacy
+- Your email, billing and settings are no longer readable from your public profile.
+
+Staff
+- New Driver Reports page (Admin > Driver Reports) lists every bug report from the Report Bug button or from Blip. Each report shows what the driver said on the radio around it, the app's warnings in the 10 minutes before, and the uploaded logs. Staff can set a report's status and see which areas get the most complaints.
+
+Server (already live, no update needed)
+- Tell Blip it has no laps for a track and it checks your history first, then answers with your real numbers. A missing corner map is not missing laps.
+
+Before acceptance:
+- GT-MAX32 (or any LED wheel): apply three different LED combos; the button, rev and side colours change each time, and the line under the wheel shows no error.
+- Wheel screen: read every label on the TrackPro Race dash from your seat; speed reads MPH when your units are miles per hour (re-apply the dash once).
+- Apply Endurance Pro, Oval Pro, Stage Pro, Co-Pilot Pro and Pocket to the wheel screen and page through them in a session.
+- Monitor dash: open Race Control on a second monitor, page through race, map and telemetry, and change the text size.
+- See-through: set the outline over the wheel, press Alt+Home in the sim, and confirm the wheel screen shows the monitor area behind it; press again to get the dash back.
+- Control Panel: open it on a touchscreen and page the wheel screen without the sim losing focus.
+- Update from 2.26.230 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
+- While driving, tell Blip "report that as a bug": the confirmation comes right away, and on Driver Reports that report's logs reach back about 10 minutes.
+- Report Bug button: the message says logs are attached, and the logs reach back about 10 minutes.
+- Turn on Brake Approach from the Overlays page and by asking Blip for a guided lap, with the sim running, both on the first try: the window appears without an off/on. Blip says it turned the overlay on, never that it is showing. The header shows the corner's gear.
+- A keyboard push-to-talk key bound to Pause works with iRacing focused.
+- iRacing multi-class Lone Qualify: no "faster class car approaching" call.
+- Le Mans Ultimate in the garage: TrackPro explains that the game sends no car data until you are in the car, instead of showing "no game".
+- iRacing new Mid-Ohio or Road America: Blip calls corners by number; Gesamtstrecke VLN: by name. In the garage on a mapped track, the greeting is the normal one.
+- On a track you've driven, say "you don't have any laps here": Blip answers with your real history.
+
 ## TrackPro V2 2.26.230 - 2026-10-08 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.229 is included. AI Coach v0.260.
@@ -9,6 +107,7 @@ AI Coach (v0.260)
 - In practice, Blip calls it: "Turn 5, 3 tenths, mostly on entry. Carry more speed to the apex." Only when the measured comparison with the fast drivers and the brain's own read agree on where the time went, at most every other lap, never over the corner you are working on, a corner you muted, or one the fair test is holding back. The braking fix is to come off the brake sooner and let it roll, never "brake later". iRacing, on corners with fast-driver data for your car.
 - Races and qualifying stay quiet as before: ask "where am I losing time?" and Blip answers against the fast drivers.
 - Every lap's read is also logged next to what the lap measured, so the staff Brain page shows how the brain does on real laps.
+- Blip no longer opens with "No corner map for this track yet" on tracks that have one. The greeting was decided at the first moment of a session, before the map had loaded; it now waits the fraction of a second until the map is in (Oschersleben, Road Atlanta, Spa, VIR, Navarra, Oulton Park, Zandvoort and more).
 
 Server (already live, no update needed)
 - The brain's full-rate model is now 209M parameters, trained nightly on every saved lap at 60 readings a second; a small model learns from it every night and reaches PCs only when it beats the one they have.
