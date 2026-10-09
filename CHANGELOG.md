@@ -45,7 +45,7 @@ AI Coach (v0.261)
 - In the garage, Blip greets normally on a track that has a corner map, instead of saying it is not receiving a usable position yet.
 - Corner maps for iRacing's new Mid-Ohio and Road America (2026 layouts) and the new Mid-Ohio Chicane and Short and Road America Bend: Blip used to say their corner numbering "does not check out". Nürburgring Gesamtstrecke VLN, Short without Arena and Long now call corners by name, like the Nordschleife, instead of refusing over turn numbers that never checked out.
 - Guided-lap and practice corner calls play 20% faster, with the same pitch.
-- The brain's lap call waits for a free moment on the radio instead of being dropped.
+- The brain's lap call waits for a free moment on the radio instead of being dropped. It is prepared in Blip's cached voice the moment the lap is read, so with Instant coach lines on it plays from that clip instead of the live voice.
 
 Overlays
 - Overlays show the first time you turn them on. A new overlay window used to hide itself while it was still loading, so you had to switch it off and on again. TrackPro now also re-checks that a window really appeared, and shows it again if not.
@@ -97,6 +97,7 @@ Before acceptance:
 - Le Mans Ultimate in the garage: TrackPro explains that the game sends no car data until you are in the car, instead of showing "no game".
 - iRacing new Mid-Ohio or Road America: Blip calls corners by number; Gesamtstrecke VLN: by name. In the garage on a mapped track, the greeting is the normal one.
 - On a track you've driven, say "you don't have any laps here": Blip answers with your real history.
+- With Instant coach lines (beta) on, iRacing practice: the brain's lap call still plays at most every other lap, in Blip's voice.
 
 ## TrackPro V2 2.26.230 - 2026-10-08 (beta)
 
