@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.236 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.235 is included. AI Coach v0.263.
+
+Blip coaching
+- Records when a coaching call starts playing, when it cannot play, and when delivery remains unknown, so a generated suggestion is no longer mistaken for a delivered call.
+- Compares later clean passes at the same corner with the advice that played, using the same car, session, model and reference. Missing or unsuitable follow-up laps stay visible instead of being counted as failures.
+- Fixes the practice comparison that sometimes waits before introducing a new coaching focus. Eligible focus switches now enter the comparison and retain their assignments and missing follow-ups.
+- Gives staff a clearer view of the PC model's prediction accuracy, playback and later corner results. An audio start does not prove the driver heard the full call, and a faster later pass does not by itself prove the advice caused the gain.
+- Keeps requests through coach reconnects and checks action results before reporting completion. Questions, ambiguous changes and commands whose values do not match the driver's request retain confirmation.
+- Anchors Blip corner labels to official map geometry and makes uncertain map boundaries explicit.
+
+Validation limits
+- Neural lap calls remain restricted to iRacing. Live headset listening and evidence that these calls improve driving still need supervised field validation; this beta does not claim those checks have passed.
+
 ## TrackPro V2 2.26.235 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.234 is included. AI Coach v0.262 is unchanged.
