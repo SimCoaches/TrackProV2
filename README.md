@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.235](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.235) preserves community voice word beginnings and pauses while filtering rumble, improves seat haptics and output sharing, and fixes Govee ambient lighting and wheel connection diagnostics. Everything in 2.26.234 is included. Physical rig acceptance is still pending; supervised testing only.
+
 Beta [2.26.234](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.234) lights recognised dashboards and DDUs automatically, like SimHub (the SIMDID DV480 and other VoCore dashes, Ascher, GRID, PSE and more), and waits for SimHub to close instead of fighting it. Everything in 2.26.233 is included.
 
 Beta [2.26.233](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.233) lights DDU and DIY SimHub LED boards (Find LED device in Wheel Studio), fixes 5-14 second window freezes on some PCs, makes the 4th-monitor dash cover the taskbar, and draws dash track maps correctly. Everything in 2.26.232 is included.
