@@ -1,5 +1,23 @@
 # Changelog
 
+## TrackPro V2 2.26.233 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.232 is included. AI Coach v0.262.
+
+Testers: none of this has been checked on real hardware yet. Please report anything that looks wrong.
+
+Wheel LEDs: Find LED device
+- Dashboards (DDUs) and DIY LED boards that SimHub drives can now light from TrackPro, including rigs whose only LEDs are on the dash and not the wheel. In Wheel Studio, open the wheel picker and choose "Find LED device". TrackPro asks each free COM port and USB device whether it is a SimHub LED board, lists what it finds with its LED count, and adds the one you pick as its own LED device with its own setup. Then turn its LEDs on like any wheel.
+- It works with SimHub's Arduino firmware, SimHub standard serial devices and SimHub standard USB devices.
+- Close SimHub first: SimHub holds the board while it runs, and TrackPro tells you if it is still open.
+- To keep motion rigs safe, ports that could be a motion controller (Leonardo and FTDI boards) are skipped unless you press "It is not one, check it" for that port. TrackPro never talks to a board at the speed that can trigger a firmware reflash.
+- The log now lists each COM port's USB maker and model, so support can see what is plugged in.
+
+Fixes
+- Fixed the app freezing for 5 to 14 seconds at a time on some PCs. TrackPro's check for Fanatec pedals and wheel bases ran on the window's own thread, and one slow USB device could hold it. Wheel and pedal settings that waited behind it now apply straight away.
+- 4th-monitor dash: the dash now covers the whole monitor. The Windows taskbar no longer sits across the bottom of it. It still never takes focus from the sim.
+- Track maps on the dashes are drawn correctly. The map used to include the out lap from the pits and points after a reset, which drew extra loops and tails off the circuit on many tracks. Maps now learn only from clean flying laps, close properly at the start/finish line, and each layout of a track (for example Road America full course and Bend) gets its own map. Maps saved by earlier versions are re-learned, so the map appears after your first clean lap.
+
 ## TrackPro V2 2.26.232 - 2026-10-09 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.231 is included. AI Coach v0.262.
