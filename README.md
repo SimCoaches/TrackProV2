@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.233](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.233) lights DDU and DIY SimHub LED boards (Find LED device in Wheel Studio), fixes 5-14 second window freezes on some PCs, makes the 4th-monitor dash cover the taskbar, and draws dash track maps correctly. Everything in 2.26.232 is included.
+
 Beta [2.26.232](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.232) puts flags and the spotter on every wheel's side lights (green, yellow, blue, white, black, checkered, red, car left and right), brings flags from F1, rFactor 2 and Le Mans Ultimate to the wheel, lights MOZA rims, fixes Simagic and Fanatec lights, matches 120+ wheels to their makers' setups, and ties every button binding to its device (AI Coach v0.262). Everything in 2.26.231 is included.
 
 Beta [2.26.231](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.231) makes every wheel LED combo work (2.26.230 shipped an older engine that refused them), sharpens wheel-screen text, adds DNR-class dashes (Endurance Pro, Oval Pro, Stage Pro, Co-Pilot Pro, Pocket), a 4th-monitor dash, see-through and a touch Control Panel (AI Coach v0.261). Everything in 2.26.230 is included.
