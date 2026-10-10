@@ -1,5 +1,57 @@
 # Changelog
 
+## TrackPro V2 2.26.232 - 2026-10-09 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.231 is included. AI Coach v0.262.
+
+Testers: only the GSI wheels have been checked on real hardware. MOZA, Fanatec, Logitech, Simagic and the new flag and spotter lights are built from protocol research and byte-exact tests, so please report anything that looks wrong on your wheel.
+
+Wheel LEDs: flags and spotter
+- Every wheel with side lights now shows the flags and the spotter when you press Turn on: green, yellow, blue, white, black (a fast white blink), checkered and red on both sides, and car left / car right on its own side. Where the wheel maker's setup already lights a cue, their colour is kept. The spotter wins over flags, and flags win over TC, ABS and lock-up lights. This includes the GSI GT-MAX32 and GSI Interlock / GT Matrix, which showed no flags or spotter before.
+- GSI GT Matrix (Interlock): the centre matrix now shows the gear, coloured by your revs, with the shift flash, a P in the pit lane, flags and the checkered flag. Choose Gear, Gear in one colour or Off under Centre matrix in Your tweaks.
+- GSI Interlock / GT Matrix: a car alongside shows an arrow on the centre matrix pointing at it. Two cars on one side make it blink, and cars on both sides show a double arrow.
+- Simagic GT Neo and Neo X: each side has a single light, so the flags also show on the outer light at each end of the rev strip, below the shift lights. A flag no longer disappears while a car is alongside.
+- Buttons: any button or ring can now light for car left, car right, two cars left or right, the sector yellow, the repair (meatball) flag, caution, debris, the start lights or a penalty, steady or blinking. On a Simagic ring the whole ring flashes.
+- Preview: new test buttons for two cars left or right, sector yellow, repair flag, caution, debris, penalty and the start lights. "On wheel" says to turn the wheel's LEDs on first instead of doing nothing.
+- Rev lights fill the way the wheel's maker set them up. The Simagic GT Neo fills from both ends toward the middle, like in SimHub. Before, it filled left to right and the colour jumped back halfway. 24 wheels change, including the PSE GPX+, Pokornyi HYP-R PRO and LMP PRO V2, Cube AMG GT, Delta EVO and RFA GT Evo.
+
+Flags from every sim
+- F1 games now send flags: green, blue and yellow from the FIA flag, the yellow in your marshal zone, safety car and VSC as caution, checkered, red, the start lights and lights out, and disqualification. DRS open and DRS available now reach the wheel. The Spotter now makes F1 flag calls too.
+- rFactor 2 and Le Mans Ultimate:
+  - Blue flags show.
+  - A full-course yellow counts as a caution, and a sector yellow counts as a local yellow.
+  - Green shows for 5 seconds at the start instead of staying lit all race and covering the other flags.
+  - Start lights, disqualification and DRS now come through.
+- iRacing: the pit limiter and DRS now reach the wheel, and the black flag lights penalty cues.
+- ACC: the orange (meatball) flag lights the repair cue, and the red flag shows.
+- Assetto Corsa: a penalty lights the penalty cue.
+- BeamNG: the pit limiter light comes through.
+- The low-fuel light no longer blinks the whole drive in a sim that doesn't report fuel in litres, or when no sim is running.
+
+Wheels
+- Simagic rims keep their lights. The rim takes its LEDs back after about 5 seconds without a message, so TrackPro now repaints them every second. Writes are paced the way the rim expects, a refused write is retried, and commands that can hang the rim or touch its firmware are blocked. TrackPro warns you when SimHub is running, because SimHub fights for the same lights. Simagic rims keep their setup across firmware updates.
+- MOZA rims:
+  - TrackPro asks the rim what it is and lays out its lights to match: rev lights, the flag lights beside them, buttons and knob colours. Picking a wheel in Wheel Studio is now only an override.
+  - The ES and ESX are detected and never sent light data, because that can lock up the base. Pit House can still drive them.
+  - Lights are re-sent so the rim doesn't take them back.
+  - The rim's light mode switches to telemetry only when needed, and goes back to how it was when TrackPro lets go.
+- Fanatec: red and blue were swapped on colour rims, and the rev-light order was wrong on older ones. Both are fixed. RevStripe now works on the CSL P1, P1 V2 and WRC, and 3-digit displays show the gear. TrackPro tells you when the Fanatec app may take over the lights.
+- Logitech G29 and G923 PlayStation: rev lights now work.
+- 120+ wheels matched to their makers' setups:
+  - 71 SimHub standard-protocol wheels and dashes are now built in, with photos and button layouts. Brands include Conspit, Velocitas, Zen's, BavarianSimTec, Delta and VPG.
+  - LED orders are checked against SimHub's drivers for GRID / Sim-Lab, Pokornyi, PSE, RFA, P1Sim, VPG, Mayaris, Innato and Ascher.
+  - The SimCore UD2S rev lights no longer run over the inner side lights.
+  - SYM Projects DDU10 and Gear UP are now driven.
+  - The Simucube Artura has button layouts.
+- Wheel Studio is simpler to use. The LED tab has one wheel bar with an LEDs switch, one preview, one setups gallery and one Apply. The dash tab has one screen picker, one design gallery and one "Put on my wheel".
+
+Controls
+- Every button you bind in TrackPro now belongs to the device you pressed it on: Blip push-to-talk, voice chat talk and volume, force feedback on/off and strength, dash page and see-through buttons, low-fuel acknowledge and fuel target. The same button number on another controller never triggers it; a sequential shifter's downshift was keying Blip, and starting him again after you stopped him. Bindings name the device ("GT Neo · Button 10"), follow it to another USB port, tell two identical button boxes apart, and say when the device isn't connected or the button is already used elsewhere. If a bound device is missing when a session starts, TrackPro shows one notice instead of failing silently.
+- The setup hardware check shows your shifter: model and type for known Simagic and Thrustmaster shifters, any device named shifter or sequential, and the other controllers Windows sees. The AI support agent sees it too.
+
+AI Coach (v0.262)
+- Blip's push-to-talk only answers to the controller you bound it on. A sequential shifter's downshift with the same button number was keying Blip (see Controls).
+
 ## TrackPro V2 2.26.231 - 2026-10-08 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.230 is included. AI Coach v0.261.
