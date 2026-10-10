@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.234 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.233 is included. AI Coach v0.262.
+
+Testers: this has not been checked on a real dash yet. Please report anything that looks wrong.
+
+Wheel LEDs: dashboards light automatically
+- Recognised dashboards and DDUs now turn their LEDs on by themselves the first time they are plugged in, with the maker's setup, the same way SimHub does. No "Turn on" click is needed. This covers dashes with a VoCore or USBD480 screen such as the SIMDID DV480 Pro V5, dashes like the Ascher, Innato, Pokornyi PDU, PSE, SimCore, Sim-Lab SD43, GRID and SYM Projects DDUs, and LED boards you added with "Find LED device". It works even with the TrackPro window closed.
+- Steering wheels and rims still need the one-time "Turn on".
+- If SimHub is running, TrackPro waits and lights the dash as soon as SimHub closes, so the two programs never fight over it.
+- If you turn a dash's LEDs off, that choice is kept and TrackPro never turns them back on by itself.
+- The wheel bar shows "LEDs on (automatic)" for a dash TrackPro turned on.
+
 ## TrackPro V2 2.26.233 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.232 is included. AI Coach v0.262.
