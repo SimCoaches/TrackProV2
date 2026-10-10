@@ -1,5 +1,26 @@
 # Changelog
 
+## TrackPro V2 2.26.235 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.234 is included. AI Coach v0.262 is unchanged.
+
+Community voice
+- Preserves word beginnings with a short audio buffer and keeps short words, quiet syllables and natural pauses flowing. Noise suppression remains enabled, with a low-frequency rumble filter and rejection of isolated short clicks.
+- Audio-thread gating avoids renderer stalls interrupting speech. The buffer adds about 160 ms of delay. Mute, setup holds, feedback protection and device changes block or clear buffered audio.
+
+Haptics
+- A master Haptics on/off switch at the top of the Haptics page. Off releases your shaker outputs so other programs like SimHub can use them, and stays off through restarts. TrackPro never grabs the shakers while it is off.
+- When SimHub is running and TrackPro has the shakers to itself, the Haptics page says so, with one click to let SimHub use them, or to share the output (both apps' effects then add up).
+- A Shared or Dedicated audio-sharing choice now sticks; it used to go back to Automatic on every restart.
+- Separated seat mixing keeps enabled effects audible together, improves shift/slip detail, corrects protection measurements, and connects TT25/mixed-kit profiles and wider frequency settings to the live app. Existing profiles retain Classic and their tuning; choose Haptics > Setup > Seat mix > Separated to try it.
+
+Ambient lights and wheels
+- Fixes Govee manual setup, restoration, local segment output, colour composition and telemetry routing.
+- Wheel/dash connection failures now explain likely causes such as another program holding the device, no response, or needing to reconnect it.
+
+Validation limits
+- Community voice passed 88 focused tests and browser synthetic audio checks. Real headset/haptics listening, physical shaker feel, Govee hardware and installed-upgrade acceptance remain pending. Sustained rig chatter can still pass while speaking; test with the normal rig running.
+
 ## TrackPro V2 2.26.234 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.233 is included. AI Coach v0.262.
