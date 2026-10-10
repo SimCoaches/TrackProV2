@@ -2,6 +2,7 @@
   "_readme": "Curated per-version status shown in TrackPro's in-app Beta Channel version list (Settings). Statuses: 'recommended' | 'testing' | 'buggy'. Defaults when a version is absent here: stable releases show 'recommended', pre-releases show 'testing'. Add an entry to override — e.g. mark a beta 'buggy' the moment a field report confirms a real problem, with a short honest note. Synced to the public repo by scripts/publish-update-release.ps1 on every publish; the app fetches it raw from the public repo's main branch.",
   "updated": "2026-10-10",
   "versions": {
+    "2.26.238": { "status": "testing", "note": "AI Coach v0.264: coaching data delivery status and more complete advice and practice-comparison records. Supervised testing only; live listening and driving-improvement acceptance pending." },
     "2.26.236": { "status": "testing", "note": "AI Coach v0.263: coaching playback and later corner evidence, plus practice comparison enrollment. Supervised testing only; live headset and driving-improvement acceptance pending." },
     "2.26.235": { "status": "testing", "note": "Buffered community voice, seat haptics and ambient lighting fixes. Supervised testing only; physical headset, shaker, Govee and installed-upgrade acceptance pending." },
     "2.26.216": { "status": "recommended", "note": "Current stable release (AI Coach v0.249): Blip calls the corner live in practice, motion and force-feedback improvements, a Thanos controller left alone until Enable. Lebois SRT80 is beta-channel only." },
