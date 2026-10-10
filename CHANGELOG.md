@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.238 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.236 is included. AI Coach v0.264.
+
+Blip coaching
+- Shows whether coaching records are paused, waiting to send, received by the server or missing, with a last-sent time on the Coach page.
+- Preserves more complete advice and practice-comparison records through temporary connection problems, and makes lost or incomplete records visible.
+- Keeps practice-comparison assignments, playback starts and later corner results separate, including cases with no usable follow-up.
+- Gives staff clearer checks for whether real coaching records are complete enough for an offline review.
+
+Beta limits
+- A server receipt or playback start does not establish that the driver heard the full call. A faster later pass does not by itself prove that advice caused the improvement.
+- Neural lap calls remain restricted to iRacing. Live headset listening, useful timing and driving-improvement acceptance still need supervised field validation.
+- Training experiments are bounded and reviewed separately. This beta does not automatically activate an experimental model or change coaching policy from incomplete outcome records.
+
 ## TrackPro V2 2.26.236 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.235 is included. AI Coach v0.263.
