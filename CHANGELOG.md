@@ -1,5 +1,31 @@
 # Changelog
 
+## TrackPro V2 2.26.239 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Combines the latest main changes, including everything in 2.26.238. AI Coach v0.265. Physical hardware and live driving acceptance remain pending.
+
+Blip and driving guidance
+- Guided laps join at the current position, guide the remainder and one complete lap, then stop. Calls use the selected Coach voice, volume and output.
+- Improves request completion, reconnect recovery, rival name recognition and diagnosis when guided calls cannot play.
+- Keeps Brake Approach available through practice, qualifying and race transitions, with larger turn text and reference-gear display.
+- Adds questions about verified corner references and measured driving actions where suitable data exists. References refresh during a session; missing or ambiguous evidence stays explicit.
+
+Haptics, lighting and controls
+- Configure shaker hardware, routing and effect frequencies separately for each audio output, including mixed BST-1 and TT25 rigs. Recommended seat tuning and output measurements help investigate weak feedback.
+- Improves Govee discovery, identification, RGB testing, placement, display selection and recovery. Screen-sampling zones and physical effect positions can be set separately.
+- Loads available shared clean-lap maps for overlays and the fourth-monitor dash without waiting to learn the outline locally.
+- Adds 1%, 2% or 5% FFB strength steps for dials, buttons and keys, with better handling of short and rapid clicks.
+
+Community and setup
+- Adds voice-volume dial/button bindings. Buffered voice activity preserves word beginnings and natural pauses while filtering low-frequency rig noise.
+- Adds mentions, replies, reactions, pictures, GIFs, short videos and click-to-play YouTube/Vimeo links, with persistent mention/reply notifications.
+- Filters redundant axle-toe totals from desktop checklists when both individual wheel targets exist. Setup generation and contributed-file checks still use the previous server rules. A complete automatic garage setup builder is not included; installation still requires an available verified file.
+
+Beta limits
+- Headset playback, driving timing, shaker output, Govee hardware and installed-upgrade acceptance require field testing.
+- Automatic reference verification covers qualifying iRacing numeric braking boards. Other landmark classes and AC/ACC detections require review or further validation. Daily discovery does not guarantee a daily change to every track or retrain the reader.
+- Neural lap calls remain restricted to iRacing. Playback starts and later faster laps do not establish full audible delivery or a causal coaching benefit.
+
 ## TrackPro V2 2.26.238 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.236 is included. AI Coach v0.264.
