@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.239](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.239) combines the latest Blip guided-lap and reference work, per-output haptics tuning, Govee recovery and placement, brake guidance, shared maps, dial controls and community chat (AI Coach v0.265). Includes 2.26.238. Supervised testing only; live listening, driving and physical hardware acceptance remain pending.
+
 Beta [2.26.238](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.238) shows coaching data delivery status and improves the completeness of Blip's advice and practice-comparison records (AI Coach v0.264). Everything in 2.26.236 is included. Supervised testing only; live listening and driving-improvement acceptance remain pending.
 
 Beta [2.26.236](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.236) tracks Blip's coaching playback and comparable later corner results, and fixes enrollment in the practice comparison (AI Coach v0.263). Everything in 2.26.235 is included. Playback starts and later gains are measured separately; they do not prove the driver heard a full call or that coaching caused an improvement. Supervised testing only.
