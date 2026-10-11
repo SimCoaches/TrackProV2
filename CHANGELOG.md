@@ -1,5 +1,25 @@
 # Changelog
 
+## TrackPro V2 2.26.240 - 2026-10-10 (beta)
+
+BETA: for supervised testing. Includes everything in 2.26.239. AI Coach v0.265 is unchanged.
+
+Reliability fixes
+- Keeps onboard recording audio running when the encoder briefly falls behind. A stuck or disconnected encoder still reports an error.
+- Waits for the monitor dash window to be ready before positioning and showing it. Failed startup is reported and can be retried.
+- Refreshes an expired login once when loading session history. Failed loads preserve previously loaded history and offer a retry instead of showing missing or incomplete laps.
+- Makes Settings navigation show its loading state while telemetry continues updating, and keeps navigation away from a loading page responsive.
+
+FFB and device checks
+- Corrects wheel steering-range and autocenter setup used by FFB Lab, and preserves failed steering reads and force-cut diagnostics.
+- Adds FFB Lab to Additional Features for the invited test account, off by default. Employee access remains available.
+- Adds clearer wheel LED connection diagnostics. A successful connection still needs visible LED and telemetry testing.
+
+Beta limits
+- Physical FFB feel, individual Simagic base compatibility, LED output, spare-monitor placement and recorded-stint audio require installed-app checks.
+- The navigation regression is reproduced and fixed; this does not establish the cause of every previously reported Windows stall.
+- Live driving and hardware acceptance limits from 2.26.239 still apply.
+
 ## TrackPro V2 2.26.239 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Combines the latest main changes, including everything in 2.26.238. AI Coach v0.265. Physical hardware and live driving acceptance remain pending.
