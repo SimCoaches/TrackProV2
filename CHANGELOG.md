@@ -1,5 +1,25 @@
 # Changelog
 
+## TrackPro V2 2.26.242 - 2026-10-11 (beta)
+
+Includes everything in published beta 2.26.240 and the unpublished 2.26.241 work. AI Coach v0.267.
+
+Blip controls
+- Executes direct requests without redundant confirmation, including natural wording and multi-part controls.
+- Sends ordinary in-game chat through the normal message path instead of an admin-only broadcast.
+- Separates immediate visor tear-off, mirror adjustment and next-stop windshield service.
+- Discovers installed simulator controls and supports observed parked assignment of missing keyboard mappings, with saved-profile verification and recovery for mistaken binding edits.
+- Inspects the requested simulator screen with continuous Coach Vision off. Interruptions and physical takeover cancel stale menu actions.
+- Preserves completed action receipts through interrupted answers and session changes.
+
+Spotter audio
+- Prepares the selected audio output before speech and recovers a stuck or rejected player for subsequent calls.
+
+Beta limits
+- A wheel button is unnecessary when a usable keyboard mapping exists. A control unassigned everywhere still requires parked setup before use while driving; automatic provisioning of every control and a binding-free visor SDK command are not included.
+- Live iRacing control outcomes, installed-app upgrades and physical audio/hardware acceptance remain pending. Earlier beta field limits still apply.
+- This desktop beta does not deploy backend functions.
+
 ## TrackPro V2 2.26.240 - 2026-10-10 (beta)
 
 BETA: for supervised testing. Includes everything in 2.26.239. AI Coach v0.265 is unchanged.
