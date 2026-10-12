@@ -1,5 +1,24 @@
 # Changelog
 
+## TrackPro V2 2.26.243 - 2026-10-11 (beta)
+
+For supervised testing. Includes all combined main changes since beta 2.26.242. AI Coach v0.268.
+
+- Setup Shop: create named starting files from installed official iRacing references, preserve sources, and retain verified car calibration. Tuned output still depends on supported, measured profiles; all-car performance is not established.
+- Starting setup targets can use one driver's clean laps and refine with more evidence, with visible driver/lap counts. A starting target is not proof of a pace improvement.
+- Stream Mode: Twitch, YouTube and Kick connections, an OBS overlay, audience questions, polls and clean-lap challenges. Live activation requires provider configuration and hosted service deployment.
+- TrackPro Studio: launch and control OBS or Streamlabs Desktop, check readiness, select scenes, broadcast, record and save replays. Capture, destination configuration, encoding and mixing remain in the broadcast app.
+- Streaming: Works Team referral links and commission visibility, plus optional Restream combined chat for existing multistream creators. Restream requires separate service configuration.
+- Endurance: iRacing team hub and shared strategy overlay with teammate plans, driver readiness, monitoring and source handoff. Live driver swaps, pit stops and simulator overlays still need field checks.
+- Wheel Studio: task-based navigation, spatial button colours, and clearer dashboard and calibration controls.
+- Blip: audio-device recovery, earlier lap-reference loading, durable visor keyboard preparation and quiet direct visor requests with truthful input outcomes.
+- Blip controls: opt-in iRacing driving-control preparation, readiness checks and fewer repeated chat/report attempts when an action cannot proceed.
+- Audio: Windows voice-audio checks and Automatic haptics output mode kept shared with other audio apps.
+- Brake Approach: audio aligned to measured overlay position, recovery of supported missing brake zones, and a more compact overlay.
+- Track maps: oval corner numbering anchored to official map references.
+
+Live driving, headset, streaming-provider and installed-upgrade acceptance remain pending. The previously documented Fuji duplicate-turn-in replay issue remains open. Some screens still contain English copy when Spanish is selected. This desktop beta does not deploy hosted services. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.242 - 2026-10-11 (beta)
 
 Includes everything in published beta 2.26.240 and the unpublished 2.26.241 work. AI Coach v0.267.
