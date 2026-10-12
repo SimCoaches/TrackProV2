@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.245 - 2026-10-12 (beta)
+
+For supervised testing. Includes everything in beta 2.26.244. AI Coach v0.270.
+
+- Live Blip coaching: judges technique against measured corner results before suggesting a correction. Faster or equal passes are not criticized just for differing from a reference. Unresolved evidence pauses older advice without awarding improvement.
+- Live-radio driving explanations: uses the preceding sequence when asked about a slide or spin, distinguishes initiating inputs from recovery, and preserves uncertainty. A supported correction is an experiment to try, not a proven cause or gain.
+- Voice routing: keeps Spotter, Coach, community voice and radio clicks off configured shaker outputs, including failed-headset recovery. Safe speaker recovery remains available; an unverified or shaker route stays muted with an output error.
+- Spotter: adds 45 incident reactions to each of the four stock voices and rotates eligible reactions before repeating. Immediate proximity and clear calls retain priority. AC and ACC incident detection is not added by this change.
+- Setup Shop: adds native-value editing for supported iRacing setup files, durable saved-version history and exact-file tracking against a baseline. Captured laps, comparison conditions and the actual measured pairs stay visible without assuming legality or pace gains.
+- Endurance: clearer room creation, joining and telemetry sharing; a more accessible pit-plan editor; and a desktop Test overlay with visible delivery feedback. Stale team data withdraws automatic fuel and readiness claims while retaining labeled manual instructions.
+- Streaming: searchable chat, saved questions, featuring, visual chat and poll overlays, and explicit creator replies on supported Twitch and YouTube connections. Visual chat works with Blip off. First-stream guidance and studio recovery clarify picture, audio and broadcast readiness.
+- Track map: a larger floating circuit with numbers beside the ribbon and calibrated start/finish direction markers. Official iRacing artwork retains its published orientation.
+- Wheel Studio: real model previews and catalog search before a wheel is connected, plus an LED canvas option. Choosing a model does not enable hardware output.
+
+Beta limits: live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Setup editing uses native values; each changed file needs its own iRacing garage and driving checks. Text-chat coaching retains deployed server behavior pending a coordinated update. Hosted Setup Shop and streaming activation remain separate, and creator conversion rewards are not activated by this installer. Three-game incident-detection parity, all-car legality and pace improvements are not established. Pit-rejoin estimates remain uncalibrated. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.244 - 2026-10-12 (beta)
 
 For supervised testing. Includes everything in beta 2.26.243. AI Coach v0.269.
