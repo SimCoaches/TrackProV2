@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.244 - 2026-10-12 (beta)
+
+For supervised testing. Includes everything in beta 2.26.243. AI Coach v0.269.
+
+- Blip: reports observed iRacing fast-repair use separately from next-stop selection, preserves unknown outcomes, and keeps repair-contaminated stops out of pit-loss estimates.
+- Race information: clears stale opponent gaps after pit entry, missing telemetry or reconnect, distinguishes race position from physical track position, and explains closing estimates that extend beyond the finish.
+- Radio: retries an interrupted local information lookup once after safety speech clears, using fresh information. Actions are not repeated. Client tool checks also recover an unacknowledged or mismatched voice-session toolset.
+- Coaching references: rejects pit-lane, invalid and incomplete corner passes, corrects the shared turn-in marks reproduced in the Fuji replay, and budgets complete spoken cues before the corner.
+- Spotter: restores own lap-time and named session-fastest reports, including practice and qualifying. Complete times can wait through a busy radio; proximity calls retain priority. Existing custom opt-outs remain respected.
+- TrackPro Studio: guides creation of separate streaming scenes, remembers setup choices, and offers an OBS picture preview. Existing scenes and broadcast destinations are preserved; Streamlabs picture checks remain in the broadcast app.
+- Setup Shop: keeps saved-file receipts and the selected reference visible during refresh, with account and car/layout ownership checks.
+- Race Pass: keeps completed-season standings and prize-claim access visible between seasons. Season 2's date remains to be announced; this update does not start a season or award prizes.
+
+Beta limits: live headset, race-control outcomes, streaming-provider operation and installed-upgrade acceptance remain pending. The Fuji fix passes recorded-session checks; three-game live acceptance remains separate. Pit-rejoin forecasts still use conservative total pit-road time, rather than a calibrated net race-time loss. Setup-file garage checks cover specific MX-5 and F3 combinations, not all-car legality or pace improvement. Hosted Setup Shop and streaming activation remain separate. Some screens still contain English copy when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.243 - 2026-10-11 (beta)
 
 For supervised testing. Includes all combined main changes since beta 2.26.242. AI Coach v0.268.
