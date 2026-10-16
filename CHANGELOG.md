@@ -1,5 +1,25 @@
 # Changelog
 
+## TrackPro V2 2.26.247 - 2026-10-15 (beta)
+
+For supervised testing. Includes everything in beta 2.26.245 (2.26.246 was a local trial build and was never published). AI Coach v0.271.
+
+- Plans: every plan card now states its monthly AI Coach allowance plainly: Starter 24 min of live radio talk time and 200 coach chat messages, Pro 5× 2 hours and 1,000, Pro 20× 8 hours and 4,000. No plan is unlimited. The Pro card's name, price and features follow the 5× / 20× switch, and the cards no longer crowd or overflow.
+- Subscribers can change plans in the app. Choosing another plan shows the exact amount charged today, the next bill and the new allowance before anything changes. Moving up charges the difference for the rest of the period; moving down takes effect now and credits unused time to the next bills. A declined card changes nothing.
+- AI support can upgrade, downgrade and cancel a plan, apply the one-time save offer and handle eligible refunds, always quoting the exact numbers and acting only after a clear yes. It no longer sends subscribers to a billing page without a plan switch, no longer claims a team is reviewing a case, and treats Logitech, MOZA, Fanatec and other wheels as working with TrackPro. These server changes are already live for every installed version.
+- The plan page no longer says the free trial was used when nobody is signed in.
+- Home: the "Before you drive" checklist is removed. The greeting line now shows who is on track and the next community race.
+- Blip: restores proactive lap reads with truthful cue delivery, routes questions and session commands correctly, and keeps practice goals attached to the right session. Guided laps use a natural deep male voice. Brake Approach handoffs between corners are steadier.
+- Spotter: fixes traffic calls in solo qualifying and calls after a post-finish restart, withholds "clear" when traffic data is incomplete, recovers warnings after a telemetry drop or an AC plugin retry, and keeps the race state current while Flags calls are muted.
+- Endurance: the pit board overlay design, multiclass overlays with class-rival pace and observed pit history, measured lap replay, Stream Deck controls, larger overlay text and overlay telemetry sharing.
+- Pedals: an interrupted virtual-pedal upgrade can be recovered, and stale pedal holds are rejected.
+- Belt tensioners: wider cue range, better release timing and steadier live telemetry handling. FFB diagnostics report wheel rotation correctly and explain torque scaling.
+- Sidebar: Belt Tensioners, Ambient Lighting, Wind Sim, Motion, Endurance, Streaming, Driver Lab, Works Team and Paint Studio can be shown or hidden as additional features.
+- Setup Shop explains which laps qualify and refreshes status after a lap upload. Overlay cosmetics get distinct materials and live previews; wheel lighting maps photo LED banks with sharper colours. Settings backup and brake audio are more dependable. More contextual help, and more screens show Spanish when Spanish is selected.
+- Installer: installs the Microsoft Visual C++ runtime when it is missing, fixing "could not create the virtual pedal device node" on PCs without it.
+
+Beta limits: in-app and AI-support plan changes have passed automated and live-service checks but have not yet been run against a real card charge; the first real upgrade and downgrade should be watched. Moving back down within 30 days of an upgrade, annual-to-monthly and smaller annual plans, and plans with a discount are handled by the Sim Coaches team. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.245 - 2026-10-12 (beta)
 
 For supervised testing. Includes everything in beta 2.26.244. AI Coach v0.270.
