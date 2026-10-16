@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.248 - 2026-10-16 (beta)
+
+For supervised testing. Includes everything in beta 2.26.247. AI Coach v0.272.
+
+- Belt Tensioners and Wind Sim are switched off while Sim Coaches finishes building and testing them. They no longer appear in the menu or in Additional Features, and their pages show an "in testing" notice with no hardware controls, including for drivers who turned them on in an earlier version. They will return in a later update.
+- Blip uses the verified trackside references. Each corner's approved boards, kerbs and landmarks now reach Blip with this car's measured brake, turn-in and throttle points phrased against them ("brake right at the 100 board", "turn in 10 meters after the end of the kerb on the left"), so lap notes, focus talk and corner answers name what the driver can see instead of bare meters. A corner with a verified object but no measured point for the car gets the object to look for, never a made-up instruction.
+
+Beta limits: in-app and AI-support plan changes have not yet been run against a real card charge. Trackside references cover only verified corners; most corners still have none. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216, which still shows Belt Tensioners and Wind Sim.
+
 ## TrackPro V2 2.26.247 - 2026-10-15 (beta)
 
 For supervised testing. Includes everything in beta 2.26.245 (2.26.246 was a local trial build and was never published). AI Coach v0.271.
