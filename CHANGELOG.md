@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.249 - 2026-10-17 (beta)
+
+For supervised testing. Includes everything in beta 2.26.248. AI Coach v0.272.
+
+- Seat haptics, Optimized mix: a new default for every new haptics profile. Each effect plays in its own frequency range, matched to the kit: gear shifts and impacts sit where that kit's shakers hit hardest, kerbs and suspension get their own ranges around them, and the engine and road sit above them. Hits now get the shakers' full stroke: the engine steps aside under a shift or impact and comes straight back. Gear shifts are a real thud instead of a knock. An everyday upshift on the 100W kit now reaches 0.92 of full output, up from 0.52. Saved profiles are not changed: drivers on a saved profile see a one-time "Use the new feel" offer, and "Keep mine" keeps their mix and tuning exactly as they are.
+- Spotter calls no longer shake the seat. Car left, car right, clear, engine warnings and off-track calls were firing the Haptics page's full-power calibration pulse into the shakers. Calibration tones are also refused while the car is moving.
+- iRacing: four wheels off onto paved runoff no longer rumbles the seat like grass. Grass, dirt, sand and gravel keep the full off-track feel, and a dirt oval's racing surface is no longer treated as off track.
+- FFB Lab: when a wheel briefly loses exclusive control, the Lab takes it back within a couple of milliseconds instead of dropping the wheel, cutting force and fading back in. The log names the program that was in front when it happens.
+
+Beta limits: the Optimized haptics are measured on the digital output only; feel on real shakers (100W, 600W, ButtKicker, TT25) still needs rig checks. The FFB Lab change is not yet confirmed on a wheel that drops out repeatedly. Ambient lighting on a SimHub-defined serial controller still does not respond on one tester's rig. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.248 - 2026-10-16 (beta)
 
 For supervised testing. Includes everything in beta 2.26.247. AI Coach v0.272.
