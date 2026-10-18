@@ -1,5 +1,19 @@
 # Changelog
 
+## TrackPro V2 2.26.250 - 2026-10-18 (beta)
+
+For supervised testing. Includes everything in beta 2.26.249. AI Coach v0.272.
+
+- Dash flags look like the real flags on every dash screen: the wheel screen, the Dash Studio preview and editor, the in-game overlay and the monitor dash. Checkered is a real board of square checks, the meatball (repair) is an orange disc on black, and blue carries its yellow diagonal stripe. Green, yellow, white, red, black and clear keep their colour and word, with room at the edges. Black flags keep a thin light border so they show on a black dash.
+- Wheel and dash LEDs on serial devices defined from SimHub (for example the SIMDID DV480 rev lights) now open and drive the port the way SimHub does, with a retry for devices that are still starting up. The log says why when a device does not answer.
+- Monitor timing board: practice and qualifying results stay visible after the session changes, and the starting grid shows before the green flag.
+- Optimized seat haptics: impacts need real contact on kerbs, off track and under braking, so light side touches no longer thud. Lateral load leaves kerbs and excursions to the kerb and road effects. Suspension detail plays on a continuous timeline instead of restarting with each batch. Saved Classic and Separated profiles are unchanged.
+- Haptics tidy-up: profile changes no longer hold up the audio, a lost audio block fades instead of cutting, and unused older code paths are removed.
+- Ambient lighting: a guided Govee setup and a simpler everyday view. Colour changes now reach the target colour instead of stopping short.
+- More of the app in Spanish, including FFB Lab tooltips and the race timing overlay labels.
+
+Beta limits: the serial LED change is not yet confirmed on real SIMDID hardware. The flags have been checked in rendered images, not yet on a physical wheel screen. Optimized haptics feel on real shakers still needs rig checks. The FFB Lab recovery is not yet confirmed on a wheel that drops out repeatedly. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.249 - 2026-10-17 (beta)
 
 For supervised testing. Includes everything in beta 2.26.248. AI Coach v0.272.
