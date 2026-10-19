@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.251 - 2026-10-19 (beta)
+
+For supervised testing. Includes everything in beta 2.26.250. AI Coach v0.272.
+
+- LEDs & Dash is open to every driver. The access code screen is gone; open it from LEDs & Dash in the left menu to set up wheel LED profiles, dash displays and the monitor dash.
+- Wheel LEDs and dash screens go dark while the PC sleeps and when Windows shuts down, restarts or signs out, then come back on wake. Self-powered dashes such as the SIMDID DV480 no longer stay lit with the last page.
+- SIMDID DV480: 4 lock-up lights, 8 rev lights and 4 lock-up lights, matching SimHub's GT layout. Turn on never puts rev lights on any recognised dash's side lights.
+- Ambient lighting: a parked iRacing car no longer glows brake red in the pits or on the grid, and the everyday view says what the lights are showing now.
+- The Support assistant can now check that pedals are plugged in, see the devices connected to the PC, measure the microphone and play a test line, find out why laps are not saving, check and fix each sim's telemetry settings, read a live pedal trace and fill in a warranty claim, and diagnose install, launch and update problems. Support tickets now reach the inbox reliably.
+
+Beta limits: LEDs & Dash has not been confirmed on every physical wheel and dash; the SIMDID layout and the sleep and shutdown blanking are not yet confirmed on real SIMDID hardware. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.250 - 2026-10-18 (beta)
 
 For supervised testing. Includes everything in beta 2.26.249. AI Coach v0.272.
