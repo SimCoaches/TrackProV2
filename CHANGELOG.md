@@ -2,10 +2,24 @@
 
 ## Unreleased (next beta)
 
-Fold this into the next release's entry when it is cut. AI Coach v0.273 (already in 2.26.252; bump only if the coach changes again).
+Fold this into the next release's entry when it is cut. AI Coach v0.274 (already in 2.26.253; bump only if the coach changes again).
 
-- Choose Blip's reference lap from his in-game overlay too. Blip's card shows the lap he compares against ("vs 1:32.456 Driver 3", tagged Auto while it is the fastest lap); open it for the current car and track's clean laps, fastest first, each with its date and session, and pick one, or Fastest lap to go back to the automatic choice. It uses the same choice as the Blip page, works while the overlays are unlocked (Alt+O), like his Start/Stop button, and closes when you click back into the sim. With a chosen lap, the coaching HUD says "vs the reference lap you chose".
+- Blip's voice list is down to six: Cedar, Marin, Echo, Shimmer, Alloy and Sage, three male and three female, each with every prepared line in Blip's own live voice. If you had picked Ash, Ballad or Verse, Blip now speaks in Cedar; Coral moves to Marin. Any other voice you want is in the Spotter Market.
+
+## TrackPro V2 2.26.253 - 2026-10-20 (beta)
+
+For supervised testing. Includes everything in beta 2.26.252. AI Coach v0.274.
+
+- Choose Blip's reference lap from his in-game overlay too. Blip's card shows the lap he compares against under "Reference lap" ("1:32.456 Driver 3 · Fastest" while it is the automatic fastest); open it for up to 100 of the current car and track's clean laps, fastest on top and slower laps under it with their gap (+0.646) and a short season/session line, in a list that scrolls smoothly on its own and opens on the lap in use. Picking the fastest goes back to automatic. It uses the same choice as the Blip page, works while the overlays are unlocked (Alt+O), like his Start/Stop button, and closes when you click back into the sim. With a chosen lap, the coaching HUD says "vs the reference lap you chose".
 - Settings shows "Blip v0.NNN" and "TrackPro v2.26.x".
+- Blip's card only shows words you actually heard. A line cut off (by the talk button, an urgent Spotter call, a late call kept silent, or a dropped voice) leaves the card instead of staying up with its unheard ending; a lookup with nothing to say no longer wipes the line he just said. His words stay up longer to read with your eyes on the track: at least 8 seconds after he stops, longer lines up to 20. Pressing the talk button keeps his last line on the card, dimmed, so "say again?" never wipes it. The coaching HUD's standing tip shows only after Blip has said that focus out loud, labelled "Working on" and dimmer so it never reads as a new line, and his other answers (fuel, gaps) no longer wear the focus corner's tag.
+- Blip's card shows the line you're hearing, not the next one. When a quick answer arrives while he is still saying the line before it ("One sec, checking" while the lookup's answer comes back, or the next queued line), its words wait until its own audio starts. A late clear for an old line no longer wipes the line playing now.
+- Blip's lap call after a clean iRacing practice lap ("Turn 5, 3 tenths to the fast drivers, mostly on entry") now plays in his own voice whenever he is connected, with his words on the card. Before, it went silent unless the Spotter, its Dynamic speech and "Coach cues through Spotter" were all on. With Blip not connected it still uses the Spotter's radio only when you allowed that. If the radio is busy or the line is still being made, it waits a few seconds and tries again, and it is never said more than about 35 seconds after the lap.
+- Blip only names a trackside reference you can use from the car. His calls named the nearest saved object however far it was, so drivers heard "Turn 14 — turn in 630 meters after the 100 board". Now a brake point is told off a brake board within 60 meters, and any other point off an object within 30 meters; farther than that he says the plain call ("Turn 14 — turn in earlier"). The reference list he keeps for each corner uses the same rule, so it matches his corner calls. Boards saved under other names ("the 300 board", the stripe boards at Snetterton) now count as boards, and when you ask about a corner he still says how far off your brake point was when it's past any marker. Asking him where a reference is still names the nearest one.
+- Haptics: Test now plays an effect at exactly its slider's strength, through the same overall strength, kit ceiling and output gains as driving, so changing an effect's % changes its Test (before, Test never played below 70%). Dragging the slider during a Test is felt live; at 0% Test is off and says why.
+- Staff-only test tools (not shown to drivers).
+
+Beta limits: the Blip card timing and the follow-up hold are not yet field-tested. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
 
 ## TrackPro V2 2.26.252 - 2026-10-20 (beta)
 
@@ -24,6 +38,7 @@ For supervised testing. Includes everything in beta 2.26.251. AI Coach v0.273.
 - Staff-only test tools (not shown to drivers).
 
 Beta limits: Setup Shop's one-click file is new and has not yet been confirmed across many cars. The haptics strength and shift changes need a seat test on a BST-1 pair. Side lights are not yet checked on hardware or in a multiclass race. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+- Haptics: each effect's Test now plays at that effect's strength and your overall strength, so you can tune on the Haptics page and feel the change before driving. Before, Test played every effect at no less than 70%, so settings below that sounded the same. At 0% the Test button is off and says why.
 
 ## TrackPro V2 2.26.251 - 2026-10-19 (beta)
 
