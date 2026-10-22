@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.256](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.256) smooths the truck cab sway: the seat follows the cab like a damped spring, keeping the sway and leaving out the cab's quick wobble that made it shake (AI Coach v0.276). Includes 2.26.255. Supervised testing only; the truck sway still needs a check on a real rig.
+
 Beta [2.26.255](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.255) makes the motion seat follow the truck's cab sway in American Truck Simulator and Euro Truck Simulator 2, raises Thanos rigs left at the old 50 mm/s setup speed to their actuators' rating, plays iRacing force feedback on the sim's own clock, adds a one-shaker BST-1 kit to haptics, and lets Ambient lighting follow the game's screen by itself (AI Coach v0.276). Includes 2.26.254. Supervised testing only; the truck sway and the force feedback timing still need checks on real rigs.
 
 Beta [2.26.254](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.254) makes motion strong again: braking, throttle and cornering keep their travel at any strength and borrow what the track's shape is not using, road camber no longer leans the rig, and on race tracks the rig levels out when the car stops. It also adds American Truck Simulator and Euro Truck Simulator 2 motion and Blip's six-voice list (AI Coach v0.275). Includes 2.26.253. Supervised testing only.
