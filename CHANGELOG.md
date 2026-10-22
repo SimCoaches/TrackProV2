@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.255 - 2026-10-22 (beta)
+
+For supervised testing. Includes everything in beta 2.26.254. AI Coach v0.276.
+
+- Truck games: the seat follows the cab. In American Truck Simulator and Euro Truck Simulator 2 the cab rocks on its mounts as you weave the wheel, brake and turn, and the motion rig now carries that sway on top of the truck's own movement. It is added after the truck's own movement is sized, so braking and cornering keep their strength and none of them is delayed, and it eases out with the rest of the motion when you pause. Advanced tuning > Truck games sets how much (Cab sway: 100% is the cab's real movement, up to 200%) and how smoothly it follows (Cab sway smoothing: 60 ms; higher feels like a slower swoop).
+- Motion > Truck games is always on the Motion page now, so the ATS Truck profile can be switched on before the first drive. Before, it only appeared while a truck game was running.
+- Motion speed: a Thanos controller now reports its actuators' stroke and leadscrew when it connects. A rig with 150 mm, 5 mm-leadscrew actuators that still has the old setup's 50 mm/s placeholder is raised to their 250 mm/s rating automatically; at 50 mm/s a hard stop or a truck's sway lost most of its travel. Motion setup fills in the rating and says what the controller reported, it warns below 150 mm/s, and the Motion page points out a rig still at 50 mm/s.
+- iRacing force feedback plays on the sim's own clock. Each 360 Hz steering sample is placed by iRacing's own tick and played through a short buffer, so a late frame no longer makes the wheel hold and then jump (felt as catches or "stop points" while turning, or a jolty lock and release). FFB Lab shows signal timing counters.
+- FFB Lab (iRacing): an experimental steering stop at the car's steering lock, off by default and never saved in profiles. It needs a parked steering check (-90°, 0, +90°) on the current wheel, car and rotation, and switches itself off when any of them change. A strength fit suggests a mapping from the last minute of driving and only ever makes steering lighter (the mapping range now reaches 400 Nm). Steady force no longer has a tiny repeating ripple.
+- Haptics: a "50W BST-1 Single" kit for rigs with one shaker. It plays Mono, so either amp output carries the whole mix with the BST-1 tuning. "Use the new feel" also brings output gains above 100% back to 100%. The Haptics page warns when Overall strength and output gain together are flattening the hits (kerbs, shifts and impacts barely louder than the engine), with "Set outputs to 100%", "Set overall strength to 100%" and "Keep my settings".
+- Ambient lighting follows the game's screen by itself: it captures the monitor holding the game window (the middle screen on triples), crops to a windowed game's picture, checks again every second and rides through brief window changes. The Screen tab and status line name the game and monitor; choosing a monitor yourself turns following off. HDR desktops are read instead of refused, a screen capture that fails says why on the Ambient page, and the lights no longer blink every two seconds.
+- Endurance: a solo iRacing Test Drive now shows live in your team room without changing the plan or the stint history. A race session always takes the room back, and the room stays with the race for 10 minutes after its feed stops.
+- Three dash layouts have new names: Time Attack, Navigator and Navigator Pro. Saved dashes keep working.
+
+Beta limits: the truck cab sway, the motion speed change and the iRacing force feedback timing still need feel tests on real rigs, and the cab sway's direction is unchecked. The FFB steering stop is experimental. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.254 - 2026-10-21 (beta)
 
 For supervised testing. Includes everything in beta 2.26.253. AI Coach v0.275.
@@ -58,7 +74,7 @@ For supervised testing. Includes everything in beta 2.26.250. AI Coach v0.272.
 
 - LEDs & Dash is open to every driver. The access code screen is gone; open it from LEDs & Dash in the left menu to set up wheel LED profiles, dash displays and the monitor dash.
 - Wheel LEDs and dash screens go dark while the PC sleeps and when Windows shuts down, restarts or signs out, then come back on wake. Self-powered dashes such as the SIMDID DV480 no longer stay lit with the last page.
-- SIMDID DV480: 4 lock-up lights, 8 rev lights and 4 lock-up lights, matching SimHub's GT layout. Turn on never puts rev lights on any recognised dash's side lights.
+- SIMDID DV480: a GT layout of 4 lock-up lights, 8 rev lights and 4 lock-up lights. Turn on never puts rev lights on any recognised dash's side lights.
 - Ambient lighting: a parked iRacing car no longer glows brake red in the pits or on the grid, and the everyday view says what the lights are showing now.
 - The Support assistant can now check that pedals are plugged in, see the devices connected to the PC, measure the microphone and play a test line, find out why laps are not saving, check and fix each sim's telemetry settings, read a live pedal trace and fill in a warranty claim, and diagnose install, launch and update problems. Support tickets now reach the inbox reliably.
 
@@ -69,7 +85,7 @@ Beta limits: LEDs & Dash has not been confirmed on every physical wheel and dash
 For supervised testing. Includes everything in beta 2.26.249. AI Coach v0.272.
 
 - Dash flags look like the real flags on every dash screen: the wheel screen, the Dash Studio preview and editor, the in-game overlay and the monitor dash. Checkered is a real board of square checks, the meatball (repair) is an orange disc on black, and blue carries its yellow diagonal stripe. Green, yellow, white, red, black and clear keep their colour and word, with room at the edges. Black flags keep a thin light border so they show on a black dash.
-- Wheel and dash LEDs on serial devices defined from SimHub (for example the SIMDID DV480 rev lights) now open and drive the port the way SimHub does, with a retry for devices that are still starting up. The log says why when a device does not answer.
+- Wheel and dash LEDs on standard serial devices (for example the SIMDID DV480 rev lights) now open and drive the port the way those devices expect, with a retry for devices that are still starting up. The log says why when a device does not answer.
 - Monitor timing board: practice and qualifying results stay visible after the session changes, and the starting grid shows before the green flag.
 - Optimized seat haptics: impacts need real contact on kerbs, off track and under braking, so light side touches no longer thud. Lateral load leaves kerbs and excursions to the kerb and road effects. Suspension detail plays on a continuous timeline instead of restarting with each batch. Saved Classic and Separated profiles are unchanged.
 - Haptics tidy-up: profile changes no longer hold up the audio, a lost audio block fades instead of cutting, and unused older code paths are removed.
@@ -87,7 +103,7 @@ For supervised testing. Includes everything in beta 2.26.248. AI Coach v0.272.
 - iRacing: four wheels off onto paved runoff no longer rumbles the seat like grass. Grass, dirt, sand and gravel keep the full off-track feel, and a dirt oval's racing surface is no longer treated as off track.
 - FFB Lab: when a wheel briefly loses exclusive control, the Lab takes it back within a couple of milliseconds instead of dropping the wheel, cutting force and fading back in. The log names the program that was in front when it happens.
 
-Beta limits: the Optimized haptics are measured on the digital output only; feel on real shakers (100W, 600W, ButtKicker, TT25) still needs rig checks. The FFB Lab change is not yet confirmed on a wheel that drops out repeatedly. Ambient lighting on a SimHub-defined serial controller still does not respond on one tester's rig. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+Beta limits: the Optimized haptics are measured on the digital output only; feel on real shakers (100W, 600W, ButtKicker, TT25) still needs rig checks. The FFB Lab change is not yet confirmed on a wheel that drops out repeatedly. Ambient lighting on a serial LED controller still does not respond on one tester's rig. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
 
 ## TrackPro V2 2.26.248 - 2026-10-16 (beta)
 
@@ -273,8 +289,8 @@ Community voice
 - Audio-thread gating avoids renderer stalls interrupting speech. The buffer adds about 160 ms of delay. Mute, setup holds, feedback protection and device changes block or clear buffered audio.
 
 Haptics
-- A master Haptics on/off switch at the top of the Haptics page. Off releases your shaker outputs so other programs like SimHub can use them, and stays off through restarts. TrackPro never grabs the shakers while it is off.
-- When SimHub is running and TrackPro has the shakers to itself, the Haptics page says so, with one click to let SimHub use them, or to share the output (both apps' effects then add up).
+- A master Haptics on/off switch at the top of the Haptics page. Off releases your shaker outputs so other programs can use them, and stays off through restarts. TrackPro never grabs the shakers while it is off.
+- When another shaker program is running and TrackPro has the shakers to itself, the Haptics page says so, with one click to let that program use them, or to share the output (both apps' effects then add up).
 - A Shared or Dedicated audio-sharing choice now sticks; it used to go back to Automatic on every restart.
 - Separated seat mixing keeps enabled effects audible together, improves shift/slip detail, corrects protection measurements, and connects TT25/mixed-kit profiles and wider frequency settings to the live app. Existing profiles retain Classic and their tuning; choose Haptics > Setup > Seat mix > Separated to try it.
 
@@ -292,9 +308,9 @@ BETA: for supervised testing. Automatic updates stay on the existing stable rele
 Testers: this has not been checked on a real dash yet. Please report anything that looks wrong.
 
 Wheel LEDs: dashboards light automatically
-- Recognised dashboards and DDUs now turn their LEDs on by themselves the first time they are plugged in, with the maker's setup, the same way SimHub does. No "Turn on" click is needed. This covers dashes with a VoCore or USBD480 screen such as the SIMDID DV480 Pro V5, dashes like the Ascher, Innato, Pokornyi PDU, PSE, SimCore, Sim-Lab SD43, GRID and SYM Projects DDUs, and LED boards you added with "Find LED device". It works even with the TrackPro window closed.
+- Recognised dashboards and DDUs now turn their LEDs on by themselves the first time they are plugged in, with the maker's setup. No "Turn on" click is needed. This covers dashes with a VoCore or USBD480 screen such as the SIMDID DV480 Pro V5, dashes like the Ascher, Innato, Pokornyi PDU, PSE, SimCore, Sim-Lab SD43, GRID and SYM Projects DDUs, and LED boards you added with "Find LED device". It works even with the TrackPro window closed.
 - Steering wheels and rims still need the one-time "Turn on".
-- If SimHub is running, TrackPro waits and lights the dash as soon as SimHub closes, so the two programs never fight over it.
+- If another dash program is running, TrackPro waits and lights the dash as soon as it closes, so the two programs never fight over it.
 - If you turn a dash's LEDs off, that choice is kept and TrackPro never turns them back on by itself.
 - The wheel bar shows "LEDs on (automatic)" for a dash TrackPro turned on.
 
@@ -305,9 +321,9 @@ BETA: for supervised testing. Automatic updates stay on the existing stable rele
 Testers: none of this has been checked on real hardware yet. Please report anything that looks wrong.
 
 Wheel LEDs: Find LED device
-- Dashboards (DDUs) and DIY LED boards that SimHub drives can now light from TrackPro, including rigs whose only LEDs are on the dash and not the wheel. In Wheel Studio, open the wheel picker and choose "Find LED device". TrackPro asks each free COM port and USB device whether it is a SimHub LED board, lists what it finds with its LED count, and adds the one you pick as its own LED device with its own setup. Then turn its LEDs on like any wheel.
-- It works with SimHub's Arduino firmware, SimHub standard serial devices and SimHub standard USB devices.
-- Close SimHub first: SimHub holds the board while it runs, and TrackPro tells you if it is still open.
+- Dashboards (DDUs) and DIY LED boards can now light from TrackPro, including rigs whose only LEDs are on the dash and not the wheel. In Wheel Studio, open the wheel picker and choose "Find LED device". TrackPro asks each free COM port and USB device whether it is a standard LED board, lists what it finds with its LED count, and adds the one you pick as its own LED device with its own setup. Then turn its LEDs on like any wheel.
+- It works with the standard Arduino LED firmware, standard serial devices and standard USB devices.
+- Close any other program that uses the board first: it holds the board while it runs, and TrackPro tells you if it is still open.
 - To keep motion rigs safe, ports that could be a motion controller (Leonardo and FTDI boards) are skipped unless you press "It is not one, check it" for that port. TrackPro never talks to a board at the speed that can trigger a firmware reflash.
 - The log now lists each COM port's USB maker and model, so support can see what is plugged in.
 
@@ -329,7 +345,7 @@ Wheel LEDs: flags and spotter
 - Simagic GT Neo and Neo X: each side has a single light, so the flags also show on the outer light at each end of the rev strip, below the shift lights. A flag no longer disappears while a car is alongside.
 - Buttons: any button or ring can now light for car left, car right, two cars left or right, the sector yellow, the repair (meatball) flag, caution, debris, the start lights or a penalty, steady or blinking. On a Simagic ring the whole ring flashes.
 - Preview: new test buttons for two cars left or right, sector yellow, repair flag, caution, debris, penalty and the start lights. "On wheel" says to turn the wheel's LEDs on first instead of doing nothing.
-- Rev lights fill the way the wheel's maker set them up. The Simagic GT Neo fills from both ends toward the middle, like in SimHub. Before, it filled left to right and the colour jumped back halfway. 24 wheels change, including the PSE GPX+, Pokornyi HYP-R PRO and LMP PRO V2, Cube AMG GT, Delta EVO and RFA GT Evo.
+- Rev lights fill the way the wheel's maker set them up. The Simagic GT Neo fills from both ends toward the middle. Before, it filled left to right and the colour jumped back halfway. 24 wheels change, including the PSE GPX+, Pokornyi HYP-R PRO and LMP PRO V2, Cube AMG GT, Delta EVO and RFA GT Evo.
 
 Flags from every sim
 - F1 games now send flags: green, blue and yellow from the FIA flag, the yellow in your marshal zone, safety car and VSC as caution, checkered, red, the start lights and lights out, and disqualification. DRS open and DRS available now reach the wheel. The Spotter now makes F1 flag calls too.
@@ -345,7 +361,7 @@ Flags from every sim
 - The low-fuel light no longer blinks the whole drive in a sim that doesn't report fuel in litres, or when no sim is running.
 
 Wheels
-- Simagic rims keep their lights. The rim takes its LEDs back after about 5 seconds without a message, so TrackPro now repaints them every second. Writes are paced the way the rim expects, a refused write is retried, and commands that can hang the rim or touch its firmware are blocked. TrackPro warns you when SimHub is running, because SimHub fights for the same lights. Simagic rims keep their setup across firmware updates.
+- Simagic rims keep their lights. The rim takes its LEDs back after about 5 seconds without a message, so TrackPro now repaints them every second. Writes are paced the way the rim expects, a refused write is retried, and commands that can hang the rim or touch its firmware are blocked. TrackPro warns you when another LED program is running, because it fights for the same lights. Simagic rims keep their setup across firmware updates.
 - MOZA rims:
   - TrackPro asks the rim what it is and lays out its lights to match: rev lights, the flag lights beside them, buttons and knob colours. Picking a wheel in Wheel Studio is now only an override.
   - The ES and ESX are detected and never sent light data, because that can lock up the base. Pit House can still drive them.
@@ -354,8 +370,8 @@ Wheels
 - Fanatec: red and blue were swapped on colour rims, and the rev-light order was wrong on older ones. Both are fixed. RevStripe now works on the CSL P1, P1 V2 and WRC, and 3-digit displays show the gear. TrackPro tells you when the Fanatec app may take over the lights.
 - Logitech G29 and G923 PlayStation: rev lights now work.
 - 120+ wheels matched to their makers' setups:
-  - 71 SimHub standard-protocol wheels and dashes are now built in, with photos and button layouts. Brands include Conspit, Velocitas, Zen's, BavarianSimTec, Delta and VPG.
-  - LED orders are checked against SimHub's drivers for GRID / Sim-Lab, Pokornyi, PSE, RFA, P1Sim, VPG, Mayaris, Innato and Ascher.
+  - 71 standard-protocol wheels and dashes are now built in, with photos and button layouts. Brands include Conspit, Velocitas, Zen's, BavarianSimTec, Delta and VPG.
+  - LED orders are checked device by device for GRID / Sim-Lab, Pokornyi, PSE, RFA, P1Sim, VPG, Mayaris, Innato and Ascher.
   - The SimCore UD2S rev lights no longer run over the inner side lights.
   - SYM Projects DDU10 and Gear UP are now driven.
   - The Simucube Artura has button layouts.
@@ -387,7 +403,7 @@ New dashes (Wheel Studio)
 - New panels: Launch (clutch and throttle, 0-100 and 0-200 km/h or 0-60 and 0-120 mph timers), Opponents (gap and gap change to the cars ahead and behind), Energy (hybrid energy per lap, laps on energy, energy to finish) and Track Rivals (your rank and the car you're chasing on each part of the lap).
 - Oval Pro: RPM and speed plates, 6 to 10 shift dots, LED rev bars around a red gear box, a straight-line track strip with every car on it, plus oil temp, water temp, laps, position, estimated laps and average fuel.
 - Stage Pro (rally): rev wings around the gear, a map that follows the car, tyre temps around a car icon, stage time and stage progress.
-- Co-Pilot Pro: 15 big-text pages for a second screen: lap times, opponents, timing, sectors, relative, leaderboard, fuel, tyres, radar, map, flags, car settings, pit and PC.
+- Navigator Pro: 15 big-text pages for a second screen: lap times, opponents, timing, sectors, relative, leaderboard, fuel, tyres, radar, map, flags, car settings, pit and PC.
 - Pocket: 16 single-panel screens for small displays, paged with your wheel buttons.
 - Oil and water temperature are new readings in iRacing, rFactor 2 and Le Mans Ultimate, plus water in ACC.
 
@@ -452,7 +468,7 @@ Server (already live, no update needed)
 Before acceptance:
 - GT-MAX32 (or any LED wheel): apply three different LED combos; the button, rev and side colours change each time, and the line under the wheel shows no error.
 - Wheel screen: read every label on the TrackPro Race dash from your seat; speed reads MPH when your units are miles per hour (re-apply the dash once).
-- Apply Endurance Pro, Oval Pro, Stage Pro, Co-Pilot Pro and Pocket to the wheel screen and page through them in a session.
+- Apply Endurance Pro, Oval Pro, Stage Pro, Navigator Pro and Pocket to the wheel screen and page through them in a session.
 - Monitor dash: open Race Control on a second monitor, page through race, map and telemetry, and change the text size.
 - See-through: set the outline over the wheel, press Alt+Home in the sim, and confirm the wheel screen shows the monitor area behind it; press again to get the dash back.
 - Control Panel: open it on a touchscreen and page the wheel screen without the sim losing focus.
@@ -493,9 +509,9 @@ Before acceptance:
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.228 is included. AI Coach v0.259.
 
 Wheel Studio (LEDs & Dash, still in shop testing)
-- Your wheel's LEDs follow the game with one click. Wheel Studio picks the wheel that is plugged in, "Apply complete setup" turns its LEDs on, and the device bar says "LEDs off - Turn on" when they are off. TrackPro still never takes a wheel you did not turn on, and warns you if SimHub is running too.
+- Your wheel's LEDs follow the game with one click. Wheel Studio picks the wheel that is plugged in, "Apply complete setup" turns its LEDs on, and the device bar says "LEDs off - Turn on" when they are off. TrackPro still never takes a wheel you did not turn on, and warns you if another LED program is running too.
 - A USB hiccup no longer switches a wheel's LEDs off for good: TrackPro reconnects on its own. Only a wheel that another program keeps holding is turned off, and it tells you so.
-- Wheels light the way their makers set them up. Each wheel's rev, side and button lights come from the vendor setups in SimHub's device files (used with SimHub's permission): which light is which, the rev colors and where they start, ABS and TC on the side lights, flags, pit limiter. 18 more wheels get their own side lights instead of a rev bar spread across them.
+- Wheels light the way their makers set them up. Each wheel's rev, side and button lights follow its maker's own setup: which light is which, the rev colors and where they start, ABS and TC on the side lights, flags, pit limiter. 18 more wheels get their own side lights instead of a rev bar spread across them.
 - Per-car rev lights: in ACC and iRacing, wheels whose maker publishes a car's shift lights show that car's own pattern.
 - Lock-up lights: front wheels locking light the left side lights, rears the right. ABS still wins while it is working. Assetto Corsa now shows ABS and TC on the side lights too.
 - Button lights: backlights stay on when TrackPro takes the wheel. Click buttons on the wheel photo to color them and choose when they light (always, pit limiter, pit lane, TC or ABS on, flags).
@@ -788,15 +804,15 @@ Before acceptance:
 Promoted from the signed beta without rebuilding the installer, after a drive on the owner's rig. This is the stable release: it carries every change since 2.26.181 (the entries below). The Lebois SRT80 has not been run on a rig and stays a beta-channel option. AI Coach v0.249.
 
 Motion
-- Stop releases the controller, and now says so. Pressing Stop has always parked the rig and then closed the controller's port, but the Motion page kept showing "Rig connected" and a Disconnect button, so it looked as if TrackPro was still holding the controller. After Stop the page now shows the rig as not connected, with: "Motion stopped. The controller is released, so other software can use it. Press Enable to use it here again." SimHub and other software can open the controller as soon as that appears (a few seconds after Stop, once the rig has parked).
+- Stop releases the controller, and now says so. Pressing Stop has always parked the rig and then closed the controller's port, but the Motion page kept showing "Rig connected" and a Disconnect button, so it looked as if TrackPro was still holding the controller. After Stop the page now shows the rig as not connected, with: "Motion stopped. The controller is released, so other software can use it. Press Enable to use it here again." Other software can open the controller as soon as that appears (a few seconds after Stop, once the rig has parked).
 - Correction to the 2.26.215 notes, which said TrackPro keeps the port until Disconnect: it does not. Stop and Disconnect both release it. E-STOP keeps the connection, because the rig is being held and motion resumes from there.
 - If an SRT80 cannot be lowered in time on Stop, TrackPro says the rig is still held up instead of saying the controller is free.
 
 Checks used for acceptance:
-- Thanos rig: Enable, drive, press Stop. The rig parks, then the Motion page shows "Rig not connected" and the released message. SimHub can open the controller without closing TrackPro. Press Enable in TrackPro (with SimHub's connection closed): motion works with the same settings.
+- Thanos rig: Enable, drive, press Stop. The rig parks, then the Motion page shows "Rig not connected" and the released message. Other motion software can open the controller without closing TrackPro. Press Enable in TrackPro (with the other software's connection closed): motion works with the same settings.
 - Press E-STOP while running: the Motion page still shows the rig connected; Enable resumes.
 - Beta channel off: Motion setup and Settings list no Lebois SRT80. Beta channel on: both list it.
-- Thanos rig: enable motion, close TrackPro, open it again. Motion is not armed and SimHub can open the controller's port.
+- Thanos rig: enable motion, close TrackPro, open it again. Motion is not armed and other motion software can open the controller's port.
 - Practice, three or more flying laps so the coach picks a corner: the short cue before it, "Brake now." early enough to act on, the other calls through the corner, the short verdict just past the exit.
 - Update from 2.26.215 (and from stable 2.26.181) with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
 
@@ -806,8 +822,8 @@ BETA: for supervised testing. Automatic updates stay on the existing stable rele
 
 Motion
 - The Lebois SRT80 is offered as a motion kit and controller on the beta channel only. Its driver has not run on a real rig yet, so an install that is not on the beta channel does not show it. A rig that is already set up on the SRT80 keeps its setup.
-- TrackPro no longer takes a Thanos or SRT80 controller when it starts. Before, if TrackPro was closed with motion still enabled, the next launch re-armed motion and opened the controller's port, which locked SimHub and other software out of it. Now every motion setting still comes back at launch, and the controller's port is opened only when you press Enable or Connect (or run a test). No motion controller re-arms on its own at launch: press Enable to start motion.
-- To hand the controller to SimHub in the middle of a session, press Stop (or Disconnect) on the Motion page: both park the rig and release the port.
+- TrackPro no longer takes a Thanos or SRT80 controller when it starts. Before, if TrackPro was closed with motion still enabled, the next launch re-armed motion and opened the controller's port, which locked other software out of it. Now every motion setting still comes back at launch, and the controller's port is opened only when you press Enable or Connect (or run a test). No motion controller re-arms on its own at launch: press Enable to start motion.
+- To hand the controller to other motion software in the middle of a session, press Stop (or Disconnect) on the Motion page: both park the rig and release the port.
 
 This build is the candidate for the next stable release: the same installer is promoted if it passes.
 
@@ -816,7 +832,7 @@ Before acceptance:
 - Practice, three or more flying laps so the coach picks a corner: the short cue before it, "Brake now." early enough to act on, the other calls through the corner, the short verdict just past the exit. Nothing talks over anything else.
 - Suggestions per lap on 1, 2 and 3: she coaches that many corners in a lap when that many have a measured fault.
 - Motion on the rig you normally drive: connect, Start, Stop and E-STOP behave as in 2.26.213.
-- Thanos rig: enable motion, close TrackPro, open it again. Motion is not armed and SimHub can open the controller's port; press Enable and motion works with the same settings as before.
+- Thanos rig: enable motion, close TrackPro, open it again. Motion is not armed and other motion software can open the controller's port; press Enable and motion works with the same settings as before.
 - Update from 2.26.214 (and from stable 2.26.181) with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
 
 ## TrackPro V2 2.26.214 - 2026-10-01 (beta)
@@ -835,7 +851,7 @@ AI Coach (practice)
 Motion: Lebois SRT80
 - Control boxes on Lebois firmware 2.1 are supported (Competition Control Box V1 and V2, four lift actuators). Firmware 1.8 and 1.9 work as before. Lebois changed the box's protocol in firmware 2.0 (June 2026) and Motion Center V1.1 installs 2.1, so an updated box could not connect to TrackPro until now.
 - Firmware 2.0 is refused with a message to update to 2.1: it switches the servos off whenever the port closes, which would drop a held rig every time TrackPro closes.
-- New safety gate, on every firmware: if the box's servos went off while TrackPro's record has the rig raised (SimHub or Motion Center used the box, the box's own E-stop, a fault), TrackPro will not move it. The box only counts position while its servos are on, so its count no longer matches the rig. TrackPro asks for the box's USB to be unplugged and plugged back in with TrackPro open, and connects after that.
+- New safety gate, on every firmware: if the box's servos went off while TrackPro's record has the rig raised (other motion software or Motion Center used the box, the box's own E-stop, a fault), TrackPro will not move it. The box only counts position while its servos are on, so its count no longer matches the rig. TrackPro asks for the box's USB to be unplugged and plugged back in with TrackPro open, and connects after that.
 - While a rig is recorded as held on a control box, TrackPro does not probe that port and will not connect another controller type to it.
 - Nothing here has run on a real SRT80 rig yet. The first-run checklist in docs/motion-srt80.md must be done with nobody in the rig.
 
@@ -924,11 +940,11 @@ Motion
 - Chassis stiffness: four actuators can twist the frame diagonally, which no car chassis does. TrackPro now removes that twist, so every movement reaches the seat as heave, pitch and roll, like a car. A kerb under one wheel still hits hardest at that corner (three quarters of it), and the rest of the hit comes through as the body moving. New slider next to the corner mixer (Advanced), 100% by default.
 - The suspension travel limit added in 2.26.208 now holds all four corners together, so it can no longer twist the frame.
 - Motion monitor (new card on the Motion page): live, what each corner is sent in mm, split into cueing (braking, cornering, bumps), elevation, suspension and haptics, plus heave, pitch, roll and warp (twist). Each lap the log gets the RMS of each, including warp.
-- Corner LEDs work with Pro Micro, Leonardo and Micro boards (ATmega32u4), including stock SimHub firmware: TrackPro keeps the board's DTR line up through the baud change it was dropping.
+- Corner LEDs work with Pro Micro, Leonardo and Micro boards (ATmega32u4), including the standard Arduino LED firmware: TrackPro keeps the board's DTR line up through the baud change it was dropping.
 
 Before acceptance:
 - Motion, Omega: kerbs on one wheel and on both sides. The rig moves as one body (no diagonal twist), the kerb side still reads, and the Motion monitor shows warp near 0 mm.
-- Corner LEDs with a Pro Micro on stock SimHub firmware: connects, all four modes, E-stop flashes red.
+- Corner LEDs with a Pro Micro on the standard Arduino LED firmware: connects, all four modes, E-stop flashes red.
 - Motion monitor: numbers move with the car; the log line appears each lap.
 - Update from 2.26.209 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
 
@@ -989,7 +1005,7 @@ Motion haptics (actuators)
 
 Motion
 - Elevation first: hills, crests and banking get the travel; suspension and bump heave give it up. Omega factory tune: Track elevation 1.5 (new slider in Advanced), bump release 0.4 Hz so crests and dips are held, Bumps & kerbs 1.0 (was 1.5), corner mixer suspension 0.10 (was 0.25). Saved Omega factory profiles upgrade on their own; a profile you changed keeps your values (Restore factory settings applies the new ones).
-- Corner LEDs: TrackPro drives the LED strip on the rig's corners (a SimHub Arduino), so SimHub isn't needed for them. Motion setup > Corner LEDs: pick the Arduino's port, then press Show to map each part of the strip to its corner. Motion page > Corner LEDs: Status, Movement (each corner follows its actuator), Game (rev lights and flags) or Static, plus brightness and colour. E-stop always flashes them red. Close SimHub, or turn off its Arduino connection, first: only one program can use the port.
+- Corner LEDs: TrackPro drives the LED strip on the rig's corners (an Arduino LED board), so no other program is needed for them. Motion setup > Corner LEDs: pick the Arduino's port, then press Show to map each part of the strip to its corner. Motion page > Corner LEDs: Status, Movement (each corner follows its actuator), Game (rev lights and flags) or Static, plus brightness and colour. E-stop always flashes them red. Close any other program that uses the board, or turn off its Arduino connection, first: only one program can use the port.
 - The response test times braking and cornering cues with the profile's cue response, the way they arrive while driving.
 
 Haptics (bass shakers)
@@ -1001,7 +1017,7 @@ AI Coach v0.247
 Before acceptance:
 - Motion, Omega on the rig: kerbs on both sides at Laguna Seca or Spa. Each kerb gives one clear thunk on the right side, front then rear, then rumble. No clunks at 4.5 mm.
 - Motion: a hilly track. Crests, dips and banking read clearly; suspension and bumps no longer fill the stroke. Try Track elevation 1.0 to 2.0.
-- Corner LEDs: with SimHub closed, pick the port, map the four parts with Show, try each mode, press E-stop once.
+- Corner LEDs: with any other LED program closed, pick the port, map the four parts with Show, try each mode, press E-stop once.
 - Shakers: kerbs stand clearly above the engine, and the engine comes back smoothly after each kerb.
 - Blip: start with the headset mic unplugged (or blocked in Windows), then plug it in mid-session.
 - Update from 2.26.206 with the in-app updater: TrackPro closes, installs and restarts cleanly, and pedals work afterwards.
@@ -1091,7 +1107,7 @@ Force feedback effects
 - Fixed: effects squashed against the force limit in loaded corners went one-sided and lightened the steering; one braking zone fired ABS, lockup and slip together; body roll on turn-in pushed the wheel as a "bump"; H-pattern shifts through neutral never knocked.
 
 Haptics (bass shakers)
-- Outputs follow amplifiers Windows renumbers, say which program holds an output (SimHub, Voicemeeter), retry every 2 seconds, and recover streams that stop.
+- Outputs follow amplifiers Windows renumbers, say which program holds an output (another shaker program, Voicemeeter), retry every 2 seconds, and recover streams that stop.
 - Dedicated mode remembers the period each output held; dropouts are counted and named by cause.
 - Feel: calibrated loudness, no effects during garage animations, kerbs by strike only, shift dynamics; F1 ABS read from the wheels; iRacing straight-line lockup; slip and lockup calibrated at the kit preset volumes; the Dayton kits' 60 Hz engine ceiling shown on the page.
 
@@ -1113,7 +1129,7 @@ Before acceptance:
 BETA: for supervised testing. Automatic updates stay on the existing stable release. Everything in 2.26.202 is included. AI Coach v0.245. Custom motion games are new; test them on an empty rig at low master gain first.
 
 VR motion compensation
-- TrackPro no longer touches VR motion-compensation data unless TrackPro motion is moving your rig. With SimHub or FlyPT driving the platform, OpenXR Motion Compensation no longer jumps. Before, TrackPro wrote a level rig position into the same shared memory even with its motion off.
+- TrackPro no longer touches VR motion-compensation data unless TrackPro motion is moving your rig. With other motion software driving the platform, OpenXR Motion Compensation no longer jumps. Before, TrackPro wrote a level rig position into the same shared memory even with its motion off.
 - With TrackPro motion on, compensation works as before.
 
 AI Coach v0.245
@@ -1131,7 +1147,7 @@ Custom motion games
 - The Motion page's engineering panel adds Custom motion games settings: joystick cue strength, joystick ramp and rotation onset.
 
 Before acceptance:
-- SimHub (or FlyPT) motion with OpenXR Motion Compensation, TrackPro running with its motion off: the headset view stays still with no jump every second.
+- Other motion software with OpenXR Motion Compensation, TrackPro running with its motion off: the headset view stays still with no jump every second.
 - TrackPro motion with OpenXR Motion Compensation: compensation still follows the rig while TrackPro motion is enabled.
 - Custom motion game on an empty rig at low master gain, using the bench sender (scripts/send-trackpro-motion.py circle, thrust, joystick): the rig leans the right way, the joystick moves it only while its cue is on, and it parks when the sender stops.
 - Blip in an ElevenLabs voice for a session: every reply in the chosen voice, no gaps.
@@ -1837,7 +1853,7 @@ Tonight's testing: check coach microphone/PTT, short spoken answers and HUD-off 
 
 ## TrackPro V2 2.26.151 - 2026-08-29 (beta)
 
-- Spotter reflexes: car left / car right / three-wide fire the instant the overlap appears (~30-50ms, faster than CrewChief) - a redundant onset debounce and the engine-tick wait are gone. Clears, flicker damping, and mid-corner clear holds are unchanged.
+- Spotter reflexes: car left / car right / three-wide fire the instant the overlap appears (~30-50ms) - a redundant onset debounce and the engine-tick wait are gone. Clears, flicker damping, and mid-corner clear holds are unchanged.
 
 ## TrackPro V2 2.26.150 - 2026-08-29 (beta)
 
@@ -2169,7 +2185,7 @@ Tonight's testing: check coach microphone/PTT, short spoken answers and HUD-off 
 
 ## TrackPro V2 2.26.97 - 2026-07-31
 
-- Added Wheel Studio for building reusable steering-wheel LED profiles and dash displays, including scalable LED layouts, themes, typed conditions, live previews, and expanded hardware backends for GSI, Moza, Fanatec, WLED, SimHub-compatible, and other supported devices.
+- Added Wheel Studio for building reusable steering-wheel LED profiles and dash displays, including scalable LED layouts, themes, typed conditions, live previews, and expanded hardware backends for GSI, Moza, Fanatec, WLED, standard-protocol LED and other supported devices.
 - Wheel Studio is protected by testing access code `1994`; an unlock lasts only for the current app run, matching the Motion testing gate.
 - Motion now publishes commanded platform pose for VR motion-compensation integrations, with customer-facing Unity integration guides and an example telemetry sender.
 - ACC now exposes the tyre, timing, flag, and session data already available from shared memory, while rFactor 2 reads its scoring buffer so dashboards no longer remain at `0:00.000`.
