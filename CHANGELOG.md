@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.256 - 2026-10-22 (beta)
+
+For supervised testing. Includes everything in beta 2.26.255. AI Coach v0.276.
+
+- Truck games: the cab sway no longer shakes the seat. In 2.26.255 the seat followed the cab through a light filter that also let through the cab's quick wobble on its mounts (3 to 5 times a second), so with Cab sway turned up the seat shook with a harsh jitter on top of the sway. The seat now follows the cab like a damped spring: the sway keeps its size and the wobble is left out (in our motion-loop test, about a third of the shake at the same sway). A sway pushed into the profile's angle limit keeps a rounded top.
+- Cab sway smoothing now defaults to 100 ms. Lower it if the sway feels late; raise it if any shake remains.
+- Truck rigs add a once-a-minute cab sway and shake reading to TrackPro's diagnostics.
+
+Beta limits: the truck cab sway and the iRacing force feedback timing still need feel tests on real rigs. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.255 - 2026-10-22 (beta)
 
 For supervised testing. Includes everything in beta 2.26.254. AI Coach v0.276.
