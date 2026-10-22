@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.258 - 2026-10-22 (beta)
+
+For supervised testing. Includes everything in beta 2.26.256 (2.26.257 was a local trial build and was never published). AI Coach v0.276.
+
+- Motion: no more sudden jolts to the tilt limit. The filter that follows the car's acceleration opens up when the acceleration changes quickly, and on games that send about 60 updates a second (American Truck Simulator and Euro Truck Simulator 2 among them) each of its steps then overshot, so it could run away and throw the seat to its pitch or roll limit for a moment. It now takes steps short enough for any update rate: on a noisy 60 Hz test feed it stays with the measured acceleration, where before it ran off without bound.
+- Truck games: smooth motion when turning and shifting. An ATS Truck profile carried the fast response limits of the racing profile it was made from, so every small jitter in the game's acceleration and the dip at every gear shift reached the seat as a shake or a jolt, most of all on motion controllers without their own smoothing. The ATS Truck profile now plans gently with its own settings (Advanced tuning > Actuator speed limits: Acceleration limit 1500 mm/s², Jerk limit 15000 mm/s³, Response time 120 ms, Cue response off), each the gentler of the truck's and the rig's. They are ordinary settings you can change; an existing ATS Truck profile takes them once. In our motion-loop test of a noisy truck drive the shake when turning dropped about seventeenfold and the pitch jolts at gear shifts about twentyfold, while the lean into turns kept 96% of its size. New ATS Truck profiles start with actuator haptics off.
+- New Gear shifts control (Advanced tuning > Braking, cornering and elevation, every profile): how much a gear change moves the seat. From the shift, the braking and acceleration cue holds toward its level from just before it for 0.8 s and then eases back; 0% keeps the seat still through shifts, and braking always comes through. ATS Truck starts at 30%; other profiles stay at 100%, how they always felt. Blip can set it too. The actuator Gear Shift thump and the shakers' Gear shifts effect keep their own sliders.
+- Every motion control now does what it says:
+  - Corner Mixer Smoothing read backwards: higher meant less smoothing. It now reads the right way round with your saved feel unchanged, and its lowest setting follows slowly instead of freezing the suspension movement on its last tilt.
+  - Changing a motion setting while the game was paused or closed restarted the wait for fresh telemetry, so a parked rig went back to its last pose for a moment. Settings changes no longer touch it.
+  - A Top speed of 50 mm/s now stays. The fix that raises rigs stuck at the old 50 mm/s setup speed ran every time TrackPro opened, so a 50 you chose went back up; it now runs once per profile.
+  - Blip can now set Gear shifts, Cab sway and Cab sway smoothing, and reads Corner Mixer Smoothing the right way round.
+
+Beta limits: the truck motion still needs a feel test on a real rig. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.256 - 2026-10-22 (beta)
 
 For supervised testing. Includes everything in beta 2.26.255. AI Coach v0.276.
