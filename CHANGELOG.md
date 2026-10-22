@@ -1,10 +1,23 @@
 # Changelog
 
-## Unreleased (next beta)
+## TrackPro V2 2.26.254 - 2026-10-21 (beta)
 
-Fold this into the next release's entry when it is cut. AI Coach v0.274 (already in 2.26.253; bump only if the coach changes again).
+For supervised testing. Includes everything in beta 2.26.253. AI Coach v0.275.
 
+- Motion feels strong again. Since 2.26.208 the car's own movement (braking, throttle, cornering, bumps and kerb launches) was held to ±25 mm before overall strength was applied, so at the default 45% a light stop and a hard stop both gave about 1° of pitch. It now keeps its 50 mm of travel at any strength and borrows whatever travel the track's shape is not using, so on a flat road braking and cornering use most of the stroke again and grow with the G, while steep banks and hills keep their share. Expect noticeably more motion at the same strength; lower Overall strength if it is too much. A Suspension travel set below 50 mm stays a hard limit.
+- Road camber no longer leans the rig into a corner. Only banking past 4° tilts the rig as track shape, and only real banking makes the cornering lean give way.
+- On race tracks the rig levels out when the car stops (pit box, a paused game, a parked car) instead of holding the track's tilt, and the tilt comes back as you drive off. Trucks, BeamNG, flight sims and custom games keep the slope they are on.
+- After a pause or a pit stop, motion no longer starts the next stint over-predicted for half a minute.
+- Motion setup: re-running setup with a higher actuator speed now raises the rig's top speed (before, it could only lower it), and a rig set up with the generic Thanos kit and left at its old 50 mm/s is raised to what its setup allows.
 - Blip's voice list is down to six: Cedar, Marin, Echo, Shimmer, Alloy and Sage, three male and three female, each with every prepared line in Blip's own live voice. If you had picked Ash, Ballad or Verse, Blip now speaks in Cedar; Coral moves to Marin. Any other voice you want is in the Spotter Market.
+- Haptics, Optimized mix: the engine runs from a deep rumble at idle to a high buzz near redline again. Since 2.26.204 the BST-1 kits capped the engine at 60 Hz, and the Optimized defaults held the engine to 52–62 Hz and RPM Buzz to 70–78 Hz at every rpm. RPM Buzz now builds under power and lifts off when you lift, so braking cues stay clear; Lockup (BST-1, BST-300EX, TT25) and Lateral Load (ButtKicker) are a little stronger. New profiles get it; existing ones are offered it with "Use the new feel" and keep their tuning otherwise.
+- American Truck Simulator and Euro Truck Simulator 2 drive the motion rig. TrackPro installs its own telemetry plugin for them (and replaces an outdated one once the game has closed), an opt-in ATS Truck motion profile runs while a truck game is active, and the rig eases out when you press Esc or leave the game. A plugin folder TrackPro cannot write to is named on the banner.
+- Instructor motion effects for training simulators: corner holds, offsets, impulses, vibration and a strength override, set on the Motion page, with a banner across the app while they are on.
+- Setup Shop's one-click setup also works out camber, toe, ride height and the garage values that depend on them.
+- The telemetry banner updates on every check and shows why a game failed to connect.
+- Settings backup: a saved haptics profile no longer stops the rig's whole settings backup.
+
+Beta limits: the motion changes need a feel test on a rig before they reach stable. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
 
 ## TrackPro V2 2.26.253 - 2026-10-20 (beta)
 
@@ -38,7 +51,6 @@ For supervised testing. Includes everything in beta 2.26.251. AI Coach v0.273.
 - Staff-only test tools (not shown to drivers).
 
 Beta limits: Setup Shop's one-click file is new and has not yet been confirmed across many cars. The haptics strength and shift changes need a seat test on a BST-1 pair. Side lights are not yet checked on hardware or in a multiclass race. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
-- Haptics: each effect's Test now plays at that effect's strength and your overall strength, so you can tune on the Haptics page and feel the change before driving. Before, Test played every effect at no less than 70%, so settings below that sounded the same. At 0% the Test button is off and says why.
 
 ## TrackPro V2 2.26.251 - 2026-10-19 (beta)
 
