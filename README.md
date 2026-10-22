@@ -10,7 +10,7 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
-Beta [2.26.253](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.253) lets drivers choose Blip's reference lap from his in-game overlay, shows only the words you heard on his card, plays his lap call in his own voice, names only trackside references in reach of the car, and makes haptics Test play each effect at its own strength (AI Coach v0.274). Includes 2.26.252. Supervised testing only.
+Beta [2.26.254](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.254) makes motion strong again: braking, throttle and cornering keep their travel at any strength and borrow what the track's shape is not using, road camber no longer leans the rig, and on race tracks the rig levels out when the car stops. It also adds American Truck Simulator and Euro Truck Simulator 2 motion and Blip's six-voice list (AI Coach v0.275). Includes 2.26.253. Supervised testing only.
 
 Beta [2.26.252](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.252) lets drivers choose the lap Blip coaches them against, adds brake-board coaching and a fix after any corner that cost a tenth, records track conditions on every lap, brings RPM tables, up to 200% strength and a real shift thud to haptics, shows every flag and faster traffic on wheel side lights, and puts the AI setup into iRacing with one click in Setup Shop (AI Coach v0.273). Includes 2.26.251. Supervised testing only; haptics feel and side lights still need hardware checks.
 
