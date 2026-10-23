@@ -10,7 +10,7 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
-Beta [2.26.258](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.258) stops the sudden motion jolts on 60 Hz games such as the truck games, gives the ATS Truck profile gentle limits you can see and change, adds a Gear shifts control, and makes every motion control do what it says (AI Coach v0.276). Includes 2.26.256. Supervised testing only; the truck motion still needs a check on a real rig.
+Beta [2.26.259](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.259) signs the ATS / ETS2 plugin so Windows Smart App Control lets the game load it: on PCs where 2.26.258 showed the truck plugin as installed but sent no data, truck motion works again. Includes everything in 2.26.258.
 
 Beta [2.26.256](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.256) smooths the truck cab sway: the seat follows the cab like a damped spring, keeping the sway and leaving out the cab's quick wobble that made it shake (AI Coach v0.276). Includes 2.26.255. Supervised testing only; the truck sway still needs a check on a real rig.
 
