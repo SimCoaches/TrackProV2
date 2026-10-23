@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.262 - 2026-10-23 (beta)
+
+For supervised testing. Includes everything in beta 2.26.260 (2.26.261 was a local build and was never published). AI Coach v0.276.
+
+- Motion follows the game by itself: ATS Truck runs while American Truck Simulator or Euro Truck Simulator 2 is running, and every other game gets your own profile back, Omega Comfort or Omega Full, whichever you picked last on the Motion page or through Blip. The Truck games switch is now on by default; a setting saved "off" before this release turns on once, and turning it off again under Motion > Truck games is kept.
+- Motion: a racing game never runs on the ATS Truck profile, however it became active. ATS Truck could stay the active profile after a truck session, and nothing put it back, so iRacing and Assetto Corsa ran on the truck's tuning: its full lean at 0.35 g and full braking at 0.5 g, every move planned over at least 120 ms, so every corner and braking zone sat pinned at the limit, soft and late. Whenever another game starts while ATS Truck is active, TrackPro now switches back to your own profile: the one ATS Truck replaced, else the one you picked last, else the first that fits your rig; the Truck games card says so if none fits.
+- Motion: Omega Comfort and Omega Full are smoother by default: Anticipation 0, Cue response 0 (off), Response time 90 ms and Jerk limit 100,000 mm/s³. On a rig whose Thanos spike filter is off, iRacing felt aggressive and not following the car on the old low-latency values; these four made it smooth. In our motion-loop measurement the seat reverses direction on telemetry noise about thirteen times less often (0.3 instead of 3.9 times a second), and each cue starts and builds later, close to the Omega Comfort of 2.26.204. Omega profiles still on the old values take the new ones once, and any of the four you set yourself stays; the faster values remain available under Advanced tuning. ATS Truck keeps its own tune.
+
+Beta limits: the motion switching and the smoother Omega defaults still need checks on more rigs. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.260 - 2026-10-22 (beta)
 
 For supervised testing. Includes everything in beta 2.26.259. AI Coach v0.276.
