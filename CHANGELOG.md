@@ -1,5 +1,13 @@
 # Changelog
 
+## TrackPro V2 2.26.260 - 2026-10-22 (beta)
+
+For supervised testing. Includes everything in beta 2.26.259. AI Coach v0.276.
+
+- Truck games: the cornering lean holds through a turn and grows as the turn tightens. The game reports acceleration as the change in the truck's own velocity, so a steady corner read as nothing at all: the seat leaned at turn-in and went level again mid-corner (recorded on the CDL rig: a held 0.3 g right-hander read 0.00 g). TrackPro now adds the turn itself, speed times yaw rate, to what the game sends, so the lean lasts as long as the turn. The same term makes a crest feel light and a dip press down.
+
+Beta limits: the truck motion still needs a feel test on a real rig. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.259 - 2026-10-22 (beta)
 
 For supervised testing. Includes everything in beta 2.26.258. AI Coach v0.276.
