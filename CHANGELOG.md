@@ -1,5 +1,11 @@
 # Changelog
 
+## TrackPro V2 2.26.259 - 2026-10-22 (beta)
+
+For supervised testing. Includes everything in beta 2.26.258. AI Coach v0.276.
+
+- Truck games: the ATS / ETS2 plugin is now code-signed. Windows Smart App Control (on by default on new Windows 11 Home PCs) refused the unsigned plugin inside the game, so TrackPro showed its plugin as installed but never received any truck data and the rig stayed still. The plugin now carries the same certificate as TrackPro itself, and a release build refuses to ship it unsigned.
+- Truck games: a TrackPro build whose plugin is not signed now says so on the banner when the game sends nothing, instead of pointing at the game's launch profile.
 ## TrackPro V2 2.26.258 - 2026-10-22 (beta)
 
 For supervised testing. Includes everything in beta 2.26.256 (2.26.257 was a local trial build and was never published). AI Coach v0.276.
