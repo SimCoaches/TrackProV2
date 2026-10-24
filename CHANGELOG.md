@@ -1,8 +1,8 @@
 # Changelog
 
-## TrackPro V2 2.26.266 - 2026-10-24 (beta)
+## TrackPro V2 2.26.266 - 2026-10-24 (stable)
 
-For supervised testing. Includes everything in beta 2.26.265. AI Coach v0.276.
+Promoted from the signed beta without rebuilding the installer, at the owner's direction. This is the stable release: it carries every change since 2.26.216 (the entries below). AI Coach v0.276.
 
 - Haptics: a new Refined seat mix, so effects stop fighting each other. Effects a few Hz apart on the same shaker throb against each other and, for an instant, cancel: a kerb taken mid-corner or a shift under a sweeping engine could go briefly quiet. On the seat bench, Refined cuts these fights by about two thirds on the 100W, BK Gamer and TT25 kits, and every hit stays intact. The engine and its buzz play as one voice (the buzz a fixed interval above the engine); cornering leans the seat toward the loaded side instead of adding its own note; every hit keeps its own pitch over the engine, which keeps playing; and the suspension steps back while a kerb plays. New rigs start on Refined. A saved setup stays exactly as it is until you tap "Use the new feel" on the Haptics page; Classic, Separated and Optimized are unchanged.
 - Haptics: a Background dip slider on every priority effect (under Tune) sets how far the engine, RPM buzz, road and lateral vibration drop while that effect hits, up to 90% so the engine never goes silent. Left alone, each mix keeps its own dip.
