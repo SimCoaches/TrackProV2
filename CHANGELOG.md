@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.267 - 2026-10-24 (beta)
+
+For supervised testing. Includes everything in 2.26.266. AI Coach v0.276.
+
+- Ambient lighting: no more Advanced settings. The Ambient page is now just the setup, your lights, two styles, brightness and the racing alerts; Diagnostics stays for support. Zones, overrides, capture areas and per-game tuning are gone, because the automatic setup does better than any of them. If something was set by hand in an earlier version, the page names it and "Reset to automatic" clears it in one tap, keeping your lights, brightness, style and alerts.
+- Ambient lighting: each racing alert has its own colour, set next to its switch: car alongside, pit limiter, low fuel, shift light, engine start, and lockups and wheelspin (one colour for lockups and ABS, one for wheelspin and traction control). Flags keep the real flag colours.
+- Ambient lighting: car alongside, left and right. While the car-alongside alert is on, each light has a "Car alongside" choice: Both sides, Cars on my left or Cars on my right. A light on one side flashes only for a car on that side and keeps the game's colour otherwise. Every other alert still reaches every light.
+- Ambient lighting reads the view ahead on every screen setup: single monitors and TVs and every 21:9 ultrawide stay whole, 32:9 and 32:10 super-ultrawides read their middle 16:9, and triples run as one wide display (Surround or Eyefinity) read exactly the middle monitor. That now includes 16:10, 21:9 and 5:4 triples and bezel correction, which used to read a slice off a side screen.
+- Ambient lighting: a Screen choice, so the lights read the screen your sim is on. It follows the game by default; pick one screen instead and it's kept. With no game found yet, the lights now read your biggest screen instead of the main one, which on some rigs is a small side or dash screen.
+- Ambient lighting: shadows cut sharply (Gabe, 2026-10-24). The lights drop from light to dark at once going into shade or a tunnel, and shade sits at about half power. Coming back out keeps the usual smoothing.
+
+Beta limits: the alert colours, the car-alongside sides, the Screen choice and the screen setups are covered by tests but have not been watched on real Govee lights, a super-ultrawide or a set of triples yet. The ambient shadow and night changes still need an in-car check, the haptics limits of 2.26.266 still apply, and the phone and tablet layouts have not been tried on a real phone during a drive. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.266 - 2026-10-24 (stable)
 
 Promoted from the signed beta without rebuilding the installer, at the owner's direction. This is the stable release: it carries every change since 2.26.216 (the entries below). AI Coach v0.276.
