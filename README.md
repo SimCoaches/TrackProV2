@@ -8,9 +8,9 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest stable release: TrackPro V2 2.26.216.
+Latest stable release: TrackPro V2 2.26.266.
 
-Beta [2.26.266](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.266) adds the Refined haptics mix so effects stop fighting each other, a Background dip slider on priority effects, ambient brightness on a wheel button or dial, faster ambient lighting and phone and tablet dash layouts (AI Coach v0.276). Includes 2.26.265. Supervised testing only; the haptics, ambient and phone changes still need rig checks.
+Earlier beta builds, all included in 2.26.266 (their notes describe each build as it was tested):
 
 Beta [2.26.265](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.265) lets any phone or tablet on the same Wi-Fi show a live dash (Wheel Studio > Phone & tablet) sends dash frames as the game makes them, and turns motion off fast when a game sends a stuck, impossible value (AI Coach v0.276). Includes 2.26.264. Supervised testing only; the tablet dash still needs a check on real devices.
 
@@ -139,6 +139,15 @@ Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189)
 Validation candidate [2.26.188](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.188) contains further motion persistence and controller-protocol corrections. **Supervised testing only; not approved for customer delivery.**
 
 Beta [2.26.187](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.187) is on **validation hold - do not use for customer delivery**. Reliability fixes and physical Thanos4U acceptance are pending.
+
+### What's New in 2.26.266
+
+- Blip, your AI Coach: coaches against a lap you choose, calls every corner that lost time, brake-board coaching, corner targets from the nightly TrackPro Brain, and six voices.
+- Motion: a big bump or crash no longer turns motion off for the session, motion follows the game (truck games and racing games each get the right profile), smoother Omega defaults.
+- Force feedback no longer goes silent after iRacing loads a session.
+- Haptics: Optimized and Refined mixes (opt-in), Road Texture felt on iRacing, 100% means full stroke, a Background dip slider on priority effects.
+- Phone and tablet dash on any device on the same Wi-Fi, no app needed; faster, lighter ambient lighting with automatic setup; flags and spotter on wheel side lights.
+- See the [changelog](CHANGELOG.md) for all changes since 2.26.216.
 
 ### What's New in 2.26.216
 
