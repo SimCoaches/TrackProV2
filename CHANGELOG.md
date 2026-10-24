@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.265 - 2026-10-23 (beta)
+
+For supervised testing. Includes everything in beta 2.26.264. AI Coach v0.276.
+
+- Phone and tablet dash: any phone, tablet or iPad on the same Wi-Fi can be a live dash, with no app to install. Open Wheel Studio > Phone & tablet, turn it on and scan the QR code with the device. It shows as linked, you pick each device's dash, and the text sizes itself to the screen. It updates about 60 times a second, and the device shows its own delay. It only shows the dash and can't change anything on the rig, and it's off until you turn it on. The installer adds a Windows firewall rule for it (TCP 8741, local network only); if Windows was told to block TrackPro, the app notices and offers "Allow on this network".
+- Dashes: the Monitor Dash window and the wheel-screen stream now send each new frame from the game as it arrives (up to about 66 a second) instead of every 33 ms, so they update with less delay.
+- Motion: a stuck, impossible acceleration value from a game (a misread telemetry field) now turns motion off within half a second instead of holding the rig at its limit; real crashes and kerbs are unaffected.
+
+Beta limits: the phone and tablet dash has not been tried on a real iPad or Android tablet, or through a real Windows Firewall prompt, and the wheel's page buttons don't turn tablet pages yet. The motion bump fix still needs a drive on a rig, the haptics changes still need a feel check, the ambient light following shade, tunnels and night still needs an in-car check, and the LED brightness sliders have not been tried on a wheel. A Thanos controller set to a 100 mm stroke still gets two-thirds of the travel TrackPro plans for. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.216.
+
 ## TrackPro V2 2.26.264 - 2026-10-23 (beta)
 
 For supervised testing. Includes everything in beta 2.26.262 (2.26.263 was a local build and was never published). AI Coach v0.276.
