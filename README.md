@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.267](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.267) makes Ambient lighting work without setup: no Advanced settings, a colour for each racing alert, car alongside on the left or right per light, a Screen choice that follows the game or keeps the screen you pick, and the view ahead read on every screen setup (singles, TVs, every ultrawide, triples), with sharper shadows (AI Coach v0.276). Includes 2.26.266. Supervised testing only; the lights still need a check on real triples and super-ultrawides.
+
 Earlier beta builds, all included in 2.26.266 (their notes describe each build as it was tested):
 
 Beta [2.26.265](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.265) lets any phone or tablet on the same Wi-Fi show a live dash (Wheel Studio > Phone & tablet) sends dash frames as the game makes them, and turns motion off fast when a game sends a stuck, impossible value (AI Coach v0.276). Includes 2.26.264. Supervised testing only; the tablet dash still needs a check on real devices.
