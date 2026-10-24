@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.216.
 
+Beta [2.26.266](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.266) adds the Refined haptics mix so effects stop fighting each other, a Background dip slider on priority effects, ambient brightness on a wheel button or dial, faster ambient lighting and phone and tablet dash layouts (AI Coach v0.276). Includes 2.26.265. Supervised testing only; the haptics, ambient and phone changes still need rig checks.
+
 Beta [2.26.265](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.265) lets any phone or tablet on the same Wi-Fi show a live dash (Wheel Studio > Phone & tablet) sends dash frames as the game makes them, and turns motion off fast when a game sends a stuck, impossible value (AI Coach v0.276). Includes 2.26.264. Supervised testing only; the tablet dash still needs a check on real devices.
 
 Beta [2.26.264](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.264) stops one big bump from turning motion off for the session, makes Road Texture felt on iRacing and lets every haptic driving effect reach the shaker's full stroke at 100% in the Optimized mix, has the ambient lights follow the view out of the car (darker in shade, tunnels and at night, no pedal flashes, automatic two-step setup) and adds a brightness slider for wheel LEDs and button lights (AI Coach v0.276). Includes 2.26.262. Supervised testing only; the motion, haptics, ambient and LED changes still need rig checks.
