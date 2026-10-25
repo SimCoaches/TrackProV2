@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.270 - 2026-10-25 (beta)
+
+For supervised testing. Includes everything in 2.26.269. Blip v0.277.
+
+- Setup Shop: AI setups are now engineered from how the car handles, not only from lap times. After every iRacing session TrackPro measures how the car behaved on the setup you drove: understeer and oversteer in slow, medium and fast corners on entry, mid-corner and exit, bump-stop contact and bottoming, wheelspin on exit and braking. It sends a short handling report with no name attached. It works in the background and never slows the telemetry.
+- The setup engineer reads every driver's reports for a car at a track and changes the TrackPro AI setup the way a race engineer would: the platform first (never softer or lower on an axle that already touches its bump stops), then the biggest balance problem (slow corners through the bars and springs, fast corners through aero), then traction and braking. It makes at most three changes at a time, each to a value the car can take. Brake bias and traction control come back as steps to do in the car. The setup card shows each change and the reason for it. A change stays only when drivers' laps on it show the handling got better without the car getting slower; otherwise it is taken back. As more laps come in, the next change builds on the last one.
+- Setup Shop files: every value Setup Shop says a file sets is now proven. It learns each car's setup fields only from garage captures that really show their own file, and claims that a value lands only when it is proven. Setups it can't prove yet go to the garage list instead, so some cars get the list where they got a file before.
+
+Beta limits: the handling reports have been checked on stored laps but not yet on a rig, and the engineer changes a setup only once at least two drivers' reports exist for that car at that track, so its first changes arrive as reports build up. Several GT3s and other cars still get the garage list instead of a file. The limits of 2.26.269 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.269 - 2026-10-25 (beta)
 
 For supervised testing. Includes everything in 2.26.268. Blip v0.277.
