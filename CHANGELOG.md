@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.269 - 2026-10-25 (beta)
+
+For supervised testing. Includes everything in 2.26.268. Blip v0.277.
+
+- Setup Shop: qualifying, race and endurance files. Put in iRacing now asks what the file is for: Practice, Qualifying (how many timed laps), Race or Endurance (how many laps). Race and endurance files load the fuel the distance needs, worked out from TrackPro drivers' laps of that car at that track, plus the start and a lap in reserve. Where the track has too few laps of the car, the fuel comes from the car's use per kilometre at its other tracks, and the card says it is an estimate. Endurance plans split the race into stints with stops. The card shows the fuel, the stops and the stint lengths. The ride heights are held at that fuel by moving the perches, and a qualifying file carries the out lap and the timed laps.
+- Setup Shop writes a file only when the garage will show every value exactly. When it can't (for this car's fuel or a value it can't set yet), it says so and the garage list sets it instead. Values you set from the cockpit, like brake bias, come back as steps to do in the car. Laps on a qualifying, race or endurance file are only compared with your earlier laps at similar fuel.
+- Setup Shop reads iRacing's own setups in every installed car, including the GT3s, GTPs, F3 and NASCAR cars whose older packages it couldn't open before. While you aren't driving, TrackPro reads iRacing's own setups from your installed cars to learn each car's setup fields; your own setups are not part of that.
+- Setup files kept in subfolders of a car's setups folder, where setup services install theirs, are now found when you load them, so TrackPro can learn that car's setup fields from them.
+- Haptics: presets never overwrite a saved profile. Picking a preset or the recommended feel leaves your saved profile as it was, and settings you haven't saved are kept as "Unsaved settings" before another profile loads. TrackPro recommended is always there as a preset, the presets now feel different from each other, and the library holds up to 60 profiles.
+- Dashes: car setting boxes you tap to cycle. A box shows one of the car's dials (ABS, brake bias, traction control 1 to 3, engine braking, front and rear bars) and a tap moves it to the next one; traction control or ABS at 0 reads OFF. Add, remove and resize them in Dash Studio, and the built-in layouts end on a Car settings page. Dashes you saved in Dash Studio now load on the monitor and on the tablet.
+
+Beta limits: the qualifying, race and endurance files haven't been loaded in a real garage yet, the reading of iRacing's own setups hasn't run on drivers' PCs yet, and several GT3s (911 GT3 R, 720S, 296, AMG) still often get the garage list instead of a file. The haptics profile changes haven't been tried on a rig, and the car setting boxes haven't been tried on a real tablet, with real dials in iRacing, or in a car with a third traction control. The limits of 2.26.268 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.268 - 2026-10-24 (beta)
 
 For supervised testing. Includes everything in 2.26.267. Blip v0.277.
