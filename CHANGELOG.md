@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.268 - 2026-10-24 (beta)
+
+For supervised testing. Includes everything in 2.26.267. Blip v0.277.
+
+- Blip runs the iRacing admin and chat commands you ask for on the radio instead of saying he can't: throw a yellow, give or clear a penalty, disqualify a car, send a car to the end of the line, open or close the pits, skip to the next session, turn chat on or off, and send a message to everyone or to one driver. A command that can't be taken back, like a disqualification, waits for a plain "yes" ("copy" doesn't count). A car number he isn't sure of is checked with you first, a message for one driver never goes to everyone (or the other way round), and a message you take back is never sent. Admin commands still need iRacing Admin Control turned on (Blip page) and host or admin rights in the session.
+- The coach is called Blip everywhere: the "AI Coach" labels on Home, the Spotter page, Telemetry, Settings, Account, Driver Lab and Support now say Blip, and his version shows as Blip v0.277.
+- Haptics: feel the engine start. Start the car from off in the pit box and the seat gives a short knock as the engine catches, and the engine note swells for a moment. It follows the Engine Vibration effect and its volume. Games don't report the key turn itself, so the knock comes when the engine fires.
+- Haptics start in the pit box. In iRacing, ACC and rFactor 2 / Le Mans Ultimate the seat comes alive about a second after you're in the car instead of waiting for you to roll. Garage screens, setup menus and replays stay quiet. Other games still start once you roll or start the engine.
+
+Beta limits: Blip's admin and chat commands are covered by tests but haven't been tried in a hosted iRacing session yet, and the engine-start knock and pit-box start haven't been felt on a rig yet. The ambient alert colours, the car-alongside sides, the Screen choice and the screen setups have not been watched on real Govee lights, a super-ultrawide or a set of triples yet. The ambient shadow and night changes still need an in-car check, the haptics limits of 2.26.266 still apply, and the phone and tablet layouts have not been tried on a real phone during a drive. Live headset/shaker checks, per-game coaching and Spotter acceptance, real Endurance pit stops and driver swaps, live streaming-provider delivery and installed-upgrade checks remain pending. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.267 - 2026-10-24 (beta)
 
 For supervised testing. Includes everything in 2.26.266. AI Coach v0.276.
