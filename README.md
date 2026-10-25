@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.270](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.270) engineers TrackPro AI setups from how the car handles: every session reports understeer, oversteer, bottoming and wheelspin, and the setup engineer changes the setup the way a race engineer would, keeping a change only when the handling gets better (Blip v0.277). Includes 2.26.269. Supervised testing only; the handling reports still need a rig check.
+
 Beta [2.26.269](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.269) adds qualifying, race and endurance setup files that load the fuel the distance needs, reads iRacing's own setups in every installed car, keeps saved haptics profiles safe from presets, and adds car setting boxes you tap to cycle on the dashes (Blip v0.277). Includes 2.26.268. Supervised testing only; the new setup files still need a check in a real garage.
 
 Beta [2.26.268](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.268) lets Blip run the iRacing admin and chat commands you ask for on the radio, calls the coach Blip everywhere in the app, and brings the seat alive in the pit box, with a knock when the engine starts (Blip v0.277). Includes 2.26.267. Supervised testing only; the admin commands still need a hosted-session check and the haptics a rig check.
