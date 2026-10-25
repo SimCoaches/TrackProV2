@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.271 - 2026-10-25 (beta)
+
+For supervised testing. Includes everything in 2.26.270. Blip v0.277.
+
+- Haptics: no engine feel until the engine is running. In iRacing a car sitting in the pit box with the engine off made the seat buzz like an idling engine, and the buzz grew as you pressed the throttle. iRacing reports a stopped engine as 300 rpm, and TrackPro read that as running. Engine Vibration, RPM Buzz, the downshift rev-match thump and the pedal engine rumble now wait for the engine to run, using the game's own engine signal where it has one (iRacing and ACC). Get in the car and the seat comes alive in the pit box, stays quiet while the engine is off, gives one knock as the engine catches, then idles. Out of the car it stays quiet.
+- The engine-start knock from 2.26.268 now plays in iRacing. It couldn't fire there before, because a stopped engine never looked off.
+
+Beta limits: the quiet pit box and the start knock haven't been felt on a rig yet. The limits of 2.26.270 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.270 - 2026-10-25 (beta)
 
 For supervised testing. Includes everything in 2.26.269. Blip v0.277.
