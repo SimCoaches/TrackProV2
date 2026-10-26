@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.272 - 2026-10-25 (beta)
+
+For supervised testing. Includes everything in 2.26.271. Blip v0.277.
+
+- Setup Shop (staff): a garage pass in the calibration card. For every car with TrackPro AI setups it lists which of iRacing's own setups to load in the garage, unchanged, so TrackPro can prove the car's camber, toe, ride heights and caster and write exact one-click files. No driving. Each setup is ticked once TrackPro has checked it ("Check my loads" checks straight away), a bar shows each car's progress, and the card says when a car needs a calibration run because iRacing's own setups never move a setting.
+- The app no longer crashes to the error screen when its local storage fills up. Old cached data is cleared at startup, and a full storage clears data the app can download again and tries the write again.
+- Already live on every version (server side): the setup engineer now works from one driver's laps and reads every kind of garage value (inch fractions, blade pairs, numbered positions, letters, combined diff ramps), and every iRacing car folder is now linked to its car, which doubled the exact one-click files (55 to 107 of 463 AI setups).
+
+Beta limits: the garage pass hasn't been used in the app yet, and a car's values are proven at the nightly relearn after its loads are checked. The limits of 2.26.271 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.271 - 2026-10-25 (beta)
 
 For supervised testing. Includes everything in 2.26.270. Blip v0.277.
