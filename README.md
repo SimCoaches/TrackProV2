@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.275](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.275) lets Blip drive in offline iRacing AI sessions as well as a solo Test Drive, where it had refused with "2 cars are in the session" (Blip v0.278). Includes 2.26.274. Supervised testing only; Blip doesn't see other cars yet, and Blip driving still needs a check on a rig.
+
 Beta [2.26.274](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.274) moves the data that grows with every race and setup change out of the app's small local storage, so a full storage can no longer crash the app (Blip v0.278). Includes 2.26.273. Supervised testing only; Blip v0.278 and the paint fixes still need a check on track.
 
 Beta [2.26.273](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.273) adds the staff AI Designer to Paint Studio, makes Paint Studio work for every car iRacing lets you paint (including clear windows on cars with paintable glass), and has Blip coach with references to aim for (Blip v0.278). Includes 2.26.272. Supervised testing only; Blip v0.278 and the paint fixes still need a check on track.
