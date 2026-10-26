@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.273 - 2026-10-26 (beta)
+
+For supervised testing. Includes everything in 2.26.272. Blip v0.278.
+
+- Blip coaches instead of comparing: what you're doing, why it costs time, the one change to make and what to feel, in focus calls, corner verdicts, lap notes, the debrief and the out lap. Each line starts with the corner and gives a reference to aim for: the verified brake board, how hard to brake, the apex speed, the gear, or a spot measured from where you brake now.
+- Paint Studio AI Designer (staff): describe a livery and it's painted onto the car's real iRacing template in about a minute. Change it by chatting, or mark an area to redo just that part. Every result is kept as a version, and one click puts it on your car in iRacing.
+- Paint Studio works for every car iRacing lets you paint: 186 cars on iRacing's own templates, now including the Aston Martin Valkyrie AMR-LMH, Caterham Academy, Caterham 420R and Gen 4 Grand National. The Global Mazda MX-5 Cup template loads again (iRacing had moved it), the Gen 4 Ford Taurus template opens, and cars iRacing ships without layouts (Supercars Camaro Gen 3, SRX, VW Jetta TDI) can be put on the car.
+- Cars with paintable glass (the Supercars, Stock Car Brasil, the 2025 ARCA cars, the Porsche Cup cars and the Renault Clio) are saved the way iRacing reads them, so their windows stay clear instead of being painted solid. The editor shows where the glass is.
+- Custom numbers place themselves on 147 of the 167 car templates (99 before), and a car opens straight away after its first load.
+- Prepare for Trading Paints opens Trading Paints' current upload page (the old address had stopped working), and the AI Designer can share there too. Trading Paints has no way for apps to upload, so TrackPro saves the file and opens the page.
+
+Beta limits: the AI Designer is for staff while we test it. Blip v0.278 still needs a field test. No paint from this build has been checked on track yet, including the glass cars and the four new cars. The limits of 2.26.272 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.272 - 2026-10-25 (beta)
 
 For supervised testing. Includes everything in 2.26.271. Blip v0.277.
