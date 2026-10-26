@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.277 - 2026-10-26 (beta)
+
+For supervised testing. Includes everything in 2.26.276. Blip v0.280.
+
+- Trucks: the gears grind when a shift won't go in. In American Truck Simulator and Euro Truck Simulator 2 with an H-shifter, when the game refuses the gear you push the lever into (no clutch, or revs not matched), the motion rig shudders and the shakers' Gear Shift effect grinds for as long as the game refuses it, hardest at the first clash, and both stop the moment the gear goes in. The rig's grind has its own "Gear grind (trucks)" slider under Motion > Advanced tuning > actuator haptics, at 80% to start, and plays while Actuator Haptics is on.
+- Trucks: a slow shift no longer loses its kick. A truck's shift often sits in neutral for a second or more (double-clutching, waiting for the revs to fall), and the rig's shift kick and the shakers' gear shift thump skipped every shift that took longer than about a second. While the truck is rolling, a shift now counts for up to 4 seconds in neutral. Cars, and a truck picking a gear at a standstill, work as before.
+- Laps Blip drives are no longer counted as yours. A lap Blip drove any part of stays out of coaching (no coaching tips, skill snapshots, corner passes, session bests, baseline laps or Race Engineer setup tests from it) and is kept apart as Blip's own training data. In Event Mode, a lap driven while Blip had the rig never goes to the leaderboard, so a Blip demo between drivers never costs the next driver a lap.
+- Blip gets going again after a spin, an off or a stall instead of ending the drive: it stops, turns to face the way the lap runs (backing up when blocked), rejoins the line slowly and builds back up to pace, as often as it takes. Stop, an E-stop, a pedal or the wheel still end a drive at once. Blip's pace can now be set up to 120% of its line, to find the limit, and the Blip Drives page shows what Blip is doing to get going again.
+- Setup Shop (staff): the calibration run says why it matters, walks through three numbered steps with the exact file to load in iRacing, shows a live status while it waits, flags a load that showed changes and describes each finished file in garage terms. The garage pass no longer asks for a calibration run that is already going for the car.
+
+Beta limits: the gear grind and the truck shift fix haven't been tried on a rig yet, and the new truck plugin loads the next time the game starts (close the game once after updating; TrackPro replaces the plugin as soon as the game has closed). Blip's recovery hasn't been tried on a rig yet (reverse from the shift buttons, a real spin, a stalled engine). The limits of 2.26.276 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.276 - 2026-10-26 (beta)
 
 For supervised testing. Includes everything in 2.26.275. Blip v0.279.
