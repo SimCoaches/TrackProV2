@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.275 - 2026-10-26 (beta)
+
+For supervised testing. Includes everything in 2.26.274. Blip v0.278.
+
+- Blip can now drive in an offline iRacing AI session, as well as alone in a Test Drive. iRacing allows test and AI sessions only, so Blip still refuses any hosted or official session, and any session where another car is driven by a person. The staff Blip drives page says where Blip may drive.
+- A solo Test Drive with no timed lap no longer stops Blip with "2 cars are in the session". iRacing lists a placeholder fastest lap there, which TrackPro counted as a second car. TrackPro now reads the cars only from iRacing's driver list.
+- Already live on every version (server side): the brain's corner model got its first update since October 8. Laps recorded under an older track map, where a corner's name pointed at a different corner, no longer mix two corners into one. It now covers 738 corners and 45 cars (614 and 36 before), and its corner speeds for a car at a track where that car has no laps are within 10 km/h of what drivers do 74% of the time (72% before).
+- Already live on every version with the brain's lap call (server side): the brain's coaching student on the PC got its first update since October 8. On drivers it never trained on, it names the phase where a corner's time goes (braking, entry or exit) right 85% of the time (83% before), and it estimates the time lost in each corner more closely (0.15 s average error, 0.16 s before).
+
+Beta limits: Blip doesn't see other cars yet, so watch it closely in an AI session. Blip driving still needs a check on a rig. The limits of 2.26.274 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.274 - 2026-10-26 (beta)
 
 For supervised testing. Includes everything in 2.26.273. Blip v0.278.
