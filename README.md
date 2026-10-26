@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.277](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.277) grinds the gears on a truck's motion rig and shakers when American Truck Simulator or Euro Truck Simulator 2 refuses a shift, keeps the shift kick on slow truck shifts, keeps laps Blip drove out of your coaching and gets Blip going again after a spin (Blip v0.280). Includes 2.26.276. Supervised testing only; the truck changes and Blip's recovery still need a check on a rig.
+
 Beta [2.26.276](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.276) starts the brain call's fair test: one brain call in four, chosen at random, is held back so the staff Brain page can measure whether the calls make drivers faster (Blip v0.279). Includes 2.26.275. Supervised testing only; the fair test hasn't run on a rig yet.
 
 Beta [2.26.275](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.275) lets Blip drive in offline iRacing AI sessions as well as a solo Test Drive, where it had refused with "2 cars are in the session" (Blip v0.278). Includes 2.26.274. Supervised testing only; Blip doesn't see other cars yet, and Blip driving still needs a check on a rig.
