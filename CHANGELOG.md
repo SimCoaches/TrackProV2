@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.274 - 2026-10-26 (beta)
+
+For supervised testing. Includes everything in 2.26.273. Blip v0.278.
+
+- A full local storage can no longer take the app to the error screen. The data that grows with every race and setup change (the opponents the spotter remembers, the Setup Shop journals and the setup upload queue) now lives in the app's larger store instead of the small local storage shared with every setting, which a heavy driver's history had filled. It moves over by itself on the first start. Data the app can download again is cleared well before the storage is full, and a save that still doesn't fit is skipped instead of crashing the app.
+- The setup upload queue keeps the newest 300 captures, so captures the server keeps refusing no longer pile up.
+- Storage reports now show which kinds of data take the space, and a storage that's filling up is reported before it's full.
+
+Beta limits: after the first start an older build, including stable 2.26.266, won't see the remembered opponents or Setup Shop journals until you update again. The limits of 2.26.273 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.273 - 2026-10-26 (beta)
 
 For supervised testing. Includes everything in 2.26.272. Blip v0.278.
