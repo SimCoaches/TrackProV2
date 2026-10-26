@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.276 - 2026-10-26 (beta)
+
+For supervised testing. Includes everything in 2.26.275. Blip v0.279.
+
+- The brain call's fair test. In practice, after a session's first brain lap call, Blip sometimes keeps a call to itself: one time in four, chosen at random right when it would speak, at most three times a session and at least five laps apart. Comparing the next laps through those corners with the corners Blip spoke about shows whether the calls really make you faster, which the old comparison could not (Blip calls the corner that cost the most, and that corner tends to improve by itself).
+- Staff Brain page: the Coach tab's "Advice delivery and follow-up" card now shows the brain call's fair test (calls spoken and held back, how many were graded, and whether the gap is bigger than chance), counts held-back calls apart from calls that failed to play, and shows why lap reads and corners stayed silent.
+
+Beta limits: the fair test hasn't run on a rig yet, and its first verdict needs 30 held-back calls graded across at least 10 drivers. The limits of 2.26.275 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.275 - 2026-10-26 (beta)
 
 For supervised testing. Includes everything in 2.26.274. Blip v0.278.
