@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.279 - 2026-10-27 (beta)
+
+For supervised testing. Includes everything in 2.26.278. Blip v0.280.
+
+- Fewer freezes in races. At the end of every lap TrackPro packed the lap's data in big pieces, and on a busy race PC that could hold TrackPro's window for several seconds: Blip's radio, the spotter and the overlays paused with it. The lap is now packed and kept in small pieces: on a real Road America lap the longest pause went from over 300 ms to under 30 ms on our test PC. Saved laps also no longer stay in memory with all their data for the rest of the session (close to a gigabyte by the end of an hour-long race), which made memory cleanups hold the window for seconds at a time. Each saved lap takes about half the space and upload it did.
+- After a race, TrackPro's window could fall further and further behind the sim's live data and stay frozen for up to 40 minutes. It now skips data it is more than 5 seconds behind on and catches up at once.
+- A sign-in renewed during a long freeze could be saved late and trusted after it had expired, so TrackPro's own requests were refused until the next renewal: Setup Shop stayed on "Checking your plan…" and lap data could look unlinked. A renewal is now dated from when it was requested, and a refused sign-in is renewed straight away.
+- The diagnostics log upload every 30 minutes no longer holds TrackPro's window while it reads and packs the logs.
+- Blip Drives page: Turn lock to lock (it replaces Wiggle steering) turns TrackPro's steering all the way left, all the way right and back to centre, over and over until you click Done, so iRacing's steering calibration gets the whole range (0 to 65535 on the controller). Setup steps 3 and 4 use it.
+- Setup Shop: the server update 2.26.278 was waiting on is live, so the A/B test card and TrackPro's new way of making setups work.
+
+Beta limits: the freeze and sign-in fixes haven't been tried in a race yet. If TrackPro's window still falls more than 5 seconds behind, the data it skips is missing from that lap (the lap is still saved). Turn lock to lock hasn't been tried on a rig yet. The other limits of 2.26.278 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.278 - 2026-10-26 (beta)
 
 For supervised testing. Includes everything in 2.26.277. Blip v0.280.
