@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.280 - 2026-10-27 (beta)
+
+For supervised testing. Includes everything in 2.26.279. Blip v0.280.
+
+- Blip Drives page: iRacing can now bind Blip's steering, pedals and shift buttons each to its own input. iRacing takes whatever moves while it is listening, and TrackPro's steering moved on its own (it followed your wheel in the garage and jumped when you clicked the next setup button), so iRacing put the steering, throttle, brake and shifts on the same input. Out of the car, each setup button now moves only its own control, and the steering stays where the last steering button left it until you go on track.
+- Press throttle, Press brake and Press clutch push TrackPro's pedal all the way down (65535), let it all the way up (0) and keep it at 0 until you click Done, so you can click Next in iRacing. Your own pedals can stay connected.
+- Press shift up, Press shift down and Press starter are one click of TrackPro's buttons 1, 2 and 3, with nothing else moving.
+- Your own wheel steers through TrackPro only on track, no longer in the garage or menus.
+- TrackPro no longer warns that your laps aren't saving when you restart before finishing a lap. A session counts toward that warning only if you drove a whole lap in it, from the start/finish line back to it.
+- Endurance: invite teammates by their TrackPro username. The invitation waits on their Endurance page, where they can join or decline it, and private invitation codes still work. You can be on up to five teams and choose which one is active. Switching teams stops sharing your telemetry until you start it for the team you chose.
+
+Beta limits: the new setup buttons haven't been tried on a rig yet. Team invitations haven't been tried between two drivers' PCs yet. Bind Blip's controls in iRacing again with this build: bindings made with 2.26.279 or earlier may share one input. If iRacing's data stops for more than a quarter of a second while you're out of the car, Blip's steering may move once. The other limits of 2.26.279 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.279 - 2026-10-27 (beta)
 
 For supervised testing. Includes everything in 2.26.278. Blip v0.280.
