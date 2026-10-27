@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.279](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.279) fixes freezes in races (lap ends no longer pause TrackPro's window, and after a race the window no longer falls behind the sim's data) and a sign-in that could lapse after a long freeze, adds Turn lock to lock to Blip's steering setup, and the Setup Shop server update is live (Blip v0.280). Includes 2.26.278. Supervised testing only; the freeze and sign-in fixes haven't been tried in a race yet.
+
 Beta [2.26.278](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.278) makes Blip's steering setup work with iRacing's calibration (exact 90° and 30° turns), lets your own wheel steer through TrackPro whenever Blip isn't driving, labels Blip's spins and offs for its learning, kicks every truck gear and judges Setup Shop setups by same-session A/B laps (Blip v0.280). Includes 2.26.277. Supervised testing only; none of it has been tried on a rig yet, and the Setup Shop changes wait on a server update.
 
 Beta [2.26.277](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.277) grinds the gears on a truck's motion rig and shakers when American Truck Simulator or Euro Truck Simulator 2 refuses a shift, keeps the shift kick on slow truck shifts, keeps laps Blip drove out of your coaching and gets Blip going again after a spin (Blip v0.280). Includes 2.26.276. Supervised testing only; the truck changes and Blip's recovery still need a check on a rig.
