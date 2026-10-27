@@ -1,5 +1,18 @@
 # Changelog
 
+## TrackPro V2 2.26.278 - 2026-10-26 (beta)
+
+For supervised testing. Includes everything in 2.26.277. Blip v0.280.
+
+- Blip's steering setup now works with iRacing's calibration. iRacing measures a wheel's lock from an exact 90° turn to the left, and the old Hold left jumped TrackPro's wheel to full lock: iRacing took it for a 180° wheel, repeated the measurement at 30°, then set the wheel up as a 60° gamepad, so every Start ended with "the car does not steer". The Blip Drives page's buttons now turn TrackPro's wheel by exactly what iRacing asks: Centre, Turn 90° left, Turn 30° left (for iRacing's repeat at 30 degrees) and Turn 90° right (if the steering comes out reversed). Each holds until you click Done, and Wiggle steering keeps moving until Done too. Untick "Device is a joystick/gamepad" in iRacing's calibration. If iRacing still has the wheel set up far too small, Blip says so ("about 60° of lock instead of 900°") and how to fix it.
+- Your own wheel steers through TrackPro whenever Blip isn't driving. With iRacing's steering set to TrackPro for Blip, you drive with your own wheel as usual: to a straight before a Start, and after Blip hands the car back. This works on a PC where Blip's steering was set up (a setup button or a Start was used there), while iRacing runs.
+- The Blip Drives page walks through iRacing's setup in seven numbered steps, with each step's buttons beside it, and the reasons Blip lets go say what to do in plain words. The Press throttle, brake and clutch buttons do nothing while pedals are connected: your pedals already go through TrackPro.
+- Blip labels every spin, off, wall hit, stall and recovery while it drives, with the two seconds before it, and times every lap 200 m at a time against its line, so it can learn from its mistakes and from where it is slower. A stalled engine is restarted with TrackPro's starter button: set iRacing's Starter with the new Press starter button. A blocked rejoin now backs out further each try, and the clutch goes in whenever Blip stops the car.
+- Trucks: every gear the lever puts in kicks the motion rig and thumps the shakers, reverse too, and gears put in slowly or at a standstill. 2.26.277 still missed reverse, the low gears and slow shifts. Cars work as before.
+- Setup Shop: TrackPro's setup for a car and track starts from iRacing's own setup for that track when TrackPro knows its garage values, or else one driver's whole setup (the card says which), never a blend of several. A new A/B test card measures TrackPro's setup against yours in one session (a few laps on yours, then on TrackPro's, then on yours again) and shows the time a lap it gained or lost and how sure that is. TrackPro keeps a change to its setup only when lap times show it is faster.
+
+Beta limits: Blip's steering setup and the wheel steering through TrackPro haven't been tried on a rig yet. While iRacing's steering is set to TrackPro, the steering has a few milliseconds of delay, iRacing's own force feedback doesn't reach your wheel (TrackPro's does, if TrackPro runs your wheel's force feedback), and the car steers only while TrackPro runs; set iRacing's steering back to your wheel to drive without TrackPro. The truck change hasn't been tried on a rig yet. The Setup Shop changes need a server update that goes live separately: until then the A/B test card shows an error and setups are made the old way. The limits of 2.26.277 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.277 - 2026-10-26 (beta)
 
 For supervised testing. Includes everything in 2.26.276. Blip v0.280.
