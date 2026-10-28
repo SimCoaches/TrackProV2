@@ -1,5 +1,24 @@
 # Changelog
 
+## TrackPro V2 2.26.282 - 2026-10-28 (beta)
+
+For supervised testing. Includes everything in 2.26.281. Blip v0.280.
+
+- Blip Drives page: Blip shifts up again. After a spin, iRacing dropping the car into neutral read to Blip as iRacing shifting the car by itself, so it stopped pressing shift and ran every lap after that in first on the limiter (194 s laps at VIR after 166 s). Now only a change between forward gears means iRacing shifts the car, and if the engine sits at the shift point for a second with a higher gear to go to, Blip takes the gears back.
+- Blip keeps going: a spin, a reset, a tow, a replay or iRacing's data pausing holds the car on a light brake for up to 10 s, and Blip drives on as soon as it has passed instead of letting go after 1.5 s. A wheel that stops following for a moment after a spin, or a car stuck in neutral after it has had a gear, no longer makes it give up.
+- Blip remembers what went wrong where: an off, a spin, running wide, its wheels at an edge it knows, a slide or the front washing out marks that spot. Next lap it carries a little less speed into it and moves its line away from an edge it ran out of; clean laps there earn the speed back. A corner where it ran wide speeds up only in small steps after that.
+- Blip learns the car's grip: in every corner it measures how much of the car's grip it used (cornering and braking together), against the most it has seen the car hold. A corner taken well inside the grip speeds up more next lap, one at the limit less. It notices the front washing out (the car turning less than the wheel asks) and the rear stepping out, even when iRacing gives no incident.
+- At VIR turn 15 Blip cut the inside dirt every lap and its line never moved: those offs came with its line under the car and were thrown away. Each one now marks the edge on that side and moves its line off it.
+- Smooth pedals: one brake per corner, firmest at first and trailing off, instead of on and off; the throttle eases off before a corner, squeezes back on out of it and holds steady when holding speed; wheelspin eases the throttle instead of cutting it to 40% and back. On grass or dirt Blip uses no more than 25% throttle, also while getting back after a spin, and brings it back up over a second once on the track.
+- Everything is recorded: every incident iRacing counts is kept on Blip's lap with what it was doing just before (a short off still cost the lap its 1x and wasn't recorded), along with slides, the front washing out, the grip in use and how much the car turned for its wheel. Every step of a recovery (a spin, a hit, being blocked on the way back, trying another way) now reaches TrackPro's diagnostics.
+- Blip's learning goes from PC to PC: after every lap, what it learned is kept on the server, and a PC behind it on the same car, track and line picks it up, at once if Blip is parked, otherwise at its next lap line.
+
+- Steady hands at speed: the faster the car, the slower Blip turns the wheel (no faster than a steady driver would), its corrections look further ahead, and catching a slide is gentler at speed, so it no longer swings left and right like a pendulum on the fast stuff.
+- Braking ahead: Blip brakes for anything a lift can't give. It used to brake only for big slow-downs, so it coasted into fast corners too fast. It eases off the throttle before that, keeps the brake on and trailing off until it is down to the speed ahead, and never aims faster than the car's grip takes the bend ahead, from the grip it has measured.
+- Turns 14 to 18 at VIR stayed at about 60% of your lap's speed after an early off at turn 15: one off held a whole stretch of track slow for good. Now an off or running wide slows only that spot; only a spin or a hit holds the corner back, and it comes back 2% each clean lap. Learning saved by earlier builds lets go of those holds once.
+
+Beta limits: none of these changes has been tried on track yet; they were written from Blip's laps at VIR on our two test PCs. Bind Shift Up, Shift Down and Starter in iRacing again if you haven't since 2.26.281. The other limits of 2.26.281 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.281 - 2026-10-27 (beta)
 
 For supervised testing. Includes everything in 2.26.280. Blip v0.280.
