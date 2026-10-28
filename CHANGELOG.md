@@ -1,5 +1,22 @@
 # Changelog
 
+## TrackPro V2 2.26.281 - 2026-10-27 (beta)
+
+For supervised testing. Includes everything in 2.26.280. Blip v0.280.
+
+- Blip Drives page: Blip gets the car into gear the way iRacing takes it. Sitting in neutral, iRacing puts first in only once the throttle is in, and reverse only while shift down is held as the throttle comes in; a shift press on a closed throttle does nothing. Blip waited on the brake for the gear, so it never left its pit box and never got going again after a spin that stopped the car. In its box, after a spin and when it backs away from a wall, it now does it iRacing's way, and the gear goes in on the first try.
+- TrackPro's controller: its first buttons went out where the controller reads its hat (the 8-way switch), and the hat read as held up at rest, so iRacing bound Blip's shift buttons to hat directions ("Dev 0 Btn 32") and a downshift could shift up. Buttons now go out where the controller reads them, with nothing held at rest. Bind Shift Up, Shift Down and Starter in iRacing again with Press shift up, Press shift down and Press starter. At every Start Blip reads which buttons iRacing has bound and presses those, and says so if a shift is bound to something it can't press.
+- Blip learns from its own laps. Each corner starts at half the speed of your lap and earns more with every clean pass; a spin, an off or a wall there takes some back and marks that corner's limit. It learns where the track's edges and walls are, moves its own line away from them, and tries its apexes a little further in or out, keeping only what gives it less trouble. The Blip Drives page shows each lap: its time and gain, its speed, how far off its line it ran, and its slides and offs. At VIR in our test its laps went 237 s, 222 s, 209 s with no spins, and its corners from 50% to 61% of your lap's speed.
+- Blip finds its own way out of its pit box: it maps the pit lane from its box, remembers every wall it touches, backs off and tries another way, and keeps the way out for next time.
+- Smoother driving: Blip follows the bend of its line instead of copying your lap's wheel corrections, which sawed left and right. It countersteers only when the rear steps out, is gentle with the pedals on grass, gets going again sooner after a spin or a hit, turns round first when it is handed the car facing the wrong way, and waits while iRacing's pit crew holds the car.
+- Gears: Blip shifts by the engine's revs, around iRacing's shift light for the car. When iRacing changes gear by itself (it did for the MX-5 in our test), Blip leaves the gears to it. Once a shift has gone in, a shift that doesn't no longer makes Blip let go of the car.
+- Off the track Blip no longer thinks its line is under it. In a run-off it measures how far out it is, heads back to the track and goes round anything it hit on the way back. It learns edges and walls only once it has measured where its line is. At VIR it had driven into the barrier at the end of turn 1's run-off 30 times; now it got back on track in one try.
+- Paint Studio now has a Gallery: browse paints other drivers shared, with each paint's upload date and real download count (one per member, counted once the paint opens). Anyone in Paint Studio can browse and share; downloading another driver's paint is included with Starter and every higher plan.
+- Paint Studio AI Designer, now included with Starter and every higher plan: give it up to five reference pictures, or name a real car and it finds photos of that livery and its sponsors' logos online. Stripes and both sides of the car line up, logos land upright on both sides as sharp layers, and it fills in your iRacing ID by itself.
+- American Truck Simulator and Euro Truck Simulator 2: when the game closes, TrackPro reads the game's own log and crash files and adds their crash and error lines to its diagnostics, so a crash, or a game that never finished loading, can be traced.
+
+Beta limits: Blip leaving its pit box and the new controller buttons haven't been tried on a rig yet. The gear and run-off fixes were tried on track at VIR on our test PC, driven by Blip with no wheel or pedals. Bind Shift Up, Shift Down and Starter again with this build. Paint Studio is still behind its early-access code. The other limits of 2.26.280 still apply. Some screens still show English when Spanish is selected. Stable automatic updates stay on 2.26.266.
+
 ## TrackPro V2 2.26.280 - 2026-10-27 (beta)
 
 For supervised testing. Includes everything in 2.26.279. Blip v0.280.
