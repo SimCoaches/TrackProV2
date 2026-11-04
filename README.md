@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.284](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.284) builds VR motion compensation into TrackPro, with nothing else to install, shows a custom motion game as soon as it connects, and gets a better Blip map to a drive already under way.
+
 Beta [2.26.283](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.283) gets Blip out of the pits on any PC, with its pit lane map and walls going with its learning, and has it learn its own line and its speed from its laps.
 
 Beta [2.26.282](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.282) gets Blip shifting up again after a spin (it had run whole laps in first on the limiter), keeps it going after spins, resets and replays, makes it remember what went wrong where and how much of the car's grip it used, so it speeds up where it can and backs off where it went wrong, steadies its steering at speed, brakes ahead for fast corners within the car's grip, smooths its pedals, records every incident and every step of a recovery, and carries what it learned from PC to PC (Blip v0.280). Includes 2.26.281. Supervised testing only; none of this has been tried on track yet.
