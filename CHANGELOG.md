@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.284 - 2026-11-04 (beta)
+
+For supervised testing. Includes everything in 2.26.283. Blip v0.281.
+
+- VR motion compensation is built into TrackPro. Turn it on under Motion > VR motion compensation and the virtual world stays still while the rig moves, in OpenXR games, with nothing else to install. Windows asks for permission once. The card says when it is compensating in your game, Center on headset lines it up with your seat, and sliders set your head's position, the timing and the strength.
+- A custom motion game shows as soon as it connects: the title bar used to say No Game until the game started moving. TrackPro now hears these games on UDP 5501 as well as 5101.
+- A better Blip map reaches a drive already under way: a PC that took the shared walls saved its own short map over them at its next wall and ran a metre off the line. The drive's map now waits until the car is placed on the better one.
+- Blip says when iRacing reads none of its clutch: on one PC 0 of 18 shifts a lap reached the game and nothing showed it.
+- Blip's shared learning keeps the fastest lap, not the most laps, and a faster lap no longer replaces a better pit or wall map. A PC with no settings of its own now starts at 120% pace and all of the throttle, so nothing holds it under the speed its laps have proven.
+
+Beta limits: VR motion compensation has been tested against a simulated headset on a moving rig, not yet in a real headset on a real rig. Directions, the default head position and the timing may need adjusting, so turn it on with the rig at low strength and someone at the E-stop. Do not use it together with other motion compensation software: the view would be corrected twice.
+
 ## TrackPro V2 2.26.283 - 2026-11-04 (beta)
 
 For supervised testing. Includes everything in 2.26.282. Blip v0.281.
