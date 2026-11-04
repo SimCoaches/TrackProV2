@@ -1,5 +1,33 @@
 # Changelog
 
+## TrackPro V2 2.26.283 - 2026-11-04 (beta)
+
+For supervised testing. Includes everything in 2.26.282. Blip v0.281.
+
+- Blip gets out of the pits on any PC: it drives the pit exit road to the merge before it looks for its line (it used to call itself out of the pits on the exit road and drive at the wall to reach its line), and its map of the pit lane and its walls now go with its learning from PC to PC. A PC on this build takes them as soon as it picks up the learning, so it knows the way out on its first drive.
+- Blip learns its own line: every 20 m of the lap it compares each lap with the one before it, its speed held still, and moves the line 0.1 m toward the quicker side once the laps are sure. Up to 1.5 m, inside the edges it knows, and half of it goes back on a hit on that side.
+- Blip finds its speed from the laps: near the limit every part of the lap gets a small nudge up or down each lap, by the toss of a coin, and the time says which way each one wants to go, all of them at once. Big tries cost up to a second a lap and could not see gains this small.
+- Blip goes back to its best lap's setup: six clean laps in a row 0.6 s behind its best and it returns to the speeds and line of that lap.
+- Blip stops asking the front tyres for what they cannot give: past the grip it measured on 311 laps the wheel goes no further, and with the front washing out it stays off the power until it bites. That was the big offs at turn 5 at Charlotte.
+- Blip's learned wheel no longer winds up at the limit: that is why it got slower the longer it ran.
+- Blip warms its tyres: out of the pits it builds from 84% of its pace over 4,500 m with half throttle while turning.
+- Blip pits by itself: it goes in on low fuel, asks the crew for fuel and tyres, parks in its box, and drives off again. Stranded, it presses Reset on TrackPro button 4 once iRacing's Reset is bound there (Press reset on the Blip Drives page).
+- Blip surveys a track: two slow laps edge to edge to find the road's width.
+- Blip steers to the turning it wants, leads the bend by what the car really takes, measures wheel spin from the revs, waits for its nose before the power, and drives the line's gears with a blip on downshifts.
+- Every lap is recorded corner by corner, with everything Blip did and why, and the log says which parts of each lap it hit, ran wide or slid.
+- A wheel reading stays good for 250 ms: a busy PC had Blip let go of the car at speed.
+- Blip's end-of-session wrap-up says each corner once, with where it ended. After a long session it used to read its focus list aloud: the same corner twice ("We left Turn 3 … We left Turn 4 … We left Turn 3 for another day"), a corner both left and sorted, and a corner left for another day just before "that's where we start next time". Now sorted corners come first in one sentence ("We sorted Turn 3 and Turn 1 — that's banked"), corners left for later in another, and the corner still being worked on only in its own line. The note Blip keeps for next session drops the repeats too.
+- Blip's corner calls only say what it can actually measure. In the last 30 days about one call in eight rested on a measurement the corner couldn't carry, and drivers moved the way a turn-in call asked only about half the time:
+  - Turn-in is compared only when both laps steered for the same part of the corner. At VIR Turn 14 a driver's turn-in jumped 55 m between two steering phases and Blip said "About 55 meters earlier is plenty". A gap over 40 m is never called.
+  - No "carry more speed through the middle", brake-pressure, apex-gear or apex-position call where the corner's slowest point isn't inside it (a zone that ends in the next corner's braking).
+  - No turn-in or brake-point call smaller than your own lap-to-lap spread at that corner.
+  - After you go past the mark, Blip no longer tells you to keep going the same way before that corner.
+  - "A touch" and "a little" now match the meters said with them.
+  - A lap where a fault couldn't be judged never counts as clean: Blip never calls a corner sorted on laps it couldn't measure, and after three such laps it moves to something it can measure.
+  - Expect fewer corner calls (roughly a fifth fewer on last month's laps); the ones dropped were inside the noise.
+- Measuring whether Blip's coaching makes drivers faster: in practice, Blip picks one new focus corner in four at random (one in ten before) and stays quiet about it for a few laps, then compares those corners with the ones it coached. This runs until 30 November and then goes back to one in ten by itself. Never in races or qualifying, never a session's first focus, never a corner you asked about, at most three a session.
+- The brain now helps choose the corner Blip works on. In iRacing practice, the brain reads each clean lap and finds where the time goes against the fast drivers in your car. When it puts the time in the same corner and the same part of it (braking, entry or exit) two laps running, and Blip measured a fault there, that corner becomes a candidate. Where the brain and Blip's own ranking would start on different corners, a coin decides whose pick Blip coaches. Both corners are then timed over the next laps, so the two can be compared fairly. Every day the server shifts more of these picks toward whichever makes drivers faster, but never all of them, so the comparison keeps going. It starts at half and half. Blip only ever coaches a fault it measured, and your pinned corner always comes first.
+
 ## TrackPro V2 2.26.282 - 2026-10-28 (beta)
 
 For supervised testing. Includes everything in 2.26.281. Blip v0.280.
