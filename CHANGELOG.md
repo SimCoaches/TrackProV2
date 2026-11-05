@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.288 - 2026-11-05 (beta)
+
+For supervised testing. Includes everything in 2.26.287. Blip v0.281.
+
+- Sim Coaches' own SCLMP3 wheel is recognised as soon as it is plugged in, and its 10 rev lights turn on by themselves, with no "Turn on" click.
+- Blip's flat exit from a long run stays a trial: it runs lap on, lap off only when started, and never drives by itself, because the car ran off at turn 5 after turn 4's exit on most of eight laps. The older free test is gone.
+
+Beta limits: the SCLMP3's lights were checked at both ends of the bar on one real wheel, but not yet through the app. Recognition, the lights turning on by themselves, the rev bar in a sim and the wheel's screen still need a check on that wheel. The rev bar assumes the lights sit above the screen.
+
 ## TrackPro V2 2.26.287 - 2026-11-05 (beta)
 
 For supervised testing. Includes everything in 2.26.284, plus the 2.26.285 and 2.26.286 entries below, which were not released on their own. Blip v0.281.
