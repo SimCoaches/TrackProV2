@@ -1,5 +1,44 @@
 # Changelog
 
+## TrackPro V2 2.26.287 - 2026-11-05 (beta)
+
+For supervised testing. Includes everything in 2.26.284, plus the 2.26.285 and 2.26.286 entries below, which were not released on their own. Blip v0.281.
+
+- The warm-up after a pit stop ends on a straight: its distance always ran out in the middle of turn 6, so the throttle limit came off with the car turning hard, and the car spun there after stops. Nine stops on this code, and none spun where the warm-up ends.
+- Blip catches the rear from 0.10 rad instead of 0.08, with more wheel past it: its clean laps never pass 0.10, so a catch from 0.08 only took turning out of the car. A catch from 0.14 was tried and lost the car. The throttle for a sliding rear reaches its lowest by 0.22 rad instead of 0.30.
+- Turn 6's exit is flat: a run of full throttle on the line now counts from 75 m, where it took 200 m, so Blip is on full throttle from about 1357 m and reaches the next brake 0.9 m/s faster.
+- A stretch does not climb while one of the next two runs wide: adding speed into turn 4, already wide, put the car in the wall at 790 m and then 658 m.
+
+Driven in the MX-5 at the Charlotte Roval: 222 laps on one PC, 3% of them with a spin, against 19% of 143 laps on 2.26.284 on another PC over the same hours. A clean 1:37.983, the first lap under 1:38, came just before the last of these changes. The best on this exact driving code is 1:38.195.
+
+Beta limits: one track and one PC. Blip still touches the wall at the exit of turn 12 on about one lap in six, at 0.7 s each, and runs wide at turn 5 about as often. On five of nine stops it lost the rear at turn 3 on the first full lap after the stop. The leak fix held handles flat in a short run on one rig PC; the link between the leak and the crashes is strong but not proven, and it has not had a long session yet. Blip still cannot pit itself on a track with no known way in.
+
+## TrackPro V2 2.26.286 - 2026-11-05 (beta, not released on its own, included in 2.26.287)
+
+For supervised testing. Includes everything in 2.26.285. Blip v0.281.
+
+- Blip shifts up before the rev limiter: its mark sat just above where the limiter holds the engine, so it stayed in gear until the line's own shift point, 3.5 s a lap on the limiter. On the back straight it went from 44.8 to 45.6 m/s in 1.6 s and came out 1.2 m/s down on the fastest driver on today's car. It now goes up at 7,344 rpm on the MX-5, unless the line brakes within 1.5 s.
+- Blip shifts up without the clutch at speed: 0.25 s of clutch and a flare to 7,500 rpm gave up 3.4 m/s a lap over 9 upshifts, against 0.8 m/s on the same shifts flat. A shift that does not go in brings the clutch back for the rest of the drive.
+- A downshift on the brake in a hard turn stays out until the line is back up at that gear: every spin at turn 6 began on the line's 2nd at 38 m/s, and the fastest clean lap on today's car holds 3rd through there.
+- Stops a handle leak behind window crashes on rig PCs: checking an empty joystick slot left about 12 Windows handles open every second, 200,000 after 4.6 hours on one rig. Both window crashes on that rig were memory corruption, one of them inside that same check, and a window crash stops motion until Enable. Empty slots are now checked only when a USB device changes, and a new device still shows up within a second.
+
+Beta limits: the driving changes have passed Blip's tests and have not driven a real lap. The leak fix held handles flat in a short run on one rig PC; the link between the leak and the crashes is strong but not proven, and a long session has not been run on it yet. Blip still cannot pit itself on a track with no known way in.
+
+## TrackPro V2 2.26.285 - 2026-11-05 (beta, not released on its own, included in 2.26.287)
+
+For supervised testing. Includes everything in 2.26.284. Blip v0.281.
+
+- Blip pushes where it has grip to spare: near the limit a corner's speed moved half a percent in 16 laps at best, and Blip sat at 1:38.8 with its own best 200 m pieces adding up to 1:37.73. A stretch using under 94% of the car's grip now climbs 0.3% each clean lap, under what has gone wrong there.
+- Blip waits for the car to turn before the power: going to throttle with the nose not round yet went with a slower turn 7 and turn 12 and more rear slip over 192 clean laps.
+- Less wheel at low speed: past 1 rad over the turn the car is drawing the fronts gave nothing more, and Blip stood on 3.4 rad at turn 7 where the fastest driver on today's car used 1.9.
+- A sliding rear eases the throttle sooner, and gently: it starts at 0.12 rad of slip, which the best laps never reach under power, where a wall lap at turn 12 stays for two seconds.
+- Blip steers further off a wall it keeps hitting: the margin went no further than 0.9 m and it went on hitting the wall at the exit of turn 12. It goes to 1.5 m now.
+- Blip Drives says when the car's setup is not the one the shared learning was driven on: a second PC spent an hour on another setup, rear bar connected, spinning at the same kink every lap.
+- Blip reads where the car's weight is from its suspension, in every sample and at first power in each corner. It is measured for now and drives nothing yet.
+- A line Blip has never driven starts from what the car has shown on others, at up to 75% of the line's speed instead of 50%. Walls and the pit lane stay each track's own.
+
+Beta limits: the driving changes have passed Blip's tests and have not driven a real lap. Blip still cannot pit itself on a track with no known way in.
+
 ## TrackPro V2 2.26.284 - 2026-11-04 (beta)
 
 For supervised testing. Includes everything in 2.26.283. Blip v0.281.
