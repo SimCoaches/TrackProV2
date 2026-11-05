@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.288](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.288) recognises Sim Coaches' own SCLMP3 wheel when it is plugged in and turns on its 10 rev lights by themselves. Everything in 2.26.287 is included.
+
 Beta [2.26.287](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.287) ends Blip's warm-up after a stop on a straight, catches the rear from 0.10 rad, goes flat out of turn 6, and keeps Blip from adding speed into a corner it is already running wide. It also stops a handle leak behind window crashes on rig PCs, has Blip shift up before the rev limiter and without the clutch at speed, hold its gear through a hard turn on the brake, push where it has grip to spare, wait for the car to turn before the power and use less wheel at low speed, and says on Blip Drives when the car's setup is not the one Blip learned on.
 
 Beta [2.26.284](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.284) builds VR motion compensation into TrackPro, with nothing else to install, shows a custom motion game as soon as it connects, and gets a better Blip map to a drive already under way.
