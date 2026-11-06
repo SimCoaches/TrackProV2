@@ -1,5 +1,20 @@
 # Changelog
 
+## TrackPro V2 2.26.290 - 2026-11-06 (beta)
+
+For supervised testing. Includes everything in 2.26.288. Blip v0.281.
+
+- Custom motion games can play their own effects on the motion actuators: thruster rumble, hull shake, weapons fire, hits and landings, and clunks. They play at fixed strengths for now, and never touch the bass shakers.
+- Custom motion games can ask for Speed Feel, a held lean that says you are moving fast, up to about 4.5 degrees.
+- Clicking the TrackPro icon while TrackPro is already running, or signing in through a link, no longer files a false crash report or disturbs the running app's session record.
+- A real TrackPro crash now matches its Windows crash record on PCs in any time zone, so the report names the real error. Before, these records were thrown out as the wrong time everywhere except UTC.
+- iRacing laps keep timing and saving past lap 1024, where iRacing stops counting. A new session gives the count back.
+- Blip's stops ask only for the braking the car can give, its learned steering no longer learns from slides, and its way into the pits no longer copies a run that touched something.
+- Blip can test several changes at a corner on every pass, keep what wins and start the next round by itself. A trial runs only when started.
+- KIRO Astro Agents shows by name in custom motion.
+
+Beta limits: the custom motion effects and Speed Feel passed their automated tests but have not been felt on a rig. Start with the seat empty, motion gain low and someone at the E-stop. the crash report changes passed their automated tests but have not been tried on a real double launch or a real crash in this build. They change what is reported, not how often TrackPro crashes. Lap counting past 1024 was found on one rig and the fix has not yet run that far on a rig.
+
 ## TrackPro V2 2.26.288 - 2026-11-05 (beta)
 
 For supervised testing. Includes everything in 2.26.287. Blip v0.281.
