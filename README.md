@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.291](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.291) saves laps and hillclimb runs up to 30 minutes, stops false lap warnings, retries update checks and gives iRacing your wheel and force feedback back after Blip. Everything in 2.26.290 is included.
+
 Beta [2.26.290](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.290) adds actuator effects and Speed Feel for custom motion games, stops false crash reports, matches real crashes to their Windows records and keeps iRacing laps saving past lap 1024. Everything in 2.26.288 is included.
 
 Beta [2.26.288](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.288) recognises Sim Coaches' own SCLMP3 wheel when it is plugged in and turns on its 10 rev lights by themselves. Everything in 2.26.287 is included.
