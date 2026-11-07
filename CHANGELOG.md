@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.291 - 2026-11-06 (beta)
+
+For supervised testing. Includes everything in 2.26.290. Blip v0.281.
+
+- Laps and hillclimb runs longer than 10 minutes now save whole, up to 30 minutes. Their start used to be thrown away at 10 minutes, so a 15-minute run to the top of Mt. Washington was lost.
+- A lap is no longer erased when iRacing's lap timer disagrees with TrackPro's while the car simply drives on. Tows, restarts and rewinds still reset the lap.
+- A lap that reached the cloud whole no longer retries forever, or warns that laps aren't saving, when iRacing renumbers an unchanged setup during the lap.
+- Fewer false lap warnings: the roll before the first line no longer counts as a lap, and short untimed stretches are called partial laps, not telemetry faults.
+- Update checks try three times before showing an error, and record the real reason a connection failed.
+- On a PC that has used Blip, iRacing gets your own wheel and force feedback back every time iRacing closes. Blip takes iRacing's controls for one run at a time: Start asks you to close and reopen iRacing.
+- Custom motion games get a Ship card on the Motion page, with a live readout, a slider for each effect, acceleration strength, rotation limit, washout, spike limit and attitude follow. Speed Feel takes its strength and direction from the game.
+- VR motion compensation can record the rig against the headset and turn that into settings, hands now ride the rig with the head, the seat is saved once per chair, and Center on headset answers.
+- Blip no longer calls a stop short of its stall a pit stop, and leaves from where the car really is when a stop goes wrong.
+
+Beta limits: the lap, update and iRacing control changes passed their automated tests but have not run on a rig. Watch memory and end-of-lap freezes on a run over 15 minutes. The first swap of iRacing's controls on a Blip PC has not been tried on a real wheel: if your wheel does not come back, set iRacing's steering to it once in Controls and close iRacing. A connection failure only stops showing once this build is installed, so 2.26.290 and earlier may still need Try Again to get here. The Ship card and VR compensation have been tried on one chair only: start with the seat empty, motion gain low and someone at the E-stop.
+
 ## TrackPro V2 2.26.290 - 2026-11-06 (beta)
 
 For supervised testing. Includes everything in 2.26.288. Blip v0.281.
