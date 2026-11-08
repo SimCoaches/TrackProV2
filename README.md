@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.296](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.296) shows your best and optimal lap on the dash the moment you load in, races Assetto Corsa online from Console mode with drivers hosting from their own PCs, and adds Console mode, Arcade mode with free play on any PC, and starting games from a Stream Deck key. Everything in 2.26.294 is included.
+
 Beta [2.26.294](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.294) makes wheel buttons answer back: colours blow out from the button you press, and button lights come alive with moving patterns, race moments, button abilities, Music Mode and games on the wheel. Wheel dashes find their screen again after a USB port change or a wheel swap, and wheel screens start more carefully after a USB drop. It also stops force feedback starting twice and knocking the wheel out, keeps real pedals hidden from games after a USB drop, waits for the real green in iRacing, and lets only a car beside you talk over Blip. Everything in 2.26.291 is included.
 
 Beta [2.26.291](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.291) saves laps and hillclimb runs up to 30 minutes, stops false lap warnings, retries update checks and gives iRacing your wheel and force feedback back after Blip. Everything in 2.26.290 is included.
@@ -218,7 +220,7 @@ The biggest update since launch - everything from thirty beta builds, promoted a
 - Chat got notifications (channel badge in the sidebar), inline YouTube players in channels and private messages, and the online bar shows every online driver.
 - Reliability: lap saves and replay loads ride through momentary server congestion with automatic retries - no lap is ever lost; telemetry records a uniform 60Hz across every sim.
 - Performance: post-lap onboard video work runs at idle priority so it can't steal frames from your sim at the start/finish line, and background database traffic is roughly halved.
-- The AI Coach speaks with instant cached lines, knows human-reviewed track craft at fifteen circuits, and new drivers get the full coach free for 30 days.
+- The AI Coach speaks with instant cached lines, knows human-reviewed track craft at fifteen circuits, and new drivers get the full coach free for 14 days.
 - Assetto Corsa lap capture survives pauses and restarts; track and car names display properly everywhere.
 
 ### What's New in 2.26.120
