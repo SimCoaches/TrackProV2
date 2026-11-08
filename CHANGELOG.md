@@ -1,5 +1,35 @@
 # Changelog
 
+## TrackPro V2 2.26.296 - 2026-11-08 (beta)
+
+For supervised testing. Includes everything in 2.26.294, plus the 2.26.295 entry below, which was not released on its own. Blip v0.283.
+
+- Dashes show your best lap in the car at the track the moment you load in, from earlier sessions too, and BEST keeps it until you beat it. Your optimal lap, your best sectors added together, shows beside it on the Lap Performance board and as a new Optimal Lap widget in Dash Studio. Laps Blip drove never count.
+- Online Assetto Corsa races from Console mode: the home screen leads with the next race, one press joins, and Assetto Corsa starts straight into it. Any signed-in driver can host from their own PC (Assetto Corsa menu > Host a race). TrackPro opens the router's ports and checks other drivers can reach the race before it goes on the board.
+- Console mode races Assetto Corsa with the wheel: pick the car, the track and Rookie or Pro, and go straight onto the grid. Your own Assetto Corsa settings are put back afterwards. Hold BACK in a game and the wheel drives the game's menus.
+- Arcade mode has a free-play switch in Settings for any PC: an attract screen, wheel menus and Assetto Corsa races with nothing to pay. Paid play stays on Sim Center venues.
+- A Stream Deck key can start a game through TrackPro: your shifting is written first, and a game that is already open comes to the front.
+- The phone dash runs full screen from an iPhone home-screen icon, edge to edge, with every tile inside the safe area.
+- Cancelling a free trial shows what you have used, when you would first be charged and the reminder email before that; cancelling is still one click. A cancelled trial can be kept with one tap. If a card is declined, your plan stays for 7 days while the payment is retried, and Update card opens straight on the card form.
+- Self-driving Blip's corner trials are fairer: trouble counts only against the change that caused it, lanes are staggered, a charged off counts as trouble, changes wait for warm tyres, and a win is driven at once. An off long after leaving the pits is no longer excused as the pit exit, and arriving at a corner faster than planned, Blip brakes the extra speed away before it turns in.
+
+Beta limits: dash bests and optimal laps have not been seen in a real session, and they start from the laps this PC has timed. Online races have not been run between two PCs over the internet yet; a host behind CGNAT (some mobile and fibre providers) cannot host, and results come from each driver's own TrackPro. The Stream Deck key has not run on a real Stream Deck. Console mode's Assetto Corsa races and Arcade free play have not run on a rig.
+
+## TrackPro V2 2.26.295 - 2026-11-08 (beta, not released on its own, included in 2.26.296)
+
+For supervised testing. Includes everything in 2.26.294. Blip v0.283.
+
+- Console mode starts a rig like a console. TrackPro opens full screen when you sign in to Windows, you pick a game with the wheel or pedals and it loads, and TrackPro takes the screen back when the game closes. Advanced mode is the normal TrackPro window and the desktop. It is off until you turn it on in Settings > Startup.
+- Arcade mode turns venue rigs into arcade machines for Assetto Corsa. The rig waits for payment by card tap, phone QR or credit added by staff, the player picks a car, track and difficulty with the wheel and pedals, and friends can race each other on nearby rigs over the venue's network. It only runs on venue rigs set up for it.
+- Staff only for now: Game Controls (Hardware > Game Controls). Teach TrackPro your paddles and your sequential shifter once, by pressing them, and it writes them into iRacing's and Assetto Corsa's own controls files. Content Manager uses the same Assetto Corsa file, so they show there too. With both devices, Assetto Corsa's gears go on TrackPro's controller and TrackPro presses them for either device while the game runs. Put back returns only the controls TrackPro set, and only where you have not changed them since.
+- TrackPro now finds Assetto Corsa's controls file wherever Windows keeps your Documents folder, such as OneDrive or another drive, so its force feedback setting lands in the file the game reads. Self-driving Blip finds iRacing's controls the same way.
+- Phone, tablet and 4th-monitor dash tiles redraw in TrackPro's own fonts once they load, instead of keeping the fallback font.
+- Self-driving Blip brakes on what its pedal really gives: later and harder, as hard as its car's model says on the curve it really drives, and never slower than its best lap. At a new track it starts from its car's model, fitted from drivers' laps on other tracks.
+- Self-driving Blip holds the throttle through a fast corner instead of lifting for a small excess over its plan, and releases the brake as the car turns in. It can try its own line through a corner: out wide, in at the apex, out again. A wide exit changes its pace there instead of its line, and an off just out of the pits is no longer learned as a track limit.
+- A lost self-driving Blip asks for iRacing's Reset after three tries to find its way back, and says so once. It keeps its own lap distance when iRacing's jumps.
+
+Beta limits: Game Controls has not run with a real wheel or shifter. Its writes were tested on copies of real iRacing and Assetto Corsa files, not in the games, and a Content Manager per-car controls preset still replaces TrackPro's shifting for that car. Console mode and Arcade mode have not run on a rig: payments, Assetto Corsa accepting the quick race, finish detection and a two-rig race are not checked yet. Self-driving Blip's changes were driven at Tsukuba and VIR only.
+
 ## TrackPro V2 2.26.294 - 2026-11-07 (beta)
 
 For supervised testing. Includes everything in 2.26.291, plus the 2.26.293 and 2.26.292 entries below, which were not released on their own. Blip v0.283.
