@@ -1,5 +1,52 @@
 # Changelog
 
+## TrackPro V2 2.26.294 - 2026-11-07 (beta)
+
+For supervised testing. Includes everything in 2.26.291, plus the 2.26.293 and 2.26.292 entries below, which were not released on their own. Blip v0.283.
+
+- A wheel dash finds its screen again after the wheel moves to another USB port, or when you swap to another wheel with the same kind of screen. Before, it waited on "Selected display is not attached" until you chose the screen again. A screen that was plugged in beside yours when you chose it is never taken over, and with two or more like it you still choose.
+- Wheel screens start the way the panel needs after a USB change: the USB pipe that carries the picture is reset, the panel gets time to wake, and a brightness change gets a pause either side. This is aimed at the picture loading off-centre or jumping halfway up the screen.
+- Self-driving Blip draws its own way into the pits on tracks with no in-lap: it drives straight down the lane, stops level with its box and steps in when iRacing says it is there. A way in that works is kept, like the way out.
+
+Beta limits: the wheel screen changes have not run on a real panel. If a picture still loads out of place, unplug the wheel's USB and plug it back in; restarting TrackPro is not enough. Blip's drawn way in was driven at Tsukuba only.
+
+## TrackPro V2 2.26.293 - 2026-11-07 (beta, not released on its own, included in 2.26.294)
+
+For supervised testing. Includes everything in 2.26.291, plus the 2.26.292 entry below, which was not released on its own. Blip v0.283.
+
+- Wheel buttons answer back. Wheel Studio has a new Light show: press a button and the colours blow out from that button across the wheel. There are eight press effects, any button can have its own, and holding a button charges it for a bigger blast.
+- Button colours can be alive, with 20 moving patterns that spread from the centre out, some driven by your revs, G-force, pedals, steering, traffic and tyres. 26 ready-made looks set the whole wheel in one click, or build your own. There are also 18 button colourways and 24 palettes.
+- The wheel can mark 15 race moments, such as a shift, a best lap, a place gained or a yellow flag. Bursts never cover a flag or a lit rev light, and while the car moves they stay on the buttons and go softer.
+- Buttons get abilities: a button that steps through your looks, switches that stay lit until pressed again, and hold-to-peek, which turns the rev lights into a gauge while held. A rotary walks a light round its own ring.
+- Music Mode moves the wheel to whatever your PC is playing. It reads levels only and records nothing. My Livery wears your iRacing car's paint, Blip can sit on a wheel's LED matrix, and the wheel can change its look for the pit lane, rain or night.
+- Three games play on the wheel's own lights when no sim is running: Lights Out, Whack-a-Light and Pit Sequence.
+- Teach your buttons links each button to its light, once per wheel. Until then a press fires from the centre of the wheel.
+- Wheel screens draw and send at the same time: about 30 frames a second with fresher data, and a stuck panel can no longer freeze the dash.
+- Dashes and the 4th monitor tag AI drivers with an AI chip and square map dots.
+- Dash names keep their accents and endings, and the 4th monitor and phones give names and track names more room, so nothing is cut off or sits on the track.
+- In an iRacing race the dash and spotter now wait for the real green. iRacing raises its green flag during pacing, so both used to call it early.
+- Your real pedals stay hidden from games after an unplug, a rig power-off or a USB drop, and when they arrive after TrackPro starts. If they stay connected with nothing hiding them, a banner says so.
+- A PC with no pedals no longer reports "Driver not found", which read like a broken install.
+- TrackPro's controller no longer parks Y Rotation at half, which RaceRoom read as a pedal held down while binding. It stays centred only on a PC set up for Blip to steer through it.
+- Only a car beside you now talks over Blip. Everything else waits for the end of its line and keeps its place, a critical call goes out after 12 seconds, and a reminder of a car already called no longer cuts in. Pit-exit and rejoin warnings still cut, because waiting would lose them.
+- Ambient lighting reads the real view out of the car, rides out gaps in screen capture and keeps the screen you picked.
+- Self-driving Blip finds its way in and out of the pits at Tsukuba and keeps a way out that worked, joins its line where the pit exit meets it, is at the limit before pit road, pits with enough fuel to reach the way in, and steers with the wheel its car really takes. An off iRacing charges now always counts.
+
+Beta limits: light shows have not run on a real wheel. They are tested down to the bytes sent to the GSI Interlock, but no press from a real wheel has been read yet, and other wheels are less tested. If Teach your buttons says no presses are reaching TrackPro, send us the log. Music Mode, My Livery and Level Horizon have not been tried in a car. Wheel screen speed, AI tags, green flag timing and the ambient changes have not been checked in a real session. The pedal fix needs a real unplug to prove, and RaceRoom has not been checked. The new radio rule has not been heard on a live radio. Blip's pit changes were driven at Tsukuba only.
+
+## TrackPro V2 2.26.292 - 2026-11-07 (beta, not released on its own, included in 2.26.294)
+
+For supervised testing. Includes everything in 2.26.291. Blip v0.282.
+
+- Force feedback can no longer start twice at once. A second start used to fail, show "Stopped: open failed", and keep knocking the wheel out until TrackPro was restarted.
+- If force feedback cannot open the wheel, the message now gives Windows' real reason.
+- The League page congratulates the Season 1 champion.
+- Ask Blip where you're losing time and it now reads your last few saved laps: your biggest average loss per corner, your largest single loss and where you vary most. It works parked, in the pits and after a restart.
+- A line of Blip's that the spotter cuts off is now finished once the radio is clear and no car is alongside, with any gap or corner brought up to date. An answer waiting behind the spotter is no longer dropped.
+- Self-driving Blip no longer brakes for a wall that is not there on the way out of a corner, and each big move it learned away from its line now gets tested against the line once.
+
+Beta limits: the force feedback fix passed its automated tests but has not run on a real wheel, and what caused the second start in the race where this was found is not known. If that message still appears, restart TrackPro and send us the log. The new Blip behaviour passed its gates but has not been tried on track yet: how it words a line it picks back up depends on the model, and how much of the line you heard is an estimate.
+
 ## TrackPro V2 2.26.291 - 2026-11-06 (beta)
 
 For supervised testing. Includes everything in 2.26.290. Blip v0.281.
