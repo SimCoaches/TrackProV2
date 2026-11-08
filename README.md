@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.294](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.294) makes wheel buttons answer back: colours blow out from the button you press, and button lights come alive with moving patterns, race moments, button abilities, Music Mode and games on the wheel. Wheel dashes find their screen again after a USB port change or a wheel swap, and wheel screens start more carefully after a USB drop. It also stops force feedback starting twice and knocking the wheel out, keeps real pedals hidden from games after a USB drop, waits for the real green in iRacing, and lets only a car beside you talk over Blip. Everything in 2.26.291 is included.
+
 Beta [2.26.291](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.291) saves laps and hillclimb runs up to 30 minutes, stops false lap warnings, retries update checks and gives iRacing your wheel and force feedback back after Blip. Everything in 2.26.290 is included.
 
 Beta [2.26.290](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.290) adds actuator effects and Speed Feel for custom motion games, stops false crash reports, matches real crashes to their Windows records and keeps iRacing laps saving past lap 1024. Everything in 2.26.288 is included.
