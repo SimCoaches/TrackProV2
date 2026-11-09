@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.297](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.297) launches iRacing from Arcade mode: players pick a car and track on the arcade and TrackPro starts the Test Drive in iRacing for them. Car and track pictures show again on the Arcade and Console pick screens. Everything in 2.26.296 is included.
+
 Beta [2.26.296](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.296) shows your best and optimal lap on the dash the moment you load in, races Assetto Corsa online from Console mode with drivers hosting from their own PCs, and adds Console mode, Arcade mode with free play on any PC, and starting games from a Stream Deck key. Everything in 2.26.294 is included.
 
 Beta [2.26.294](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.294) makes wheel buttons answer back: colours blow out from the button you press, and button lights come alive with moving patterns, race moments, button abilities, Music Mode and games on the wheel. Wheel dashes find their screen again after a USB port change or a wheel swap, and wheel screens start more carefully after a USB drop. It also stops force feedback starting twice and knocking the wheel out, keeps real pedals hidden from games after a USB drop, waits for the real green in iRacing, and lets only a car beside you talk over Blip. Everything in 2.26.291 is included.
