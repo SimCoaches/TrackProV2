@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.298](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.298) reports a motion controller whose USB connection drops at once instead of freezing motion, opens TrackPro, the Monitor Dash and overlays on the screen you left them on, and keeps Ambient lighting on the game's colour while a full-screen game is minimised. Everything in 2.26.297 is included.
+
 Beta [2.26.297](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.297) launches iRacing from Arcade mode: players pick a car and track on the arcade and TrackPro starts the Test Drive in iRacing for them. Car and track pictures show again on the Arcade and Console pick screens. Everything in 2.26.296 is included.
 
 Beta [2.26.296](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.296) shows your best and optimal lap on the dash the moment you load in, races Assetto Corsa online from Console mode with drivers hosting from their own PCs, and adds Console mode, Arcade mode with free play on any PC, and starting games from a Stream Deck key. Everything in 2.26.294 is included.
