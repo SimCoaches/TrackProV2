@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.297 - 2026-11-08 (beta)
+
+For supervised testing. Includes everything in 2.26.296. Blip v0.283.
+
+- Arcade mode launches iRacing. Players pick iRacing, then a car and a track with its layout from what is installed in iRacing on the PC, and TrackPro starts that Test Drive in iRacing by itself: the player never sees iRacing's menus. When the clock runs out TrackPro closes the sim and leaves iRacing open and signed in for the next player. Free play has it on at 15 minutes (Settings > Startup > Arcade mode). Venues turn it on in the desk's Arcade panel and price it like the other timed races.
+- Car and track pictures show again on the Arcade and Console mode pick screens. They showed names only.
+- Self-driving Blip lets off the brake the moment its driven wheels start to lock, instead of spinning.
+- Self-driving Blip no longer cuts the throttle after an upshift, a charge taken on its own line costs it no pace, and its corner tests carry on across restarts and fuel stops, so a change they call faster stays on.
+
+Beta limits: iRacing in Arcade mode has picked a car, track and layout in iRacing's own app, but has not yet pressed Drive with up-to-date content, loaded the sim or ended a session on the clock. The car and track must be up to date in iRacing, or the player is asked to pick another. iRacing must be installed and signed in on the PC. The iRacing car menu shows names, not pictures. Self-driving Blip's changes were driven at Oulton Park only.
+
 ## TrackPro V2 2.26.296 - 2026-11-08 (beta)
 
 For supervised testing. Includes everything in 2.26.294, plus the 2.26.295 entry below, which was not released on its own. Blip v0.283.
