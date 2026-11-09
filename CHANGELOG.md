@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.298 - 2026-11-09 (beta)
+
+For supervised testing. Includes everything in 2.26.297. Blip v0.283.
+
+- Motion: when a motion controller's USB connection drops, TrackPro says so at once and stops the rig. Before, it could freeze motion for up to 11 minutes while still showing the controller as connected, and Enable did nothing. Press Enable to start again once the controller is back. If Windows is still holding the controller's port, TrackPro says so and asks you to unplug its USB cable, wait five seconds and plug it back in (on an SRT80, after everyone is clear of the rig). Applies to Thanos, ESP32 and SRT80 controllers.
+- TrackPro, the Monitor Dash and overlays open on the screen you left them on, even after Windows renumbers your screens overnight.
+- Ambient lighting keeps the game's colour while a full-screen game is minimised, instead of flickering to the desktop's colours each time you click another screen.
+- Self-driving Blip catches a slide off the brake and on the throttle, puts each mistake down to the brake, the throttle or the speed, and no longer learns the pit exit as a track-limit off.
+
+Beta limits: the motion fix has not been run on a rig with a failing USB link; it was tested by holding the port the way a dead link does. The screen placement and Ambient changes have not been seen on a customer rig yet. Self-driving Blip's changes were driven at Oulton Park only.
+
 ## TrackPro V2 2.26.297 - 2026-11-08 (beta)
 
 For supervised testing. Includes everything in 2.26.296. Blip v0.283.
