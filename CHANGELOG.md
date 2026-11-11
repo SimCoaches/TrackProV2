@@ -1,5 +1,33 @@
 # Changelog
 
+## TrackPro V2 2.26.299 - 2026-11-11 (beta)
+
+For supervised testing. Includes everything in 2.26.298. Blip v0.284.
+
+- Setup Shop has a setup for every car at every track. Where nobody has run your car at a track yet, you get the car's setup from the track most like it (another layout of the same track first, never an oval setup at a road course), marked as coming from that track, and which of iRacing's own setups to load there.
+- "Change how it handles" on the setup card: say what the car does (pushes or is loose on the way in, mid-corner or on the way out; moves around under braking; spins its wheels) and get the same setup with the change for it, written as your own file. The shared setup is untouched, and your laps on your version are shown on their own line.
+- Setup Shop keeps TrackPro's setup for the car you are driving in your iRacing setups. When the setup changes it writes a new file and tells you which one to load; when you have none for the car you are sitting in, it puts one there. On by default, with a switch on the setup's card.
+- A setup that is already iRacing's own baseline (most Skip Barber setups) says there is nothing to change and which file to load, instead of failing to install.
+- Laps record for drivers with no account: any PC with nobody signed in starts a guest session as soon as a sim is running. Before, a driver who had signed out or closed the account screen drove with no session and their laps were not saved.
+- Blip's short calls name the control and say which way to move it. "Check your gear" is now "use third gear". "Release cleaner" is "release the brake sooner". "Power sooner" is "on the throttle sooner". At the corner Blip is working on with you, "Unwind" is "Unwind the wheel". The line after a corner names the pedal too: "brake release is right", "no early lift", "throttle's on time".
+- Blip stops repeating a call you have already fixed. When it says "turn-in's right, now carry more speed", the next call before that corner is about the speed, and the line after it says whether you got closer. A point you hit is "repeat that turn-in mark", not "turn in earlier" again.
+- Blip stays quiet on your out lap and on your first timed lap, as it says it will when you leave the pits. iRacing counts a lap while you are still in the pit lane, which let coaching start on the out lap. Blip now knows the out lap from the car leaving the pits and crossing the line on track. An out lap is never used as evidence of a mistake: Blip had read an easy out lap back as "that's where most of the time is going".
+- The line Blip opens with makes one promise about when coaching starts, not two.
+- Blip no longer asks for more speed, another gear or earlier throttle in a corner you took flat.
+- One corner at a time. A call about a corner never starts while you are braking or turning into another corner; it waits until you are on the way out, back on the throttle. The lap note keeps to one corner instead of switching between two that lose about the same. On the default setting, calls after other corners follow the size of the lap: about one corner in three, so two on a five-corner lap where it was six, and six as before on a long lap. Chatty still calls every corner.
+- A call that takes longer to say starts earlier, so it still finishes before the corner. The clearer calls are up to a second longer than the ones they replace; a call that could not finish in time is not said.
+- "Unwind" waits while you are still turning the wheel in. In a guided lap it no longer starts up to two seconds before its point.
+- Turn numbers are on the right corners at Brands Hatch Indy and Knockhill International. At Brands Hatch Indy, Turn 4 is Surtees, and Turn 5 runs from the braking for McLaren to the Clearways exit; Blip had put Turn 4 on McLaren's braking zone, which is why it asked for a gear and more speed on the way to a flat corner. At Knockhill, Turn 3 is McIntyre, which had no number.
+- The first time you roll out of the pit box, Blip says "Pit exit", not "Stop complete".
+- Asking Blip about a corner from its page gets an answer to the question you asked. It used to return a fixed reply about choosing two laps. This also needs the server update that ships with this release.
+- Blip's page and Driver Progress say what each weekly grade is made of, and what a missing grade still needs: "27 clean laps · 25 in a week is an A", "Needs 3 clean laps in one session".
+- An out lap or a spin no longer drops your consistency score to 0. The score is worked out a new way, so its history and its "with Blip" comparison start again from this version: the jump is not shown as a gain you drove.
+- Blip's lap analysis writes distances as "meters", ignores brake-point gaps under 10 meters, and calls your own reference lap "your best lap".
+- On the Telemetry onboard tab, the video and its controls stay in view while the charts scroll under them. The recording settings on that tab are now one line that opens when you want them; open, they took most of the tab.
+- An analysis note can no longer reach the radio on Blip's backup voice either (the voice used when the live radio is not connected).
+
+Beta limits: Setup Shop's new features have not been run in the app with iRacing yet: they are covered by tests and by writing every served setup's file offline. Guest lap recording has not been seen on a customer PC yet. Blip: none of this has been driven on a rig yet. It was checked by replaying three real practice sessions through the coach (Brands Hatch Indy, Okayama, Sandown) and by the coach tests. The short line Blip says after the corner you are working on can still land as you arrive at the next corner on tight sections; that line gets its own placement next. With the coach speaking a language other than English, a call before a corner is skipped at more corners than in English, because the live voice needs more clear road. Guided laps still say "Unwind": the guided voice needs a new recording to say "Unwind the wheel".
+
 ## TrackPro V2 2.26.298 - 2026-11-09 (beta)
 
 For supervised testing. Includes everything in 2.26.297. Blip v0.283.
