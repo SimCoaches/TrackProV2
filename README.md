@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.266.
 
+Beta [2.26.300](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.300) puts Blip's best lap in Telemetry to compare and ghost against where Blip has driven your car and track, counts the laps you drove before opening Setup Shop's A/B test, and has the setup engineer look at a setup with new laps when you open it. Everything in 2.26.299 is included.
+
 Beta [2.26.299](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.299) gives every car a setup at every track, lets you change how a setup handles as your own file, keeps TrackPro's setup for the car you drive in your iRacing setups, records laps for drivers with no account, and has Blip v0.284's clearer calls that name the control and keep to one corner. Everything in 2.26.298 is included.
 
 Beta [2.26.298](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.298) reports a motion controller whose USB connection drops at once instead of freezing motion, opens TrackPro, the Monitor Dash and overlays on the screen you left them on, and keeps Ambient lighting on the game's colour while a full-screen game is minimised. Everything in 2.26.297 is included.
