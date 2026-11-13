@@ -1,5 +1,22 @@
 # Changelog
 
+## TrackPro V2 2.26.300 - 2026-11-13 (beta)
+
+For supervised testing. Includes everything in 2.26.299. Blip v0.284.
+
+- Blip's best lap is in Telemetry. Where Blip has driven your car and track, its best lap is listed under "Blip's best lap" when you open your current car and track session. Load it beside your own lap to compare, or race it as a ghost. It is always labelled Blip, never a driver's name, and it is not counted in lap lists or leaderboards. Paid plans.
+- Setup Shop's A/B test counts the laps you drove before you opened the card. A session with clean laps at the track is a test already under way: laps on your own setup count as A, the card says so, and you load TrackPro's setup for B.
+- A setup with new handling reports or test laps at its track is looked at by the setup engineer when you open it, instead of waiting for the nightly run.
+- A setup change that was kept at one track is tried first for the same problem at the car's other tracks. One that was reverted at two tracks is not tried again. A plan the engineer made again and found the same is not made again every night.
+- Each time TrackPro checks your setup file while you drive, it writes what it found and did to the app's log: the file it wrote, that your garage is current, that the setup is iRacing's own file, or why a file could not be written.
+- Self-driving Blip drives an oval as a setup test driver: Charlotte in the Gen 6 Cup Camaro.
+- On the warm-up nothing moves self-driving Blip's line, its edges or its wall margins. Charges taken on the out lap had moved the line and spun three out laps at Oulton Park.
+- Self-driving Blip stays flat down the straight after a corner it took flat at the limit.
+- A seam or gap in the track map's line no longer makes self-driving Blip brake on its own line.
+- An off long after a slide ended is not put down to the slide, and corner tests wait when the car leaves the pits cold.
+
+Beta limits: Blip's lap in Telemetry and the A/B card change are covered by tests and have not been run in the app with iRacing yet. Blip has laps at few car and track pairs so far, so most sessions will not list one. Self-driving Blip's changes were driven on one rig, at Oulton Park and Charlotte only.
+
 ## TrackPro V2 2.26.299 - 2026-11-11 (beta)
 
 For supervised testing. Includes everything in 2.26.298. Blip v0.284.
