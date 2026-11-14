@@ -8,9 +8,9 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest stable release: TrackPro V2 2.26.266.
+Latest stable release: TrackPro V2 2.26.300.
 
-Beta [2.26.300](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.300) puts Blip's best lap in Telemetry to compare and ghost against where Blip has driven your car and track, counts the laps you drove before opening Setup Shop's A/B test, and has the setup engineer look at a setup with new laps when you open it. Everything in 2.26.299 is included.
+Earlier beta builds, all included in 2.26.300 (their notes describe each build as it was tested):
 
 Beta [2.26.299](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.299) gives every car a setup at every track, lets you change how a setup handles as your own file, keeps TrackPro's setup for the car you drive in your iRacing setups, records laps for drivers with no account, and has Blip v0.284's clearer calls that name the control and keep to one corner. Everything in 2.26.298 is included.
 
@@ -195,6 +195,17 @@ Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189)
 Validation candidate [2.26.188](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.188) contains further motion persistence and controller-protocol corrections. **Supervised testing only; not approved for customer delivery.**
 
 Beta [2.26.187](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.187) is on **validation hold - do not use for customer delivery**. Reliability fixes and physical Thanos4U acceptance are pending.
+
+### What's New in 2.26.300
+
+- Blip (v0.284): clearer calls that name the control, one corner at a time, quiet on your out lap, no repeats of a call you already fixed, and Blip's best lap in Telemetry to compare or race as a ghost (paid plans).
+- Setup Shop: a setup for every car at every track written straight into iRacing, "Change how it handles", and setups engineered from how the car handles.
+- Laps up to 30 minutes save whole, laps record with no account, and dashes show your best and optimal lap as you load in.
+- Reliability: fewer freezes in races, no error screen from a full local storage, false crash reports stopped, a handle leak behind window crashes fixed.
+- Motion: a dropped controller USB link is reported at once instead of freezing motion; VR motion compensation built in; custom motion game effects.
+- Force feedback no longer starts twice and knocks the wheel out; real pedals stay hidden from games after a USB drop.
+- Wheel light shows, wheel dashes that find their screen again, a simpler Ambient lighting page, Console mode, Arcade free play and online Assetto Corsa races.
+- See the [changelog](CHANGELOG.md) for all changes since 2.26.266.
 
 ### What's New in 2.26.266
 
