@@ -1,8 +1,8 @@
 # Changelog
 
-## TrackPro V2 2.26.300 - 2026-11-13 (beta)
+## TrackPro V2 2.26.300 - 2026-11-13 (stable, promoted 2026-11-14)
 
-For supervised testing. Includes everything in 2.26.299. Blip v0.284.
+Promoted from the signed beta without rebuilding the installer, at the owner's direction. This is the stable release: it carries every change since 2.26.266 (the entries below). Blip v0.284.
 
 - Blip's best lap is in Telemetry. Where Blip has driven your car and track, its best lap is listed under "Blip's best lap" when you open your current car and track session. Load it beside your own lap to compare, or race it as a ghost. It is always labelled Blip, never a driver's name, and it is not counted in lap lists or leaderboards. Paid plans.
 - Setup Shop's A/B test counts the laps you drove before you opened the card. A session with clean laps at the track is a test already under way: laps on your own setup count as A, the card says so, and you load TrackPro's setup for B.
