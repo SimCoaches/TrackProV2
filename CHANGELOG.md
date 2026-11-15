@@ -1,5 +1,28 @@
 # Changelog
 
+## TrackPro V2 2.26.301 - 2026-11-14 (beta)
+
+For supervised testing. Includes everything in 2.26.300. Blip v0.284.
+
+- Ambient: Spotter calls no longer flash the lights when "Car alongside" is switched off or Ambient is off. They had reached the lights through the command the setup test uses.
+- Ambient: lights no longer stick on a held colour.
+- Ambient: a "When no game is running" choice for Match the game: follow the screen, hold a colour, drift slowly, or stay off.
+- Ambient: on the Lighting page a light set to "Don't use" stays off, a command a light missed is sent again, and a fresh install no longer starts on a blank profile.
+- The left menu is three labelled, coloured blocks (Rig, Driving, Community) and every entry has its own icon. Paint Studio, Streaming and Overlays are under Driving. Motion has a drawn rig icon.
+- Setup Shop draws the setup on a top view of the car, with what to do in one column beside it. The catalog tabs show only once there is a catalog.
+- Setup Shop's "How it handles for you" counts, from your own laps this session, where the car pushed wide, stepped out, moved under braking or spun its wheels.
+- Setup files: a ride height further out than any setup file TrackPro has seen is held back on both corners of its axle. A McLaren 720S file at Imola had loaded with front ride heights of 77.7 and 81.3 mm where both were meant to be 73.4.
+- Setup Shop, Streaming and Works Team fit the window the app opens at (1200 x 800).
+- Home: the trial card shows Blip and what a plan adds (Blip, Setup Shop, the paid overlays, Race Engineer, Driver Lab), and one press goes to the trial checkout. On the plan page, buttons that move you to a lower plan say Downgrade.
+- Self-driving Blip drives one warm-up lap, then the hot lap. The warm-up ends before the last braking zone so lap 2 starts at speed.
+- A new line for self-driving Blip starts at its full pace, and each stretch climbs until it uses 97% of the car's grip, half the way to the limit each pass.
+- For self-driving Blip a touch within 2.5 m of its line is a kerb, not a wall, so it no longer slows lap on lap after one. Running out to an edge it knows, it eases the power before the car is over it.
+- Self-driving Blip holds the line's gear at an apex unless the engine lugs, and at speed turns the wheel no further than the car's grip can use.
+- The Formula Vee has its own car model for self-driving Blip, fitted from 234 drivers' laps on 12 tracks.
+- Surveying a track, self-driving Blip stays within 4 m of its line along the pit lane and turns back short of an edge it already knows. A drawn way into the pits is tried only under 2.5 laps of fuel.
+
+Beta limits: the Ambient fixes were made from a customer's report and are covered by tests; they are not yet confirmed on the customer's lights. The new left menu, the Setup Shop page and the Home trial card have not been used by customers yet. The Setup Shop page is iRacing only. Self-driving Blip's changes were driven on one rig, mostly at Spa in the Formula Vee. Stable automatic updates stay on 2.26.300.
+
 ## TrackPro V2 2.26.300 - 2026-11-13 (stable, promoted 2026-11-14)
 
 Promoted from the signed beta without rebuilding the installer, at the owner's direction. This is the stable release: it carries every change since 2.26.266 (the entries below). Blip v0.284.
