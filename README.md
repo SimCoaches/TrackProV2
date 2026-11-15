@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.300.
 
+Beta [2.26.301](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.301) stops Spotter calls flashing Ambient lights that are switched off, adds a choice for what the lights do when no game is running, groups the left menu into Rig, Driving and Community with an icon per entry, and draws your setup on the car in Setup Shop. Everything in 2.26.300 is included.
+
 Earlier beta builds, all included in 2.26.300 (their notes describe each build as it was tested):
 
 Beta [2.26.299](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.299) gives every car a setup at every track, lets you change how a setup handles as your own file, keeps TrackPro's setup for the car you drive in your iRacing setups, records laps for drivers with no account, and has Blip v0.284's clearer calls that name the control and keep to one corner. Everything in 2.26.298 is included.
