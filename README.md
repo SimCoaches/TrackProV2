@@ -10,6 +10,10 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.300.
 
+Beta [2.26.303](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.303) adds wet setups, a setup tuned to your own driving, a safer version and this week's target pace to Setup Shop, draws dashes at the game's full frame rate, lets drivers share haptics, motion, dash and LED setups, and puts a tooltip on every control. Everything in 2.26.302 is included.
+
+Beta [2.26.302](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.302) stops custom Blip voices cutting off a second into every line, lets shade on a bright day dim the Ambient lights, fills the pit wall with your own laps when you drive alone, and has Blip v0.285. Everything in 2.26.301 is included.
+
 Beta [2.26.301](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.301) stops Spotter calls flashing Ambient lights that are switched off, adds a choice for what the lights do when no game is running, groups the left menu into Rig, Driving and Community with an icon per entry, and draws your setup on the car in Setup Shop. Everything in 2.26.300 is included.
 
 Earlier beta builds, all included in 2.26.300 (their notes describe each build as it was tested):
