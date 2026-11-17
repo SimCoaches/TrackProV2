@@ -1,5 +1,19 @@
 # Changelog
 
+## TrackPro V2 2.26.304 - 2026-11-17 (beta)
+
+For supervised testing. Includes everything in 2.26.303. Blip v0.286.
+
+- League Night Season 2: starts Friday Nov 27, 12 Fridays in the Skip Barber Formula 2000, with a no-points fun race on Nov 20 and the Christmas and New Year's Fridays off. A driver's best 8 of 12 Fridays count toward the title; wins and podiums still count every week. Sim Coaches staff race outside the championship, listed apart. A season switcher keeps Season 1 as it was raced.
+- League: Beat Blip, a time trial on each week's exact layout and car, open all week, with Blip's time to beat (Mount Washington, week 9, is scored from it). Weekly awards for fastest lap, hard charger and fewest incidents. After a race, add the drivers you raced as friends. Bring a friend copies an invite with the week's race, Blip's time and the driver's referral code.
+- Home: the Friday race is the top card, with the week's time trial beside it. This week in TrackPro shows the week's drivers and clean laps and who is on track. Free drivers see Blip's Verdict: the corner that cost them the most in their last session, against their own best pass through it.
+- Shared setups: choose who sees a setup (every driver, anyone with the link, or friends you pick), send it to friends (they get it in the bell), copy a web link that opens TrackPro, or save it as a .tpsetup file that opens TrackPro.
+- Blip: where no trackside board is in reach of a brake point, he says "brake on the chime" and the Brake Approach count-in marks that brake point; the chime lands on the mark, never early or late.
+- Mount Washington: every hillclimb run saves at iRacing's official time. The reset to the start no longer drops the next run, and going off the road no longer voids a run (incidents still mark it).
+- Self-driving Blip: a track book per car and track keeps every corner's best clean pass and limit, so a new line or engine starts from what was learned; one flying lap in eight tests a corner's limit; the wheel reading waits for warm tyres.
+
+Beta limits: brake on the chime and the hillclimb run saving are covered by tests and real-lap replays and have not been driven on a rig. The Season 2 pages read live league data; their first race night is Nov 20. Stable automatic updates stay on 2.26.300.
+
 ## TrackPro V2 2.26.303 - 2026-11-17 (beta)
 
 For supervised testing. Includes everything in 2.26.302. Blip v0.285.
