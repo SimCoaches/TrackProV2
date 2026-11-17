@@ -1,5 +1,35 @@
 # Changelog
 
+## TrackPro V2 2.26.303 - 2026-11-17 (beta)
+
+For supervised testing. Includes everything in 2.26.302. Blip v0.285.
+
+- Setup Shop: wet setups. A "Wet track" tick box writes a wet version of any setup (practice, qualifying, race or endurance): what iRacing's own wet setup changes for the car, on top of the setup for the track. When iRacing declares the session wet, the wet file is put in the garage and the driver is told which to load.
+- Setup Shop: "Tune it to my driving" runs the setup engineer on the driver's own laps on the setup (six clean laps needed) and writes the result as their own file. "Safer version" steadies the rear on corner entry and exit.
+- Setup Shop: this week's target pace. Per car and track driven this week: the fastest clean lap on TrackPro's setup, what a strong iRacing driver laps there (from iRacing's own records), the driver's best and the gap.
+- Setup files are saved in a TrackPro folder inside the car's setups folder, named Track-Layout-Season-TrackPro; shop downloads land there too.
+- Dashes: each game frame drawn the moment it arrives (saved dashes off their 30 fps cap), one font on every screen, tachs and shift lights on the car's own shift window, an RPM number widget and new Saved layouts templates.
+- Shared setups: drivers share haptics, motion, dash and LED setups with a description and their name; others add them and rate them, best rated on top.
+- Tooltips across the app: every menu entry, tab, setting and button says what it does and how it works.
+- Haptics: the output check names a parked car and a low Windows volume.
+- Self-driving Blip: its line from the cloud is its own fastest lap where that beats the drivers'; the best lap's floor no longer plans a stop no brake can make; a trained driver can take the wheel and pedals on flying laps.
+
+Beta limits: no wet file has been loaded in iRacing yet. Tune it to my driving, the safer version and the target pace list are covered by tests and have not been driven or opened on a rig. iRacing's pace is known for about two thirds of the cars and tracks. Self-driving Blip's changes were driven on one rig. Stable automatic updates stay on 2.26.300.
+
+## TrackPro V2 2.26.302 - 2026-11-15 (beta)
+
+For supervised testing. Includes everything in 2.26.301. Blip v0.285.
+
+- Blip: a custom voice (ElevenLabs or Spotter Market) no longer stops a second into every line. Since 2026-10-21, 262 of 263 such lines were cut about 15% in: the voice service closed its connection after sending the whole line and the app stopped the audio it was still playing. The app now ignores that close once the line is here; the updated voice service keeps the connection open until playback ends.
+- Ambient: in the car, full light is what the last minute's lit stretches read (never below the old fixed level), so tree shadows dim the lights on a bright day. On a customer's hazy Spa lap the lights had sat at full 98% of the time. Dusk, tunnels, night, menus and the garage are unchanged.
+- Ambient: every two minutes of driving a log line says what the lights read (rows, brightness, time at full light, pictures a second).
+- Pit wall, driving alone: your laps and sector times fill the leaderboard box, lap times fill the battle box.
+- Car alerts: no STALLED over a moving car; the pit wall keeps quiet about an engine that is off in the pit lane.
+- Ghost Lap is a paid overlay (Starter and up); plan lists no longer call Ghost Lap and Race Engineer free.
+- Self-driving Blip: no second ease of the brake in a turn until the first has climbed back; a track-limit charge it does not see as an off marks its stretch; the learned steering is taught only by corrections for something real; the charge rule counts the aim as well as the proven share and runs during a recovery; a technique card's 0 takes effect.
+
+Beta limits: the custom voice fix is complete only once the updated voice service is deployed. The Ambient shade change was made from one customer's footage and is covered by tests, not yet confirmed on their lights. Self-driving Blip's changes were driven on one rig at Spa in the Formula Vee. Stable automatic updates stay on 2.26.300.
+
 ## TrackPro V2 2.26.301 - 2026-11-14 (beta)
 
 For supervised testing. Includes everything in 2.26.300. Blip v0.284.
