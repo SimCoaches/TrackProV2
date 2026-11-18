@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.306 - 2026-11-18 (beta)
+
+For supervised testing. Includes everything in 2.26.305. Blip v0.286.
+
+- Pedals: the Pedals page says under its title, and first in the no-pedals notice, that it works only with Sim Coaches P1 Pro Pedals and Fanatec ClubSport V3 pedals for now; the V3 must be on its own USB cable, and other pedals are left alone.
+- Pedal census: to choose which pedal sets to support next, TrackPro tells Sim Coaches which game controllers are connected to the PC (make, model and how the device reports its axes; no serial number).
+- Self-driving Blip: off its line with a bend coming, Blip runs under its planned speed until it is back on line, measured from where it means to be at the car; going off with grip in hand no longer slows that stretch next time.
+
+Beta limits: the Pedals page wording was checked on screen, not on a rig. The self-driving Blip changes are covered by tests and replays. Stable automatic updates stay on 2.26.300.
+
 ## TrackPro V2 2.26.305 - 2026-11-18 (beta)
 
 For supervised testing. Includes everything in 2.26.304. Blip v0.286.
