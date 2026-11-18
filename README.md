@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.300.
 
+Beta [2.26.306](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.306) makes the Pedals page say which pedals it works with (Sim Coaches P1 Pro Pedals and Fanatec ClubSport V3, for now), reports which game controllers are connected so the next supported pedal sets can be chosen, and has Blip v0.286. Everything in 2.26.305 is included.
+
 Beta [2.26.305](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.305) adds TrackPro credit that comes off Sim Coaches gear at the in-app checkout, starts Setup Shop setups for 31 cars from their season setups, runs Race Pass Season 2 for six months, and has Blip v0.286. Everything in 2.26.304 is included.
 
 Beta [2.26.304](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.304) opens League Night Season 2 (from Nov 27, with a fun race on Nov 20) with a driver's best 8 of 12 Fridays counting, a Beat Blip time trial open all week and weekly awards, puts the Friday race at the top of Home with Blip's Verdict on your last session, lets drivers send setups to friends by link or file, and has Blip v0.286. Everything in 2.26.303 is included.
