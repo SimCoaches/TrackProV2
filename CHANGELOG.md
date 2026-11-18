@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.305 - 2026-11-18 (beta)
+
+For supervised testing. Includes everything in 2.26.304. Blip v0.286.
+
+- TrackPro credit: an account can carry a credit balance, shown on Plan & billing and in the Marketplace, that comes off Sim Coaches gear automatically at the in-app checkout.
+- Setup Shop: for 31 cars, a setup starts from that car's season setups instead of a generic baseline, and the setup card says how many tracks it was built from.
+- League and Race Pass: the Friday event follows the league week, and Race Pass Season 2 now runs for six months.
+- Blip car box: the setup page's sound step covers the car stereo and Bluetooth speakers, for driving without a helmet.
+- Self-driving Blip: every lap is saved with how it braked and its onboard video, and out laps are saved whole; a corner where the front washed out and the car ran wide is entered slower next time; in high-power cars, throttle rises as the wheel unwinds, holds over kerbs and crests, and short-shifts when the rears spin (switched on per car from the rig's card, only in cars with the power to spin their rears).
+
+Beta limits: the season-setup base has not yet been timed against TrackPro's own setups on a rig. Drivers are not yet limited to Blip laps that brake like a person (still pending). Stable automatic updates stay on 2.26.300.
+
 ## TrackPro V2 2.26.304 - 2026-11-17 (beta)
 
 For supervised testing. Includes everything in 2.26.303. Blip v0.286.
