@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.300.
 
+Beta [2.26.307](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.307) has Blip tell a driver who has never talked to him that he answers, with their talk button named; gives the gear to be in at a corner's apex when laps can show one; and renames "Suggestions per lap" to "Fixes per lap" (1, 2 or 3) with a note that more fixes uses talk time faster. Blip v0.287.
+
 Beta [2.26.306](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.306) makes the Pedals page say which pedals it works with (Sim Coaches P1 Pro Pedals and Fanatec ClubSport V3, for now), reports which game controllers are connected so the next supported pedal sets can be chosen, and has Blip v0.286. Everything in 2.26.305 is included.
 
 Beta [2.26.305](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.305) adds TrackPro credit that comes off Sim Coaches gear at the in-app checkout, starts Setup Shop setups for 31 cars from their season setups, runs Race Pass Season 2 for six months, and has Blip v0.286. Everything in 2.26.304 is included.
