@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.307 - 2026-11-18 (beta)
+
+For supervised testing. Includes everything in 2.26.306. Blip v0.287.
+
+- Blip: a driver who has never talked to Blip is told plainly that he answers. The start-of-session call names the driver's own talk button and, once a lap is banked, what is worth asking; the offers after a lap say how to take them up; the "on track without Blip" reminder shows the talk button. It stops once the driver has talked to him, and after six sessions if they never do.
+- Blip: asked about a corner, Blip now says the gear to be in at the apex when laps can show one, and where that comes from: the driver's own passes this session in two gears at the same corner speed, then drivers who tried both gears in that car, then what most quick drivers use (said as a habit, not a gain). Where laps decide nothing he gives no best gear.
+- Blip: "Suggestions per lap" on Blip's page is now "Fixes per lap" (1, 2 or 3), with a line under it saying that more fixes means Blip talks more and uses the plan's talk time faster, and this month's minutes. A driver can also ask Blip for more or fewer fixes per lap while driving; when it goes up, Blip says it uses talk time faster.
+- Remote Support: turning on instant access now runs the one-time setup first, and TrackPro's support helper can open the Remote Support page for a signed-in driver.
+
+Beta limits: the Blip changes are covered by tests and have not been heard on a rig. The apex-gear answer has measured data for only a few corners so far; elsewhere it says what most quick drivers use, or nothing. Stable automatic updates stay on 2.26.300.
+
 ## TrackPro V2 2.26.306 - 2026-11-18 (beta)
 
 For supervised testing. Includes everything in 2.26.305. Blip v0.286.
