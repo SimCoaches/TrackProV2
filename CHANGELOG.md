@@ -1,5 +1,68 @@
 # Changelog
 
+## TrackPro V2 2.26.312 - 2026-11-20 (beta)
+
+For supervised testing. Includes everything in 2.26.311. Blip v0.291.
+
+- Force feedback is open to every driver. TrackPro drives the wheel from the game's own steering force in iRacing, Assetto Corsa, rFactor 2 and Le Mans Ultimate, and builds one from the car's movement in F1. ACC is marked as not checked on a rig yet, and BeamNG keeps its own force feedback for now.
+- Force feedback starting feel: new drivers start on Balanced GT, now the car's own steering (Feel 0) plus ABS, lockup, traction control, shift, limiter and a faint engine cue. Bumps and slip start off, because the game's force already carries kerbs, road and slides. Saved settings are kept.
+- Force feedback smoothing: games that send one force value per update (AC, ACC, rFactor 2, Le Mans Ultimate, F1, and iRacing's fallback) play it as a straight line from the last value over the time it stands for, on the game's own clock, instead of a staircase. It costs one update of delay: about 3 ms on AC and ACC, 20 ms on rFactor 2 and Le Mans Ultimate.
+- rFactor 2 and Le Mans Ultimate are read every 3 ms instead of every 20 ms. On Le Mans Ultimate's own data a few-byte check skips the full copy when nothing changed, and on rFactor 2 a record the game was still writing is dropped instead of reaching the wheel.
+- Each game keeps its own steering weight (their force units do not compare). A game driven for the first time starts from the current weight; the page says which game the weight is saved for.
+- Effects play as late as the steering force does (about 15 ms on iRacing, half an update on the other games), so they line up with it.
+- The frozen-force check needs half a second of identical force on every game (it was 30 updates: 0.1 s on AC and ACC, which cut steady force), and a value at ACC's or AC's own limit only escapes it while the car is still moving. The strength read covers a minute of driving on every game, and the clipping meter reads the force before the force limit.
+- ACC: when ACC's own force feedback sits at its limit in more than 2% of recent driving, the page says to lower ACC's gain.
+- Force feedback safety and accuracy, from the opening: a wheel left holding force after a crash is released at the next start, effect tests only play while parked, settings that add force fade in over 0.4 s, minimum force tops out at 15%, a session lets go two minutes after the game stops sending force, force stays on in the pit lane on ACC, rFactor 2, Le Mans Ultimate and F1, the crash cut needs 8 G sideways (fast corners in high-downforce cars were tripping it), and Assetto Corsa's own kerb, road, slip and ABS effects are turned down while TrackPro drives the wheel and put back exactly afterwards.
+- Force feedback page: problems in plain words, a setup check that only counts what each game can prove, a link to turn off automatic start, and an alert when STOP did not reach the wheel. The experimental soft lock stays staff-only.
+- Blip says your lap time on short laps too: in the first gap where the whole line fits, never while you brake, in its shortest form ("Thirty nine two, three tenths up."). If a lap has no room he gives two laps together ("Last two: ..."). When the Spotter reads the lap time, Blip adds only the gap.
+- Blip only says "not yet" or "closer" about a call you actually heard. He never makes the same call at a corner three times running: the third time he gives the reason or the number, or moves on to the next thing.
+- Blip's first read of where the time is going waits for a straight, and a corner verdict is said before you brake for the next corner, or folded into the lap time line ("Turn 1 was on it.").
+- Fix this corner and your session reports say what kind of corner it is (hairpin, the stop at the end of the longest straight, the slowest corner, a flat-out kink), in the same words Blip uses on the radio.
+- Drills start with the one for your weakest measured skill, marked "Start here" with one line saying why. With too little data the list keeps its usual order.
+- Reference laps show humidity, wind and the fuel each lap burned (humidity on iRacing). A track temperature difference gets a measured lap time figure where one exists. Blip tells you when a reference lap was on a different setup, and prefers one on your setup class when all else is equal (iRacing).
+- Onboard video now records by itself on PCs with a hardware video encoder, also on existing installs where you never chose. You see a note once and can turn it off with one press. If recording slows your game, TrackPro stops it for that session and tells you once. Reference laps with no video say so.
+- Brake tones go quiet at corners you have learned, now on existing installs too. You see a note once and can keep a tone at every corner.
+- See your saved laps on your phone or laptop with the PC off: open My laps in the phone app and sign in. Lap times, speed, pedal, steering and gear traces, your driven line, and where you gained or lost time in each corner.
+- rFactor 2 telemetry setup shows exactly which plugin file you need, opens its author's download page, and tells you where it goes.
+- Blip works the one focus corner every lap: a call before it and a verdict after it, also when the pass matched the last one ("Turn 5 — no time lost there."), and the job stays on the corner with the biggest steady loss instead of moving when its leading fault changes.
+- On a short lap with no straight, the teaching line is said in its shortest form at the first place it fits ("Turn 2 is the one to work on: brake, then straight to throttle.") and no longer holds that corner's call and verdict back.
+- A driver's first session hears how Blip talks at the first lap line: "A call before a corner is for that corner; a line after it is about the one you just drove." Returning drivers hear it once a week at most.
+- Lap guide: the short form of a corner's target may come once you have turned in to the corner before it, off the brake and back on the throttle.
+- A new driver gets Blip from the first lap: finishing his voice setup counts as set up, so he starts when the car goes on track, and the first-drive screen says what he is doing.
+- Blip no longer asks for a gear you are already in, never repeats the same verdict more than twice (after that it says what is left, with a number), and never talks about the same corner pass twice.
+- Lap times are spoken one fixed way ("Forty point four five nine seconds.").
+- Line coaching on the radio: "Turn 2 — turn in from the outside.", and where the line is what stops the throttle, "Turn in from the outside, then build the throttle as you unwind."
+- The lap guide never gives a corner's target before the corner before it, and can never start silent: when your chosen voice cannot say it, the built-in narrator does the whole lap.
+- When you are talking with the key up, verdicts and corner calls never wait and other lines wait at most 1.5 seconds.
+- A driver who has never spoken to Blip is told in one line that he answers and how to ask for the lap guide.
+- Onboard video: a note is shown before the first recording on a new install (what is recorded, where it goes, Keep on or Turn off), and game sound is recorded only if you turn it on.
+- Spotter: the slow-down, track-limits and spin lines are in the built-in Spotter voices, so every driver hears them.
+- Blip's after-corner verdict waits until the teaching line for that corner has been heard, and a teaching line is timed from the reference brake points so it never runs into braking.
+- Blip praises a corner where you beat the reference two laps running, names a skill when the same fault shows at three or more corners, backs off with one reset line when laps turn rough, and reports your consistency over a stint. Each of his line kinds has its own switch in his settings, and a mode list (Automatic, Practice coach, Quiet, Race engineer, Lap guide every lap, Hot lap).
+- The opener is 7 to 12 seconds: your name, the track, what this lap is, the first job, and for a driver new to the car and track the lap guide offer. A driver who has never spoken to Blip is always told he answers and which control to hold.
+- Fix this corner and Telemetry show what a hotter or cooler track is worth where it has been measured. A track guide under Fix this corner lists each corner's braking, gear and slowest speed. Telemetry charts the gap to an imported lap.
+- Le Mans Ultimate: tyre pressures, brake temperatures, tyre loads, camber, weather, wind and battery are read from the game's own data when Enable Plugins is on; the plugin stays the source for everything it already delivers.
+- Any one kind of Blip or Spotter line can be switched off from the server without an app update.
+- Blip's calls name the control, a size and a how: "less brake, carry 6 mph more", "off the brake sooner, carry more speed", "open the wheel earlier, run wider". A teaching line is never started where it cannot finish before the next braking zone; on a short lap he uses the shortest form.
+- Blip never says "sorted" for a change the lap cannot show was made (a gear, a speed, a brake pressure, an exit line). When a corner simply stopped costing time he says so.
+- Blip finishes a line a Spotter call cut off, once the radio is clear and if it is still true. Lines that can wait hold while you are talking with the key up.
+- Lines with a new number or corner name start from recorded pieces instead of waiting for the live voice, and Blip says "Let me check." at once before a lookup.
+- Lap guide: a corner you drive on target two laps running drops out and Blip says so once ("You've got Turns 1 and 3. I'll only call the rest."); one miss brings it back. On a short straight it keeps the numbers ("Turn 2, 60 percent, second."). The guided lap says "Unwind the wheel."
+- The opener names the track and the first job, and offers the lap guide to a driver new to the car and track.
+- Track limits: the Spotter calls iRacing's slow-down ("Slow-down for the cut. Lift and give the time back."), counts the sim's own warnings on ACC, rFactor 2, Le Mans Ultimate and F1, and warns before a corner you have been off at twice. Recorded once in your Spotter voice.
+- Spins: "Spun. Stay on the brakes.", the cars-coming warning, then "Clear behind. Rejoin carefully." Spin detection on iRacing, AC, ACC, rFactor 2 and Le Mans Ultimate.
+- Lock-ups: Blip says when you locked a wheel and what to do, on AC, ACC, rFactor 2, Le Mans Ultimate and F1 (practice only).
+- Pin the corner you just drove as Blip's focus by voice, a button on his overlay, or a key or wheel button.
+- New overlay, Corner View: the reference line ahead, your trail behind and the brake, turn-in and apex marks for the next corner (marks only where the line cannot be placed). Reference Trace gains a steering lane and can use Blip's own lap. Brake Approach shows a gear badge that turns amber when your gear differs, a last-corner row (brake point, slowest speed, throttle, time gained or lost) and a note when a tone was skipped.
+- Fix this corner reads your last 8 clean passes, not one lap. It has one ranked list of things to focus on with a how and why, what each change is worth and how to build up to it, the habits it sees (changing down with the wheel turned, braking at full lock, brake and throttle together, coasting), what you do well, both lines on the map, and a jump to Telemetry and the video at that corner.
+- After a session: how far you were from your theoretical best with a status per sector, your own target lap time with a progress bar, a written progress story per track, a race result card, and fuel on reference laps.
+- Coach chat compares any two of your laps corner by corner, also on tracks without a corner map and in your language, leaving out out laps and spins and saying so. It can compare against an imported lap. "Ask Blip" under the onboard video sends that moment.
+- Onboard video is recorded by default on new installs with a hardware encoder (measured cost: 0.2% of the CPU, no frame-rate change). Video uploads wait for the pits or the end of the session. Existing installs are unchanged.
+- Sector times are saved correctly for iRacing laps (they were stored as zero), and F1 sectors are saved.
+- One-click telemetry setup for rFactor 2, Le Mans Ultimate, F1 24/25 and BeamNG: it shows every change first, keeps a backup, checks that data arrives, and can undo.
+- Blip's settings show five controls with the rest under More. Four drills are open to every driver on a plan or trial. A note on how Blip should talk to you. A date filter on the reference lap picker. Tones step back once a corner is learned on new installs.
+- Voices: guided laps speak in your chosen voice and never fall back to another one; private voices; a voice from your own voice with a spoken consent line; starting descriptions; previews on real lines. These switch on with the server update.
+
 ## TrackPro V2 2.26.311 - 2026-11-19 (beta)
 
 For supervised testing. Includes everything in 2.26.308, and in 2.26.309 and 2.26.310, which were prepared but not published (their entries follow). Blip v0.290.
