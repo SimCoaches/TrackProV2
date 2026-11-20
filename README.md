@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.300.
 
+Beta [2.26.311](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.311) adds a "Your rig" step to sign-up: TrackPro shows every sim, pedal set, wheel light, bass shaker and motion platform it finds on the PC, working. A bass shaker setup from another program comes over in one press, and one more press stops that program starting with Windows. A first drive follows the plan step. It also brings what was prepared for 2.26.309 and 2.26.310: Teams with private chat, private voice and the Endurance race planner inside, the Race Pass reward tracks, the turn-in and throttle tones on their points, and a long list of Blip fixes. Blip v0.290. Everything in 2.26.308 is included.
+
 Beta [2.26.308](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.308) adds "Fix this corner" to the top of Blip's page (your costliest corner against the reference lap, what to change, and a jump to that corner in Telemetry), a lap guide where Blip says the braking, brake pressure and gear before every corner on every lap and tells you what to change at the corners where you repeat a mistake, turn-in and throttle tones beside the brake tone, and tyre calls: Blip knows when the tyres are not in yet or running hot. Blip v0.288. Everything in 2.26.307 is included.
 
 Beta [2.26.307](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.307) has Blip tell a driver who has never talked to him that he answers, with their talk button named; gives the gear to be in at a corner's apex when laps can show one; and renames "Suggestions per lap" to "Fixes per lap" (1, 2 or 3) with a note that more fixes uses talk time faster. Blip v0.287.
