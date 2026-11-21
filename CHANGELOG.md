@@ -1,5 +1,40 @@
 # Changelog
 
+## TrackPro V2 2.26.313 - 2026-11-20 (beta)
+
+For supervised testing. Includes everything in 2.26.312. Blip v0.292.
+
+- Blip waits until you have recovered from a spin or a big moment before saying your lap time, and lap notes never start while you are braking.
+- The lap guide never talks about the next corner while you are still braking for this one.
+- Blip never repeats the lap time the Spotter just read; he adds only the gap.
+- Every time you head out, if the reference lap was set on a different fuel load, Blip says so in one quick line ("Reference ran lighter on fuel."), and a gap to a lighter reference adds "Some of that is fuel."
+- In races Blip gives the short lap time on a lap where he has said nothing else, only when the radio is clear: never in traffic, never on lap 1.
+- "Shorter on the brake" when you brake as hard as the reference but too early or for too long.
+- Blip's calls finish before you brake, and no line of his runs over about 12 seconds while you drive.
+- Corner names stay the same all session; a change of corner map is announced once and never lost under the Spotter.
+- Le Mans Ultimate at Monza and Imola get full corner coaching.
+- The out-lap brief is no longer cut off as it starts.
+- Talk more gives a short line after each corner that cost time; Blip's offer to talk more now gets said.
+- The lap with no calls always ends with its result.
+- Drill grades wait for the Spotter instead of being lost, no corner verdicts during a drill, and a drill started between runs is announced with its picture.
+- Kerb notes can now be heard.
+- Spotter: sector times for every sector (up to 20) and lettered turns like "Turn 3a" in all four built-in voices, and if a voice ever lacks a line the call is still spoken.
+- Like for like: when the fastest lap was set on the other kind of setup (fixed or open), Blip coaches you against the quickest lap on your kind of setup if one is nearly as quick (iRacing). Fuel never changes the reference: Blip keeps coaching you against it and tells you when it was set with more or less fuel than you carry.
+- When you are in the wrong gear at a corner and it costs time, Blip says which gear in his normal call ("in first gear, not second"). Practice only.
+- Blip never starts the lap time line where you have been dabbing the brake in a corner on recent laps.
+- With every corner learned, the lap guide still confirms one corner each lap, so a guided lap is never silent.
+- Driver Lab tells you the drill's picture once, before you head out.
+- On tracks with no corner map, Blip now finds the braking zones from your own laps after 10 clean practice, test or qualifying laps (never race laps), and his tones and corner coaching follow them. He calls them "Braking zone 3", never "Turn 3", always says the map is automatic, and a verified map always wins.
+- Alone on a car and track? Blip coaches you to his own lap where it is quicker ("my lap"), or to a corner speed range worked out from similar cars and corners.
+- After two clean laps on every brake mark in practice, Blip offers one lap with no calls (safety and Spotter stay on), then says how it went.
+- Blip tells you once that he can say a word after every corner where you lose time: just say "talk more". "Talk less" and "normal" work too, and the talk level (Quiet, Normal, Chatty) is now one of his visible settings, with a line on what each sounds like.
+- Blip's corner notes can say when the faster lap uses the kerb at the apex or on the exit (iRacing, F1, rFactor 2 and Le Mans Ultimate; on ACC only when the exit kerb unsettles the car).
+- Every drill has a picture to hold on to, and there are new Pace and Steady steering drills, so every skill on your card has one.
+- Fix this corner and the session report know more kinds of corner (chicane, long corner, fast sweeper, the corner onto the longest straight), and each report corner says how much your typical lap loses there and where.
+- Telemetry says why no reference video plays, and the session check says when video recording was paused to protect your frame rate.
+- Le Mans Ultimate: telemetry setup switches on the game's own Enable Plugins setting for you, with nothing to set by hand and no plugin file. You see the change first, it only happens while the game is closed, with a backup and an undo.
+- rFactor 2 telemetry setup: once you have downloaded the plugin from its author's page, TrackPro checks it is the exact release, takes the plugin file from it and puts it in place for you, with a backup and an undo. The by-hand steps are always shown too.
+
 ## TrackPro V2 2.26.312 - 2026-11-20 (beta)
 
 For supervised testing. Includes everything in 2.26.311. Blip v0.291.
