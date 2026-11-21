@@ -1,5 +1,21 @@
 # Changelog
 
+## TrackPro V2 2.26.314 - 2026-11-21 (beta)
+
+For supervised testing. Includes everything in 2.26.313. Blip v0.293.
+
+- Blip talks more by default: up to three fixes a lap and a short word after each corner where you lose time. A talk level you picked yourself stays as it is, and "talk less" or "normal" changes it at any time. Talking more uses your talk time faster.
+- When the car is what causes the fault at the corner Blip is working on, he says so at the Chatty level and always with a plan: what to change from the cockpit now, what to change at the next stop, and how to drive it until then. He then moves on to another corner instead of repeating the same technique call.
+- Lap times on Assetto Corsa, ACC, Le Mans Ultimate and rFactor 2 are that lap's own; Blip could say the previous lap's time.
+- Blip no longer starts a call while you are still braking for the corner before (a heel-and-toe blip on the throttle could look like the end of braking).
+- Alone on a car and track, Blip tells you how much more speed a corner has, worked out from cars like yours, and calls his own lap "my lap".
+- After a session, Fix this corner and Blip's reference list use the lap Blip coached you against on your setup, call it the quickest on your setup, and say when it ran on different fuel. A lap slower than your own best is never used as your reference.
+- Blip's own laps can play their onboard video beside yours, in step with your lap, labelled Blip's lap.
+- Session report corner notes now differ corner by corner, saying what kind of corner it is, where the time goes and what to change first.
+- If iRacing crashes or freezes mid-session, TrackPro waits for it to move again. It no longer reconnects every few seconds and replays the car's last moment to the shakers, pedals and lights.
+- Clean laps save again (a server search was timing out since November 19), and a lap whose upload finished is completed on the next try without sending every frame again.
+- Support: ask for a person and the assistant offers to send your case to the Sim Coaches team, with no troubleshooting first. One yes sends it and you get the case number.
+
 ## TrackPro V2 2.26.313 - 2026-11-20 (beta)
 
 For supervised testing. Includes everything in 2.26.312. Blip v0.292.
