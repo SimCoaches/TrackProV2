@@ -1,8 +1,8 @@
 # Changelog
 
-## TrackPro V2 2.26.315 - 2026-11-22 (beta)
+## TrackPro V2 2.26.315 - 2026-11-22 (stable, promoted 2026-11-22)
 
-For supervised testing. Includes everything in 2.26.314. Blip v0.294.
+Promoted from the signed beta without rebuilding the installer, at the owner's direction, on the day it was built. This is the stable release: it carries every change since 2.26.300 (the entries below). Blip v0.294.
 
 - Blip's own lines are recordings from the first time he says them. The app looks on this PC, then in a library every driver shares, and makes the recording only if nobody has yet; the live voice says a line only when its recording cannot be ready in time. A recorded line starts sooner than the live voice, and the live AI is kept for when you key up.
 - A line recorded for one driver is there for every driver in that voice (the six built-in voices and public Market voices). A line that names you or another driver stays on your PC and is never shared.
