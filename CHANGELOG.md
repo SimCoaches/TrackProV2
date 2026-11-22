@@ -1,5 +1,17 @@
 # Changelog
 
+## TrackPro V2 2.26.315 - 2026-11-22 (beta)
+
+For supervised testing. Includes everything in 2.26.314. Blip v0.294.
+
+- Blip's own lines are recordings from the first time he says them. The app looks on this PC, then in a library every driver shares, and makes the recording only if nobody has yet; the live voice says a line only when its recording cannot be ready in time. A recorded line starts sooner than the live voice, and the live AI is kept for when you key up.
+- A line recorded for one driver is there for every driver in that voice (the six built-in voices and public Market voices). A line that names you or another driver stays on your PC and is never shared.
+- Lap guide lines in your own Blip voice come from the same shared library, so they are ready sooner on a track someone has driven before.
+- A PC without a plan no longer asks the server for the same recordings every minute.
+- At the Chatty level (the default), the lap guide now starts by itself in a practice session, once there is a reference lap for your car at the track. Before a corner you haven't got yet, Blip says how the reference lap braked, the brake pressure, the gear and, where the road is long enough, the speed through the corner: "Turn 2. Hard braking, 75 percent, second gear. About 85 through." A corner where you repeat a mistake gets what to change instead. His other lines go on beside it: the word after a corner, praise, the lap note, the quiet-lap offer. Say "stop" and it stays off for that session; "talk less" stops it too. It does not run in qualifying or a race.
+- A lap guide line is only started where it is over before you brake again, by your own last laps, so fewer lines are still playing as you press the pedal.
+- Lap guide lines in the six built-in voices are joined from short recordings (the corner, the target, the speed) that every driver shares, so a track nobody has driven before has its lines ready from the first lap.
+
 ## TrackPro V2 2.26.314 - 2026-11-21 (beta)
 
 For supervised testing. Includes everything in 2.26.313. Blip v0.293.
