@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.300.
 
+Beta [2.26.315](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.315) has Blip start the lap guide by itself in practice at the Chatty level: before a corner you haven't got yet he says how the reference lap braked, the brake pressure, the gear and the speed, and his other lines go on beside it. Blip's lines are now recordings every driver shares, so they start sooner and the live AI is kept for when you key up. Blip v0.294. Everything in 2.26.314 is included.
+
 Beta [2.26.314](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.314) no longer buzzes the rig and flashes the lights every few seconds after iRacing crashes or freezes, saves clean laps again, and lets you ask Support for a person in one step. Blip talks more by default, names the car's part in a fault with a plan, and reads the right lap time on Assetto Corsa, ACC, Le Mans Ultimate and rFactor 2. Blip v0.293. Everything in 2.26.313 is included.
 
 Beta [2.26.313](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.313) makes Blip and the Spotter work as one radio: no lap time read twice, calls that finish before you brake, a quick fuel note each run when the reference ran a different load, talk more that really says more, and braking zones found from your own laps on tracks with no corner map. Blip v0.292. Everything in 2.26.312 is included.
