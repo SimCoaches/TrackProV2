@@ -8,9 +8,9 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest stable release: TrackPro V2 2.26.300.
+Latest stable release: TrackPro V2 2.26.315.
 
-Beta [2.26.315](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.315) has Blip start the lap guide by itself in practice at the Chatty level: before a corner you haven't got yet he says how the reference lap braked, the brake pressure, the gear and the speed, and his other lines go on beside it. Blip's lines are now recordings every driver shares, so they start sooner and the live AI is kept for when you key up. Blip v0.294. Everything in 2.26.314 is included.
+Earlier beta builds, all included in 2.26.315 (their notes describe each build as it was tested):
 
 Beta [2.26.314](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.314) no longer buzzes the rig and flashes the lights every few seconds after iRacing crashes or freezes, saves clean laps again, and lets you ask Support for a person in one step. Blip talks more by default, names the car's part in a fault with a plan, and reads the right lap time on Assetto Corsa, ACC, Le Mans Ultimate and rFactor 2. Blip v0.293. Everything in 2.26.313 is included.
 
@@ -221,6 +221,17 @@ Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189)
 Validation candidate [2.26.188](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.188) contains further motion persistence and controller-protocol corrections. **Supervised testing only; not approved for customer delivery.**
 
 Beta [2.26.187](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.187) is on **validation hold - do not use for customer delivery**. Reliability fixes and physical Thanos4U acceptance are pending.
+
+### What's New in 2.26.315
+
+- Blip (v0.294): his lines are recordings every driver shares, so they start sooner and the live AI is kept for when you key up. At the Chatty level (now the default) he starts the lap guide by himself in practice, with braking, brake pressure, gear and speed before a corner you haven't got yet. One focus corner worked every lap, your lap time on short laps too, and one radio with the Spotter.
+- Fix this corner at the top of Blip's page, with your costliest corner, what to change and a jump to it in Telemetry.
+- Force feedback open to every driver, from the game's own steering force, with a steering weight for each game.
+- A "Your rig" step at sign-up that finds your sims and hardware, and one press to bring a bass shaker setup over from another program.
+- Setup Shop: wet setups, a setup tuned to your own driving, a safer version, target pace, and setups shared with friends.
+- League Night Season 2, Race Pass Season 2, Teams with private chat and voice, and your saved laps on your phone.
+- Fixes: clean laps save again, a frozen iRacing no longer buzzes the rig and flashes the lights, custom Blip voices no longer cut off, and the right lap time on Assetto Corsa, ACC, Le Mans Ultimate and rFactor 2.
+- See the [changelog](CHANGELOG.md) for all changes since 2.26.300.
 
 ### What's New in 2.26.300
 
