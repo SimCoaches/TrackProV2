@@ -1,5 +1,16 @@
 # Changelog
 
+## TrackPro V2 2.26.316 - 2026-11-23 (beta)
+
+For supervised testing. Includes everything in 2.26.315. Blip v0.294.
+
+- Fix this corner: the corner cards under "Where your lap goes" line up, with the braking on one line, the gear and speed on the next, and "You are in gear 1" and "Costs the most" as small labels at the bottom.
+- Haptics: the page now lists the Windows outputs it does not offer for shakers (headphones and headsets, monitor and TV outputs) and says why, so an amp plugged into one of them is no longer just missing from the list.
+- Haptics, more than one amp: "+ Use a second amplifier" is now right under the output picker in Setup. Up to four amps or sound cards play together.
+- Haptics, more than one amp: opening the Haptics page no longer switches off or moves shakers on a rig whose first amp has more than two channels.
+- Haptics, more than one amp: a device row only offers outputs no other row is using, says when no other output is available, says when its shakers are still off because no mount is chosen, and says "Waiting for Device 1" when the first device is off (it keeps time for the others).
+- Haptics, two amps of the same model: after one is moved to another USB port and back, it is found again.
+
 ## TrackPro V2 2.26.315 - 2026-11-22 (stable, promoted 2026-11-22)
 
 Promoted from the signed beta without rebuilding the installer, at the owner's direction, on the day it was built. This is the stable release: it carries every change since 2.26.300 (the entries below). Blip v0.294.
