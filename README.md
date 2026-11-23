@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.315.
 
+Beta [2.26.316](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.316) makes a second shaker amplifier easy to add: "+ Use a second amplifier" sits under the output picker on the Haptics page, the page lists the Windows outputs it does not offer for shakers and why, and opening the page no longer moves or switches off shakers on a rig whose first amp has more than two channels. The corner cards in Fix this corner line up. Blip v0.294. Everything in 2.26.315 is included.
+
 Earlier beta builds, all included in 2.26.315 (their notes describe each build as it was tested):
 
 Beta [2.26.314](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.314) no longer buzzes the rig and flashes the lights every few seconds after iRacing crashes or freezes, saves clean laps again, and lets you ask Support for a person in one step. Blip talks more by default, names the car's part in a fault with a plan, and reads the right lap time on Assetto Corsa, ACC, Le Mans Ultimate and rFactor 2. Blip v0.293. Everything in 2.26.313 is included.
