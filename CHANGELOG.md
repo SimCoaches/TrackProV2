@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.317 - 2026-11-23 (beta)
+
+For supervised testing. Includes everything in 2.26.316. Blip v0.295.
+
+- Blip v0.295: asking Blip to stop the lap guide, the corner calls or "the other voice" now stops every recorded corner call for the rest of the session: the lap guide, the corner read, and the "Brake now. Turn in. Unwind the wheel." calls at the corner you are working on. Before, each had its own off switch, and Blip could switch off one that was not speaking and say it was off while another went on. A driver asked four times in one session and the calls continued.
+- Blip can now tell which of his recorded calls is speaking when you ask what is talking, and calls them his own recorded lines. He had described them as a separate voice from outside TrackPro.
+- Saying it in your own words ("stop the lap guide", "turn that other voice off", "stop reading the corners") ends the calls even when Blip picks the wrong control. Blip's coaching, verdicts and answers go on.
+- League: the week's time trial (Blip's time to beat, on Home and the League page) shows every driver's name. A driver was listed as "TrackPro driver" unless lap sharing was switched on, and it is off unless a driver turns it on. Names come from the server, so every version shows them (the `20261123200000_league_time_trial_names.sql` migration is live since 2026-11-23). The lap sharing switch now says what it covers: whether other drivers can open, overlay and race your laps. League Night results and the time trial show your name either way.
+- Billing locks: Sim Coaches can lock a simulator whose bill is unpaid, from Admin → Billing locks. A lock covers a whole sim center, one rig, a customer account or one PC. A locked simulator cannot be used at all: a lock screen with the billing message and a reference code covers every monitor and cannot be closed, minimized or hidden; every sim and its launchers (Steam, Content Manager, SimHub and others) are closed and kept closed; pedals, motion, haptics, belts, wind and force feedback are off; and TrackPro starts itself again if it is ended and starts with Windows. It stays locked through restarts and without internet until it is released in the admin panel. A customer's lock never locks a sim center rig, and on a friend's PC it holds only while that customer is signed in. A "watch" can also require a PC to check in every few days. Needs the `20261123100000_billing_locks.sql` migration deployed.
+
 ## TrackPro V2 2.26.316 - 2026-11-23 (beta)
 
 For supervised testing. Includes everything in 2.26.315. Blip v0.294.
