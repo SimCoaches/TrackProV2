@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.318 - 2026-11-23 (beta)
+
+For supervised testing. Includes everything in 2.26.317. Blip v0.295.
+
+- Haptics, two shakers: both shakers now play every effect in full. Every rig started on Left / Right with Spatial at 82%, which places effects by side: a kerb under one side of the car played as low as 28% on the other shaker, cornering load as low as 41%, and lockups and wheel spin were quieter there too. Two shakers on one seat cannot be told apart, so that only made those effects weaker. A rig still on that untouched start is moved to Spatial 0% once. The Haptics page says so the next time it is opened, and one button sets Spatial to 82% again. A rig whose Spatial, sides or layout were changed is left as it was set. On the phone companion a saved rig is never moved: it shows what the PC has, with the same one-press choice.
+- Haptics: Left / Right and Front / Back now start with Spatial at 0%. Four or more shakers still start placed. A line under the Spatial slider says what it is doing: either every shaker plays every effect in full, or how little of a kerb on the far side a shaker plays at the current setting, with one button to play everything on every shaker.
+- Haptics: Spatial now also moves the road and kerb detail that comes from each wheel, so 0% is every effect the same on every shaker, as the page says. Before, that detail stayed on its own side at any setting. This part is shared, not added: at 0% each shaker of a pair plays half of all four wheels, so the shaker that had a one-sided kerb's detail to itself plays less of it and the two together play the same total. In between, a shaker plays mostly its own wheels and a little of the others (at 82%, 91% of its own and 9% of the other side's, where 82% used to mean all of its own). With four corner shakers, 0% plays on each what an "Everything" output plays. In the Refined mix, the lean toward the loaded side in corners follows Spatial too.
+- Haptics, custom zones: a zone set to every corner now plays every effect at full strength, as "Everything" does. It played the average of its four corners, so with Spatial at 100% kerbs were 5 to 9 dB down, ABS, lockups and wheel spin 4 to 5 dB down, and shifts and impacts about 2 dB down, on every shaker. A zone on two corners now gets the same share of each effect as the built-in Left, Right, Front or Back output, and zones over several corners (half a seat, a backrest) get more of what happens under the corners they cover: up to 6 dB more of a kerb under one wheel, 1 to 2 dB more of the engine and shifts. No zone's share of an effect went down. The wheels' road and kerb detail is separate: on a zone it follows Spatial as on any other output, and a zone on every corner still plays it at twice the level of "Everything", as before.
+- Haptics: output labels read like names but decide what a shaker plays once Spatial is up. The tooltips on the layout, on each output's position and on Spatial now say so.
+
 ## TrackPro V2 2.26.317 - 2026-11-23 (beta)
 
 For supervised testing. Includes everything in 2.26.316. Blip v0.295.
