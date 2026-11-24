@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.319 - 2026-11-23 (beta)
+
+For supervised testing. Includes everything in 2.26.318. Blip v0.296.
+
+- Blip v0.296, one voice: Blip's recorded lines can no longer come out as a second voice.
+  - They play on the same speaker as his live voice. Windows gives a headset a new id when it is re-plugged or its driver updates; the live voice found it again by name, the recordings did not, and played on the Windows default output instead.
+  - They go through the same level chain as his live voice, so a recording is no longer quieter and thinner than the answer next to it.
+  - The lap guide and guided lap are only ever said in your own Blip voice. When that voice was slow or refused to record, the older narrator voice took the whole lap; now the lap waits and starts once your voice has its lines.
+  - A line the server recorded with a different voice engine than Blip speaks in is never played. The live voice says the line instead.
+
 ## TrackPro V2 2.26.318 - 2026-11-23 (beta)
 
 For supervised testing. Includes everything in 2.26.317. Blip v0.295.
