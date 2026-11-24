@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.315.
 
+Beta [2.26.318](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.318) makes both shakers of a two-shaker kit play every effect in full. Every rig started with effects placed by side, so a kerb under one side of the car played as low as 28% on the other shaker; on one seat the two cannot be told apart, and that only made effects weaker. A rig still on that start is moved once, with one button to go back, and a line under the Spatial slider says what it is doing. A custom zone set to every corner now plays effects at full strength instead of the average of its corners. Measured on the haptics bench, not yet felt on a rig. Blip v0.295. Everything in 2.26.317 is included.
+
 Beta [2.26.317](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.317) makes "stop" mean stop for Blip's recorded corner calls: asking him to stop the lap guide, the corner calls or "the other voice" ends the lap guide, the corner read and the "Brake now. Turn in. Unwind the wheel." calls together for the rest of the session, and he can say which one is speaking. It includes beta 2.26.316: a second shaker amplifier is easy to add on the Haptics page, and the corner cards in Fix this corner line up. Blip v0.295. Everything in 2.26.315 is included.
 
 Earlier beta builds, all included in 2.26.315 (their notes describe each build as it was tested):
