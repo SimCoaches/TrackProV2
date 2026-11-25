@@ -1,5 +1,19 @@
 # Changelog
 
+## TrackPro V2 2.26.320 - 2026-11-25 (beta)
+
+For supervised testing. Includes everything in 2.26.319. Blip v0.297 and BLIP 0.7 Brain.
+
+- Setup Shop, driving style upfront: pick Safe, Balanced, Pointy, or My driving before applying a setup. My driving starts from your saved cross-session driving style on Lap 1 instead of waiting for new telemetry, and never overwrites a driver's kept setups.
+- Setup Shop, fuel and ride-height tech compliance: setups no longer pour heavy race or endurance fuel onto lower-fuel pushrod or perch settings without compensating for ride-height sag, and Race / Endurance modes prefer heavy-fuel starting setups when available.
+- Setup Shop, high-speed gearing and aero transfer: cross-track setups at high-speed circuits (Daytona, Monza, Spa, Sebring, Bathurst, Nordschleife, Road America, Watkins Glen, Le Mans) stop copying slow-track Short gear stacks onto long straights, adopt track-specific gearing and low-drag aero packages when available, and clear unproven testing revisions that held stale short-stack bases.
+- Setup Shop, garage integrity and file writer: sessions reported under another car's id are excluded from car bases and driver cohorts, modified-load results report back, nightly coverage measures served setups against the file writer, layouts named like sessions (such as Spa Endurance) stay labelled as layouts, and untested rear-toe slopes are never written past verified files.
+- Blip v0.297: braking physics and light-tap fixes stop Blip from insisting on slower, earlier braking points against your own reference lap or inventing brake zones where the faster lap lifts or only taps the brake.
+- Blip v0.297 & BLIP 0.7 Brain: verifiable call-outcome loop, next-lap optimal adjustments, Chase Session Optimal with Fresh Reset, split corner voice controls, upgraded telemetry upload priority, and the in-app BLIP 0.7 model release popup.
+- Spotter: added Practice Mode for quieter, practice-friendly calls.
+- Haptics: added channel split presets and a live headroom meter.
+- Billing locks: while a simulator is locked, the Ctrl+Alt+Del screen no longer offers a way out — Task Manager, Sign out, Lock and Switch user are removed from it (and restored when the simulator is unlocked). Windows does not let any program block Ctrl+Alt+Del itself, so the screen still appears, but with nothing on it that can close TrackPro or get past the lock.
+
 ## TrackPro V2 2.26.319 - 2026-11-23 (beta)
 
 For supervised testing. Includes everything in 2.26.318. Blip v0.296.
