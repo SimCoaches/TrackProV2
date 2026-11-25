@@ -1,8 +1,8 @@
 # Changelog
 
-## TrackPro V2 2.26.320 - 2026-11-25 (beta)
+## TrackPro V2 2.26.320 - 2026-11-25 (stable, promoted 2026-11-25)
 
-For supervised testing. Includes everything in 2.26.319. Blip v0.297 and BLIP 0.7 Brain.
+Promoted from the signed beta without rebuilding the installer, at the owner's direction, on the day it was built. This is the stable release: it carries every change since 2.26.315 (the entries below). Blip v0.297 and BLIP 0.7 Brain.
 
 - Setup Shop, driving style upfront: pick Safe, Balanced, Pointy, or My driving before applying a setup. My driving starts from your saved cross-session driving style on Lap 1 instead of waiting for new telemetry, and never overwrites a driver's kept setups.
 - Setup Shop, fuel and ride-height tech compliance: setups no longer pour heavy race or endurance fuel onto lower-fuel pushrod or perch settings without compensating for ride-height sag, and Race / Endurance modes prefer heavy-fuel starting setups when available.
