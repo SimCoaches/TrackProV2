@@ -8,9 +8,9 @@ Download the latest signed installer from the [TrackPro V2 releases page](https:
 
 TrackPro updates are delivered through this public release channel. The app checks the latest release, shows the changelog, downloads the signed installer, applies the update, and restarts.
 
-Latest stable release: TrackPro V2 2.26.315.
+Latest stable release: TrackPro V2 2.26.320.
 
-Beta [2.26.320](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.320) upgrades Setup Shop with an upfront Driving Style selector (Safe, Balanced, Pointy, or My driving from Lap 1), fuel and ride-height tech-compliance guardrails, high-speed gearing and aero transfer (stopping slow-track Short gear stacks from being copied onto Daytona, Monza, Spa, Sebring, Bathurst, and Nordschleife), and foreign-garage and rear-toe writer fixes. It also brings Blip v0.297 and BLIP 0.7 (braking physics and light-tap fixes, verifiable outcome loop, next-lap optimal adjustments, Chase Session Optimal with Fresh Reset, split corner voice controls, telemetry upload priority), Spotter practice mode, Haptics channel split presets and headroom meter, and Ctrl+Alt+Del exit locks when a simulator is billing-locked. Verified by automated suites, recorded-session replays, and live Setup Shop rebuilds; physical rig check pending. Everything in 2.26.319 is included.
+Earlier beta builds, all included in 2.26.320 (their notes describe each build as it was tested):
 
 Beta [2.26.319](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.319) stops Blip's recorded lines coming out as a second voice: they play on the same speaker and through the same level chain as his live voice, the lap guide is only ever said in your own Blip voice, and a line recorded with a different voice engine is never played. Checked with tests and a replay of recorded sessions, not yet heard on a rig. Blip v0.296. Everything in 2.26.318 is included.
 
@@ -229,6 +229,14 @@ Beta [2.26.189](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.189)
 Validation candidate [2.26.188](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.188) contains further motion persistence and controller-protocol corrections. **Supervised testing only; not approved for customer delivery.**
 
 Beta [2.26.187](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.187) is on **validation hold - do not use for customer delivery**. Reliability fixes and physical Thanos4U acceptance are pending.
+
+### What's New in 2.26.320
+
+- Setup Shop: upfront Driving Style selector (Safe, Balanced, Pointy, or My driving from Lap 1 with cross-session driving-style fallback), fuel and ride-height tech-compliance guardrails, high-speed gearing and aero transfer (stopping slow-track Short gear stacks on Daytona, Monza, Spa, Sebring, Bathurst, and Nordschleife), and foreign-garage, layout-name, and rear-toe file writer fixes.
+- Blip (v0.297 & BLIP 0.7 Brain): one voice everywhere (same headset, level chain, and voice engine as live Blip, and "stop" silences all recorded corner feeds together), braking physics and light-tap fixes, verifiable outcome loop, next-lap optimal adjustments, Chase Session Optimal with Fresh Reset, split corner voice controls, higher telemetry upload priority, and the BLIP 0.7 model release popup.
+- Haptics & Spotter: multi-amp setup up to four amps, Spatial 0% full-strength default on two-shaker kits, full-strength four-corner custom zones, channel split presets, a live headroom meter, and Spotter practice mode.
+- League & Billing locks: League Night time trial shows every driver's name, and billing-locked rigs cover every monitor, keep sims closed, disable hardware outputs, and remove Ctrl+Alt+Del exit paths while locked.
+- See the [changelog](CHANGELOG.md) for all changes since 2.26.315.
 
 ### What's New in 2.26.315
 
