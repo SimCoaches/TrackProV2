@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.321 - 2026-11-25 (beta)
+
+For supervised testing. Includes everything in 2.26.320. Blip v0.298.
+
+- Blip v0.298, unified Lap Guide before-and-after coaching: continuous Lap Guide corner fixes and focus calls now pair WHAT to change with rotating, plain-English HOW sentences when straight room permits (stepping down cleanly to compact fixes before your own braking point), and feed directly into Blip's after-corner debrief engine so every corner coached on entry gets a natural, telemetry-grounded word on exit — concrete time gained, right-on-pace confirmation (only when genuinely clean and settled, never false praise), progress updates, over-correction detection, or specific diagnoses across 60+ rotating variations.
+- Blip v0.298, active before-corner cadence: Chatty mode raises predictive pre-corner fixes from 3 to 5 per lap (with 5 s cue spacing) and pairs WHAT with concise, physics-grounded HOW cues on braking, turn-in, coasting, and exit drive whenever straight room fits cleanly before braking (strictly gated by telemetry honesty and a 2-lap cooldown per corner). Quiet (1 fix/lap) and Normal (2 fixes/lap) stay unchanged.
+- Blip v0.298, straight-line technique teaching: unlocks concise WHY + HOW teaching lines (13–16 words) that fit medium straights without collapsing to bare labels, enriches straight-line lap notes with cause, feel, and progressive approach-layer cues (eyes → step before → fixed point), and teaches repeated cross-corner technique habits (2+ distinct corners) once per session.
+- Blip v0.298, humanized focus corner verdicts: in Chatty mode with live voice connected, focus verdicts rotate through natural conversational phrasing and escalate coaching angles across repeated misses when straight room fits cleanly, falling back to compact clips on tight straights.
+- Blip Brain `focus_pick`: allows one fresh, high-confidence clean solo read at initial Lap-2 adoption so the brain's 4-7 s worker read no longer misses the Lap-2 focus pick window, while the focus engine still requires two-lap recurring fault confirmation.
+
 ## TrackPro V2 2.26.320 - 2026-11-25 (stable, promoted 2026-11-25)
 
 Promoted from the signed beta without rebuilding the installer, at the owner's direction, on the day it was built. This is the stable release: it carries every change since 2.26.315 (the entries below). Blip v0.297 and BLIP 0.7 Brain.
