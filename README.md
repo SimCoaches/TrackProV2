@@ -10,6 +10,8 @@ TrackPro updates are delivered through this public release channel. The app chec
 
 Latest stable release: TrackPro V2 2.26.320.
 
+Beta [2.26.321](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.321) upgrades Blip into a full before-and-after technique coach in Chatty mode: unified Lap Guide fixes with rotating plain-English HOW sentences before corners, 60+ natural telemetry-grounded after-corner debrief variations (time gained, right on pace, progress, over-correction, or specific diagnosis), concise straight-line WHY + HOW technique teaching and 2-corner habit detection, humanized rotating focus verdicts with progressive coaching angles, up to 5 predictive fixes per lap (5 s spacing), and the Blip Brain `focus_pick` Lap-2 fix. Checked with 12,215 coach tests, 2,628 spotter tests, and 14 recorded-session whole-coach replays (130/130 bars, 109/109 scenario checks); live rig ear check pending. Blip v0.298. Everything in 2.26.320 is included.
+
 Earlier beta builds, all included in 2.26.320 (their notes describe each build as it was tested):
 
 Beta [2.26.319](https://github.com/SimCoaches/TrackProV2/releases/tag/v2.26.319) stops Blip's recorded lines coming out as a second voice: they play on the same speaker and through the same level chain as his live voice, the lap guide is only ever said in your own Blip voice, and a line recorded with a different voice engine is never played. Checked with tests and a replay of recorded sessions, not yet heard on a rig. Blip v0.296. Everything in 2.26.318 is included.
