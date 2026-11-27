@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.322 - 2026-11-27 (beta)
+
+For supervised testing. Includes everything in 2.26.321 and 2.26.320. Blip v0.299.
+
+- Blip v0.299, Blip GO ($9/mo): new listen-only automatic Blip radio tier powered by the same BLIP racing AI model, offering unlimited automatic corner-by-corner coaching across all 6 stock voices with a 1-click downgrade option in cancel/manage flows (excludes two-way talk, Coach chat, Setup Shop, and Race Engineer).
+- Blip v0.299, Wave 1 Advanced Technique Training & WHY coaching: adds 60Hz physics drills, readiness and mastery tracking, natural WHY loss explanations without rigid word caps, once-only mic notices, and conversational intros.
+- Blip v0.299, Stock-6 voice standardization: retires Spotter Market, Voice Studio, and ElevenLabs custom voices with automatic migration to the 6 stock OpenAI voices and expanded zero-cost pre-recorded clip coverage.
+- Blip Driving (RL v2 & physics): upgrades Blip Driver to RL v2 (RMA, 3D lookahead, 3-action pedals, RPM shift, traffic, aero fit, composite optimal reference engine, BC+DAgger human warm-start) plus lead-matched `yaw_wheel` curvature, smoothed `YAW_SMOOTH_S`, anti-sawing steer reversal damping, slip-aware `planted_unwind_floor` with front-axle understeer guard, Rule-of-1 steering/braking, curb edge mapper, full-track-width utilization, and warm-tyre RL takeover gating.
+- Setup Shop (coupled solver & tech compliance): symmetric coupled solver with mirrored axle fuel terms, L/R ride-height symmetry enforcement, heavy-fuel sag blocking, fleet-wide `CenterFrontSplitterHeight` guard, click-rounding floor checks, Qualifying fuel clearance buffer, 720S front splitter floor raise (56.0mm), BoP schema unification, pace-aware donors, Blip lap evidence integration, and 107-car tech audit.
+
 ## TrackPro V2 2.26.321 - 2026-11-25 (beta)
 
 For supervised testing. Includes everything in 2.26.320. Blip v0.298.
