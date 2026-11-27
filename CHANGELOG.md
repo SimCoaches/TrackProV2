@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.323 - 2026-11-27 (beta)
+
+For supervised testing. Includes everything in 2.26.322, 2.26.321, and 2.26.320. Blip v0.300.
+
+- Blip v0.300, Persistent Cross-Session Driver Technique Profile (Sim + Real Car): builds a unified 6-dimension driver profile (Braking Shape, Trail Release & Grip Blend, Steering & Vision, Throttle Roll-On, Rolling Speed & Flow, and Car Control & Recovery) synced across sim and real-car sessions with day/month/year longitudinal mastery progression, broken-habit tracking, and account-synced advanced drill mastery.
+- Blip v0.300, 60Hz Real-Time Technique Recognition & Skill-Tier Adaptive Coaching: evaluates braking shape, trail release, steering arc, throttle roll-on, and spatial corner flow at 60Hz, adapts vocabulary and depth to Foundation/Developing/Advanced/Pro skill maturity for both live Blip and Blip GO ($9/mo), and connects live Blip Brain phase-loss reads to the new Driver Technique Profile card on the Coach page.
+- Blip v0.300, 60Hz Incident & Mistake Root-Cause Autopsy Engine: inspects the 5.5s of 60Hz telemetry leading into off-tracks, spins, and loss-of-control catches to diagnose tank-slappers, front lockups, late braking, brake-to-throttle weight-shift understeer, aggressive exit throttle snaps, mid-corner lift-off oversteer, kerb unsettlement, and stalled corner roll — explaining the physical cause once the car is settled and safe without blaming punts.
+- Blip v0.300, 6-Voice Stock Clip Library Parity & Training Pipeline Hardening: enqueues every Wave 2/3 technique, incident autopsy, milestone line, and sentence fragment identically across all 6 stock OpenAI voices (`cedar`, `marin`, `echo`, `shimmer`, `alloy`, `sage`), fixes rollback student dropping in `coaching-student-loader`, and includes Setup Shop v4 class-pooled nonlinear GPU surrogates (0/3300 tech violations) and Blip Driving post-catch stability improvements.
+
 ## TrackPro V2 2.26.322 - 2026-11-27 (beta)
 
 For supervised testing. Includes everything in 2.26.321 and 2.26.320. Blip v0.299.
