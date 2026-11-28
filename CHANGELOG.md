@@ -1,5 +1,14 @@
 # Changelog
 
+## TrackPro V2 2.26.325 - 2026-11-27 (beta)
+
+For supervised testing. Includes everything in stable 2.26.324. Blip v0.302.
+
+- Blip v0.302, Simplified Settings & Deduplicated Home: consolidates Blip Settings into 4 flat, non-overlapping sections (Voice & Audio, How Blip Coaches, Radio & Talk Controls, Advanced) removing duplicate and conflicting controls, renames silent mode from "Quiet" to "Ask only" across Settings and Blip's voice instructions, and unifies the Blip Home page into a single Car & Track card and tabbed Driving Profile card.
+- Updater Flow & Timed Snooze: resolves the highest eligible release for your channel (stable vs. beta) across startup prompts, Settings, and the title bar, and re-verifies freshness right before download so drivers never finish one update only to be prompted for a newer one right after reopening. "Remind me later" now snoozes for 12 hours instead of dismissing permanently (clearing legacy permanent dismissals), backed by a cross-channel install lock.
+- Fluid Window Sizing, Taskbar Clamping & Responsive Modals: makes the main window fluid down to 640x440 logical pixels, clamps startup, restore, drag, and DPI/scale-factor changes to the monitor work area so TrackPro never hides under the Windows taskbar or off-screen, auto-compacts the left navigation sidebar at narrower widths (<= 920px), and hardens update prompts, onboarding wizards, and app dialogs with viewport-safe scrolling and accessible close controls at any Windows zoom or display scale.
+- Visual Track Anchors, Setup Shop & Blip Driving: adds 140 verified visual track anchors across 6 additional circuits with accented iRacing track key lookup fixes, wires telemetry-guided donor scoring in Setup Shop `car_base` from live chassis handling reports, and upgrades Blip Driver high-speed cornering (proportional micro-catch throttle feathering, distance-weighted `WheelFit` for fast sweepers, exit-gated mid-corner `wide_understeer_cap`, ramped turn-in counter-bend steer limits, braking-zone camber compensation, and setup profile sanitization).
+
 ## TrackPro V2 2.26.324 - 2026-11-27 (stable, promoted 2026-11-27)
 
 Promoted from the signed beta without rebuilding the installer, at the owner's direction, on the day it was built. This is the stable release: it carries every change since 2.26.320 (including Blip GO $9/mo, Wave 1-3 Technique Coaching, Incident Autopsy, Zero-Leak Proactive Voice, Spotter Slow-Down Penalties, Complete Spotter/Blip Zero-Overlap Split, Setup Shop v4 & Blip lap evidence, and 305 verified visual track references). Blip v0.301.
