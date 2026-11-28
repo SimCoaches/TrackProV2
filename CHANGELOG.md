@@ -1,5 +1,15 @@
 # Changelog
 
+## TrackPro V2 2.26.324 - 2026-11-27 (beta)
+
+For supervised testing. Includes everything in 2.26.323, 2.26.322, 2.26.321, and 2.26.320. Blip v0.301.
+
+- Blip v0.301, Zero-Leak Proactive Voice & Rich 6-Voice Stitched Clips: fixes voice overlap and pitch artifacts (natural 1.0x pitch across Lap Guide and Talk-Through, atomic cut of both live Realtime Coach and pre-recorded CueClipPlayer, deferred unmute), hard-blocks routine scripted English proactive lines from leaking onto paid OpenAI Realtime (reserving Realtime strictly for driver conversation and genuinely unrecorded turns), subsets non-iRacing tools on Turn 0, and stitches rich post-corner wrap-ups (time lost + mistake + meters/board + target brake %) locally across all 6 stock voices at ~4ms / $0.00.
+- Spotter, Slow-Down / Course-Cut Time Penalties & Zero Spotter ↔ Blip Overlap: fixes iRacing slow-down callouts (resolves stock clips before commit checks, elevates slow-down warnings to critical priority so they outlast active Blip lines instead of expiring silently, merges player personal penalty flags from `CarIdxSessionFlags`, adds universal stock fallback clips, and adds AC1 `penaltyTimeSec` slow-down support while keeping ACC Stop-and-Go penalties separate) and cleanly separates Spotter vs. Blip responsibilities when both are active so Spotter handles traffic, flags, slow-downs, cautions/pace order, multiclass, lapping, spin/rejoin safety, and pit-lane ops while Blip owns all coaching and race-engineer calls with zero overlap.
+- Blip v0.301, Actionable Post-Corner Wrap-Ups & Explicit Speed Units: retires vague two-word stubs in favor of concrete post-corner wrap-ups naming time lost, mistake, verified brake board/cone or meters, and target brake pressure %; unlocks "getting closer" progress praise, racing vernacular ("trail brake into the apex"), vital-fix tail allowance on big mistakes, and explicit spoken speed units ("About 55 miles per hour through." / "About 90 kilometers per hour through.").
+- Blip v0.301, Countdown Brake Cones & 305 Verified Track Visual References: recognizes 4/3/2/1 countdown brake cones alongside numbered boards, upgrades the venue-survey pipeline for cones and marshal posts, repairs runtime legacy-key lookups for accented iRacing tracks, and ships eye-checked references across 11 circuits: Sebring (56), MotorLand Aragón GP (39), Nürburgring GP (31), Interlagos GP (29), Oulton Park Island Historic (25), Summit Point (25), Sonoma IndyCar (24), Portland Full (24), Adelaide Street (22), Winton Club (20), and St. Petersburg (10).
+- Setup Shop & Blip Driving: wires Blip laps into Setup Shop A/B scoring, multi-setup AI evidence, and live desktop chassis handling reports (with TypeScript LapCompletion fix) plus Blip Driver startup stall protection.
+
 ## TrackPro V2 2.26.323 - 2026-11-27 (beta)
 
 For supervised testing. Includes everything in 2.26.322, 2.26.321, and 2.26.320. Blip v0.300.
