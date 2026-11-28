@@ -1,8 +1,8 @@
 # Changelog
 
-## TrackPro V2 2.26.324 - 2026-11-27 (beta)
+## TrackPro V2 2.26.324 - 2026-11-27 (stable, promoted 2026-11-27)
 
-For supervised testing. Includes everything in 2.26.323, 2.26.322, 2.26.321, and 2.26.320. Blip v0.301.
+Promoted from the signed beta without rebuilding the installer, at the owner's direction, on the day it was built. This is the stable release: it carries every change since 2.26.320 (including Blip GO $9/mo, Wave 1-3 Technique Coaching, Incident Autopsy, Zero-Leak Proactive Voice, Spotter Slow-Down Penalties, Complete Spotter/Blip Zero-Overlap Split, Setup Shop v4 & Blip lap evidence, and 305 verified visual track references). Blip v0.301.
 
 - Blip v0.301, Zero-Leak Proactive Voice & Rich 6-Voice Stitched Clips: fixes voice overlap and pitch artifacts (natural 1.0x pitch across Lap Guide and Talk-Through, atomic cut of both live Realtime Coach and pre-recorded CueClipPlayer, deferred unmute), hard-blocks routine scripted English proactive lines from leaking onto paid OpenAI Realtime (reserving Realtime strictly for driver conversation and genuinely unrecorded turns), subsets non-iRacing tools on Turn 0, and stitches rich post-corner wrap-ups (time lost + mistake + meters/board + target brake %) locally across all 6 stock voices at ~4ms / $0.00.
 - Spotter, Slow-Down / Course-Cut Time Penalties & Zero Spotter ↔ Blip Overlap: fixes iRacing slow-down callouts (resolves stock clips before commit checks, elevates slow-down warnings to critical priority so they outlast active Blip lines instead of expiring silently, merges player personal penalty flags from `CarIdxSessionFlags`, adds universal stock fallback clips, and adds AC1 `penaltyTimeSec` slow-down support while keeping ACC Stop-and-Go penalties separate) and cleanly separates Spotter vs. Blip responsibilities when both are active so Spotter handles traffic, flags, slow-downs, cautions/pace order, multiclass, lapping, spin/rejoin safety, and pit-lane ops while Blip owns all coaching and race-engineer calls with zero overlap.
